@@ -1,27 +1,22 @@
 # bumbler
 
-A DIY barebones CMS
+A DIY barebones CMS for photos or whatever
 
-* Configuration: set a git repo URL, set the build script, and set the directories
-* A web UI lets you modify your content.  Sign in with Github or use "local" config for no pw.
-* Preview pages by clicking "save and build".
-* Click to push and go live
+## app flow
 
-ui: 
+* click "+" to create a post
+* upload my stuff
+* build with a button
+* publish with a button
 
-```
-[folder1]
-[folder2]
-[folder3]
---------------
-edit area 
+## config
 
------------
+* folders
+* repo URL
+* tasks after publishing
 
-[save]
-[build]
-[commit+push]
+## generates
 
-```
-
-or... just make it a general purpose "commands to buttons" ui + editor + filtered fiel tree viewer
+* permalinks
+* pagination
+* rss
