@@ -1,6 +1,6 @@
 # bumbler
 
-A DIY barebones CMS for photos or whatever
+A DIY barebones CMS for photos or blog posts or whatever
 
 Runs like a desktop app or as a local webserver, builds out to static files
 
