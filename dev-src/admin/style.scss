@@ -1,0 +1,43 @@
+$bg: #fff;
+$fg: #000;
+$bg2: #333;
+$fg2: #cdd;
+
+html{
+  background-color:$bg;
+  color:$fg;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+body{
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:stretch;
+  min-height:100%;
+}
+.sidebar{
+  flex:0 0 auto;
+  padding:0 0.5rem;
+  border-right:solid 1px #eee;
+  z-index:2;
+  box-shadow:0 0 10px 1px rgba(0,0,0,0.2);
+}
+.sidebar>.big{
+  font-size:1.4rem;
+  margin:0.5rem;
+  list-style-type:none;
+}
+hash-template{
+  display:none;
+}
+hash-template.unhidden{
+  display:block;
+}
+.menu-list li, .menu-list a{
+  transition: all 0.2s;
+}
+
+@import "bulma"

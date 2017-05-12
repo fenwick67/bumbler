@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/fenwick67/bumbler#readme",
   "dependencies": {
+    "async": "^2.4.0",
+    "body-parser": "^1.17.1",
+    "bulma": "^0.4.1",
     "express": "^4.15.2",
+    "express-fileupload": "^0.1.3",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.3.0",
-    "yargs":"^8.0.1"
-  }
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {}
 }

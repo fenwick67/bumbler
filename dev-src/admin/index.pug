@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  head
+    title Bumbler Admin
+    link(rel="stylesheet" type="text/css" href="style.css")
+
+  - var menuCategories = ['posts','files','general']
+  - var menuItems = {posts: [{title:'➕&#xFE0E; new',href:"#posts/new"},{title:'📁&#xFE0E; manage',href:"#posts"}], files: [{title:'➕&#xFE0E; new',href:"#files/new"},{title:'📁&#xFE0E; manage',href:"#files"}], general: [{title:'⌨️&#xFE0E; edit HTML',href:"#html"},{title:'✈️&#xFE0E; publish',href:"#publish"},{title:'⚙️&#xFE0E; settings',href:"#settings"}]}
+  body
+    .sidebar.menu#sidebar
+      li.big
+        a(href="#") Bumbler Admin
+      each category in menuCategories
+        p.menu-label= category
+        ul.menu-list
+          each t in menuItems[category]
+            li
+              a(href=t.href class=t.active?'is-active':'')!= t.title
+
+    #replace.container
+      hash-template#settings
+        h1.title Settings
+        form
+          each option in ['Git Publish URL','Title']
+            .field
+              label.label=option
+                input.input(type="text")
+          button.button.is-primary Save
+      hash-template#files
+        .content
+          .container
+            h1 Files
+            each file in [{url:"#"},{url:"#"}]
+              .box
+                img(src='//lorempixel.com/100/100')
+                .field.is-grouped
+                  p.control
+                    a(href='#').button 👁️ View
+                  p.control
+                    a(href='#').button.is-danger ❌ Delete
+      hash-template#publish
+        h1.title publish
+        p.control
+          a(href='#').button 👁️ View
+        p.control
+          a(href='#').button.is-primary ✈️ Publish to Git Repo
+
+      hash-template#404
+        .content
+          h1 Sorry, couldn't find that page :(
+
+
+      script(src="app.js")
