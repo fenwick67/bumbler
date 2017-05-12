@@ -15,4 +15,9 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dev-serve'));
 });
 
-gulp.task('default',['sass','pug'])
+gulp.task('default',['sass','pug']);
+
+gulp.task('watch',function(){
+   gulp.watch('./dev-src/**/*.pug',['pug'])
+   gulp.watch('./dev-src/**/*.scss',['sass'])
+})
