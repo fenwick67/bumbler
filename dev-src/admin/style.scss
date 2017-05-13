@@ -1,7 +1,10 @@
+@import "bulma";
+
 $bg: #fff;
 $fg: #000;
 $bg2: #333;
 $fg2: #cdd;
+$shadow: 0 0 10px 1px rgba(0,0,0,0.2);
 
 html{
   background-color:$bg;
@@ -23,7 +26,7 @@ body{
   padding:0 0.5rem;
   border-right:solid 1px #eee;
   z-index:2;
-  box-shadow:0 0 10px 1px rgba(0,0,0,0.2);
+  box-shadow:$shadow;
 }
 .sidebar>.big{
   font-size:1.4rem;
@@ -64,26 +67,44 @@ hash-template.unhidden{
 // fresh popup
 .popup{
   position:relative;
-  transform:translateY(0);
+  transform:translateZ(0) scale(1);
   opacity:0;
   flex:0 1 auto;
   position:relative;
   z-index:10;
   opacity:1;
-  max-height:6rem;
-  transition:all 1s;
+  transition:all 0.5s;
+  box-shadow: $shadow;
+  width:15rem;
 }
 // being added
 .popup.fadein{
-  opacity:0;
-  max-height:0;
-  transform:translateY(6rem);
+  opacity:1;
+  transform:translateY(6rem) scale(0);
 }
 // being removed
 .popup.fadeout{
+  transition:all 2s;
   opacity:0;
-  max-height:0;
-  transform:translateY(6rem);
+  transform:translateX(40rem) scale(1);
 }
-
-@import "bulma"
+.thumb{
+  display:inline-block;
+  width:150px;
+  height:100px;
+  border:solid 1px black;
+}
+.asset{
+  display:flex;
+  align-items:center;
+  border-bottom:solid 1px $grey-lighter;
+}
+.asset:first-child{
+  border-top:solid 1px $grey-lighter;
+}
+.asset>*{
+  margin:0.5rem;
+}
+.textedit{
+  font-family:monospace;
+}

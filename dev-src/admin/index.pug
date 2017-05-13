@@ -1,10 +1,12 @@
 <!DOCTYPE html>
   head
     title Bumbler Admin
+    style
+      include ../../node_modules/fine-uploader/fine-uploader/fine-uploader.css
     link(rel="stylesheet" type="text/css" href="style.css")
 
   - var menuCategories = ['posts','files','general']
-  - var menuItems = {posts: [{title:'➕&#xFE0E; new',href:"#posts/new"},{title:'📁&#xFE0E; manage',href:"#posts"}], files: [{title:'📁&#xFE0E; manage',href:"#files"}], general: [{title:'⌨️&#xFE0E; edit template',href:"#html"},{title:'✈️&#xFE0E; publish',href:"#publish"},{title:'⚙️&#xFE0E; settings',href:"#settings"}]}
+  - var menuItems = {posts: [{title:'➕&#xFE0E; create',href:"#post/create"},{title:'📁&#xFE0E; manage',href:"#posts"}], files: [{title:'📁&#xFE0E; manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> edit template',href:"#html"},{title:'✈️&#xFE0E; publish',href:"#publish"},{title:'⚙️&#xFE0E; settings',href:"#settings"}]}
   body
     .sidebar.menu#sidebar
       li.big
@@ -32,21 +34,25 @@
           h1.title Files
           .file-view
       hash-template#publish
-        h1.title publish
+        h1.title Publish
         p.control
           a(href='/').button 👁️ View
         p.control
           form(method="post" action="/admin/publish")
             button(type="submit").button.is-primary ✈️ Publish to Git Repo
+      hash-template#post-create
+        div
+          h1.title Create Post
+            div.editor
 
       hash-template#html
-        h1.title edit HTML
+        h1.title Edit site template
         span#htmleditor
 
       hash-template#404
-        .content
-          h1 Sorry, couldn't find that page :(
-
+          h1.title Sorry, couldn't find that page :(
 
       script(src="app.js")
     #popup-area
+
+    include uploader-template.html
