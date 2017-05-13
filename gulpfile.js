@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 
 gulp.task('default',['sass','pug','browserify']);
 
-gulp.task('watch',function(){
+gulp.task('watch',['default'],function(){
    gulp.watch('./dev-src/**/*.pug',['pug'])
    gulp.watch('./dev-src/**/*.scss',['sass'])
    gulp.watch('./dev-src/**/*.js',['browserify'])

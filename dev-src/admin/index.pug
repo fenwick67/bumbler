@@ -2,7 +2,6 @@
   head
     title Bumbler Admin
     style
-      include ../../node_modules/fine-uploader/fine-uploader/fine-uploader.css
     link(rel="stylesheet" type="text/css" href="style.css")
 
   - var menuCategories = ['posts','files','general']
@@ -22,11 +21,6 @@
       hash-template#settings
         h1.title Settings
         form
-          each option in ['Git Publish URL','Title']
-            .field
-              label.label=option
-                input.input(type="text")
-          button.button.is-primary Save
       hash-template#files
         div
           h1.title Upload
@@ -54,5 +48,3 @@
 
       script(src="app.js")
     #popup-area
-
-    include uploader-template.html

@@ -1,5 +1,16 @@
 html
   head
   body
-    div Hello, world!
-    
+    div
+      each post in page.posts
+        section
+          h1= post.title
+          each attachment in post.attachments
+            div!= attachment.widget
+            a(href=attachment.url) aaaa
+          div= post.caption
+      footer 
+        if page.links.previousPage
+          a(href=page.links.previousPage) Previous
+        if page.links.nextPage
+          a(href=page.links.nextPage) Next

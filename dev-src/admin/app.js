@@ -7,6 +7,7 @@ var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
+var SettingsManager = require('./SettingsManager');
 document.addEventListener("DOMContentLoaded", function(event) {
 
   //navigation
@@ -25,6 +26,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     filesAssetsView.load();
   });
+
+  var settingsManager = null;
+  document.getElementById('settings').addEventListener('navigate-to',function(){
+    if (!settingsManager){
+      settingsManager = new SettingsManager(this.querySelector('form'));
+    }
+  })
 
   // html editor
   var htmlEditor = null;

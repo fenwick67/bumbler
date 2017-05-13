@@ -1,5 +1,6 @@
 var Post = require('../../lib/Post')
 var AssetPicker = require('./AssetPicker.js')
+var Asset = require('./Asset');
 
 module.exports = class PostEditor extends Object{
   constructor(el){
@@ -31,8 +32,8 @@ module.exports = class PostEditor extends Object{
     this.typeField.innerHTML = `
       <label class="label">Post Type</label>
       <p class="control">
-        <span class="select" name="type">
-          <select>
+        <span class="select">
+          <select name="type">
             <option value="image" >image</option>
             <option value="audio" >audio</option>
             <option value="video" >video</option>
@@ -78,8 +79,10 @@ module.exports = class PostEditor extends Object{
     this.el.appendChild(this.pickerEl);
 
     var self = this;
-    function _save(){
+    function _save(e){
+      e.preventDefault();
       self.save();
+      return false;
     }
     this.submitButton.addEventListener('click',_save);
   }
@@ -94,12 +97,67 @@ module.exports = class PostEditor extends Object{
 
   // save from dom => server
   save(){
+    console.log('saving');
+    var self = this;
+    // 1 create json
+    // 2 validate
+    // 3 upload files
+    // 4 POST the post
+
+    //todo validate the form
+
+    //create json
+    var type = self.el.querySelector('[name="type"]').value;
+    var caption = self.el.querySelector('[name="caption"]').value;
+    var title = self.el.querySelector('[name="title"]').value;
+    var assets = self.picker.assetUploader.assets;
+    var date = new Date().toISOString();
+    var id = Post.prototype.uuid();
+    var json = {type,caption,title,assets,date,id};
+
+    // validate
+    var problems = Post.prototype.validate(json);
+    if (problems){
+      popup(problems,'danger','Post error:')
+      return;
+    }
+
+    // upload
+    this.picker.assetUploader.uploadAll(function(er){
+      if (er){
+        return popup(er,'danger','Error uploading files')
+      }
+
+      // 4 post it up
+      var ok = false;
+      fetch('/admin/post',
+        {
+          method:'POST',
+          body:JSON.stringify(json),
+          headers:{'Content-Type': 'application/json'}
+        }).then(res=>{
+          ok = res.ok;
+          if (ok){
+            popup('uploaded post!');
+            self.reset();
+          }else{
+            popup('failed to upload','danger','Error');
+          }
+      });
+
+    });
 
   }
 
   // load from browser by id
   load(id){
+    console.log('todo: load')
+  }
 
+  reset(){
+    this.picker.assetUploader.reset();
+    this.el.querySelector('[name="caption"]').value ='';
+    this.el.querySelector('[name="title"]').value = '';
   }
 
 

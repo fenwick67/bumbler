@@ -13,9 +13,4 @@ module.exports = class AssetPicker{
     this.el.appendChild(this.uploadContain);
   }
 
-  // pop open a thing and let user pick an asset
-  showAssets(){
-
-  }
-
 }
