@@ -1,3 +1,6 @@
 {
-  "name": "my-bumbler"
+  "postsPerPage": "20",
+  "publishBranch": "master",
+  "publishUrl": "",
+  "title": "Life and Times "
 }
