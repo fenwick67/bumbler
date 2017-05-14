@@ -52,8 +52,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     postCreator.load();
   });
 
+  var publishInitialized = false;
+  document.getElementById('publish').addEventListener('navigate-to',function(){
+    if (!publishInitialized){
+      publishInitialized = true;
+
+      this.querySelector('[name="build"]').addEventListener('click',function(e){
+        fetch('/admin/build',{method:"POST"}).then(res=>{
+          if (!res.ok){throw new Error('response not ok');return;}
+          popup('Build triggered.')
+        }).catch(e=>{
+          popup(e,'danger','Error starting build:')
+        });
+      });
+
+    }
+  })
+
   // always navigate to a hash on pageload
   var page = window.location.hash.replace('#','').replace(/\//g,'-');
-  navigate(page||'posts-edit');
+  navigate(page||'post-create');
 
 }); // end DOM loaded

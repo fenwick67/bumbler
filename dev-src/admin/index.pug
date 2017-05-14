@@ -4,8 +4,8 @@
     style
     link(rel="stylesheet" type="text/css" href="style.css")
 
-  - var menuCategories = ['posts','files','general']
-  - var menuItems = {posts: [{title:'➕&#xFE0E; create',href:"#post/create"},{title:'📁&#xFE0E; manage',href:"#posts"}], files: [{title:'📁&#xFE0E; manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> edit template',href:"#html"},{title:'✈️&#xFE0E; publish',href:"#publish"},{title:'⚙️&#xFE0E; settings',href:"#settings"}]}
+  - var menuCategories = [' ','posts','files','general']
+  - var menuItems = {" ":[{title:"👁️&#xFE0E; View",href:"/"}], posts: [{title:'➕&#xFE0E; create',href:"#post/create"},{title:'📁&#xFE0E; manage',href:"#posts"}], files: [{title:'📁&#xFE0E; manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> edit template',href:"#html"},{title:'✈️&#xFE0E; publish',href:"#publish"},{title:'⚙️&#xFE0E; settings',href:"#settings"}]}
   body
     .sidebar.menu#sidebar
       li.big
@@ -29,11 +29,11 @@
           .file-view
       hash-template#publish
         h1.title Publish
-        p.control
-          a(href='/').button 👁️ View
-        p.control
+        .field
+          a.button(name="build") ↻&#xFE0E; Build
+          a(href='/').button 👁️&#xFE0E; View
           form(method="post" action="/admin/publish")
-            button(type="submit").button.is-primary ✈️ Publish to Git Repo
+            button(type="submit").button.is-primary ✈️&#xFE0E; Publish to Git Repo
       hash-template#post-create
         div
           h1.title Create Post

@@ -5,12 +5,12 @@ html
       each post in page.posts
         section
           h1= post.title
-          each attachment in post.attachments
+          each attachment in post.assets
             div!= attachment.widget
             a(href=attachment.url) aaaa
           div= post.caption
-      footer 
+      footer
         if page.links.previousPage
           a(href=page.links.previousPage) Previous
         if page.links.nextPage
-          a(href=page.links.nextPage) Next
+          a(href=page.links.nextPage) Next  

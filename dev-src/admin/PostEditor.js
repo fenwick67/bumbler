@@ -25,8 +25,6 @@ module.exports = class PostEditor extends Object{
     }
 
     this.form = document.createElement('form');
-    this.form.method="GET";
-    this.form.action="#post/create";
     var types = ['text', 'link', 'embed', 'audio', 'video', 'image'];
     this.typeField = field();
     this.typeField.innerHTML = `
