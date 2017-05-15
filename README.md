@@ -12,7 +12,7 @@ Runs as a local webserver, builds out to static files
 
 ## todo items
 
-publish via git
-create git commits on the fly
-publish via scp
-permanently delete posts
+* publish via git
+* create git commits on the fly
+* publish via scp
+* permanently delete posts
