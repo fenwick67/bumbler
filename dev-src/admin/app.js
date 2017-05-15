@@ -8,6 +8,7 @@ var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
 var SettingsManager = require('./SettingsManager');
+var publish = require('./publisher');
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -62,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   })
 
   document.getElementById('run-a-build').addEventListener('click',startBuild);
+  document.getElementById('publish-button').addEventListener('click',publish);
 
   // always navigate to a hash on pageload
   var page = window.location.hash.replace('#','').replace(/\//g,'-');

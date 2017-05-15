@@ -63,7 +63,7 @@ Asset.prototype.fetchAll = function(callback){
 
 module.exports = Asset;
 
-},{"lodash":13}],2:[function(require,module,exports){
+},{"lodash":14}],2:[function(require,module,exports){
 var AssetUploader = require('./AssetUploader');
 var AssetView = require('./AssetView');
 
@@ -621,7 +621,7 @@ module.exports = class PostEditor extends Object{
 
 }
 
-},{"../../lib/Post":12,"./Asset":1,"./AssetPicker.js":2,"moment":14}],9:[function(require,module,exports){
+},{"../../lib/Post":13,"./Asset":1,"./AssetPicker.js":2,"moment":15}],9:[function(require,module,exports){
 // manage settings
 
 var _ = require('lodash');
@@ -774,7 +774,7 @@ module.exports = class SettingsManager extends Object{
 
 }
 
-},{"lodash":13}],10:[function(require,module,exports){
+},{"lodash":14}],10:[function(require,module,exports){
 var PopupManager = require('./PopupManager');
 var Asset = require('./Asset');
 var AssetView = require('./AssetView');
@@ -785,6 +785,7 @@ var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
 var SettingsManager = require('./SettingsManager');
+var publish = require('./publisher');
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -839,6 +840,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   })
 
   document.getElementById('run-a-build').addEventListener('click',startBuild);
+  document.getElementById('publish-button').addEventListener('click',publish);
 
   // always navigate to a hash on pageload
   var page = window.location.hash.replace('#','').replace(/\//g,'-');
@@ -857,7 +859,7 @@ function startBuild(){
   });
 }
 
-},{"../../lib/Post":12,"./Asset":1,"./AssetUploader":3,"./AssetView":4,"./AssetsView":5,"./FileEditor":6,"./PopupManager":7,"./PostEditor":8,"./SettingsManager":9,"./initNavigation":11}],11:[function(require,module,exports){
+},{"../../lib/Post":13,"./Asset":1,"./AssetUploader":3,"./AssetView":4,"./AssetsView":5,"./FileEditor":6,"./PopupManager":7,"./PostEditor":8,"./SettingsManager":9,"./initNavigation":11,"./publisher":12}],11:[function(require,module,exports){
 // navigation handler
 
 var activeSidebarEl = null;
@@ -916,6 +918,25 @@ module.exports = function initNavigation(){
 }
 
 },{}],12:[function(require,module,exports){
+// publish to git and show a message
+
+module.exports = function publish(){
+  var ok = false;
+  fetch('/admin/publish',{method:"POST"}).then(res=>{
+    ok=res.ok;
+    return res.text()
+  }).then(text=>{
+    if (!ok){
+      popup(text,'danger','Error publishing:');
+    }else{
+      popup('publish succeeded!','success')
+    }
+  }).catch(e=>{
+    popup(e,'danger','Error publishing:');
+  });
+}
+
+},{}],13:[function(require,module,exports){
 /* post
   each post has the following:
 
@@ -1019,7 +1040,7 @@ Post.prototype.uuid = uuid;
 
 module.exports = Post;
 
-},{"lodash":13,"uuid/v1":17}],13:[function(require,module,exports){
+},{"lodash":14,"uuid/v1":18}],14:[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -18107,7 +18128,7 @@ module.exports = Post;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 //! moment.js
 //! version : 2.18.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -22572,7 +22593,7 @@ return hooks;
 
 })));
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 /**
  * Convert array of 16 byte values to UUID string format of the form:
  * XXXXXXXX-XXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
@@ -22597,7 +22618,7 @@ function bytesToUuid(buf, offset) {
 
 module.exports = bytesToUuid;
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 (function (global){
 // Unique ID creation requires a high quality random # generator.  In the
 // browser this is a little complicated due to unknown quality of Math.random()
@@ -22634,7 +22655,7 @@ if (!rng) {
 module.exports = rng;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 // Unique ID creation requires a high quality random # generator.  We feature
 // detect to determine the best RNG source, normalizing to a function that
 // returns 128-bits of randomness, since that's what's usually required
@@ -22739,4 +22760,4 @@ function v1(options, buf, offset) {
 
 module.exports = v1;
 
-},{"./lib/bytesToUuid":15,"./lib/rng":16}]},{},[10]);
+},{"./lib/bytesToUuid":16,"./lib/rng":17}]},{},[10]);
