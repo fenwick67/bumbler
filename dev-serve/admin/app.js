@@ -552,13 +552,6 @@ module.exports = class PostEditor extends Object{
     this.submitButton.addEventListener('click',_save);
   }
 
-  // get json from the elements
-  serialize(){
-    var json = {};
-    // get names
-
-
-  }
 
   // save from dom => server
   save(){

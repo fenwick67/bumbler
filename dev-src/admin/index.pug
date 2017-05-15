@@ -5,7 +5,7 @@
     link(rel="stylesheet" type="text/css" href="style.css")
 
   - var menuCategories = ['quick actions','posts','files','general']
-  - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
+  - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
   body
     .sidebar.menu#sidebar
       li.big
@@ -15,7 +15,7 @@
         ul.menu-list
           each t in menuItems[category]
             li
-              a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'')!= t.title
+              a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'' target=t.target?t.target:'')!= t.title
 
     #app
       hash-template#settings

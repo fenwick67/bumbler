@@ -1,12 +1,12 @@
 html
   head
     title= site.title
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
   body
     div
       h1
-        a(href="/")= site.title            
-      hr  
+        a(href="/")= site.title
+      hr
       each post in page.posts
         section
           h4= post.title
@@ -16,7 +16,7 @@ html
           p= post.caption
           small Posted #{post.englishDate}
           br
-          small Permalink: 
+          small Permalink:
             a(href=post.permalink) 🔗
         hr
 
