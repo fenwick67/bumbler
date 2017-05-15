@@ -8,6 +8,7 @@ var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
 var SettingsManager = require('./SettingsManager');
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
   //navigation
@@ -56,21 +57,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById('publish').addEventListener('navigate-to',function(){
     if (!publishInitialized){
       publishInitialized = true;
-
-      this.querySelector('[name="build"]').addEventListener('click',function(e){
-        fetch('/admin/build',{method:"POST"}).then(res=>{
-          if (!res.ok){throw new Error('response not ok');return;}
-          popup('Build triggered.')
-        }).catch(e=>{
-          popup(e,'danger','Error starting build:')
-        });
-      });
-
+      this.querySelector('[name="build"]').addEventListener('click',startBuild);
     }
   })
+
+  document.getElementById('run-a-build').addEventListener('click',startBuild);
 
   // always navigate to a hash on pageload
   var page = window.location.hash.replace('#','').replace(/\//g,'-');
   navigate(page||'post-create');
 
 }); // end DOM loaded
+
+
+
+function startBuild(){
+  fetch('/admin/build',{method:"POST"}).then(res=>{
+    if (!res.ok){throw new Error('response not ok');return;}
+    popup('Build triggered.','info')
+  }).catch(e=>{
+    popup(e,'danger','Error starting build:')
+  });
+}

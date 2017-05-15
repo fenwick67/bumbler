@@ -4,8 +4,8 @@
     style
     link(rel="stylesheet" type="text/css" href="style.css")
 
-  - var menuCategories = [' ','posts','files','general']
-  - var menuItems = {" ":[{title:"👁️&#xFE0E; View",href:"/"}], posts: [{title:'➕&#xFE0E; create',href:"#post/create"},{title:'📁&#xFE0E; manage',href:"#posts"}], files: [{title:'📁&#xFE0E; manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> edit template',href:"#html"},{title:'✈️&#xFE0E; publish',href:"#publish"},{title:'⚙️&#xFE0E; settings',href:"#settings"}]}
+  - var menuCategories = ['quick actions','posts','files','general']
+  - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
   body
     .sidebar.menu#sidebar
       li.big
@@ -15,7 +15,7 @@
         ul.menu-list
           each t in menuItems[category]
             li
-              a(href=t.href class=t.active?'is-active':'')!= t.title
+              a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'')!= t.title
 
     #app
       hash-template#settings
@@ -30,10 +30,12 @@
       hash-template#publish
         h1.title Publish
         .field
-          a.button(name="build") ↻&#xFE0E; Build
-          a(href='/').button 👁️&#xFE0E; View
           form(method="post" action="/admin/publish")
             button(type="submit").button.is-primary ✈️&#xFE0E; Publish to Git Repo
+        p
+          | Edit your
+          a(href="#settings") &nbsp;settings&nbsp;
+          | to set the repository and branch.
       hash-template#post-create
         div
           h1.title Create Post

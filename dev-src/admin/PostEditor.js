@@ -1,6 +1,7 @@
 var Post = require('../../lib/Post')
 var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
+var moment = require('moment');
 
 module.exports = class PostEditor extends Object{
   constructor(el){
@@ -66,15 +67,14 @@ module.exports = class PostEditor extends Object{
 
     this.pickerEl = document.createElement('div');
     this.picker = new AssetPicker(this.pickerEl);
-    console.log(this.picker);
 
     this.form.appendChild(this.titleField);
     this.form.appendChild(this.typeField);
+    this.form.appendChild(this.pickerEl);
     this.form.appendChild(this.captionField);
     this.form.appendChild(this.submitButton);
 
     this.el.appendChild(this.form);
-    this.el.appendChild(this.pickerEl);
 
     var self = this;
     function _save(e){
@@ -85,13 +85,6 @@ module.exports = class PostEditor extends Object{
     this.submitButton.addEventListener('click',_save);
   }
 
-  // get json from the elements
-  serialize(){
-    var json = {};
-    // get names
-
-
-  }
 
   // save from dom => server
   save(){
@@ -109,7 +102,7 @@ module.exports = class PostEditor extends Object{
     var caption = self.el.querySelector('[name="caption"]').value;
     var title = self.el.querySelector('[name="title"]').value;
     var assets = self.picker.assetUploader.assets;
-    var date = new Date().toISOString();
+    var date = moment().format();
     var id = Post.prototype.uuid();
     var json = {type,caption,title,assets,date,id};
 

@@ -1,16 +1,28 @@
 html
   head
+    title= site.title
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css" type="text/css">
   body
     div
+      h1
+        a(href="/")= site.title            
+      hr  
       each post in page.posts
         section
-          h1= post.title
+          h4= post.title
           each attachment in post.assets
             div!= attachment.widget
-            a(href=attachment.url) aaaa
-          div= post.caption
+            a(href=attachment.url)
+          p= post.caption
+          small Posted #{post.englishDate}
+          br
+          small Permalink: 
+            a(href=post.permalink) 🔗
+        hr
+
       footer
         if page.links.previousPage
-          a(href=page.links.previousPage) Previous
+          a(href=page.links.previousPage) Previous page
+        br
         if page.links.nextPage
-          a(href=page.links.nextPage) Next  
+          a(href=page.links.nextPage) Next page
