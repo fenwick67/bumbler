@@ -10,6 +10,9 @@ Runs as a local webserver, builds out to static files
 * create a new folder and run `bumbler init` inside it
 * run `bumbler --open` to view the admin interface for creating posts, reconfiguring, and publishing
 
-## publishing guide
+## todo items
 
-todo
+publish via git
+create git commits on the fly
+publish via scp
+permanently delete posts
