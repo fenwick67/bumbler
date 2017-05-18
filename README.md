@@ -12,7 +12,15 @@ Runs as a local webserver, builds out to static files
 
 ## todo items
 
-* publish via git
-* create git commits on the fly
-* publish via scp
+* more asset types 
+  - support OBJ/MTL
+  - support STL
+  - preview images
 * permanently delete posts
+* publish via git?  
+* publish via scp?
+
+### hosted features
+
+* subscribe to other feeds via Atom
+* support 
