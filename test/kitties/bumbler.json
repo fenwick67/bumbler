@@ -1,6 +1,8 @@
 {
-  "postsPerPage": "2",
+  "description": "A site about kitties, birds, and more!",
+  "metadata": "{}",
+  "postsPerPage": "5",
   "publishBranch": "",
   "publishUrl": "",
-  "title": "kitties"
+  "title": "Kitties"
 }

@@ -4371,4 +4371,6 @@ hash-template.unhidden {
   margin: 0.5rem; }
 
 .textedit {
-  font-family: monospace; }
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: auto; }

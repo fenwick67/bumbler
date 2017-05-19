@@ -108,4 +108,6 @@ hash-template.unhidden{
 }
 .textedit{
   font-family:monospace;
+  white-space: nowrap;
+  overflow: auto;
 }

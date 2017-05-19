@@ -1,28 +1,41 @@
 html
   head
     title= site.title
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" type="text/css">
+    meta(name="description" content=site.description)
+    style(type="text/css") .gallery{display:flex;text-align:center;justify-content:space-between;flex-direction:column;}.gallery>*{flex:1 1 auto;}
   body
-    div
-      h1
-        a(href="/")= site.title
-      hr
-      each post in page.posts
-        section
-          h4= post.title
-          each attachment in post.assets
-            div!= attachment.widget
-            a(href=attachment.url)
-          p= post.caption
-          small Posted #{post.englishDate}
-          br
-          small Permalink:
-            a(href=post.permalink) 🔗
-        hr
+    section.hero.is-primary
+      .hero-body
+        .container
+          h1.title
+            a(href="/")= site.title
+          h2.subtitle= site.description
+    div.section
+      .container
+        .columns
+          .column.is-0-mobile.is-2-tablet.is-3-desktop
+          .column.is-12-mobile.is-8-tablet.is-6-desktop
+            each post in page.posts
+              section.card
+                header.card-header
+                  if post.title
+                    p.card-header-title= post.title
+                .card-content
+                  .gallery
+                    each attachment in post.assets
+                      a(href=attachment.href)!= attachment.widget
+                  if post.caption
+                    br
+                    .content!= post.caption
+                footer.card-footer
+                  p.card-footer-item Posted #{post.englishDate}
+                  p.card-footer-item
+                    a(href=post.permalink) Permalink 🔗
+              br
+          .column.is-0-mobile.is-2-tablet.is-3-desktop
 
-      footer
-        if page.links.previousPage
-          a(href=page.links.previousPage) Previous page
-        br
-        if page.links.nextPage
-          a(href=page.links.nextPage) Next page
+      if page.number
+        footer.pagination
+          a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous Previous page
+          a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next Next page

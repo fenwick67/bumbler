@@ -626,25 +626,6 @@ module.exports = class PostEditor extends Object{
 
 var _ = require('lodash');
 
-function formFactory(keysLabels){
-
-  var ret = document.createElement('div');
-
-  _.each(keysLabels,function(label,key){
-    var el = document.createElement('div');
-    el.setAttribute('class','field')
-    el.innerHTML = `
-    <label class="label">${label||key}
-      <input class="input" type="text" name="${key}">
-    </label>`
-    ret.appendChild(el);
-  });
-
-  return ret;
-}
-
-
-
 module.exports = class SettingsManager extends Object{
   constructor(el){
     super();
@@ -653,7 +634,9 @@ module.exports = class SettingsManager extends Object{
       publishUrl: "Git Publish URL",
       publishBranch: "Git Publish Branch",
       title:"Title",
-      postsPerPage:"Posts per Page"
+      postsPerPage:"Posts per Page",
+      metadata:"Metadata (json)",
+      description:"Site Description"
     };
 
     this.defaultKeys = Object.keys(this.labels);
@@ -699,6 +682,7 @@ module.exports = class SettingsManager extends Object{
     var dat = {};
     _.each(this.form.querySelectorAll('input'),function(input){
       dat[input.getAttribute('name')] = input.value;
+      console.log(input.value)
     })
     var ok = false;
 
@@ -758,14 +742,23 @@ module.exports = class SettingsManager extends Object{
     var orderedKeys = _.sortBy(_.keys(extendedData));
 
     _.each(orderedKeys,(key)=>{
-      var value = extendedData[key]
-      console.log(key);
+      var value = extendedData[key] || this.defaults[key] ;
+      console.log(value);
       var el = document.createElement('div');
       el.setAttribute('class','field')
-      el.innerHTML = `
-      <label class="label">${this.labels[key]||key}
-        <input class="input" type="text" name="${key}" value="${ value || this.defaults[key] || "" }">
-      </label>`
+
+      var l = document.createElement('label');
+      l.classList = "label";
+      var label = this.labels[key];
+      l.innerHTML = label||key;
+      var i = document.createElement('input');
+      i.name = key;
+      i.type = "text";
+      i.value = value;
+      i.classList = "input";
+      l.appendChild(i);
+      el.appendChild(l);
+
       ret.appendChild(el);
     });
 
