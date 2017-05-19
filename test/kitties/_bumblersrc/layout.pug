@@ -17,11 +17,11 @@ html
           .column.is-0-mobile.is-2-tablet.is-3-desktop
           .column.is-12-mobile.is-8-tablet.is-6-desktop
             each post in page.posts
-              section.card
+              section.card.h-entry
                 header.card-header
                   if post.title
-                    p.card-header-title= post.title
-                .card-content
+                    p.card-header-title.p-name= post.title
+                .card-content.e-content
                   .gallery
                     each attachment in post.assets
                       a(href=attachment.href)!= attachment.widget
@@ -29,7 +29,7 @@ html
                     br
                     .content!= post.caption
                 footer.card-footer
-                  p.card-footer-item Posted #{post.englishDate}
+                  p.card-footer-item.dt-published Posted #{post.englishDate}
                   p.card-footer-item
                     a(href=post.permalink) Permalink 🔗
               br
