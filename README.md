@@ -28,5 +28,5 @@ Runs as a local webserver, builds out to static files
   - `bumbler --gen-hash`,`enter username`,`enter password`,`=> admin:$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa`
   - set as an env var (`BUMBLER_AUTH`?)
 * subscribe to other feeds via Atom 
-  - :star: their posts
+  - :star: and boost their posts
 * support pingbacks?
