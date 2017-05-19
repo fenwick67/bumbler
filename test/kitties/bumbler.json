@@ -4,5 +4,6 @@
   "postsPerPage": "5",
   "publishBranch": "",
   "publishUrl": "",
-  "title": "Kitties"
+  "siteUrl": "http://localhost:8000/",
+  "title": "Kitties?!?"
 }
