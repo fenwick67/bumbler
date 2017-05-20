@@ -3,14 +3,9 @@
   "avatar": "https://s.gravatar.com/avatar/f163450453f776e6312bd504e054a594",
   "description": "A site about kitties, birds, and more!",
   "metadata": "{}",
-  "postsPerPage": "5",
+  "postsPerPage": "3",
   "publishBranch": "",
   "publishUrl": "",
-<<<<<<< HEAD
-  "siteUrl": "",
+  "siteUrl": "http://localhost:8000",
   "title": "Kitties"
-=======
-  "siteUrl": "http://localhost:8000/",
-  "title": "Kitties?!?"
->>>>>>> b6b48ff4c60851c9063231410543e3c0262e93b5
 }

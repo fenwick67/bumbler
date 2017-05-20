@@ -29,7 +29,7 @@ module.exports = class PostEditor extends Object{
     var types = ['text', 'link', 'embed', 'audio', 'video', 'image'];
     this.typeField = field();
     this.typeField.innerHTML = `
-      <label class="label">Post Type</label>
+      <label class="label">Post Type
       <p class="control">
         <span class="select">
           <select name="type">
@@ -39,21 +39,24 @@ module.exports = class PostEditor extends Object{
             <option value="text" >text</option>
           </select>
         </span>
-      </p>`;
+      </p>
+      </label>`;
 
     this.captionField = field();
     this.captionField.innerHTML = `
-      <label class="label">Caption/Content</label>
+      <label class="label">Caption/Content
       <p class="control">
         <textarea class="textarea" placeholder="Use Markdown for bonus points" name="caption"></textarea>
-      </p>`
+      </p>
+      </label>`
 
     this.titleField = field();
     this.titleField.innerHTML = `
-    <label class="label">Title</label>
+    <label class="label">Title
      <p class="control">
        <input class="input" type="text" placeholder="(optional)" name="title">
      </p>
+     </label>
     `;
 
     this.submitGroup = field('is-grouped');
@@ -66,6 +69,7 @@ module.exports = class PostEditor extends Object{
     this.submitGroup.appendChild(submitP);
 
     this.pickerEl = document.createElement('div');
+    this.pickerEl.classList.add('field');
     this.picker = new AssetPicker(this.pickerEl);
 
     this.form.appendChild(this.titleField);

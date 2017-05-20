@@ -4273,6 +4273,9 @@ label.panel-block {
   background-color: #242424;
   padding: 3rem 1.5rem 6rem; }
 
+.card {
+  background-color: #1f1f1f; }
+
 .admin {
   background-color: #242424;
   color: white;
