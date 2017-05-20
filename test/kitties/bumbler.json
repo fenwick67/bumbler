@@ -6,6 +6,11 @@
   "postsPerPage": "5",
   "publishBranch": "",
   "publishUrl": "",
+<<<<<<< HEAD
   "siteUrl": "",
   "title": "Kitties"
+=======
+  "siteUrl": "http://localhost:8000/",
+  "title": "Kitties?!?"
+>>>>>>> b6b48ff4c60851c9063231410543e3c0262e93b5
 }

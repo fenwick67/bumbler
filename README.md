@@ -12,15 +12,21 @@ Runs as a local webserver, builds out to static files
 
 ## todo items
 
+* warn before overwriting asset 
+  - don't block, just prompt user "There is already a file named 'abc.jpg' {overwrite it} {rename my file} {cancel}"
 * more asset types 
-  - support OBJ/MTL
   - support STL
-  - preview images
+* edit posts via web interface
 * permanently delete posts
 * publish via git?  
 * publish via scp?
 
 ### hosted features
 
-* subscribe to other feeds via Atom
-* support 
+* add a CLI flag for --serve (run web app with authentication)
+  - this will entail a --gen-hash tool, in which you enter a username and password and it generates a bcrypt hash+username string
+  - `bumbler --gen-hash`,`enter username`,`enter password`,`=> admin:$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa`
+  - set as an env var (`BUMBLER_AUTH`?)
+* subscribe to other feeds via Atom 
+  - :star: and boost their posts
+* support pingbacks?
