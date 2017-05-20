@@ -636,7 +636,10 @@ module.exports = class SettingsManager extends Object{
       title:"Title",
       postsPerPage:"Posts per Page",
       metadata:"Metadata (json)",
-      description:"Site Description"
+      description:"Site Description",
+      authorName:"Author Name",
+      avatar:"Avatar URL",
+      siteUrl:"Site base URL (format: https://www.site.com/)"
     };
 
     this.defaultKeys = Object.keys(this.labels);

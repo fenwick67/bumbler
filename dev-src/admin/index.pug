@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-  head
-    title Bumbler Admin
-    style
-    link(rel="stylesheet" type="text/css" href="style.css")
+  html.admin
+    head
+      title Bumbler Admin
+      style
+      link(rel="stylesheet" type="text/css" href="style.css")
 
-  - var menuCategories = ['quick actions','posts','files','general']
-  - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
-  body
-    .sidebar.menu#sidebar
-      li.big
-        a(href="#") Bumbler Admin
-      each category in menuCategories
-        p.menu-label= category
-        ul.menu-list
-          each t in menuItems[category]
-            li
-              a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'' target=t.target?t.target:'')!= t.title
+    - var menuCategories = ['quick actions','posts','files','general']
+    - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
+    body
+      .sidebar.menu#sidebar
+        li.big
+          a(href="#") Bumbler Admin
+        each category in menuCategories
+          p.menu-label= category
+          ul.menu-list
+            each t in menuItems[category]
+              li
+                a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'' target=t.target?t.target:'')!= t.title
 
-    #app
-      hash-template#settings
-        h1.title Settings
-        form
-      hash-template#files
-        div
-          h1.title Upload
-          input(type="file").button.is-default
-          h1.title Files
-          .file-view
-      hash-template#publish
-        h1.title Publish
-        .field
-          button.button.is-primary#publish-button ✈️&#xFE0E; Publish to Git Repo
-        p
-          | Edit your
-          a(href="#settings") &nbsp;settings&nbsp;
-          | to set the repository and branch.
-      hash-template#post-create
-        div
-          h1.title Create Post
-            div.editor
+      #app
+        hash-template#settings
+          h1.title Settings
+          form
+        hash-template#files
+          div
+            h1.title Upload
+            input(type="file").button.is-default
+            h1.title Files
+            .file-view
+        hash-template#publish
+          h1.title Publish
+          .field
+            button.button.is-primary#publish-button ✈️&#xFE0E; Publish to Git Repo
+          p
+            | Edit your
+            a(href="#settings") &nbsp;settings&nbsp;
+            | to set the repository and branch.
+        hash-template#post-create
+          div
+            h1.title Create Post
+              div.editor
 
-      hash-template#html
-        h1.title Edit site template
-        span#htmleditor
+        hash-template#html
+          h1.title Edit site template
+          span#htmleditor
 
-      hash-template#404
-          h1.title Sorry, couldn't find that page :(
+        hash-template#404
+            h1.title Sorry, couldn't find that page :(
 
-      script(src="app.js")
-    #popup-area
+        script(src="app.js")
+      #popup-area
