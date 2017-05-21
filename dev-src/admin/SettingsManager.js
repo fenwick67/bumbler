@@ -2,9 +2,8 @@
 
 var _ = require('lodash');
 
-module.exports = class SettingsManager extends Object{
+module.exports = class SettingsManager {
   constructor(el){
-    super();
 
     this.labels = {
       publishUrl: "Git Publish URL",

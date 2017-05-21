@@ -3,8 +3,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var source = require('vinyl-source-stream');
-
 var browserify = require('browserify');
+var babelify = require('babelify')
 
 gulp.task('pug',function(){
   return gulp.src('./dev-src/**/*.pug')
@@ -13,12 +13,13 @@ gulp.task('pug',function(){
 })
 
 gulp.task('browserify', function() {
-    return browserify('./dev-src/private/admin/app.js')
+    return browserify('./dev-src/admin/app.js')
+      .transform(babelify)
       .bundle()
       //Pass desired output filename to vinyl-source-stream
       .pipe(source('app.js'))
       // Start piping stream to tasks!
-      .pipe(gulp.dest('./dev-serve/private/admin'));
+      .pipe(gulp.dest('./dev-serve/admin'));
 });
 
 

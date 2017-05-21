@@ -1,8 +1,7 @@
 var Asset = require('./Asset');
 
-module.exports = class AssetUploader extends Object{
+module.exports = class AssetUploader {
   constructor(element){
-    super();
     var self = this;
     this.assets = [];
     this.files = [];

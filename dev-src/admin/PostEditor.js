@@ -1,11 +1,10 @@
-var Post = require('../../../lib/Post')
+var Post = require('../../lib/Post')
 var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
 var moment = require('moment');
 
-module.exports = class PostEditor extends Object{
+module.exports = class PostEditor{
   constructor(el){
-    super();
     this.el = el;
     // add appropriate fields to this
     /*

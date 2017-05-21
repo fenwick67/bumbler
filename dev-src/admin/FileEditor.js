@@ -1,9 +1,8 @@
 
 // text editor element
-module.exports = class FileEditor extends Object{
+module.exports = class FileEditor{
 
   constructor(href,element,type,opts){
-    super();
     this.opts = opts||{};
     this.canDelete = this.opts.canDelete || false;
     this.element = element;

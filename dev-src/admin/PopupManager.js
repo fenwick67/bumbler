@@ -1,8 +1,7 @@
 
 // popups
-module.exports = class PopupManager extends Object{
+module.exports = class PopupManager {
   constructor(selector){
-    super();
     if (typeof selector == 'string'){
       this.el = document.querySelector(selector);
     }else{

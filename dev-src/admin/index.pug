@@ -3,7 +3,8 @@
     head
       title Bumbler Admin
       style
-      link(rel="stylesheet" type="text/css" href="style.css")
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      link(rel="stylesheet" type="text/css" href="./style.css")
 
     - var menuCategories = ['quick actions','posts','files','general']
     - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
@@ -48,5 +49,5 @@
         hash-template#404
             h1.title Sorry, couldn't find that page :(
 
-        script(src="app.js")
+        script(src="./app.js")
       #popup-area

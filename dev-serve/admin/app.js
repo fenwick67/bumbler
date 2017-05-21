@@ -1,478 +1,566 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var _ = require('lodash');
+'use strict';
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var _ = require('lodash');
 
 // Asset that has been uploaded
 // has a href and a type
-class Asset{
-  constructor(href,type){
-    // type optional
-    function getExtension(href){
-      var s = href.split('.');
-      return s[s.length - 1];
-    }
-    function getTypeForExtension(ext){
-      var x = ext.toLowerCase();
-      var type = 'unknown'
-      var types = {
-        'audio':['mp3','wav','ogg'],
-        'video':['mp4'],
-        'image':['jpg','jpeg','png','bmp','gif']
-      }
-      _.each(types,(extensions,key)=>{
-        _.each(extensions,extension=>{
-          if (x == extension){
-            type=key;
-            return false;
-          }
-        })
-      });
 
-      return type;
+var Asset = function Asset(href, type) {
+  _classCallCheck(this, Asset);
 
-    }
-    this.href = href;
-    this.type = type || getTypeForExtension(getExtension(href));
+  // type optional
+  function getExtension(href) {
+    var s = href.split('.');
+    return s[s.length - 1];
   }
-}
+  function getTypeForExtension(ext) {
+    var x = ext.toLowerCase();
+    var type = 'unknown';
+    var types = {
+      'audio': ['mp3', 'wav', 'ogg'],
+      'video': ['mp4'],
+      'image': ['jpg', 'jpeg', 'png', 'bmp', 'gif']
+    };
+    _.each(types, function (extensions, key) {
+      _.each(extensions, function (extension) {
+        if (x == extension) {
+          type = key;
+          return false;
+        }
+      });
+    });
 
-Asset.prototype.fetchAll = function(callback){
+    return type;
+  }
+  this.href = href;
+  this.type = type || getTypeForExtension(getExtension(href));
+};
+
+Asset.prototype.fetchAll = function (callback) {
 
   var ok = false;
-  fetch('/admin/glob?pattern='+encodeURIComponent('./assets/*')).then(response=>{
+  fetch('/admin/glob?pattern=' + encodeURIComponent('./assets/*'), { credentials: "include" }).then(function (response) {
     ok = response.ok;
-    if (ok){
+    if (ok) {
       return response.json();
-    }else{
+    } else {
       return response.text();
     }
-  }).then(data=>{
-    if (ok){
+  }).then(function (data) {
+    if (ok) {
       var assets = [];
-      data.forEach(file=>{
+      data.forEach(function (file) {
         assets.push(new Asset(file));
       });
-      callback(null,assets)
-    }else{
+      callback(null, assets);
+    } else {
       // data is response text
-      callback(data)
+      callback(data);
     }
-
   });
-}
+};
 
 module.exports = Asset;
 
 },{"lodash":14}],2:[function(require,module,exports){
+'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var AssetUploader = require('./AssetUploader');
 var AssetView = require('./AssetView');
 
 // pick or upload assets
 
-module.exports = class AssetPicker{
-  constructor(el){
-    this.assets = [];
-    this.el = el;
+module.exports = function AssetPicker(el) {
+  _classCallCheck(this, AssetPicker);
 
-    this.uploadContain = document.createElement('div');
-    this.assetUploader = new AssetUploader(this.uploadContain);
-    this.el.appendChild(this.uploadContain);
-  }
+  this.assets = [];
+  this.el = el;
 
-}
+  this.uploadContain = document.createElement('div');
+  this.assetUploader = new AssetUploader(this.uploadContain);
+  this.el.appendChild(this.uploadContain);
+};
 
 },{"./AssetUploader":3,"./AssetView":4}],3:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var Asset = require('./Asset');
 
-module.exports = class AssetUploader extends Object{
-  constructor(element){
-    super();
+module.exports = function () {
+  function AssetUploader(element) {
+    _classCallCheck(this, AssetUploader);
+
     var self = this;
     this.assets = [];
     this.files = [];
 
     var input = document.createElement('input');
-    input.setAttribute('type','file')
-    input.setAttribute('multiple','multiple')
+    input.setAttribute('type', 'file');
+    input.setAttribute('multiple', 'multiple');
     element.appendChild(input);
     self.input = input;
 
     var gallery = document.createElement('div');
     this.gallery = gallery;
-    gallery.setAttribute('class','gallery');
+    gallery.setAttribute('class', 'gallery');
     element.appendChild(gallery);
 
-
-    input.addEventListener('change', function(){
-        for (var i = 0; i < this.files.length; i ++){
-          self.previewImage(this.files[i]);
-          self.files.push(this.files[i]);
-          console.log(this.files[i])
-          self.assets.push(new Asset('/assets/'+this.files[i].name));
-        }
+    input.addEventListener('change', function () {
+      for (var i = 0; i < this.files.length; i++) {
+        self.previewImage(this.files[i]);
+        self.files.push(this.files[i]);
+        console.log(this.files[i]);
+        self.assets.push(new Asset('/assets/' + this.files[i].name));
+      }
     }, false);
-
   }
 
-  previewImage(file) {
+  _createClass(AssetUploader, [{
+    key: 'previewImage',
+    value: function previewImage(file) {
 
-    var thumb = document.createElement("div");
-    thumb.classList.add('thumbnail'); // Add the class thumbnail to the created div
-    var img = document.createElement("img");
-    img.file = file;
-    thumb.appendChild(img);
-    this.gallery.appendChild(thumb);
-    // Using FileReader to display the image content
-    var reader = new FileReader();
-    reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
-    reader.readAsDataURL(file);
-  }
-
-  upload(file,callback){
-    var cb = callback || function(){};
-    var url = '/admin/asset';
-    var xhr = new XMLHttpRequest();
-    var fd = new FormData();
-    xhr.open("POST", url, true);
-    var done = false;
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        // Every thing ok, file uploaded
-        console.log(xhr.responseText); // handle response.
-        cb(null);
-      }else if (xhr.status != 200 && xhr.readyState == 4){
-        console.error('bad')
-        cb(xhr.responseText);
-      }
-    };
-    fd.append("upload_file", file);
-    xhr.send(fd);
-  }
-
-  uploadAll(done){
-    var self = this;
-    var i = 0;
-    var n = this.files.length;
-    if (i == n || !n || !this.files){return done(null);}
-
-    var finished = false
-    function cb(er){
-      if (finished){return;}
-      if (er){
-        finished = true;
-        return done(er);
-      }
-      i++;
-      if (i == n){
-        done(null);
-      }
+      var thumb = document.createElement("div");
+      thumb.classList.add('thumbnail'); // Add the class thumbnail to the created div
+      var img = document.createElement("img");
+      img.file = file;
+      thumb.appendChild(img);
+      this.gallery.appendChild(thumb);
+      // Using FileReader to display the image content
+      var reader = new FileReader();
+      reader.onload = function (aImg) {
+        return function (e) {
+          aImg.src = e.target.result;
+        };
+      }(img);
+      reader.readAsDataURL(file);
     }
-    this.files.forEach(f=>{
-      self.upload(f,function(er){
-        cb(er);
+  }, {
+    key: 'upload',
+    value: function upload(file, callback) {
+      var cb = callback || function () {};
+      var url = '/admin/asset';
+      var xhr = new XMLHttpRequest();
+      var fd = new FormData();
+      xhr.open("POST", url, true);
+      var done = false;
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          // Every thing ok, file uploaded
+          console.log(xhr.responseText); // handle response.
+          cb(null);
+        } else if (xhr.status != 200 && xhr.readyState == 4) {
+          console.error('bad');
+          cb(xhr.responseText);
+        }
+      };
+      fd.append("upload_file", file);
+      xhr.send(fd);
+    }
+  }, {
+    key: 'uploadAll',
+    value: function uploadAll(done) {
+      var self = this;
+      var i = 0;
+      var n = this.files.length;
+      if (i == n || !n || !this.files) {
+        return done(null);
+      }
+
+      var finished = false;
+      function cb(er) {
+        if (finished) {
+          return;
+        }
+        if (er) {
+          finished = true;
+          return done(er);
+        }
+        i++;
+        if (i == n) {
+          done(null);
+        }
+      }
+      this.files.forEach(function (f) {
+        self.upload(f, function (er) {
+          cb(er);
+        });
       });
-    });
-  }
+    }
+  }, {
+    key: 'reset',
+    value: function reset() {
+      this.files = [];
+      this.assets = [];
+      this.gallery.innerHTML = '';
+      this.input.value = "";
+    }
+  }]);
 
-  reset(){
-    this.files = [];
-    this.assets = [];
-    this.gallery.innerHTML = '';
-    this.input.value = "";
-  }
-
-}
+  return AssetUploader;
+}();
 
 },{"./Asset":1}],4:[function(require,module,exports){
+'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 // view into an asset
 // i.e. in a list or whatever
-module.exports = class AssetView{
-  constructor(asset,element){
-    var inner = `<span class="thumb">(unknown type)</span>`;
-    console.log(asset);
-    if (asset.type == 'audio'){
-      inner = `<audio controls class="thumb" src="${asset.href}"></audio>`
-    }else if (asset.type == 'video'){
-      inner = `<video controls class="thumb" src="${asset.href}"></video>`
-    }else if (asset.type == 'image'){
-      inner = `<img class="thumb" src="${asset.href}"></img>`
-    }
-    inner += `<b>${asset.href}</b><a href="${asset.href}">view</a>`;
-    element.innerHTML = inner;
-    element.classList.add('asset')
+module.exports = function AssetView(asset, element) {
+  _classCallCheck(this, AssetView);
+
+  var inner = '<span class="thumb">(unknown type)</span>';
+  console.log(asset);
+  if (asset.type == 'audio') {
+    inner = '<audio controls class="thumb" src="' + asset.href + '"></audio>';
+  } else if (asset.type == 'video') {
+    inner = '<video controls class="thumb" src="' + asset.href + '"></video>';
+  } else if (asset.type == 'image') {
+    inner = '<img class="thumb" src="' + asset.href + '"></img>';
   }
-}
+  inner += '<b>' + asset.href + '</b><a href="' + asset.href + '">view</a>';
+  element.innerHTML = inner;
+  element.classList.add('asset');
+};
 
 },{}],5:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var Asset = require('./Asset');
 var AssetView = require('./AssetView');
 
 // view ALL assets
 
-module.exports = class AssetsView{
+module.exports = function () {
+  function AssetsView(el) {
+    _classCallCheck(this, AssetsView);
 
-  constructor(el){
     this.el = el;
     this.el.innerHTML = 'loading...';
     this.assets = [];
     this.assetViews = [];
   }
 
-  load(){
-    Asset.prototype.fetchAll((er,assets)=>{
-      if (er){
-        popup('Error fetching assets: '+er,'danger');
-      }else{
-        this.assets = assets;
-        this.render();
-      }
-    });
-  }
+  _createClass(AssetsView, [{
+    key: 'load',
+    value: function load() {
+      var _this = this;
 
-  add(asset){
-    var assetContain = document.createElement('div');
-    var av = new AssetView(asset,assetContain);
-    this.assetViews.push(av);
-    this.el.appendChild(assetContain);
-  }
+      Asset.prototype.fetchAll(function (er, assets) {
+        if (er) {
+          popup('Error fetching assets: ' + er, 'danger');
+        } else {
+          _this.assets = assets;
+          _this.render();
+        }
+      });
+    }
+  }, {
+    key: 'add',
+    value: function add(asset) {
+      var assetContain = document.createElement('div');
+      var av = new AssetView(asset, assetContain);
+      this.assetViews.push(av);
+      this.el.appendChild(assetContain);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
 
-  render(){
-    this.el.innerHTML = '';
-    this.assetViews = [];
-    this.assets.forEach(a=>{
-      this.add(a);
-    });
-  }
+      this.el.innerHTML = '';
+      this.assetViews = [];
+      this.assets.forEach(function (a) {
+        _this2.add(a);
+      });
+    }
+  }]);
 
-
-}
+  return AssetsView;
+}();
 
 },{"./Asset":1,"./AssetView":4}],6:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // text editor element
-module.exports = class FileEditor extends Object{
+module.exports = function () {
+  function FileEditor(href, element, type, opts) {
+    _classCallCheck(this, FileEditor);
 
-  constructor(href,element,type,opts){
-    super();
-    this.opts = opts||{};
+    this.opts = opts || {};
     this.canDelete = this.opts.canDelete || false;
     this.element = element;
     this.href = href;
 
     // buttons
     this.buttonField = document.createElement('div');
-    this.buttonField.setAttribute('class','field is-grouped')
+    this.buttonField.setAttribute('class', 'field is-grouped');
 
     this.deleteButton = document.createElement('button');
-    this.deleteButton.setAttribute('class','button is-danger');
+    this.deleteButton.setAttribute('class', 'button is-danger');
     this.deleteButton.innerHTML = "Delete";
     var deleteButtonContain = document.createElement('p');
-    deleteButtonContain.setAttribute('class','control')
+    deleteButtonContain.setAttribute('class', 'control');
     deleteButtonContain.appendChild(this.deleteButton);
 
     this.saveButton = document.createElement('button');
-    this.saveButton.setAttribute('class','button is-primary');
+    this.saveButton.setAttribute('class', 'button is-primary');
     this.saveButton.innerHTML = "💾&#xFE0E; Save";
     var saveButtonContain = document.createElement('p');
-    saveButtonContain.setAttribute('class','control')
+    saveButtonContain.setAttribute('class', 'control');
     saveButtonContain.appendChild(this.saveButton);
 
     this.revertButton = document.createElement('button');
-    this.revertButton.setAttribute('class','button is-warning');
+    this.revertButton.setAttribute('class', 'button is-warning');
     this.revertButton.innerHTML = "⮌&#xFE0E; Revert Changes";
     var revertButtonContain = document.createElement('p');
-    revertButtonContain.setAttribute('class','control')
+    revertButtonContain.setAttribute('class', 'control');
     revertButtonContain.appendChild(this.revertButton);
 
     // text area
     var textField = document.createElement('div');
-    textField.setAttribute('class','field')
+    textField.setAttribute('class', 'field');
     var p = document.createElement('p');
-    p.setAttribute('class','control')
+    p.setAttribute('class', 'control');
     textField.appendChild(p);
     this.textarea = document.createElement('textarea');
-    this.textarea.name="data";
-    this.textarea.setAttribute('class','textarea textedit');
+    this.textarea.name = "data";
+    this.textarea.setAttribute('class', 'textarea textedit');
     p.appendChild(this.textarea);
     element.appendChild(textField);
 
     this.buttonField.appendChild(saveButtonContain);
     this.buttonField.appendChild(revertButtonContain);
-    if (this.canDelete){
+    if (this.canDelete) {
       this.buttonField.appendChild(deleteButtonContain);
     }
     element.appendChild(this.buttonField);
 
     var self = this;
-    this.deleteButton.addEventListener('click',()=>self.delete());
-    this.saveButton.addEventListener('click',()=>self.save());
-    this.revertButton.addEventListener('click',()=>self.load(true));
-    this.textarea.addEventListener('keydown',e=>self.keydown(e),false);
-  }
-
-  save(){
-    var contents = this.textarea.value;
-    var ok = true;
-    fetch(this.href,{
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: "POST",
-      body: JSON.stringify({data:contents})
-    }).then(req=>{
-      ok = req.ok;
-      return req.text();
-    }).then(text=>{
-      if (ok){
-        this.textarea.value = text;
-        window.popup('saved','success')
-      }else{
-        window.popup('error: '+text,'danger','Error Saving')
-      }
-    }).catch(er=>{
-      window.popup('error: '+er,'danger','Error Saving')
-    })
-  }
-
-  delete(){
-    var contents = this.textarea.value;
-    var ok = true;
-    fetch(this.href,{method: "DELETE"}).then(req=>{
-      ok = req.ok;
-      return req.text();
-    }).then(text=>{
-      if (ok){
-        window.popup('deleted','success')
-      }else{
-        window.popup('error: '+text,'danger','Error Deleting')
-      }
-    }).catch(er=>{
-      window.popup('error: '+er,'danger','Error Deleting')
-    })
-  }
-
-  load(reload){
-    // load the data
-    var ok = true;
-    fetch(this.href).then(req=>{
-      ok = req.ok;
-      return req.text();
-    }).then(text=>{
-      if (!ok){
-        window.popup('error: '+text,'danger','Error Loading')
-      }else{
-        this.textarea.value = text;
-        if (reload){
-          window.popup('Reverted to last save','warning')
-        }
-      }
-    }).catch(er=>{
-      window.popup('error: '+er,'danger','Error Loading')
+    this.deleteButton.addEventListener('click', function () {
+      return self.delete();
     });
+    this.saveButton.addEventListener('click', function () {
+      return self.save();
+    });
+    this.revertButton.addEventListener('click', function () {
+      return self.load(true);
+    });
+    this.textarea.addEventListener('keydown', function (e) {
+      return self.keydown(e);
+    }, false);
   }
 
-  keydown(e){
-    console.log(e);
-    if ( e.key == 's' && (e.metaKey || e.ctrlKey) ){
-      this.save();
-      e.preventDefault();
-      return false;
+  _createClass(FileEditor, [{
+    key: 'save',
+    value: function save() {
+      var _this = this;
+
+      var contents = this.textarea.value;
+      var ok = true;
+      fetch(this.href, {
+        credentials: "include",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        method: "POST",
+        body: JSON.stringify({ data: contents })
+      }).then(function (req) {
+        ok = req.ok;
+        return req.text();
+      }).then(function (text) {
+        if (ok) {
+          _this.textarea.value = text;
+          window.popup('saved', 'success');
+        } else {
+          window.popup('error: ' + text, 'danger', 'Error Saving');
+        }
+      }).catch(function (er) {
+        window.popup('error: ' + er, 'danger', 'Error Saving');
+      });
     }
-    if (e.key == 'Tab'){
-      var start = this.textarea.selectionStart;
-      var end = this.textarea.selectionEnd;
-
-      var value = this.textarea.value;
-
-      // set textarea value to: text before caret + tab + text after caret
-      this.textarea.value = (value.substring(0, start)+ "  "+ value.substring(end));
-
-      // put caret at right position again (add one for the tab)
-      this.textarea.selectionStart = this.textarea.selectionEnd = start + 2;
-
-      // prevent the focus lose
-      e.preventDefault();
+  }, {
+    key: 'delete',
+    value: function _delete() {
+      var contents = this.textarea.value;
+      var ok = true;
+      fetch(this.href, { method: "DELETE", credentials: 'include' }).then(function (req) {
+        ok = req.ok;
+        return req.text();
+      }).then(function (text) {
+        if (ok) {
+          window.popup('deleted', 'success');
+        } else {
+          window.popup('error: ' + text, 'danger', 'Error Deleting');
+        }
+      }).catch(function (er) {
+        window.popup('error: ' + er, 'danger', 'Error Deleting');
+      });
     }
-  }
+  }, {
+    key: 'load',
+    value: function load(reload) {
+      var _this2 = this;
 
-}
+      // load the data
+      var ok = true;
+      fetch(this.href, { credentials: 'include' }).then(function (req) {
+        ok = req.ok;
+        return req.text();
+      }).then(function (text) {
+        if (!ok) {
+          window.popup('error: ' + text, 'danger', 'Error Loading');
+        } else {
+          _this2.textarea.value = text;
+          if (reload) {
+            window.popup('Reverted to last save', 'warning');
+          }
+        }
+      }).catch(function (er) {
+        window.popup('error: ' + er, 'danger', 'Error Loading');
+      });
+    }
+  }, {
+    key: 'keydown',
+    value: function keydown(e) {
+      console.log(e);
+      if (e.key == 's' && (e.metaKey || e.ctrlKey)) {
+        this.save();
+        e.preventDefault();
+        return false;
+      }
+      if (e.key == 'Tab') {
+        var start = this.textarea.selectionStart;
+        var end = this.textarea.selectionEnd;
+
+        var value = this.textarea.value;
+
+        // set textarea value to: text before caret + tab + text after caret
+        this.textarea.value = value.substring(0, start) + "  " + value.substring(end);
+
+        // put caret at right position again (add one for the tab)
+        this.textarea.selectionStart = this.textarea.selectionEnd = start + 2;
+
+        // prevent the focus lose
+        e.preventDefault();
+      }
+    }
+  }]);
+
+  return FileEditor;
+}();
 
 },{}],7:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // popups
-module.exports = class PopupManager extends Object{
-  constructor(selector){
-    super();
-    if (typeof selector == 'string'){
+module.exports = function () {
+  function PopupManager(selector) {
+    _classCallCheck(this, PopupManager);
+
+    if (typeof selector == 'string') {
       this.el = document.querySelector(selector);
-    }else{
+    } else {
       // passed an element
       this.el = selector;
     }
   }
-  show(message,type,headerText){
-    var type = type||'primary';
-    var popup = document.createElement('article');
-    popup.setAttribute('class','fadein popup message is-'+type);
-    // header
-    var header = document.createElement('div');
-    header.setAttribute('class','message-header');
-    if (headerText){
-      header.innerHTML = headerText;
+
+  _createClass(PopupManager, [{
+    key: 'show',
+    value: function show(message, type, headerText) {
+      var type = type || 'primary';
+      var popup = document.createElement('article');
+      popup.setAttribute('class', 'fadein popup message is-' + type);
+      // header
+      var header = document.createElement('div');
+      header.setAttribute('class', 'message-header');
+      if (headerText) {
+        header.innerHTML = headerText;
+      }
+      var title = document.createElement('p');
+      var button = document.createElement('button');
+      button.setAttribute('class', 'delete');
+      header.appendChild(title);
+      header.appendChild(button);
+      popup.appendChild(header);
+      // body
+      var msgBody = document.createElement('div');
+      msgBody.setAttribute('class', 'message-body');
+      msgBody.innerHTML = message;
+
+      popup.appendChild(header);
+      popup.appendChild(msgBody);
+
+      var removed = false;
+      //delete on click
+      function remove() {
+        if (removed) {
+          return;
+        }
+        removed = true;
+        popup.parentElement.removeChild(popup);
+        button.removeEventListener('click', remove);
+      }
+
+      setTimeout(function () {
+        popup.classList.add('fadeout');
+      }, 5000);
+
+      setTimeout(remove, 6000);
+
+      button.addEventListener('click', remove);
+
+      //add to DOM
+      this.el.appendChild(popup);
+
+      setTimeout(function () {
+        popup.classList.remove('fadein');
+      }, 100);
     }
-    var title = document.createElement('p');
-    var button = document.createElement('button');
-    button.setAttribute('class','delete');
-    header.appendChild(title);
-    header.appendChild(button);
-    popup.appendChild(header);
-    // body
-    var msgBody = document.createElement('div');
-    msgBody.setAttribute('class','message-body');
-    msgBody.innerHTML = message;
+  }]);
 
-    popup.appendChild(header);
-    popup.appendChild(msgBody);
-
-    var removed = false;
-    //delete on click
-    function remove(){
-      if (removed){return;}
-      removed = true;
-      popup.parentElement.removeChild(popup);
-      button.removeEventListener('click',remove);
-    }
-
-
-    setTimeout(function(){
-      popup.classList.add('fadeout');
-    },5000)
-
-    setTimeout(remove,6000)
-
-    button.addEventListener('click',remove)
-
-    //add to DOM
-    this.el.appendChild(popup);
-
-
-    setTimeout(function(){
-      popup.classList.remove('fadein');
-    },100)
-
-  }
-}
+  return PopupManager;
+}();
 
 },{}],8:[function(require,module,exports){
-var Post = require('../../lib/Post')
-var AssetPicker = require('./AssetPicker.js')
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Post = require('../../lib/Post');
+var AssetPicker = require('./AssetPicker.js');
 var Asset = require('./Asset');
 var moment = require('moment');
 
-module.exports = class PostEditor extends Object{
-  constructor(el){
-    super();
+module.exports = function () {
+  function PostEditor(el) {
+    _classCallCheck(this, PostEditor);
+
     this.el = el;
     // add appropriate fields to this
     /*
@@ -486,52 +574,29 @@ module.exports = class PostEditor extends Object{
     */
 
     // get a field
-    function field(classes){
+    function field(classes) {
       var l = document.createElement('div');
-      l.setAttribute( 'class','field'+(classes?(' '+classes):'') );
+      l.setAttribute('class', 'field' + (classes ? ' ' + classes : ''));
       return l;
     }
 
     this.form = document.createElement('form');
     var types = ['text', 'link', 'embed', 'audio', 'video', 'image'];
     this.typeField = field();
-    this.typeField.innerHTML = `
-      <label class="label">Post Type
-      <p class="control">
-        <span class="select">
-          <select name="type">
-            <option value="image" >image</option>
-            <option value="audio" >audio</option>
-            <option value="video" >video</option>
-            <option value="text" >text</option>
-          </select>
-        </span>
-      </p>
-      </label>`;
+    this.typeField.innerHTML = '\n      <label class="label">Post Type\n      <p class="control">\n        <span class="select">\n          <select name="type">\n            <option value="image" >image</option>\n            <option value="audio" >audio</option>\n            <option value="video" >video</option>\n            <option value="text" >text</option>\n          </select>\n        </span>\n      </p>\n      </label>';
 
     this.captionField = field();
-    this.captionField.innerHTML = `
-      <label class="label">Caption/Content
-      <p class="control">
-        <textarea class="textarea" placeholder="Use Markdown for bonus points" name="caption"></textarea>
-      </p>
-      </label>`
+    this.captionField.innerHTML = '\n      <label class="label">Caption/Content\n      <p class="control">\n        <textarea class="textarea" placeholder="Use Markdown for bonus points" name="caption"></textarea>\n      </p>\n      </label>';
 
     this.titleField = field();
-    this.titleField.innerHTML = `
-    <label class="label">Title
-     <p class="control">
-       <input class="input" type="text" placeholder="(optional)" name="title">
-     </p>
-     </label>
-    `;
+    this.titleField.innerHTML = '\n    <label class="label">Title\n     <p class="control">\n       <input class="input" type="text" placeholder="(optional)" name="title">\n     </p>\n     </label>\n    ';
 
     this.submitGroup = field('is-grouped');
     this.submitButton = document.createElement('button');
     this.submitButton.innerHTML = "💾&#xFE0E; Submit Post";
-    this.submitButton.setAttribute('class',"button is-primary");
+    this.submitButton.setAttribute('class', "button is-primary");
     var submitP = document.createElement('p');
-    submitP.setAttribute('class','control');
+    submitP.setAttribute('class', 'control');
     submitP.appendChild(this.submitButton);
     this.submitGroup.appendChild(submitP);
 
@@ -548,246 +613,270 @@ module.exports = class PostEditor extends Object{
     this.el.appendChild(this.form);
 
     var self = this;
-    function _save(e){
+    function _save(e) {
       e.preventDefault();
       self.save();
       return false;
     }
-    this.submitButton.addEventListener('click',_save);
+    this.submitButton.addEventListener('click', _save);
   }
-
 
   // save from dom => server
-  save(){
-    console.log('saving');
-    var self = this;
-    // 1 create json
-    // 2 validate
-    // 3 upload files
-    // 4 POST the post
 
-    //todo validate the form
 
-    //create json
-    var type = self.el.querySelector('[name="type"]').value;
-    var caption = self.el.querySelector('[name="caption"]').value;
-    var title = self.el.querySelector('[name="title"]').value;
-    var assets = self.picker.assetUploader.assets;
-    var date = moment().format();
-    var id = Post.prototype.uuid();
-    var json = {type,caption,title,assets,date,id};
+  _createClass(PostEditor, [{
+    key: 'save',
+    value: function save() {
+      console.log('saving');
+      var self = this;
+      // 1 create json
+      // 2 validate
+      // 3 upload files
+      // 4 POST the post
 
-    // validate
-    var problems = Post.prototype.validate(json);
-    if (problems){
-      popup(problems,'danger','Post error:')
-      return;
-    }
+      //todo validate the form
 
-    // upload
-    this.picker.assetUploader.uploadAll(function(er){
-      if (er){
-        return popup(er,'danger','Error uploading files')
+      //create json
+      var type = self.el.querySelector('[name="type"]').value;
+      var caption = self.el.querySelector('[name="caption"]').value;
+      var title = self.el.querySelector('[name="title"]').value;
+      var assets = self.picker.assetUploader.assets;
+      var date = moment().format();
+      var id = Post.prototype.uuid();
+      var json = { type: type, caption: caption, title: title, assets: assets, date: date, id: id };
+
+      // validate
+      var problems = Post.prototype.validate(json);
+      if (problems) {
+        popup(problems, 'danger', 'Post error:');
+        return;
       }
 
-      // 4 post it up
-      var ok = false;
-      fetch('/admin/post',
-        {
-          method:'POST',
-          body:JSON.stringify(json),
-          headers:{'Content-Type': 'application/json'}
-        }).then(res=>{
+      // upload
+      this.picker.assetUploader.uploadAll(function (er) {
+        if (er) {
+          return popup(er, 'danger', 'Error uploading files');
+        }
+
+        // 4 post it up
+        var ok = false;
+        fetch('/admin/post', {
+          method: 'POST',
+          body: JSON.stringify(json),
+          headers: { 'Content-Type': 'application/json' },
+          credentials: "include"
+        }).then(function (res) {
           ok = res.ok;
-          if (ok){
+          if (ok) {
             popup('uploaded post!');
             self.reset();
-          }else{
-            popup('failed to upload','danger','Error');
+          } else {
+            popup('failed to upload', 'danger', 'Error');
           }
+        });
       });
+    }
 
-    });
+    // load from browser by id
 
-  }
+  }, {
+    key: 'load',
+    value: function load(id) {
+      console.log('todo: load');
+    }
+  }, {
+    key: 'reset',
+    value: function reset() {
+      this.picker.assetUploader.reset();
+      this.el.querySelector('[name="caption"]').value = '';
+      this.el.querySelector('[name="title"]').value = '';
+    }
+  }]);
 
-  // load from browser by id
-  load(id){
-    console.log('todo: load')
-  }
-
-  reset(){
-    this.picker.assetUploader.reset();
-    this.el.querySelector('[name="caption"]').value ='';
-    this.el.querySelector('[name="title"]').value = '';
-  }
-
-
-}
+  return PostEditor;
+}();
 
 },{"../../lib/Post":13,"./Asset":1,"./AssetPicker.js":2,"moment":15}],9:[function(require,module,exports){
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 // manage settings
 
 var _ = require('lodash');
 
-module.exports = class SettingsManager extends Object{
-  constructor(el){
-    super();
+module.exports = function () {
+  function SettingsManager(el) {
+    _classCallCheck(this, SettingsManager);
 
     this.labels = {
       publishUrl: "Git Publish URL",
       publishBranch: "Git Publish Branch",
-      title:"Title",
-      postsPerPage:"Posts per Page",
-      metadata:"Metadata (json)",
-      description:"Site Description",
-      authorName:"Author Name",
-      avatar:"Avatar URL",
-      siteUrl:"Site base URL (format: https://www.site.com/)"
+      title: "Title",
+      postsPerPage: "Posts per Page",
+      metadata: "Metadata (json)",
+      description: "Site Description",
+      authorName: "Author Name",
+      avatar: "Avatar URL",
+      siteUrl: "Site base URL (format: https://www.site.com/)"
     };
 
     this.defaultKeys = Object.keys(this.labels);
-    this.defaults = _.mapValues(this.labels,l=>'');
+    this.defaults = _.mapValues(this.labels, function (l) {
+      return '';
+    });
 
     var form = this.autoFormFactory(this.defaults);
     this.form = form;
     this.formContain = document.createElement('div');
     var btn = document.createElement('button');
     var revertBtn = document.createElement('button');
-    var btnContain = document.createElement('div')
-    btnContain.setAttribute('class','field')
-    btn.setAttribute('class','button is-primary');
+    var btnContain = document.createElement('div');
+    btnContain.setAttribute('class', 'field');
+    btn.setAttribute('class', 'button is-primary');
     btn.innerHTML = "💾&#xFE0E; Save";
-    revertBtn.setAttribute('class','button is-warning');
+    revertBtn.setAttribute('class', 'button is-warning');
     revertBtn.innerHTML = '⮌&#xFE0E; Revert Changes';
     btnContain.appendChild(btn);
     btnContain.appendChild(revertBtn);
-
 
     this.formContain.appendChild(form);
     el.appendChild(this.formContain);
     el.appendChild(btnContain);
 
     var self = this;
-    var _save = (e)=>{
+    var _save = function _save(e) {
       e.preventDefault();
-      self.save()
+      self.save();
       return false;
-    }
-    var _load = e=>{
+    };
+    var _load = function _load(e) {
       e.preventDefault();
       self.load(true);
       return false;
-    }
-    btn.addEventListener('click',_save)
-    revertBtn.addEventListener('click',_load);
+    };
+    btn.addEventListener('click', _save);
+    revertBtn.addEventListener('click', _load);
 
     self.load();
-
   }
-  save(){
-    var dat = {};
-    _.each(this.form.querySelectorAll('input'),function(input){
-      dat[input.getAttribute('name')] = input.value;
-      console.log(input.value)
-    })
-    var ok = false;
 
-    fetch('/admin/settings',{
-      method:"POST",
-      body:JSON.stringify(dat),
-      headers:{'Content-Type': 'application/json'}
-    }).then(res=>{
-      ok = res.ok;
-      if (ok){
+  _createClass(SettingsManager, [{
+    key: "save",
+    value: function save() {
+      var _this = this;
+
+      var dat = {};
+      _.each(this.form.querySelectorAll('input'), function (input) {
+        dat[input.getAttribute('name')] = input.value;
+        console.log(input.value);
+      });
+      var ok = false;
+
+      fetch('/admin/settings', {
+        method: "POST",
+        body: JSON.stringify(dat),
+        headers: { 'Content-Type': 'application/json' },
+        credentials: "include"
+      }).then(function (res) {
+        ok = res.ok;
+        if (ok) {
+          return res.json();
+        } else {
+          throw new Error('bad response');
+        }
+      }).then(function (json) {
+        var formData = _.clone(json);
+        var parent = _this.form.parentElement;
+        parent.removeChild(_this.form);
+
+        _this.form = _this.autoFormFactory(formData);
+        parent.appendChild(_this.form);
+        popup("Settings saved.", 'success');
+      }).catch(function (e) {
+        popup(e, 'danger', 'Error saving settings');
+      });
+    }
+  }, {
+    key: "load",
+    value: function load(alert) {
+      var _this2 = this;
+
+      var ok = false;
+      fetch('/admin/settings', { credentials: "include" }).then(function (res) {
+        ok = res.ok;
         return res.json();
-      }else{
-        throw new Error('bad response')
-      }
-    }).then(json=>{
-      var formData = _.clone(json);
-      var parent = this.form.parentElement;
-      parent.removeChild(this.form);
+      }).then(function (json) {
+        var formData = _.clone(json);
+        var parent = _this2.form.parentElement;
+        parent.removeChild(_this2.form);
 
-      this.form = this.autoFormFactory(formData);
-      parent.appendChild(this.form);
-      popup("Settings saved.",'success',)
+        _this2.form = _this2.autoFormFactory(formData);
+        parent.appendChild(_this2.form);
+        if (alert) {
+          window.popup('Reverted settings to last save.', 'warning');
+        }
+      }).catch(function (e) {
+        popup(e, 'danger', 'Error fetching settings');
+      });
+    }
+  }, {
+    key: "autoFormFactory",
+    value: function autoFormFactory(keysValues) {
+      var _this3 = this;
 
-    }).catch(e=>{
-      popup(e,'danger','Error saving settings')
-    })
+      var ret = document.createElement('div');
 
+      var extendedData = _.extend({}, this.defaults, keysValues);
+      console.log(extendedData);
+      var orderedKeys = _.sortBy(_.keys(extendedData));
 
-  }
-  load(alert){
-    var ok = false;
-    fetch('/admin/settings').then(res=>{
-      ok = res.ok;
-      return res.json();
-    }).then(json=>{
-      var formData = _.clone(json);
-      var parent = this.form.parentElement;
-      parent.removeChild(this.form);
+      _.each(orderedKeys, function (key) {
+        var value = extendedData[key] || _this3.defaults[key];
+        console.log(value);
+        var el = document.createElement('div');
+        el.setAttribute('class', 'field');
 
-      this.form = this.autoFormFactory(formData);
-      parent.appendChild(this.form);
-      if(alert){
-        window.popup('Reverted settings to last save.','warning')
-      }
+        var l = document.createElement('label');
+        l.classList = "label";
+        var label = _this3.labels[key];
+        l.innerHTML = label || key;
+        var i = document.createElement('input');
+        i.name = key;
+        i.type = "text";
+        i.value = value;
+        i.classList = "input";
+        l.appendChild(i);
+        el.appendChild(l);
 
-    }).catch(e=>{
-      popup(e,'danger','Error fetching settings')
-    })
+        ret.appendChild(el);
+      });
 
-  }
+      return ret;
+    }
+  }]);
 
-  autoFormFactory(keysValues){
-    var ret = document.createElement('div');
-
-    var extendedData = _.extend({},this.defaults,keysValues)
-    console.log(extendedData)
-    var orderedKeys = _.sortBy(_.keys(extendedData));
-
-    _.each(orderedKeys,(key)=>{
-      var value = extendedData[key] || this.defaults[key] ;
-      console.log(value);
-      var el = document.createElement('div');
-      el.setAttribute('class','field')
-
-      var l = document.createElement('label');
-      l.classList = "label";
-      var label = this.labels[key];
-      l.innerHTML = label||key;
-      var i = document.createElement('input');
-      i.name = key;
-      i.type = "text";
-      i.value = value;
-      i.classList = "input";
-      l.appendChild(i);
-      el.appendChild(l);
-
-      ret.appendChild(el);
-    });
-
-    return ret;
-  }
-
-}
+  return SettingsManager;
+}();
 
 },{"lodash":14}],10:[function(require,module,exports){
+'use strict';
+
 var PopupManager = require('./PopupManager');
 var Asset = require('./Asset');
 var AssetView = require('./AssetView');
 var AssetsView = require('./AssetsView');
 var FileEditor = require('./FileEditor');
 var AssetUploader = require('./AssetUploader');
-var initNavigation = require('./initNavigation')
+var initNavigation = require('./initNavigation');
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 
   //navigation
   initNavigation();
@@ -798,8 +887,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // files controller
   var filesAssetsView = null;
-  document.getElementById('files').addEventListener('navigate-to',function(){
-    if (!filesAssetsView){
+  document.getElementById('files').addEventListener('navigate-to', function () {
+    if (!filesAssetsView) {
       var box = this.querySelector('.file-view');
       filesAssetsView = new AssetsView(box);
     }
@@ -807,65 +896,67 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   var settingsManager = null;
-  document.getElementById('settings').addEventListener('navigate-to',function(){
-    if (!settingsManager){
+  document.getElementById('settings').addEventListener('navigate-to', function () {
+    if (!settingsManager) {
       settingsManager = new SettingsManager(this.querySelector('form'));
     }
-  })
+  });
 
   // html editor
   var htmlEditor = null;
-  document.getElementById('html').addEventListener('navigate-to',function(){
-    if (!htmlEditor){
-      htmlEditor = new FileEditor('/admin/html',document.getElementById('htmleditor'),'pug');
+  document.getElementById('html').addEventListener('navigate-to', function () {
+    if (!htmlEditor) {
+      htmlEditor = new FileEditor('/admin/html', document.getElementById('htmleditor'), 'pug');
     }
     htmlEditor.load();
   });
 
   var postCreator = null;
-  document.getElementById('post-create').addEventListener('navigate-to',function(){
-    if (!postCreator){
-      var el = this.querySelector('.editor')
+  document.getElementById('post-create').addEventListener('navigate-to', function () {
+    if (!postCreator) {
+      var el = this.querySelector('.editor');
       postCreator = new PostEditor(el);
     }
     postCreator.load();
   });
 
   var publishInitialized = false;
-  document.getElementById('publish').addEventListener('navigate-to',function(){
-    if (!publishInitialized){
+  document.getElementById('publish').addEventListener('navigate-to', function () {
+    if (!publishInitialized) {
       publishInitialized = true;
-      this.querySelector('[name="build"]').addEventListener('click',startBuild);
+      this.querySelector('[name="build"]').addEventListener('click', startBuild);
     }
-  })
+  });
 
-  document.getElementById('run-a-build').addEventListener('click',startBuild);
-  document.getElementById('publish-button').addEventListener('click',publish);
+  document.getElementById('run-a-build').addEventListener('click', startBuild);
+  document.getElementById('publish-button').addEventListener('click', publish);
 
   // always navigate to a hash on pageload
-  var page = window.location.hash.replace('#','').replace(/\//g,'-');
-  navigate(page||'post-create');
-
+  var page = window.location.hash.replace('#', '').replace(/\//g, '-');
+  navigate(page || 'post-create');
 }); // end DOM loaded
 
 
-
-function startBuild(){
-  fetch('/admin/build',{method:"POST"}).then(res=>{
-    if (!res.ok){throw new Error('response not ok');return;}
-    popup('Build triggered.','info')
-  }).catch(e=>{
-    popup(e,'danger','Error starting build:')
+function startBuild() {
+  fetch('/admin/build', { method: "POST", credentials: "include" }).then(function (res) {
+    if (!res.ok) {
+      throw new Error('response not ok');return;
+    }
+    popup('Build triggered.', 'info');
+  }).catch(function (e) {
+    popup(e, 'danger', 'Error starting build:');
   });
 }
 
 },{"../../lib/Post":13,"./Asset":1,"./AssetUploader":3,"./AssetView":4,"./AssetsView":5,"./FileEditor":6,"./PopupManager":7,"./PostEditor":8,"./SettingsManager":9,"./initNavigation":11,"./publisher":12}],11:[function(require,module,exports){
+"use strict";
+
 // navigation handler
 
 var activeSidebarEl = null;
 var activeTemplate = null;
 
-module.exports = function initNavigation(){
+module.exports = function initNavigation() {
 
   var navigateTo = new CustomEvent("navigate-to", { "detail": "navigate to event" });
   var navigateAway = new CustomEvent("navigate-away", { "detail": "navigate away event" });
@@ -873,70 +964,78 @@ module.exports = function initNavigation(){
   var sidebar = document.getElementById('sidebar');
   var templates = document.querySelectorAll('hash-template');
 
-  window.addEventListener('hashchange',function(e){
+  window.addEventListener('hashchange', function (e) {
     // load the appropriate template based on window.location.hash
-    var page = window.location.hash.replace('#','').replace(/\//g,'-');
-    if (page){
+    var page = window.location.hash.replace('#', '').replace(/\//g, '-');
+    if (page) {
       navigate(page);
     }
     return false;
   });
 
-  window.navigate = function navigate(page){
+  window.navigate = function navigate(page) {
     var found = false;
 
     // find matching nav element
-    var href = '#'+page.replace(/\-/g,'/')
-    var sbEl = sidebar.querySelector('a[href="'+href+'"]');
-    if (sbEl){
-      if(activeSidebarEl){
+    var href = '#' + page.replace(/\-/g, '/');
+    var sbEl = sidebar.querySelector('a[href="' + href + '"]');
+    if (sbEl) {
+      if (activeSidebarEl) {
         activeSidebarEl.classList.remove('is-active');
       }
       sbEl.classList.add('is-active');
       activeSidebarEl = sbEl;
     }
 
-    for (var i = 0; i < templates.length; i ++){
+    for (var i = 0; i < templates.length; i++) {
       var template = templates[i];
-      if (template.id === page){
+      if (template.id === page) {
         found = true;
-        template.setAttribute('class','unhidden');
+        template.setAttribute('class', 'unhidden');
         template.dispatchEvent(navigateTo);
 
-        if (activeTemplate && activeTemplate !== template){
-          activeTemplate.setAttribute('class','');
+        if (activeTemplate && activeTemplate !== template) {
+          activeTemplate.setAttribute('class', '');
           activeTemplate.dispatchEvent(navigateAway);
         }
 
         activeTemplate = template;
       }
     }
-    if (!found){
+    if (!found) {
       navigate('404');
     }
-  }
-}
+  };
+};
 
 },{}],12:[function(require,module,exports){
+"use strict";
+
 // publish to git and show a message
 
-module.exports = function publish(){
+module.exports = function publish() {
   var ok = false;
-  fetch('/admin/publish',{method:"POST"}).then(res=>{
-    ok=res.ok;
-    return res.text()
-  }).then(text=>{
-    if (!ok){
-      popup(text,'danger','Error publishing:');
-    }else{
-      popup('publish succeeded!','success')
+  fetch('/admin/publish', { method: "POST", credentials: "include" }).then(function (res) {
+    ok = res.ok;
+    return res.text();
+  }).then(function (text) {
+    if (!ok) {
+      popup(text, 'danger', 'Error publishing:');
+    } else {
+      popup('publish succeeded!', 'success');
     }
-  }).catch(e=>{
-    popup(e,'danger','Error publishing:');
+  }).catch(function (e) {
+    popup(e, 'danger', 'Error publishing:');
   });
-}
+};
 
 },{}],13:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 /* post
   each post has the following:
 
@@ -955,86 +1054,88 @@ module.exports = function publish(){
 var uuid = require('uuid/v1');
 var _ = require('lodash');
 
-class Post{
-  constructor(json){
+var Post = function () {
+  function Post(json) {
+    _classCallCheck(this, Post);
+
     // jsonize it (remove funcs etc)
     var json = JSON.parse(JSON.stringify(json));
 
     // validate it
     var problem = Post.prototype.validate(json);
-    if (problem){
+    if (problem) {
       throw new TypeError(problem);
     }
 
     // inherit from json but don't override my methods
-    _.defaults(this,json);
+    _.defaults(this, json);
 
     // add permalink
-    this.permalink = '/posts/'+this.id;
-
+    this.permalink = '/posts/' + this.id;
   }
 
   // asyncronous render
-  render(callback){
 
-  }
 
-}
+  _createClass(Post, [{
+    key: 'render',
+    value: function render(callback) {}
+  }]);
 
-Post.prototype.requiredKeys = function(json){
-  var requiredKeys = ['id','type'];
+  return Post;
+}();
 
-  if ( json.type == 'audio' || json.type == 'video' || json.type == 'image' ){
+Post.prototype.requiredKeys = function (json) {
+  var requiredKeys = ['id', 'type'];
+
+  if (json.type == 'audio' || json.type == 'video' || json.type == 'image') {
     requiredKeys.push('assets');
   }
 
   // text posts require a title and content
-  if (json.type == 'text'){
+  if (json.type == 'text') {
     requiredKeys.push('caption');
     requiredKeys.push('title');
   }
 
-  if (json.type == 'link'){
+  if (json.type == 'link') {
     requiredKeys.push('link');
   }
 
   return requiredKeys;
+};
 
-}
-
-
-Post.prototype.validate = function validate(json){
-  if (!json.type){
+Post.prototype.validate = function validate(json) {
+  if (!json.type) {
     return 'Posts require a type';
   }
   // check it's a valid type
   var types = ['text', 'link', 'audio', 'video', 'image'];
   var ok = false;
-  for (var i = 0; i < types.length; i ++){
-    if (json.type == types[i]){
-      ok=true;
+  for (var i = 0; i < types.length; i++) {
+    if (json.type == types[i]) {
+      ok = true;
       break;
     }
   }
-  if (!ok){
-    return 'Bad post type: '+json.type;
+  if (!ok) {
+    return 'Bad post type: ' + json.type;
   }
 
   // check it has the needed keys
   var requiredKeys = Post.prototype.requiredKeys(json);
-  for (var i = 0; i < requiredKeys.length; i ++){
-    if ( !json[requiredKeys[i]] ){
-      return 'This post type requires a '+requiredKeys[i];
+  for (var i = 0; i < requiredKeys.length; i++) {
+    if (!json[requiredKeys[i]]) {
+      return 'This post type requires a ' + requiredKeys[i];
     }
   }
 
-  if (requiredKeys.indexOf('assets') > -1 && json.assets.length < 1){
-    return "This post type requires at least one asset"
+  if (requiredKeys.indexOf('assets') > -1 && json.assets.length < 1) {
+    return "This post type requires at least one asset";
   }
 
   return false;
-
-}
+};
 
 Post.prototype.uuid = uuid;
 

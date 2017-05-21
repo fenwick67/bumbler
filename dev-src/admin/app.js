@@ -6,7 +6,7 @@ var FileEditor = require('./FileEditor');
 var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
-var Post = require('../../../lib/Post');
+var Post = require('../../lib/Post');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
