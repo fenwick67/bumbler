@@ -1,32 +1,41 @@
 # bumbler
 
-A DIY barebones CMS for photos, audio, blog posts or whatever.
+A DIY barebones CMS for photos, audio, blog posts or whatever.  It's optimized for microblogging, but can be used for macroblogging as well.
 
-Runs as a local webserver, builds out to static files
+Features:
 
-## usage
+* Builds out to static files, so you can easily write locally and push to github-pages or
 
-* `npm install -g` it
-* create a new folder and run `bumbler init` inside it
-* run `bumbler --open` to view the admin interface for creating posts, reconfiguring, and publishing
 
-## todo items
+## Usage
 
-* warn before overwriting asset 
-  - don't block, just prompt user "There is already a file named 'abc.jpg' {overwrite it} {rename my file} {cancel}"
-* more asset types 
-  - support STL
-* edit posts via web interface
-* permanently delete posts
-* publish via git?  
-* publish via scp?
+1. `npm install -g` it
+2. create a new folder for your project
+3. `cd` into your new site folder
+4. run `bumbler init` inside it
+5. then, run `bumbler hash` to set your password
+  - **DO NOT** re-use a password for this.  Seriously.  This software is pre-alpha and there are probably security holes.
+  - save the hash as `.bumblerhash` in your site folder, or set it as `BUMBLERHASH` as an environment variable
+6. run `bumbler --open` to view the admin interface for creating posts, reconfiguring, and publishing
 
-### hosted features
+# Publishing
 
-* add a CLI flag for --serve (run web app with authentication)
-  - this will entail a --gen-hash tool, in which you enter a username and password and it generates a bcrypt hash+username string
-  - `bumbler --gen-hash`,`enter username`,`enter password`,`=> admin:$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa`
-  - set as an env var (`BUMBLER_AUTH`?)
-* subscribe to other feeds via Atom 
-  - :star: and boost their posts
-* support pingbacks?
+## Static Hosting
+
+Bumblr was *made to work without a serverside application*.  You can simply move your project files over to a HTTP server and everything will just work.  Almost everything except the admin interface is built out to static files.  
+
+The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/
+
+## Self-Hosting
+
+If you have an extra $7/month, you can host it on DigitalOcean ($5), with backups ($1), and get a domain ($1).  Here are some tips:
+
+* Bumbler will **not** work on Heroku or other SAAS platforms with an ephemeral filesystem, because of Bumbler's filesystem-based nature.  All of your files and settings will get blown away every 24 hours or so.
+* install nodejs v7 using the instructions here:  https://github.com/nodesource/distributions#deb
+* when running `npm install`, use the `--production` flag to reduce the dependencies and install time
+* To enable WebFinger support and for better security, use HTTPS.  You can sign up for CloudFlare's free plan, which includes free auto-renewing certificates.
+* You can use PM2 to easily manage app startup and shutdown
+  - use `pm2 startup` to install startup scripts
+  - use only one process (because of in-memory session store)
+  - use `pm2 save` to save your running process
+* Set up backups in case your site explodes, or hackers get in and ruin everything.
