@@ -1,23 +1,51 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
-<id>http://localhost:8000feed.atom</id>
-<title>Kitties</title>
+<id>http://localhost:8000/feed.atom</id>
+<title>Kitties &amp; Birdies</title>
 <subtitle>A site about kitties, birds, and more!</subtitle>
-<updated>2017-05-20T22:06:01-05:00</updated>
-<logo>https://s.gravatar.com/avatar/f163450453f776e6312bd504e054a594</logo>
+<updated>2017-05-20T23:26:25-05:00</updated>
+<logo>/assets/avatar.png</logo>
 <author>
-<id>http://localhost:8000</id>
+<id>http://localhost:8000/</id>
 <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
-<uri>http://localhost:8000</uri>
+<uri>http://localhost:8000/</uri>
 <name>Drew</name>
 <summary type="html">&lt;p&gt;A site about kitties, birds, and more!&lt;/p&gt;</summary>
-<link rel="alternate" type="text/html" href="http://localhost:8000"/>
-<link rel="avatar" type="false" media:width="120" media:height="120" href="https://s.gravatar.com/avatar/f163450453f776e6312bd504e054a594"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
 <poco:displayName>Drew</poco:displayName>
 <poco:note>A site about kitties, birds, and more!</poco:note>
 </author>
-<link rel="alternate" type="text/html" href="http://localhost:8000"/>
-<link rel="self" type="application/atom+xml" href="http://localhost:8000feed.atom"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/feed.atom"/>
+<entry>
+<id>939811a0-3dd3-11e7-bc6a-27dac3f1f0b3</id>
+<published>2017-05-20T22:14:18-05:00</published>
+<updated>2017-05-20T22:14:18-05:00</updated>
+<title>skater birbs</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;skater birbs&lt;/h1&gt;&lt;img src=&#34;/assets/forthebirtds.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;These birds are HXC and ready to tear up the local park.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;He was a skater-birb, she said see-ya-later-birb&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/forthebirtds.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/939811a0-3dd3-11e7-bc6a-27dac3f1f0b3.html"/>
+</entry>
+<entry>
+<id>09c15b30-3dd3-11e7-bc6a-27dac3f1f0b3</id>
+<published>2017-05-20T22:10:26-05:00</published>
+<updated>2017-05-20T22:10:26-05:00</updated>
+<title>G&#39;day mate</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;G&#39;day mate&lt;/h1&gt;&lt;img src=&#34;/assets/kooky.png&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
+<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/kooky.png"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/09c15b30-3dd3-11e7-bc6a-27dac3f1f0b3.html"/>
+</entry>
 <entry>
 <id>5dfee950-3cdf-11e7-b699-65904639b67e</id>
 <published>2017-05-19T17:06:11-05:00</published>
@@ -88,7 +116,7 @@ _   underscore
 !   exclamation mark
 &lt;/code&gt;&lt;/pre&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/5dfee950-3cdf-11e7-b699-65904639b67e.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/5dfee950-3cdf-11e7-b699-65904639b67e.html"/>
 </entry>
 <entry>
 <id>7acbd810-39db-11e7-828d-61ad8758da0c</id>
@@ -100,82 +128,82 @@ _   underscore
 <content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;And now for something completely different&lt;/h1&gt;&lt;img src=&#34;/assets/0_7abdd_4f171b95_XL.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;img src=&#34;/assets/bp2ypv8fx7h7c3cn80so.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;img src=&#34;/assets/BqUUe.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;Yes they are birds but &lt;strong&gt;YOLO&lt;/strong&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/0_7abdd_4f171b95_XL.jpg"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/bp2ypv8fx7h7c3cn80so.jpg"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/BqUUe.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/7acbd810-39db-11e7-828d-61ad8758da0c.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/0_7abdd_4f171b95_XL.jpg"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/bp2ypv8fx7h7c3cn80so.jpg"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/BqUUe.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/7acbd810-39db-11e7-828d-61ad8758da0c.html"/>
 </entry>
 <entry>
 <id>d35022a0-39ce-11e7-828d-61ad8758da0c</id>
 <published>2017-05-15T19:30:12-05:00</published>
 <updated>2017-05-15T19:30:12-05:00</updated>
-<title>New Post on Kitties</title>
+<title>New Post on Kitties &amp; Birdies</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;img src=&#34;/assets/1283989422599.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;is &lt;em&gt;this&lt;/em&gt; a cat?  &lt;strong&gt;Huh?&lt;/strong&gt;&lt;/p&gt;
 &lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/1283989422599.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/d35022a0-39ce-11e7-828d-61ad8758da0c.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/1283989422599.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/d35022a0-39ce-11e7-828d-61ad8758da0c.html"/>
 </entry>
 <entry>
 <id>f854e660-392b-11e7-9bb4-fdbe3e3ecf6f</id>
 <published>2017-05-15T00:04:27-05:00</published>
 <updated>2017-05-15T00:04:27-05:00</updated>
-<title>New Post on Kitties</title>
+<title>New Post on Kitties &amp; Birdies</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;img src=&#34;/assets/cat-wearing-wig-12.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/cat-wearing-wig-12.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/f854e660-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/cat-wearing-wig-12.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/f854e660-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
 </entry>
 <entry>
 <id>f5c561e0-392b-11e7-9bb4-fdbe3e3ecf6f</id>
 <published>2017-05-15T00:04:22-05:00</published>
 <updated>2017-05-15T00:04:22-05:00</updated>
-<title>New Post on Kitties</title>
+<title>New Post on Kitties &amp; Birdies</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;img src=&#34;/assets/cat-wearing-wig-10.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/cat-wearing-wig-10.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/f5c561e0-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/cat-wearing-wig-10.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/f5c561e0-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
 </entry>
 <entry>
 <id>f3772c20-392b-11e7-9bb4-fdbe3e3ecf6f</id>
 <published>2017-05-15T00:04:18-05:00</published>
 <updated>2017-05-15T00:04:18-05:00</updated>
-<title>New Post on Kitties</title>
+<title>New Post on Kitties &amp; Birdies</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;img src=&#34;/assets/cat-wearing-wig-8.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/cat-wearing-wig-8.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/f3772c20-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/cat-wearing-wig-8.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/f3772c20-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
 </entry>
 <entry>
 <id>f1808c40-392b-11e7-9bb4-fdbe3e3ecf6f</id>
 <published>2017-05-15T00:04:15-05:00</published>
 <updated>2017-05-15T00:04:15-05:00</updated>
-<title>New Post on Kitties</title>
+<title>New Post on Kitties &amp; Birdies</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;img src=&#34;/assets/cat-wearing-wig-4.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/cat-wearing-wig-4.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/f1808c40-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/cat-wearing-wig-4.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/f1808c40-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
 </entry>
 <entry>
 <id>ef29cb00-392b-11e7-9bb4-fdbe3e3ecf6f</id>
 <published>2017-05-15T00:04:11-05:00</published>
 <updated>2017-05-15T00:04:11-05:00</updated>
-<title>New Post on Kitties</title>
+<title>New Post on Kitties &amp; Birdies</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;img src=&#34;/assets/cat-wearing-wig.jpg&#34;&gt;&lt;/img&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000assets/cat-wearing-wig.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000post/ef29cb00-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/cat-wearing-wig.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/ef29cb00-392b-11e7-9bb4-fdbe3e3ecf6f.html"/>
 </entry>
 </feed>

@@ -1,11 +1,11 @@
 {
   "authorName": "Drew",
-  "avatar": "https://s.gravatar.com/avatar/f163450453f776e6312bd504e054a594",
+  "avatar": "/assets/avatar.png",
   "description": "A site about kitties, birds, and more!",
   "metadata": "{}",
   "postsPerPage": "3",
   "publishBranch": "",
   "publishUrl": "",
-  "siteUrl": "http://localhost:8000",
-  "title": "Kitties"
+  "siteUrl": "http://localhost:8000/",
+  "title": "Kitties & Birdies"
 }
