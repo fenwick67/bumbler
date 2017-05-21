@@ -68,7 +68,8 @@ module.exports = class SettingsManager extends Object{
     fetch('/admin/settings',{
       method:"POST",
       body:JSON.stringify(dat),
-      headers:{'Content-Type': 'application/json'}
+      headers:{'Content-Type': 'application/json'},
+      credentials: "include"
     }).then(res=>{
       ok = res.ok;
       if (ok){
@@ -93,7 +94,7 @@ module.exports = class SettingsManager extends Object{
   }
   load(alert){
     var ok = false;
-    fetch('/admin/settings').then(res=>{
+    fetch('/admin/settings',{credentials: "include"}).then(res=>{
       ok = res.ok;
       return res.json();
     }).then(json=>{

@@ -19,7 +19,7 @@ $purple:	hsl(271, 100%, 71%);
 $red:	hsl(348, 100%, 61%);
 
 @function inv($c){
-  @return lighten( invert($c), 10%)
+  @return $c;
 }
 
 $black:inv($black);
@@ -35,7 +35,7 @@ $white-bis:	inv($white-bis);
 $white:	inv($white);
 
 @function dar($c){
-  @return darken($c,15%);
+  @return $c;
 }
 
 $orange:dar($orange);

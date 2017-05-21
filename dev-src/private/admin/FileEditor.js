@@ -64,6 +64,7 @@ module.exports = class FileEditor extends Object{
     var contents = this.textarea.value;
     var ok = true;
     fetch(this.href,{
+      credentials: "include",
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -88,7 +89,7 @@ module.exports = class FileEditor extends Object{
   delete(){
     var contents = this.textarea.value;
     var ok = true;
-    fetch(this.href,{method: "DELETE"}).then(req=>{
+    fetch(this.href,{method: "DELETE",credentials:'include'}).then(req=>{
       ok = req.ok;
       return req.text();
     }).then(text=>{
@@ -105,7 +106,7 @@ module.exports = class FileEditor extends Object{
   load(reload){
     // load the data
     var ok = true;
-    fetch(this.href).then(req=>{
+    fetch(this.href,{credentials:'include'}).then(req=>{
       ok = req.ok;
       return req.text();
     }).then(text=>{

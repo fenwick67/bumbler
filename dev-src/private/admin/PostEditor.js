@@ -1,4 +1,4 @@
-var Post = require('../../lib/Post')
+var Post = require('../../../lib/Post')
 var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
 var moment = require('moment');
@@ -129,7 +129,8 @@ module.exports = class PostEditor extends Object{
         {
           method:'POST',
           body:JSON.stringify(json),
-          headers:{'Content-Type': 'application/json'}
+          headers:{'Content-Type': 'application/json'},
+          credentials: "include"
         }).then(res=>{
           ok = res.ok;
           if (ok){

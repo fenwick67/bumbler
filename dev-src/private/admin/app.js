@@ -6,7 +6,7 @@ var FileEditor = require('./FileEditor');
 var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
-var Post = require('../../lib/Post');
+var Post = require('../../../lib/Post');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function startBuild(){
-  fetch('/admin/build',{method:"POST"}).then(res=>{
+  fetch('/admin/build',{method:"POST",credentials: "include"}).then(res=>{
     if (!res.ok){throw new Error('response not ok');return;}
     popup('Build triggered.','info')
   }).catch(e=>{

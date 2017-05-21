@@ -13,12 +13,12 @@ gulp.task('pug',function(){
 })
 
 gulp.task('browserify', function() {
-    return browserify('./dev-src/admin/app.js')
+    return browserify('./dev-src/private/admin/app.js')
       .bundle()
       //Pass desired output filename to vinyl-source-stream
       .pipe(source('app.js'))
       // Start piping stream to tasks!
-      .pipe(gulp.dest('./dev-serve/admin'));
+      .pipe(gulp.dest('./dev-serve/private/admin'));
 });
 
 

@@ -38,7 +38,7 @@ class Asset{
 Asset.prototype.fetchAll = function(callback){
 
   var ok = false;
-  fetch('/admin/glob?pattern='+encodeURIComponent('./assets/*')).then(response=>{
+  fetch('/admin/glob?pattern='+encodeURIComponent('./assets/*'),{credentials: "include"}).then(response=>{
     ok = response.ok;
     if (ok){
       return response.json();
