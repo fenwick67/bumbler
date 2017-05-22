@@ -15,8 +15,8 @@ Features:
 4. run `bumbler init` inside it
 5. then, run `bumbler hash` to set your password
   - **DO NOT** re-use a password for this.  Seriously.  This software is pre-alpha and there are probably security holes.
-  - save the hash as `.bumblerhash` in your site folder, or set it as `BUMBLERHASH` as an environment variable
-6. run `bumbler --open` to view the admin interface for creating posts, reconfiguring, and publishing
+6. save the hash as `.bumblerhash` in your site folder, or set it as `BUMBLERHASH` as an environment variable
+7. run `bumbler --open` to view the admin interface for creating posts, reconfiguring, and publishing
 
 # Publishing
 
