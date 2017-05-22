@@ -1095,7 +1095,6 @@ Post.prototype.requiredKeys = function (json) {
   // text posts require a title and content
   if (json.type == 'text') {
     requiredKeys.push('caption');
-    requiredKeys.push('title');
   }
 
   if (json.type == 'link') {

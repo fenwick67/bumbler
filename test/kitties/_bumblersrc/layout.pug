@@ -10,11 +10,11 @@ html
     meta(name="description" content=site.description)
   body
     section.hero.is-primary
-      .hero-body.container
+      .hero-body
         .columns
           .column.is-0-mobile.is-2-tablet.is-3-desktop
           .column.is-12-mobile.is-8-tablet.is-6-desktop
-            .media.container
+            .media
               .media-left.centered
                 img(src=site.avatar).image.is-64x64
               .media-content
@@ -38,7 +38,7 @@ html
                 .card-content.e-content
                   .gallery
                     each attachment in post.assets
-                      a(href=attachment.href)!= attachment.widget
+                      span!= attachment.widget
                   if post.caption
                     br
                     .content!= post.caption
