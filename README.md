@@ -57,8 +57,9 @@ If you have an extra $7/month, you can host it on DigitalOcean ($5), with backup
 * follow other users (hosted only?)
 * rebumble
   - webmention them
-  - create new post 
-    + be sure to have a different schema and/or template
+  - create new post
+    + include their content (from h-card or atom feed) but BE SURE TO RE-BUILD THEIR DOM, don't just blindly allow their html. Parse out their img[src], audio[src], a[href], and text.  Might be a bit rough.
+    + be sure to have a different schema and/or template.
 
 ### Low priority
 
