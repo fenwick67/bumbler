@@ -39,3 +39,27 @@ If you have an extra $7/month, you can host it on DigitalOcean ($5), with backup
   - use only one process (because of in-memory session store)
   - use `pm2 save` to save your running process
 * Set up backups in case your site explodes, or hackers get in and ruin everything.
+
+
+## TODO items:
+
+### High priority
+
+* let user delete posts
+  - [ ] by ID
+  - [ ] with a UI
+* let user delete assets
+  - [ ] by ID
+  - [ ] with a UI
+  
+### Medium priority
+
+* follow other users (hosted only?)
+* rebumble
+  - webmention them
+  - create new post 
+    + be sure to have a different schema and/or template
+
+### Low priority
+
+plugin system
