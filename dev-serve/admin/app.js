@@ -22,7 +22,7 @@ var Asset = function Asset(href, type) {
     var types = {
       'audio': ['mp3', 'wav', 'ogg'],
       'video': ['mp4'],
-      'image': ['jpg', 'jpeg', 'png', 'bmp', 'gif']
+      'image': ['png', 'gif', 'bmp', 'svg', 'tif', 'jpg', 'jpeg']
     };
     _.each(types, function (extensions, key) {
       _.each(extensions, function (extension) {
@@ -94,6 +94,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Asset = require('./Asset');
+var _ = require('lodash');
 
 module.exports = function () {
   function AssetUploader(element) {
@@ -102,11 +103,19 @@ module.exports = function () {
     var self = this;
     this.assets = [];
     this.files = [];
+    this.thumbnails = [];
+
+    var label = document.createElement('label');
+    label.innerHTML = "Upload Files";
+    label.classList.add('label');
 
     var input = document.createElement('input');
+    input.classList.add('box');
     input.setAttribute('type', 'file');
     input.setAttribute('multiple', 'multiple');
+    element.appendChild(label);
     element.appendChild(input);
+
     self.input = input;
 
     var gallery = document.createElement('div');
@@ -116,32 +125,62 @@ module.exports = function () {
 
     input.addEventListener('change', function () {
       for (var i = 0; i < this.files.length; i++) {
-        self.previewImage(this.files[i]);
+        var a = new Asset('/assets/' + this.files[i].name);
+        self.assets.push(a);
+        var thumb = self.previewImage(this.files[i], a);
+        self.thumbnails.push(thumb);
         self.files.push(this.files[i]);
         console.log(this.files[i]);
-        self.assets.push(new Asset('/assets/' + this.files[i].name));
       }
     }, false);
   }
 
   _createClass(AssetUploader, [{
     key: 'previewImage',
-    value: function previewImage(file) {
+    value: function previewImage(file, asset) {
+      var self = this;
 
+      var href = '/assets/' + file.name;
       var thumb = document.createElement("div");
-      thumb.classList.add('thumbnail'); // Add the class thumbnail to the created div
+      thumb.classList.add("asset");
       var img = document.createElement("img");
+      var title = document.createElement('b');
+      title.innerHTML = href;
+      img.classList.add('thumb'); // Add the class thumbnail to the created div
+
       img.file = file;
       thumb.appendChild(img);
+      thumb.appendChild(title);
+
+      var delBtn = document.createElement('button');
+      delBtn.classList.add('button');
+      delBtn.classList.add('is-warning');
+      delBtn.innerHTML = 'remove';
+      // delete it on click
+      delBtn.addEventListener('click', function (e) {
+        self.files = _.filter(self.files, function (f) {
+          return f != file;
+        });
+        self.assets = _.filter(self.assets, function (ass) {
+          return ass.href != href;
+        });
+        thumb.parentElement.removeChild(thumb);
+        e.preventDefault();
+      });
+
+      thumb.appendChild(delBtn);
       this.gallery.appendChild(thumb);
       // Using FileReader to display the image content
       var reader = new FileReader();
-      reader.onload = function (aImg) {
-        return function (e) {
-          aImg.src = e.target.result;
-        };
-      }(img);
+      if (isImg(file.name)) {
+        reader.onload = function (aImg) {
+          return function (e) {
+            aImg.src = e.target.result;
+          };
+        }(img);
+      }
       reader.readAsDataURL(file);
+      return thumb;
     }
   }, {
     key: 'upload',
@@ -208,16 +247,34 @@ module.exports = function () {
   return AssetUploader;
 }();
 
-},{"./Asset":1}],4:[function(require,module,exports){
+function getExt(n) {
+  var i = n.lastIndexOf('.');
+  if (i > -1) {
+    return n.slice(i + 1);
+  } else {
+    return '';
+  }
+}
+
+function isImg(filename) {
+  var ext = getExt(filename).toLowerCase();
+  var n = ['png', 'gif', 'bmp', 'svg', 'tif', 'jpg', 'jpeg'];
+  return n.indexOf(ext) > -1;
+}
+
+},{"./Asset":1,"lodash":14}],4:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // view into an asset
 // i.e. in a list or whatever
-module.exports = function AssetView(asset, element) {
+module.exports = function AssetView(asset, element, options) {
   _classCallCheck(this, AssetView);
 
+  if (!options) {
+    var options = {};
+  }
   var inner = '<span class="thumb">(unknown type)</span>';
   console.log(asset);
   if (asset.type == 'audio') {
@@ -227,7 +284,9 @@ module.exports = function AssetView(asset, element) {
   } else if (asset.type == 'image') {
     inner = '<img class="thumb" src="' + asset.href + '"></img>';
   }
-  inner += '<b>' + asset.href + '</b><a href="' + asset.href + '">view</a>';
+  if (options.link !== false) {
+    inner += '<b>' + asset.href + '</b><a href="' + asset.href + '">view</a>';
+  }
   element.innerHTML = inner;
   element.classList.add('asset');
 };

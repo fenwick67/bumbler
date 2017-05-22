@@ -1,7 +1,10 @@
 // view into an asset
 // i.e. in a list or whatever
 module.exports = class AssetView{
-  constructor(asset,element){
+  constructor(asset,element,options){
+    if (!options){
+      var options = {};
+    }
     var inner = `<span class="thumb">(unknown type)</span>`;
     console.log(asset);
     if (asset.type == 'audio'){
@@ -11,7 +14,9 @@ module.exports = class AssetView{
     }else if (asset.type == 'image'){
       inner = `<img class="thumb" src="${asset.href}"></img>`
     }
-    inner += `<b>${asset.href}</b><a href="${asset.href}">view</a>`;
+    if (options.link !== false){
+      inner += `<b>${asset.href}</b><a href="${asset.href}">view</a>`;
+    }
     element.innerHTML = inner;
     element.classList.add('asset')
   }

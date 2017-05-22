@@ -16,7 +16,7 @@ class Asset{
       var types = {
         'audio':['mp3','wav','ogg'],
         'video':['mp4'],
-        'image':['jpg','jpeg','png','bmp','gif']
+        'image':['png','gif','bmp','svg','tif','jpg','jpeg']
       }
       _.each(types,(extensions,key)=>{
         _.each(extensions,extension=>{
