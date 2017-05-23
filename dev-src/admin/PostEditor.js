@@ -4,8 +4,12 @@ var Asset = require('./Asset');
 var moment = require('moment');
 
 module.exports = class PostEditor{
-  constructor(el){
+  constructor(el,options){
+    var self = this;
     this.el = el;
+    this.options = options || {};
+    this.id = this.options.id || null;
+    this.canDelete = this.options.canDelete || false;
     // add appropriate fields to this
     /*
       id
@@ -75,17 +79,31 @@ module.exports = class PostEditor{
     this.form.appendChild(this.typeField);
     this.form.appendChild(this.pickerEl);
     this.form.appendChild(this.captionField);
-    this.form.appendChild(this.submitButton);
+    this.form.appendChild(this.submitGroup);
+
+    if (this.canDelete){
+      this.deleteButton = document.createElement('button');
+      this.deleteButton.innerHTML = "X Delete Post";
+      this.deleteButton.setAttribute('class',"button is-danger");
+      submitP.appendChild(this.deleteButton);
+      this.deleteButton.addEventListener('click',e=>{
+        // delet this
+        self.delete();
+      })
+    }
 
     this.el.appendChild(this.form);
 
-    var self = this;
     function _save(e){
       e.preventDefault();
       self.save();
       return false;
     }
     this.submitButton.addEventListener('click',_save);
+
+    if (this.id){
+      this.load(this.id);
+    }
   }
 
 
@@ -146,13 +164,42 @@ module.exports = class PostEditor{
 
   // load from browser by id
   load(id){
-    console.log('todo: load')
+    if (!id){
+      this.reset();
+      return;
+    }
+    console.log('todo: load');
   }
 
   reset(){
     this.picker.assetUploader.reset();
     this.el.querySelector('[name="caption"]').value ='';
     this.el.querySelector('[name="title"]').value = '';
+  }
+
+  delete(callback){
+    var callback = callback || function(e){if(e){throw e}}
+    var id = this.id;
+    if (!id){
+      return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE'))
+    }
+
+    var ok = false;
+    fetch('/admin/post?id='+id,
+      {
+        method:'DELETE',
+        credentials: "include"
+      }).then(res=>{
+        ok = res.ok;
+        if (ok){
+          popup('deleted post','success');
+        }else{
+          popup('failed to delete','danger');
+        }
+    }).catch(e=>{
+      popup(e,'danger','Error Deleting:');
+    });
+
   }
 
 

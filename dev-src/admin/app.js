@@ -7,6 +7,7 @@ var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
+var PostList = require('./PostList');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
@@ -52,6 +53,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
       postCreator = new PostEditor(el);
     }
     postCreator.load();
+  });
+
+  // html editor
+  var postList = null;
+  document.getElementById('posts').addEventListener('navigate-to',function(){
+    if (!postList){
+      postList = new PostList(document.getElementById('posts-list'));
+    }
+    postList.clear();
+    postList.load();
   });
 
   var publishInitialized = false;

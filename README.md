@@ -46,12 +46,9 @@ If you have an extra $7/month, you can host it on DigitalOcean ($5), with backup
 ### High priority
 
 * let user delete posts
-  - [ ] by ID
+  - [x] by ID
   - [ ] with a UI
-* let user delete assets
-  - [ ] by ID
-  - [ ] with a UI
-  
+
 ### Medium priority
 
 * follow other users (hosted only?)

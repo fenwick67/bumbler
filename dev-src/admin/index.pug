@@ -20,15 +20,35 @@
                 a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'' target=t.target?t.target:'')!= t.title
 
       #app
-        hash-template#settings
-          h1.title Settings
-          form
+
         hash-template#files
           div
             h1.title Upload
             input(type="file").button.is-default
             h1.title Files
             .file-view
+
+        // posts
+        hash-template#post-create
+          div
+            h1.title Create Post
+            div.editor
+        hash-template#post-edit
+          div
+            h1.title Edit Post
+            .editor
+        hash-template#posts
+          div
+            h1.title Manage Posts
+            #posts-list
+
+        // settings
+        hash-template#html
+          h1.title Edit site template
+          span#htmleditor
+        hash-template#settings
+          h1.title Settings
+          form
         hash-template#publish
           h1.title Publish
           .field
@@ -37,17 +57,10 @@
             | Edit your
             a(href="#settings") &nbsp;settings&nbsp;
             | to set the repository and branch.
-        hash-template#post-create
-          div
-            h1.title Create Post
-            div.editor
-
-        hash-template#html
-          h1.title Edit site template
-          span#htmleditor
 
         hash-template#404
             h1.title Sorry, couldn't find that page :(
+
 
         script(src="./app.js")
       #popup-area

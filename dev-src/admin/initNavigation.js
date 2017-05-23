@@ -13,7 +13,7 @@ module.exports = function initNavigation(){
 
   window.addEventListener('hashchange',function(e){
     // load the appropriate template based on window.location.hash
-    var page = window.location.hash.replace('#','').replace(/\//g,'-');
+    var page = window.location.hash.replace('#','').replace(/\//g,'-').replace(/\?[\s\S]*/g,'');
     if (page){
       navigate(page);
     }

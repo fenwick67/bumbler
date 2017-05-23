@@ -1,6 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var _ = require('lodash');
@@ -8,36 +10,58 @@ var _ = require('lodash');
 // Asset that has been uploaded
 // has a href and a type
 
-var Asset = function Asset(href, type) {
-  _classCallCheck(this, Asset);
+var Asset = function () {
+  function Asset(href, type) {
+    _classCallCheck(this, Asset);
 
-  // type optional
-  function getExtension(href) {
-    var s = href.split('.');
-    return s[s.length - 1];
-  }
-  function getTypeForExtension(ext) {
-    var x = ext.toLowerCase();
-    var type = 'unknown';
-    var types = {
-      'audio': ['mp3', 'wav', 'ogg'],
-      'video': ['mp4'],
-      'image': ['png', 'gif', 'bmp', 'svg', 'tif', 'jpg', 'jpeg']
-    };
-    _.each(types, function (extensions, key) {
-      _.each(extensions, function (extension) {
-        if (x == extension) {
-          type = key;
-          return false;
-        }
+    // type optional
+    function getExtension(href) {
+      var s = href.split('.');
+      return s[s.length - 1];
+    }
+    function getTypeForExtension(ext) {
+      var x = ext.toLowerCase();
+      var type = 'unknown';
+      var types = {
+        'audio': ['mp3', 'wav', 'ogg'],
+        'video': ['mp4'],
+        'image': ['png', 'gif', 'bmp', 'svg', 'tif', 'jpg', 'jpeg']
+      };
+      _.each(types, function (extensions, key) {
+        _.each(extensions, function (extension) {
+          if (x == extension) {
+            type = key;
+            return false;
+          }
+        });
       });
-    });
 
-    return type;
+      return type;
+    }
+    this.href = href;
+    this.type = type || getTypeForExtension(getExtension(href));
   }
-  this.href = href;
-  this.type = type || getTypeForExtension(getExtension(href));
-};
+
+  _createClass(Asset, [{
+    key: 'delete',
+    value: function _delete(callback) {
+
+      var cb = callback || function () {};
+      var filename = _.last(this.href.split('/'));
+      var ok = false;
+      fetch('/admin/asset?filename=' + filename, { method: "DELETE", credentials: 'include' }).then(function (response) {
+        ok = response.ok;
+        return response.text();
+      }).then(function (text) {
+        return cb(ok ? null : new Error(text));
+      }).catch(function (error) {
+        return cb(error);
+      });
+    }
+  }]);
+
+  return Asset;
+}();
 
 Asset.prototype.fetchAll = function (callback) {
 
@@ -65,7 +89,7 @@ Asset.prototype.fetchAll = function (callback) {
 
 module.exports = Asset;
 
-},{"lodash":14}],2:[function(require,module,exports){
+},{"lodash":15}],2:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -262,7 +286,7 @@ function isImg(filename) {
   return n.indexOf(ext) > -1;
 }
 
-},{"./Asset":1,"lodash":14}],4:[function(require,module,exports){
+},{"./Asset":1,"lodash":15}],4:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -272,11 +296,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 module.exports = function AssetView(asset, element, options) {
   _classCallCheck(this, AssetView);
 
+  this.asset = asset;
+  this.element = element;
+
   if (!options) {
     var options = {};
   }
   var inner = '<span class="thumb">(unknown type)</span>';
-  console.log(asset);
   if (asset.type == 'audio') {
     inner = '<audio controls class="thumb" src="' + asset.href + '"></audio>';
   } else if (asset.type == 'video') {
@@ -285,10 +311,36 @@ module.exports = function AssetView(asset, element, options) {
     inner = '<img class="thumb" src="' + asset.href + '"></img>';
   }
   if (options.link !== false) {
-    inner += '<b>' + asset.href + '</b><a href="' + asset.href + '">view</a>';
+    inner += '<b>' + asset.href + '</b><a class="button is-default" href="' + asset.href + '">view</a>';
   }
   element.innerHTML = inner;
   element.classList.add('asset');
+
+  this.deleteButton = document.createElement('a');
+  this.deleteButton.classList.add('button');
+  this.deleteButton.classList.add('is-danger');
+  this.deleteButton.innerHTML = "Delete";
+  element.appendChild(this.deleteButton);
+
+  var self = this;
+  this.deleteButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (!window.confirm("Do you REALLY want to delete " + self.asset.href + "?\nNote that this won't delete the post")) {
+      return;
+    }
+    self.asset.delete(function (er) {
+      if (er) {
+        popup(er, 'danger', 'Error deleting asset:');
+        return;
+      }
+
+      popup('Deleted asset', 'success');
+      if (self.element.parentElement) {
+        // delet this
+        self.element.parentElement.removeChild(self.element);
+      }
+    });
+  });
 };
 
 },{}],5:[function(require,module,exports){
@@ -617,10 +669,14 @@ var Asset = require('./Asset');
 var moment = require('moment');
 
 module.exports = function () {
-  function PostEditor(el) {
+  function PostEditor(el, options) {
     _classCallCheck(this, PostEditor);
 
+    var self = this;
     this.el = el;
+    this.options = options || {};
+    this.id = this.options.id || null;
+    this.canDelete = this.options.canDelete || false;
     // add appropriate fields to this
     /*
       id
@@ -667,17 +723,31 @@ module.exports = function () {
     this.form.appendChild(this.typeField);
     this.form.appendChild(this.pickerEl);
     this.form.appendChild(this.captionField);
-    this.form.appendChild(this.submitButton);
+    this.form.appendChild(this.submitGroup);
+
+    if (this.canDelete) {
+      this.deleteButton = document.createElement('button');
+      this.deleteButton.innerHTML = "X Delete Post";
+      this.deleteButton.setAttribute('class', "button is-danger");
+      submitP.appendChild(this.deleteButton);
+      this.deleteButton.addEventListener('click', function (e) {
+        // delet this
+        self.delete();
+      });
+    }
 
     this.el.appendChild(this.form);
 
-    var self = this;
     function _save(e) {
       e.preventDefault();
       self.save();
       return false;
     }
     this.submitButton.addEventListener('click', _save);
+
+    if (this.id) {
+      this.load(this.id);
+    }
   }
 
   // save from dom => server
@@ -741,6 +811,10 @@ module.exports = function () {
   }, {
     key: 'load',
     value: function load(id) {
+      if (!id) {
+        this.reset();
+        return;
+      }
       console.log('todo: load');
     }
   }, {
@@ -750,12 +824,108 @@ module.exports = function () {
       this.el.querySelector('[name="caption"]').value = '';
       this.el.querySelector('[name="title"]').value = '';
     }
+  }, {
+    key: 'delete',
+    value: function _delete(callback) {
+      var callback = callback || function (e) {
+        if (e) {
+          throw e;
+        }
+      };
+      var id = this.id;
+      if (!id) {
+        return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE'));
+      }
+
+      var ok = false;
+      fetch('/admin/post?id=' + id, {
+        method: 'DELETE',
+        credentials: "include"
+      }).then(function (res) {
+        ok = res.ok;
+        if (ok) {
+          popup('deleted post', 'success');
+        } else {
+          popup('failed to delete', 'danger');
+        }
+      }).catch(function (e) {
+        popup(e, 'danger', 'Error Deleting:');
+      });
+    }
   }]);
 
   return PostEditor;
 }();
 
-},{"../../lib/Post":13,"./Asset":1,"./AssetPicker.js":2,"moment":15}],9:[function(require,module,exports){
+},{"../../lib/Post":14,"./Asset":1,"./AssetPicker.js":2,"moment":16}],9:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// show a list of posts
+
+var PostList = function () {
+  function PostList(el) {
+    _classCallCheck(this, PostList);
+
+    this.rows = [];
+    this.element = el;
+  }
+
+  _createClass(PostList, [{
+    key: 'addId',
+    value: function addId(id) {
+      var el = document.createElement('div');
+      el.classList.add('level');
+      el.innerHTML = '<pre>' + id + '</pre> <a class="button is-default" href="/post/' + id + '.html">View<a><a class="button is-primary" href="#post/edit?id=' + id + '">Edit</a>';
+      this.element.appendChild(el);
+      this.rows.push(el);
+    }
+  }, {
+    key: 'clear',
+    value: function clear() {
+      this.rows.forEach(function (el) {
+        if (el.parentElement) {
+          el.parentElement.removeChild(el);
+        }
+      });
+      this.rows = [];
+    }
+  }, {
+    key: 'load',
+    value: function load() {
+      var _this = this;
+
+      var ok = false;
+      var self = this;
+      fetch('/admin/posts', { credentials: 'include' }).then(function (res) {
+        ok = res.ok;
+        if (ok) {
+          return res.json();
+        } else {
+          return res.text();
+        }
+      }).then(function (data) {
+        if (ok) {
+          var self = _this;
+          data.forEach(function (id) {
+            self.addId(id);
+          });
+        } else {
+          popup(data, 'danger', 'Error fetching posts:');
+        }
+      });
+    }
+  }]);
+
+  return PostList;
+}();
+
+module.exports = PostList;
+
+},{}],10:[function(require,module,exports){
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -920,7 +1090,7 @@ module.exports = function () {
   return SettingsManager;
 }();
 
-},{"lodash":14}],10:[function(require,module,exports){
+},{"lodash":15}],11:[function(require,module,exports){
 'use strict';
 
 var PopupManager = require('./PopupManager');
@@ -932,6 +1102,7 @@ var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation');
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
+var PostList = require('./PostList');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
@@ -979,6 +1150,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     postCreator.load();
   });
 
+  // html editor
+  var postList = null;
+  document.getElementById('posts').addEventListener('navigate-to', function () {
+    if (!postList) {
+      postList = new PostList(document.getElementById('posts-list'));
+    }
+    postList.clear();
+    postList.load();
+  });
+
   var publishInitialized = false;
   document.getElementById('publish').addEventListener('navigate-to', function () {
     if (!publishInitialized) {
@@ -1007,7 +1188,7 @@ function startBuild() {
   });
 }
 
-},{"../../lib/Post":13,"./Asset":1,"./AssetUploader":3,"./AssetView":4,"./AssetsView":5,"./FileEditor":6,"./PopupManager":7,"./PostEditor":8,"./SettingsManager":9,"./initNavigation":11,"./publisher":12}],11:[function(require,module,exports){
+},{"../../lib/Post":14,"./Asset":1,"./AssetUploader":3,"./AssetView":4,"./AssetsView":5,"./FileEditor":6,"./PopupManager":7,"./PostEditor":8,"./PostList":9,"./SettingsManager":10,"./initNavigation":12,"./publisher":13}],12:[function(require,module,exports){
 "use strict";
 
 // navigation handler
@@ -1025,7 +1206,7 @@ module.exports = function initNavigation() {
 
   window.addEventListener('hashchange', function (e) {
     // load the appropriate template based on window.location.hash
-    var page = window.location.hash.replace('#', '').replace(/\//g, '-');
+    var page = window.location.hash.replace('#', '').replace(/\//g, '-').replace(/\?[\s\S]*/g, '');
     if (page) {
       navigate(page);
     }
@@ -1067,7 +1248,7 @@ module.exports = function initNavigation() {
   };
 };
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 "use strict";
 
 // publish to git and show a message
@@ -1088,7 +1269,7 @@ module.exports = function publish() {
   });
 };
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1199,7 +1380,7 @@ Post.prototype.uuid = uuid;
 
 module.exports = Post;
 
-},{"lodash":14,"uuid/v1":18}],14:[function(require,module,exports){
+},{"lodash":15,"uuid/v1":19}],15:[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -18287,7 +18468,7 @@ module.exports = Post;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 //! moment.js
 //! version : 2.18.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -22752,7 +22933,7 @@ return hooks;
 
 })));
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 /**
  * Convert array of 16 byte values to UUID string format of the form:
  * XXXXXXXX-XXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
@@ -22777,7 +22958,7 @@ function bytesToUuid(buf, offset) {
 
 module.exports = bytesToUuid;
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 (function (global){
 // Unique ID creation requires a high quality random # generator.  In the
 // browser this is a little complicated due to unknown quality of Math.random()
@@ -22814,7 +22995,7 @@ if (!rng) {
 module.exports = rng;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 // Unique ID creation requires a high quality random # generator.  We feature
 // detect to determine the best RNG source, normalizing to a function that
 // returns 128-bits of randomness, since that's what's usually required
@@ -22919,4 +23100,4 @@ function v1(options, buf, offset) {
 
 module.exports = v1;
 
-},{"./lib/bytesToUuid":16,"./lib/rng":17}]},{},[10]);
+},{"./lib/bytesToUuid":17,"./lib/rng":18}]},{},[11]);

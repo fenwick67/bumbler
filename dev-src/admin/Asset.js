@@ -33,6 +33,22 @@ class Asset{
     this.href = href;
     this.type = type || getTypeForExtension(getExtension(href));
   }
+
+  delete(callback){
+
+    var cb = callback || function(){};
+    var filename = _.last(this.href.split('/'));
+    var ok = false;
+    fetch('/admin/asset?filename='+filename,{method:"DELETE",credentials:'include'}).then(response=>{
+      ok = response.ok;
+      return response.text();
+    }).then(text=>{
+      return cb(ok?null:new Error(text));
+    }).catch(error=>{
+      return cb(error);
+    });
+
+  }
 }
 
 Asset.prototype.fetchAll = function(callback){
