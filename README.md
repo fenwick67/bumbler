@@ -6,6 +6,11 @@
 
 A straightforward, DIY CMS for photos, images, statuses, audio, blog posts or whatever.  It's optimized for microblogging, but can be used for macroblogging as well.
 
+## Screenshots
+
+![screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/screenshot.png)
+![admin screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png)
+
 ## Features
 
 * Your site your rules.  No censorship, plus simple yet powerful theming
