@@ -1,9 +1,8 @@
 # Bumbler
 
-<div style="text-align:center">
-  <img src="./doc/bumbler-text.png"></img>
-</div>
-<br>
+<p align="center">
+  <img src="https://github.com/fenwick67/bumbler/raw/master/doc/bumbler-text.png"></img>
+</p>
 
 A straightforward, DIY CMS for photos, images, statuses, audio, blog posts or whatever.  It's optimized for microblogging, but can be used for macroblogging as well.
 
