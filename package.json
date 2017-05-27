@@ -53,6 +53,7 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "prompt": "^1.0.0",
+    "session-file-store": "^1.0.0",
     "through2": "^2.0.3",
     "uuid": "^3.0.1",
     "vinyl-source-stream": "^1.1.0",

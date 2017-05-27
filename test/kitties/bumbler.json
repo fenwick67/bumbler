@@ -3,7 +3,7 @@
   "avatar": "/assets/avatar.png",
   "description": "A site about kitties, birds, and more!",
   "metadata": "{}",
-  "postsPerPage": "3",
+  "postsPerPage": "4",
   "publishBranch": "",
   "publishUrl": "",
   "siteUrl": "http://localhost:8000/",
