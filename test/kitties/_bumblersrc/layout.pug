@@ -22,10 +22,6 @@ html
                   a(href="/")= site.title
                 p= site.description
     .section
-      if page.number
-        footer.pagination
-          a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous.button.is-primary Previous page
-          a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next.button.is-primary Next page
       .container
         .columns
           .column.is-0-mobile.is-2-tablet.is-3-desktop

@@ -1,10 +1,10 @@
 // hash CLI command
-const passwordManager = require('./password-manager');
+const passwordManager = require('../lib/password-manager');
 const readline = require('readline');
 var prompt = require('prompt');
 var chalk = require('chalk')
 
-module.exports = function(){
+module.exports = function(done){
 
   var schema = {
   properties:{
@@ -25,12 +25,13 @@ module.exports = function(){
     passwordManager.genHash(result.password,function(er,result){
       if(er){throw er}
       // write it
-      console.log(`
-here is your bcrypt hash.  Please save it as ${chalk.bold('.bumblrhash')} in your project directory
-or set it as ${chalk.bold('BUMBLRHASH')} in your environment:
-        `)
+      console.log('==============================================================\r\n\r\n\r\n')
+      console.log(chalk.green(`
+IMPORTANT: This is your bcrypt hash.  Set it as ${chalk.bold('BUMBLERHASH')} in your environment,
+or save it as ${chalk.bold('.bumblerhash')} in your project directory: `));
       console.log(result);
-      process.exit(0);
+      console.log('\r\n')
+      done(null);
     })
   });
 

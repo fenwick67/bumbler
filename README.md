@@ -21,11 +21,8 @@ step 0: install Node.js v7+ and NPM, and open a terminal.
 1. `npm install -g bumbler`
 2. Create a new folder for your project
 3. `cd` into your new site folder
-4. Run `bumbler init` inside it and answer the questions
-5. Run `bumbler hash` to set your password
-  - **DO NOT** re-use a password for this.  Seriously.  This software is pre-alpha and there are probably security holes.
-6. Set the hash as the environment variable `BUMBLERHASH`, or (less ideally) save the hash as `.bumblerhash` in your site folder
-7. Run `bumbler` and then visit the URL to create posts.
+4. Run `bumbler init` inside it and follow the directions
+  - **DO NOT** re-use a password for the admin interface.  Seriously.  This software is pre-alpha and there are probably security holes.
 
 # Publishing
 
@@ -45,7 +42,7 @@ If you have an extra $7/month, you can host it on DigitalOcean ($5), with backup
 
 ## Static Hosting
 
-Bumblr was *made to work **with or without** a serverside application*.  You can simply move your project files over to a HTTP server and everything will just work.  Everything except the admin interface is built out to static files.  
+Bumblr was *made to work **with or without** a serverside application*.  You can simply move your project files over to a HTTP server and everything will just work.  Almost everything except the admin interface is built out to static files.  
 
 The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/
 

@@ -8,13 +8,11 @@
 var fs = require('fs');
 var path = require('path')
 var readline = require('readline');
-
+var hash = require('./hash');
 var async = require('async');
 var _ = require('lodash');
 var chalk = require('chalk');
 chalk.enabled = true;
-
-var pub = require('./publish')
 
 var cwd = process.cwd();
 
@@ -30,8 +28,6 @@ module.exports = function(){
     '_bumblersrc',
     'assets',
     '_bumblersrc/posts',
-    '_bumblersrc/hydrated-posts',
-    '_bumblersrc/plugins',
     'page',
     'post'
   ];
@@ -117,9 +113,13 @@ module.exports = function(){
     fs.writeFileSync(path.join(cwd,'_bumblersrc','layout.pug'),pug);
 
     fs.writeFileSync(path.join(cwd,'bumbler.json'),toWrite);
+    hash(e=>{
+      if (e){throw e}
+      console.log(chalk.green('...then run '+chalk.cyan('bumbler')+' to start writing!\r\n'));
+      process.exit(0);
 
-    console.log('ok!  Now run '+chalk.cyan('bumbler')+' to start writing!');
-    process.exit(0);
+    })
+
   })
 
 }
