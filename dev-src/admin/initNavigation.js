@@ -22,6 +22,7 @@ module.exports = function initNavigation(){
 
   window.navigate = function navigate(page){
     var found = false;
+    var page = page || window.location.hash.replace('#','').replace(/\//g,'-').replace(/\?[\s\S]*/g,'') || 'post-create';
 
     // find matching nav element
     var href = '#'+page.replace(/\-/g,'/')

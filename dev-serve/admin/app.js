@@ -149,22 +149,41 @@ module.exports = function () {
 
     input.addEventListener('change', function () {
       for (var i = 0; i < this.files.length; i++) {
-        var a = new Asset('/assets/' + this.files[i].name);
-        self.assets.push(a);
-        var thumb = self.previewImage(this.files[i], a);
-        self.thumbnails.push(thumb);
-        self.files.push(this.files[i]);
-        console.log(this.files[i]);
+        self.addAssetFromFile(this.files[i]);
       }
     }, false);
   }
 
   _createClass(AssetUploader, [{
+    key: 'addAssetFromFile',
+    value: function addAssetFromFile(file) {
+      var self = this;
+      var a = new Asset('/assets/' + file.name);
+      self.assets.push(a);
+      var thumb = self.previewImage(file, a);
+      self.thumbnails.push(thumb);
+      self.files.push(file);
+      console.log(file);
+    }
+  }, {
+    key: 'addAssetFromHref',
+    value: function addAssetFromHref(href) {
+      var self = this;
+      var a = new Asset(href);
+      self.assets.push(a);
+      var thumb = self.previewImage(null, a);
+      self.thumbnails.push(thumb);
+      //self.files.push(this.files[i]);
+      //console.log(this.files[i])
+    }
+  }, {
     key: 'previewImage',
     value: function previewImage(file, asset) {
       var self = this;
 
-      var href = '/assets/' + file.name;
+      var file = file || false;
+
+      var href = file ? '/assets/' + file.name : asset.href;
       var thumb = document.createElement("div");
       thumb.classList.add("asset");
       var img = document.createElement("img");
@@ -172,7 +191,15 @@ module.exports = function () {
       title.innerHTML = href;
       img.classList.add('thumb'); // Add the class thumbnail to the created div
 
-      img.file = file;
+      if (!file) {
+        // read from href
+        img.src = href;
+        console.log(img);
+      }
+
+      if (file) {
+        img.file = file;
+      }
       thumb.appendChild(img);
       thumb.appendChild(title);
 
@@ -195,15 +222,17 @@ module.exports = function () {
       thumb.appendChild(delBtn);
       this.gallery.appendChild(thumb);
       // Using FileReader to display the image content
-      var reader = new FileReader();
-      if (isImg(file.name)) {
-        reader.onload = function (aImg) {
-          return function (e) {
-            aImg.src = e.target.result;
-          };
-        }(img);
+      if (file) {
+        var reader = new FileReader();
+        if (isImg(file.name)) {
+          reader.onload = function (aImg) {
+            return function (e) {
+              aImg.src = e.target.result;
+            };
+          }(img);
+        }
+        reader.readAsDataURL(file);
       }
-      reader.readAsDataURL(file);
       return thumb;
     }
   }, {
@@ -731,6 +760,8 @@ module.exports = function () {
       this.deleteButton.setAttribute('class', "button is-danger");
       submitP.appendChild(this.deleteButton);
       this.deleteButton.addEventListener('click', function (e) {
+        e.preventDefault();
+
         // delet this
         self.delete();
       });
@@ -770,8 +801,8 @@ module.exports = function () {
       var caption = self.el.querySelector('[name="caption"]').value;
       var title = self.el.querySelector('[name="title"]').value;
       var assets = self.picker.assetUploader.assets;
-      var date = moment().format();
-      var id = Post.prototype.uuid();
+      var date = this.date || moment().format();
+      var id = this.id || Post.prototype.uuid();
       var json = { type: type, caption: caption, title: title, assets: assets, date: date, id: id };
 
       // validate
@@ -811,15 +842,65 @@ module.exports = function () {
   }, {
     key: 'load',
     value: function load(id) {
+      var _this = this;
+
       if (!id) {
         this.reset();
         return;
       }
-      console.log('todo: load');
+      this.reset();
+      var ok = false;
+      fetch('/admin/post?id=' + id, {
+        headers: { 'Content-Type': 'application/json' },
+        credentials: "include"
+      }).then(function (res) {
+        ok = res.ok;
+        if (ok) {
+          return res.json();
+        } else {
+          popup('Failed to load post', 'danger', 'Error');
+        }
+      }).then(function (data) {
+        if (ok) {
+          _this.populate(data);
+        }
+      }).catch(function (e) {
+        console.error(e);
+        popup('Failed to load post', 'danger', 'Error');
+      });
+    }
+  }, {
+    key: 'populate',
+    value: function populate(data) {
+      var _this2 = this;
+
+      this.picker.assetUploader.reset();
+      //
+
+      this.caption = data.caption || "";
+      this.id = data.id || false;
+      this.title = data.title || "";
+      this.type = data.type || "text";
+
+      console.log('TODO: load assets');
+      var assets = data.assets || [];
+
+      assets.forEach(function (a) {
+        _this2.picker.assetUploader.addAssetFromHref(a.href);
+      });
+
+      this.el.querySelector('[name="caption"]').value = this.caption || '';
+      this.el.querySelector('[name="title"]').value = this.title || '';
+      this.el.querySelector('[name="type"]').value = this.type || '';
     }
   }, {
     key: 'reset',
     value: function reset() {
+      this.id = false;
+      this.title = "";
+      this.type = "text";
+      this.caption = "";
+
       this.picker.assetUploader.reset();
       this.el.querySelector('[name="caption"]').value = '';
       this.el.querySelector('[name="title"]').value = '';
@@ -834,7 +915,7 @@ module.exports = function () {
       };
       var id = this.id;
       if (!id) {
-        return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE'));
+        return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE THIS'));
       }
 
       var ok = false;
@@ -845,6 +926,7 @@ module.exports = function () {
         ok = res.ok;
         if (ok) {
           popup('deleted post', 'success');
+          navigate('posts');
         } else {
           popup('failed to delete', 'danger');
         }
@@ -870,8 +952,45 @@ var PostList = function () {
   function PostList(el) {
     _classCallCheck(this, PostList);
 
-    this.rows = [];
+    var self = this;
     this.element = el;
+
+    this.enterElement = document.createElement('div');
+    this.enterElement.setAttribute('class', 'level');
+
+    this.label = document.createElement('div');
+    this.label.setAttribute('class', 'level');
+    this.label.innerHTML = "Enter a post ID to edit, or pick from a recent one below";
+    this.input = document.createElement('input');
+    this.input.setAttribute('type', 'text');
+    this.input.setAttribute('class', 'input');
+    this.input.setAttribute('placeholder', '7acbd810-39db-11e7-828d-61ad8758da0c');
+
+    this.button = document.createElement('a');
+    this.button.setAttribute('class', 'button is-primary');
+    this.button.innerHTML = "Edit";
+    this.button.addEventListener('click', function (e) {
+      window.location = '/admin/#post/edit?id=' + self.input.value;
+    });
+
+    this.viewButton = document.createElement('a');
+    this.viewButton.setAttribute('class', 'button');
+    this.viewButton.setAttribute('target', '_top');
+
+    this.viewButton.innerHTML = "View";
+    this.input.addEventListener('change', function (e) {
+      self.viewButton.href = '/post/' + self.input.value + '.html';
+    });
+
+    this.label.appendChild(this.enterElement);
+
+    this.enterElement.appendChild(this.input);
+    this.enterElement.appendChild(this.viewButton);
+    this.enterElement.appendChild(this.button);
+    this.element.appendChild(this.label);
+
+    this.listElement = document.createElement('div');
+    this.element.appendChild(this.listElement);
   }
 
   _createClass(PostList, [{
@@ -880,24 +999,27 @@ var PostList = function () {
       var el = document.createElement('div');
       el.classList.add('level');
       el.innerHTML = '<pre>' + id + '</pre> <a class="button is-default" href="/post/' + id + '.html">View<a><a class="button is-primary" href="#post/edit?id=' + id + '">Edit</a>';
-      this.element.appendChild(el);
-      this.rows.push(el);
+      this.listElement.appendChild(el);
+    }
+  }, {
+    key: 'setIds',
+    value: function setIds(ids) {
+      // faster operation, add multiple IDs
+      var h = '';
+
+      ids.forEach(function (id) {
+        h += '<div class="level"><pre>' + id + '</pre> <a class="button is-default" href="/post/' + id + '.html">View<a><a class="button is-primary" href="#post/edit?id=' + id + '">Edit</a></div>';
+      });
+      this.listElement.innerHTML = h;
     }
   }, {
     key: 'clear',
     value: function clear() {
-      this.rows.forEach(function (el) {
-        if (el.parentElement) {
-          el.parentElement.removeChild(el);
-        }
-      });
-      this.rows = [];
+      this.listElement.innerHTML = "";
     }
   }, {
     key: 'load',
     value: function load() {
-      var _this = this;
-
       var ok = false;
       var self = this;
       fetch('/admin/posts', { credentials: 'include' }).then(function (res) {
@@ -909,10 +1031,7 @@ var PostList = function () {
         }
       }).then(function (data) {
         if (ok) {
-          var self = _this;
-          data.forEach(function (id) {
-            self.addId(id);
-          });
+          self.setIds(data);
         } else {
           popup(data, 'danger', 'Error fetching posts:');
         }
@@ -1150,7 +1269,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
     postCreator.load();
   });
 
-  // html editor
+  var postEditor = null;
+  document.getElementById('post-edit').addEventListener('navigate-to', function () {
+    if (!postEditor) {
+      var el = this.querySelector('.editor');
+      postEditor = new PostEditor(el, { canDelete: true });
+    }
+    var id = window.location.hash.replace(/.*id=/, '');
+    postEditor.load(id);
+  });
+
+  // post list
   var postList = null;
   document.getElementById('posts').addEventListener('navigate-to', function () {
     if (!postList) {
@@ -1172,8 +1301,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   document.getElementById('publish-button').addEventListener('click', publish);
 
   // always navigate to a hash on pageload
-  var page = window.location.hash.replace('#', '').replace(/\//g, '-');
-  navigate(page || 'post-create');
+  navigate();
 }); // end DOM loaded
 
 
@@ -1215,6 +1343,7 @@ module.exports = function initNavigation() {
 
   window.navigate = function navigate(page) {
     var found = false;
+    var page = page || window.location.hash.replace('#', '').replace(/\//g, '-').replace(/\?[\s\S]*/g, '') || 'post-create';
 
     // find matching nav element
     var href = '#' + page.replace(/\-/g, '/');

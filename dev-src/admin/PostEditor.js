@@ -87,6 +87,8 @@ module.exports = class PostEditor{
       this.deleteButton.setAttribute('class',"button is-danger");
       submitP.appendChild(this.deleteButton);
       this.deleteButton.addEventListener('click',e=>{
+        e.preventDefault();
+
         // delet this
         self.delete();
       })
@@ -123,8 +125,8 @@ module.exports = class PostEditor{
     var caption = self.el.querySelector('[name="caption"]').value;
     var title = self.el.querySelector('[name="title"]').value;
     var assets = self.picker.assetUploader.assets;
-    var date = moment().format();
-    var id = Post.prototype.uuid();
+    var date = this.date || moment().format();
+    var id = this.id || Post.prototype.uuid();
     var json = {type,caption,title,assets,date,id};
 
     // validate
@@ -168,10 +170,57 @@ module.exports = class PostEditor{
       this.reset();
       return;
     }
-    console.log('todo: load');
+    this.reset();
+    var ok=false;
+    fetch('/admin/post?id='+id,
+      {
+        headers:{'Content-Type': 'application/json'},
+        credentials: "include"
+      }).then(res=>{
+        ok = res.ok;
+        if (ok){
+          return res.json();
+        }else{
+          popup('Failed to load post','danger','Error');
+        }
+    }).then(data=>{
+      if (ok){
+        this.populate(data);
+      }
+    }).catch(e=>{
+      console.error(e);
+      popup('Failed to load post','danger','Error')
+    });
+
+  }
+
+  populate(data){
+    this.picker.assetUploader.reset();
+    //
+
+    this.caption = data.caption||"";
+    this.id = data.id||false;
+    this.title = data.title||"";
+    this.type = data.type||"text";
+
+    console.log('TODO: load assets');
+    var assets = data.assets || [];
+
+    assets.forEach(a=>{
+      this.picker.assetUploader.addAssetFromHref(a.href);
+    });
+
+    this.el.querySelector('[name="caption"]').value = this.caption||'';
+    this.el.querySelector('[name="title"]').value = this.title||'';
+    this.el.querySelector('[name="type"]').value = this.type||'';
   }
 
   reset(){
+    this.id = false;
+    this.title="";
+    this.type="text";
+    this.caption="";
+
     this.picker.assetUploader.reset();
     this.el.querySelector('[name="caption"]').value ='';
     this.el.querySelector('[name="title"]').value = '';
@@ -181,7 +230,7 @@ module.exports = class PostEditor{
     var callback = callback || function(e){if(e){throw e}}
     var id = this.id;
     if (!id){
-      return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE'))
+      return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE THIS'))
     }
 
     var ok = false;
@@ -193,6 +242,7 @@ module.exports = class PostEditor{
         ok = res.ok;
         if (ok){
           popup('deleted post','success');
+          navigate('posts')
         }else{
           popup('failed to delete','danger');
         }

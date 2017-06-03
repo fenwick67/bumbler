@@ -55,7 +55,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     postCreator.load();
   });
 
-  // html editor
+  var postEditor = null;
+  document.getElementById('post-edit').addEventListener('navigate-to',function(){
+    if (!postEditor){
+      var el = this.querySelector('.editor')
+      postEditor = new PostEditor(el,{canDelete:true });
+    }
+    var id = window.location.hash.replace(/.*id=/,'');
+    postEditor.load(id);
+  });
+
+
+  // post list
   var postList = null;
   document.getElementById('posts').addEventListener('navigate-to',function(){
     if (!postList){
@@ -77,8 +88,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById('publish-button').addEventListener('click',publish);
 
   // always navigate to a hash on pageload
-  var page = window.location.hash.replace('#','').replace(/\//g,'-');
-  navigate(page||'post-create');
+  navigate();
 
 }); // end DOM loaded
 

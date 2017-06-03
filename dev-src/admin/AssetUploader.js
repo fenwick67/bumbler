@@ -29,21 +29,38 @@ module.exports = class AssetUploader {
 
     input.addEventListener('change', function(){
         for (var i = 0; i < this.files.length; i ++){
-          var a = new Asset('/assets/'+this.files[i].name);
-          self.assets.push(a);
-          var thumb = self.previewImage(this.files[i],a);
-          self.thumbnails.push(thumb);
-          self.files.push(this.files[i]);
-          console.log(this.files[i])
+          self.addAssetFromFile(this.files[i]);
         }
     }, false);
 
   }
 
+  addAssetFromFile(file){
+    var self = this;
+    var a = new Asset('/assets/'+file.name);
+    self.assets.push(a);
+    var thumb = self.previewImage(file,a);
+    self.thumbnails.push(thumb);
+    self.files.push(file);
+    console.log(file)
+  }
+
+  addAssetFromHref(href){
+    var self = this;
+    var a = new Asset(href);
+    self.assets.push(a);
+    var thumb = self.previewImage(null,a);
+    self.thumbnails.push(thumb);
+    //self.files.push(this.files[i]);
+    //console.log(this.files[i])
+  }
+
   previewImage(file,asset) {
     var self = this;
 
-    var href = '/assets/' + file.name;
+    var file = file || false;
+
+    var href = file?'/assets/' + file.name:asset.href;
     var thumb = document.createElement("div");
     thumb.classList.add("asset");
     var img = document.createElement("img");
@@ -51,7 +68,13 @@ module.exports = class AssetUploader {
     title.innerHTML = href;
     img.classList.add('thumb'); // Add the class thumbnail to the created div
 
-    img.file = file;
+    if (!file){
+      // read from href
+      img.src=href;
+      console.log(img);
+    }
+
+    if (file){ img.file = file; }
     thumb.appendChild(img);
     thumb.appendChild(title);
 
@@ -74,11 +97,13 @@ module.exports = class AssetUploader {
     thumb.appendChild(delBtn);
     this.gallery.appendChild(thumb);
     // Using FileReader to display the image content
-    var reader = new FileReader();
-    if (isImg(file.name)){
-      reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+    if (file){
+      var reader = new FileReader();
+      if (isImg(file.name)){
+        reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+      }
+      reader.readAsDataURL(file);
     }
-    reader.readAsDataURL(file);
     return thumb;
   }
 

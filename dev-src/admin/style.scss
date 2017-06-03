@@ -106,10 +106,10 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
     position:fixed;
     width:100%;
     height:0;
-    bottom:0;
+    bottom:2em;
     left:0;
-    right:0;
-    padding:2rem;
+    right:-2em;
+    padding:0;
     display:flex;
     flex-direction: column;
     z-index:10;
@@ -119,7 +119,7 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
   // fresh popup
   .popup{
     position:relative;
-    transform:translateZ(0) scale(1);
+    transform:translateX(-2em) translateZ(0) scale(1);
     opacity:0;
     flex:0 1 auto;
     position:relative;
@@ -132,7 +132,7 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
   // being added
   .popup.fadein{
     opacity:1;
-    transform:translateY(6rem) scale(0);
+    transform:translateX(-2em) translateY(6rem) scale(0);
   }
   // being removed
   .popup.fadeout{
