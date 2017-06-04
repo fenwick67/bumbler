@@ -5,11 +5,11 @@ var path = require('path');
 var chalk = require('chalk');
 chalk.enabled = true;
 
-module.exports = ()=>{
+module.exports = (done)=>{
 
   var settingsController = new DiskController({path:path.join(process.cwd(),'bumbler.json')});
   settingsController.load(er=>{
-    if (er){throw er;}
+    if (er){return done(er);}
 
     var settings = settingsController.get();
 
@@ -22,7 +22,7 @@ module.exports = ()=>{
 
 server {
     listen 80;
-    server_name ${settings.siteUrl.slice(0,-1)};
+    server_name ${'*.'+ settings.siteUrl.replace(/.+?(\/\/)(.+?\.)?/,'').slice(0,-1)};
 
     root ${process.cwd()};
 
@@ -37,7 +37,7 @@ server {
         deny all;
     }
 
-    location _bumblersrc{
+    location /_bumblersrc/ {
       deny all;
     }
 
@@ -63,7 +63,7 @@ server {
     fs.writeFileSync('./bumbler-nginx',nginx,'utf8');
     console.log('wrote "bumbler-nginx" NGINX config file. ')
     console.log('copy it to '+chalk.cyan('/etc/nginx/sites-available/bumbler-nginx')+' and put a symlink in '+chalk.cyan('/etc/nginx/sites-enabled')+' to make NGINX work.')
-    return
+    return done(null);
   })
 
 }

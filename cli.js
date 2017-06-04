@@ -21,10 +21,9 @@ USAGE:
           --open => open it in a web browser when starting, for convenience
 
 
-  The author recommends making a dir, running "bumbler init" then "bumbler hash" then "bumbler" for the normal experience.
+  The author recommends making a dir, "cd" into it, then run "bumbler init" then "bumbler" for easy setup.
 
   For better performance, set up NGINX.  Run "bumbler nginx" to get that set up.
-  For better stability, use pm2
 
   `
 
@@ -36,11 +35,13 @@ if (argv.help || argv.h || (cmd && cmd.toLowerCase() == 'help') ){
 if (cmd && cmd.toLowerCase() == 'init'){
   init();
 }else if (cmd && cmd.toLowerCase() == 'nginx'){
-  nginx();
-  process.exit(0);
+  nginx(e=>{
+    if(e){throw e}    
+    process.exit(0);
+  });
 }else if (cmd && cmd.toLowerCase() == 'hash'){
   hash(e=>{
-    if (e){throw e}    
+    if (e){throw e}
     process.exit(0);
   });
 }else{
