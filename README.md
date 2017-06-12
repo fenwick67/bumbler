@@ -19,7 +19,7 @@ A straightforward, DIY CMS for photos, images, statuses, audio, blog posts or wh
 step 0: install Node.js v7+ and NPM, and open a terminal.
 
 1. `npm install -g bumbler`
-2. Create a new folder for your project
+2. Create a new folder for your site
 3. `cd` into your new site folder
 4. Run `bumbler init` inside it and follow the directions
   - **DO NOT** re-use a password for the admin interface.  Seriously.  This software is pre-alpha and there are probably security holes.
@@ -34,7 +34,7 @@ If you have an extra $7/month, you can host it on DigitalOcean ($5), with backup
 * Install nodejs v7 using the instructions here:  https://github.com/nodesource/distributions#deb
 * When running `npm install`, use the `--production` flag to reduce the dependencies and install time
 * Use HTTPS.  You can sign up for CloudFlare's free plan, which includes free auto-renewing certificates.
-* You can use PM2 to easily manage app startup and shutdown
+* You can use [PM2](http://pm2.keymetrics.io/) to easily manage app startup and shutdown
   - use `pm2 startup` to install startup scripts
   - use only one process (because of in-memory session storage)
   - use `pm2 save` to save your running process
@@ -46,32 +46,29 @@ Bumblr was *made to work **with or without** a serverside application*.  You can
 
 The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/
 
-## TODO items:
+## TODO Items:
 
-### High priority
+### High Priority
 
-* let user delete posts
-  - [x] API
-  - [ ] UI
+Social features:
 
-* let user edit posts
-  - [x] API
-  - [ ] UI
+* [ ] Create JSON scheme for replying and sharing
+* [ ] Share a url and parse out H-entry and/or opengraph info in the post interface
+* [ ] bookmarklet / plugin to share from browser
+* [ ] hit their Webmention URL when sharing
 
-### Medium priority
+### Medium Priority
 
-* follow other users' RSS feeds
-* repost
-  - webmention them
-  - create post
-    + include their content (from h-card or atom feed)
-    + be sure to have a different schema and/or template.
+After implementing social features:
 
-### Low priority
+* [ ] Put a RSS feed reader into the admin interface
+  - [ ] I can reuse some work from mastofeed for this
+
+### Low Priority
 
 plugin system
 
 ## Screenshots
 
-![screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/screenshot.png)
+![screenshot](https://github.com/fenwick67/bumbler-themes/raw/master/masonry.png)
 ![admin screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png)
