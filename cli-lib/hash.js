@@ -31,7 +31,7 @@ IMPORTANT: This is your bcrypt hash.  Set it as ${chalk.bold('BUMBLERHASH')} in 
 or save it as ${chalk.bold('.bumblerhash')} in your project directory: `));
       console.log(result);
       console.log('\r\n')
-      done(null);
+      done(null,result);
     })
   });
 

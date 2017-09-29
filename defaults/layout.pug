@@ -22,11 +22,11 @@ html
         .navbar-menu#drawer
           .navbar-start
             a.navbar-item(href="/atom.xml") Atom Feed
-          .navbar-end
+          .navbar-end          
+          if (site.categories && site.categories.length > 1)
             .navbar-item Categories:
-            if (site.categories && site.categories.length > 1)
-              for cat in site.categories
-                a.navbar-item.is-tab(href="/category/"+cat class=cat==page.category?"is-active":"")= cat
+            for cat in site.categories
+              a.navbar-item.is-tab(href="/category/"+cat class=cat==page.category?"is-active":"")= cat
 
     section.hero
       .hero-body
