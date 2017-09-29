@@ -1,107 +1,107 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
-<title>kitties</title>
-<subtitle>kitties, birdies, doggoes, and more!</subtitle>
-<updated>2017-09-28T19:26:41-05:00</updated>
+<title>KBnD</title>
+<subtitle>kitties, birdies, doggos, and more!</subtitle>
+<updated>2017-09-28T21:41:57-05:00</updated>
 <logo>/assets/avatar.png</logo>
 <author>
 <id>http://localhost:8000/</id>
 <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
 <uri>http://localhost:8000/</uri>
-<name>kitties</name>
-<summary type="html">&lt;p&gt;kitties, birdies, doggoes, and more!&lt;/p&gt;</summary>
+<name>The Authors</name>
+<summary type="html">&lt;p&gt;kitties, birdies, doggos, and more!&lt;/p&gt;</summary>
 <link rel="alternate" type="text/html" href="http://localhost:8000/"/>
 <link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
-<poco:displayName>kitties</poco:displayName>
-<poco:note>kitties, birdies, doggoes, and more!</poco:note>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more!</poco:note>
 </author>
 <link rel="alternate" type="text/html" href="http://localhost:8000/"/>
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/feed.atom"/>
 <entry>
 <id>01BV5FT3P95S4XFWAKTMEJY6Q6</id>
-<published>2017-09-28T19:15:35-05:00</published>
-<updated>2017-09-28T19:15:35-05:00</updated>
-<title>New Post on kitties</title>
+<published>2017-09-28T20:34:31-05:00</published>
+<updated>2017-09-28T20:34:31-05:00</updated>
+<title>New Post on KBnD</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/2ca9c9f0dfc9956b.jpg&#34;&gt;&lt;img src=&#34;/assets/2ca9c9f0dfc9956b.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/2ca9c9f0dfc9956b.jpg"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BV5FT3P95S4XFWAKTMEJY6Q6.html"/>
 </entry>
 <entry>
 <id>01BJCZVHC1ZK2TK1NB0EWH5K8S</id>
-<published>2017-06-11T20:49:24-05:00</published>
-<updated>2017-06-11T20:49:24-05:00</updated>
-<title>New Post on kitties</title>
+<published>2017-09-28T20:34:26-05:00</published>
+<updated>2017-09-28T20:34:26-05:00</updated>
+<title>New Post on KBnD</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/bird on skateboard.jpg&#34;&gt;&lt;img src=&#34;/assets/bird on skateboard.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/bird%20on%20skateboard.jpg"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZVHC1ZK2TK1NB0EWH5K8S.html"/>
 </entry>
 <entry>
 <id>01BJCZVCN70YK0R0MCYD72W41T</id>
-<published>2017-06-11T20:49:19-05:00</published>
-<updated>2017-06-11T20:49:19-05:00</updated>
-<title>New Post on kitties</title>
+<published>2017-09-28T20:35:01-05:00</published>
+<updated>2017-09-28T20:35:01-05:00</updated>
+<title>New Post on KBnD</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/g2VlV.jpg&#34;&gt;&lt;img src=&#34;/assets/g2VlV.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/g2VlV.jpg"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZVCN70YK0R0MCYD72W41T.html"/>
 </entry>
 <entry>
 <id>01BJCZV9GE03D2Y9F4MKGM643C</id>
-<published>2017-06-11T20:49:16-05:00</published>
-<updated>2017-06-11T20:49:16-05:00</updated>
-<title>New Post on kitties</title>
+<published>2017-09-28T20:34:16-05:00</published>
+<updated>2017-09-28T20:34:16-05:00</updated>
+<title>New Post on KBnD</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/kooky.png&#34;&gt;&lt;img src=&#34;/assets/kooky.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/png" href="http://localhost:8000/assets/kooky.png"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZV9GE03D2Y9F4MKGM643C.html"/>
 </entry>
 <entry>
 <id>01BJCZTZTG26W91NX8ASGCWCMD</id>
-<published>2017-06-11T20:49:06-05:00</published>
-<updated>2017-06-11T20:49:06-05:00</updated>
-<title>New Post on kitties</title>
+<published>2017-09-28T20:34:08-05:00</published>
+<updated>2017-09-28T20:34:08-05:00</updated>
+<title>New Post on KBnD</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/o rly.jpg&#34;&gt;&lt;img src=&#34;/assets/o rly.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/o%20rly.jpg"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZTZTG26W91NX8ASGCWCMD.html"/>
 </entry>
 <entry>
 <id>01BJCTAYSSR4T6K99WCTSBTFMG</id>
-<published>2017-06-11T20:52:23-05:00</published>
-<updated>2017-06-11T20:52:23-05:00</updated>
-<title>New Post on kitties</title>
+<published>2017-09-28T20:34:01-05:00</published>
+<updated>2017-09-28T20:34:01-05:00</updated>
+<title>New Post on KBnD</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/KERfS.gif&#34;&gt;&lt;img src=&#34;/assets/KERfS.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/Kl7in.jpg&#34;&gt;&lt;img src=&#34;/assets/Kl7in.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;dolphins are the birbs of the sea&lt;/p&gt;
 &lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/KERfS.gif"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/Kl7in.jpg"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCTAYSSR4T6K99WCTSBTFMG.html"/>
 </entry>
 <entry>
 <id>01BJCSYN4CWKMMMD9ST1XXCRF2</id>
-<published>2017-06-11T20:51:58-05:00</published>
-<updated>2017-06-11T20:51:58-05:00</updated>
+<published>2017-09-28T20:33:52-05:00</published>
+<updated>2017-09-28T20:33:52-05:00</updated>
 <title>🐦🐦🐦🐔🐔🐔</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
 <content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;🐦🐦🐦🐔🐔🐔&lt;/h1&gt;&lt;a href=&#34;/assets/burds21.jpg&#34;&gt;&lt;img src=&#34;/assets/burds21.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/c6v8R.jpg&#34;&gt;&lt;img src=&#34;/assets/c6v8R.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/extreme_double_bird.jpg&#34;&gt;&lt;img src=&#34;/assets/extreme_double_bird.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg&#34;&gt;&lt;img src=&#34;/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;asdfasfdasdf&lt;/p&gt;
 &lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="kitties"/>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/burds21.jpg"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/c6v8R.jpg"/>
 <link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/extreme_double_bird.jpg"/>

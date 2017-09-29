@@ -2,21 +2,39 @@
 html
   head
     title= site.title
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     style(type="text/css") .gallery{display:flex;text-align:center;justify-content:space-between;flex-direction:column}.gallery>*{flex:1 1 auto}
     <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png" />
     meta(name="description" content=site.description)
   body
-    section.hero.is-primary
+    .container
+      nav.navbar
+        .navbar-brand
+          a.navbar-item(href="/")
+            img(src=site.avatar)
+            span= site.title
+          button.button.navbar-burger
+            span
+            span
+            span
+        .navbar-menu
+          .navbar-start
+            a.navbar-item(href="/atom.xml") Atom Feed
+          .navbar-end
+            .navbar-item Categories:
+            if (site.categories && site.categories.length > 1)
+              for cat in site.categories
+                a.navbar-item.is-tab(href="/category/"+cat class=cat==page.category?"is-active":"")= cat
+
+    section.hero
       .hero-body
         .columns
           .column.is-0-mobile.is-2-tablet.is-3-desktop
           .column.is-12-mobile.is-8-tablet.is-6-desktop
             .media
               .media-left.centered
-                img(src=site.avatar).image.is-64x64
               .media-content
                 h1.title
                   a(href="/")= site.title
@@ -26,6 +44,9 @@ html
         .columns
           .column.is-0-mobile.is-2-tablet.is-3-desktop
           .column.is-12-mobile.is-8-tablet.is-6-desktop
+            if page.posts.length == 0
+              .content
+                p Sorry, this page doesn't have any posts yet :(
             each post in page.posts
               section.card.h-entry
                 header.card-header
@@ -48,7 +69,20 @@ html
               br
           .column.is-0-mobile.is-2-tablet.is-3-desktop
 
-      if page.number
-        footer.pagination
-          a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous.button.is-primary Previous page
-          a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next.button.is-primary Next page
+    if page.number
+      footer.footer
+        .container
+          .pagination.is-large
+            a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous.button Previous page
+            a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next.button Next page
+          .content.has-text-centered
+            p All content ©
+              strong #{site.authorName}
+              |  #{new Date().getFullYear()}.
+            p
+              a(href="https://github.com/fenwick67/bumbler") Bumbler
+              |  flat CMS by
+              b  Drew Harwell
+
+
+  script(type="text/javascript") document.addEventListener("DOMContentLoaded",function(){var a=Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"),0);0<a.length&&a.forEach(function(b){b.addEventListener("click",function(){var a=document.getElementById(b.dataset.target);b.classList.toggle("is-active");a.classList.toggle("is-active")})})});

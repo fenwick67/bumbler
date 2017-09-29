@@ -1,12 +1,12 @@
 {
-  "authorName": "kitties",
+  "authorName": "The Authors",
   "avatar": "/assets/avatar.png",
   "categories": "kitties,birdies,doggos",
-  "description": "kitties, birdies, doggoes, and more!",
+  "description": "kitties, birdies, doggos, and more!",
   "metadata": "{}",
   "postsPerPage": "3",
   "publishBranch": "",
   "publishUrl": "",
   "siteUrl": "http://localhost:8000/",
-  "title": "kitties"
+  "title": "KBnD"
 }
