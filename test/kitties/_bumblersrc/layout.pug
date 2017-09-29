@@ -15,11 +15,11 @@ html
           a.navbar-item(href="/")
             img(src=site.avatar)
             span= site.title
-          button.button.navbar-burger
+          button.button.navbar-burger#burger
             span
             span
             span
-        .navbar-menu
+        .navbar-menu#drawer
           .navbar-start
             a.navbar-item(href="/atom.xml") Atom Feed
           .navbar-end
@@ -85,4 +85,4 @@ html
               b  Drew Harwell
 
 
-  script(type="text/javascript") document.addEventListener("DOMContentLoaded",function(){var a=Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"),0);0<a.length&&a.forEach(function(b){b.addEventListener("click",function(){var a=document.getElementById(b.dataset.target);b.classList.toggle("is-active");a.classList.toggle("is-active")})})});
+  script(type="text/javascript") document.addEventListener("DOMContentLoaded",function(){document.getElementById('burger').addEventListener('click',function(){document.getElementById('drawer').classList.toggle('is-active');this.classList.toggle('is-active')})});

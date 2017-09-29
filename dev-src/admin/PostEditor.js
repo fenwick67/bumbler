@@ -154,29 +154,31 @@ module.exports = class PostEditor{
 
   // load from browser by id
   load(id){
-    this.reset();
-    if (!id){
-      return;
-    }
-    var ok=false;
-    fetch('/admin/post?id='+id,
-      {
-        headers:{'Content-Type': 'application/json'},
-        credentials: "include"
-      }).then(res=>{
-        ok = res.ok;
-        if (ok){
-          return res.json();
-        }else{
-          popup('Failed to load post','danger','Error');
-        }
-    }).then(data=>{
-      if (ok){
-        this.populate(data);
+    this.reset(er=>{
+      if (!id){
+        return;
       }
-    }).catch(e=>{
-      console.error(e);
-      popup('Failed to load post','danger','Error')
+      var ok=false;
+      fetch('/admin/post?id='+id,
+        {
+          headers:{'Content-Type': 'application/json'},
+          credentials: "include"
+        }).then(res=>{
+          ok = res.ok;
+          if (ok){
+            return res.json();
+          }else{
+            popup('Failed to load post','danger','Error');
+          }
+      }).then(data=>{
+        if (ok){
+          this.populate(data);
+        }
+      }).catch(e=>{
+        console.error(e);
+        popup('Failed to load post','danger','Error')
+      });
+
     });
 
   }
@@ -202,7 +204,8 @@ module.exports = class PostEditor{
     this.el.querySelector('[name="category"]').value = this.category||'';
   }
 
-  reset(){
+  reset(done){
+    var done = done || function(e){if (e) throw e};
     this.id = false;
     this.title="";
     this.category="";
@@ -211,7 +214,7 @@ module.exports = class PostEditor{
     this.picker.assetUploader.reset();
     this.el.querySelector('[name="caption"]').value ='';
     this.el.querySelector('[name="title"]').value = '';
-    this.updateCategories();
+    this.updateCategories(done);
 
   }
 
@@ -241,9 +244,11 @@ module.exports = class PostEditor{
 
   }
 
-  updateCategories(){
+  updateCategories(done){
+    var done = done || function(e){if (e) throw e};
     loadSettings((er,settings)=>{
       if (er){
+        done(er);
         return window.popup('Failed to load settings!  You should reload and try again :(','danger')
       }
       var categories = [];
@@ -267,7 +272,11 @@ module.exports = class PostEditor{
           </span>
         </p>
         </label>`;
+
+      done(null);
+
     });
+
   }
 
 

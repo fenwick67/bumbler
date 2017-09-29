@@ -844,28 +844,29 @@ module.exports = function () {
     value: function load(id) {
       var _this = this;
 
-      this.reset();
-      if (!id) {
-        return;
-      }
-      var ok = false;
-      fetch('/admin/post?id=' + id, {
-        headers: { 'Content-Type': 'application/json' },
-        credentials: "include"
-      }).then(function (res) {
-        ok = res.ok;
-        if (ok) {
-          return res.json();
-        } else {
+      this.reset(function (er) {
+        if (!id) {
+          return;
+        }
+        var ok = false;
+        fetch('/admin/post?id=' + id, {
+          headers: { 'Content-Type': 'application/json' },
+          credentials: "include"
+        }).then(function (res) {
+          ok = res.ok;
+          if (ok) {
+            return res.json();
+          } else {
+            popup('Failed to load post', 'danger', 'Error');
+          }
+        }).then(function (data) {
+          if (ok) {
+            _this.populate(data);
+          }
+        }).catch(function (e) {
+          console.error(e);
           popup('Failed to load post', 'danger', 'Error');
-        }
-      }).then(function (data) {
-        if (ok) {
-          _this.populate(data);
-        }
-      }).catch(function (e) {
-        console.error(e);
-        popup('Failed to load post', 'danger', 'Error');
+        });
       });
     }
   }, {
@@ -894,7 +895,10 @@ module.exports = function () {
     }
   }, {
     key: 'reset',
-    value: function reset() {
+    value: function reset(done) {
+      var done = done || function (e) {
+        if (e) throw e;
+      };
       this.id = false;
       this.title = "";
       this.category = "";
@@ -903,7 +907,7 @@ module.exports = function () {
       this.picker.assetUploader.reset();
       this.el.querySelector('[name="caption"]').value = '';
       this.el.querySelector('[name="title"]').value = '';
-      this.updateCategories();
+      this.updateCategories(done);
     }
   }, {
     key: 'delete',
@@ -936,11 +940,15 @@ module.exports = function () {
     }
   }, {
     key: 'updateCategories',
-    value: function updateCategories() {
+    value: function updateCategories(done) {
       var _this3 = this;
 
+      var done = done || function (e) {
+        if (e) throw e;
+      };
       loadSettings(function (er, settings) {
         if (er) {
+          done(er);
           return window.popup('Failed to load settings!  You should reload and try again :(', 'danger');
         }
         var categories = [];
@@ -957,6 +965,8 @@ module.exports = function () {
         });
 
         _this3.categoryField.innerHTML = '\n        <label class="label">Category\n        <p class="control">\n          <span class="select">\n            <select name="category">\n              ' + catHtml + '\n            </select>\n          </span>\n        </p>\n        </label>';
+
+        done(null);
       });
     }
   }]);
@@ -16091,7 +16101,7 @@ module.exports={
         "spec": ">=6.0.0 <7.0.0",
         "type": "range"
       },
-      "C:\\Users\\Drew\\workspace\\bumbler\\node_modules\\browserify-sign"
+      "C:\\Users\\dh15639\\personal\\bumbler\\node_modules\\browserify-sign"
     ]
   ],
   "_from": "elliptic@>=6.0.0 <7.0.0",
@@ -16126,7 +16136,7 @@ module.exports={
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
   "_shrinkwrap": null,
   "_spec": "elliptic@^6.0.0",
-  "_where": "C:\\Users\\Drew\\workspace\\bumbler\\node_modules\\browserify-sign",
+  "_where": "C:\\Users\\dh15639\\personal\\bumbler\\node_modules\\browserify-sign",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
