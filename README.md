@@ -52,10 +52,10 @@ The only caveat here is that right now it needs to be the root of the domain.  S
 
 Social features:
 
-* [ ] Create JSON scheme for replying and sharing
+* [ ] Create JSON scheme for replying and sharing (reply contexts)
 * [ ] Share a url and parse out H-entry and/or opengraph info in the post interface
-* [ ] bookmarklet / plugin to share from browser
-* [ ] hit their Webmention URL when sharing
+* [ ] bookmarklet / plugin to share from browser.  Create an API route to redirect for sharing.
+* [ ] hit a peer's Webmention URL when sharing
 
 ### Medium Priority
 

@@ -2,6 +2,7 @@ var Post = require('../../lib/Post')
 var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
 var moment = require('moment');
+var loadSettings = require('./loadSettings');
 
 module.exports = class PostEditor{
   constructor(el,options){
@@ -14,7 +15,7 @@ module.exports = class PostEditor{
     /*
       id
       date
-      type (text, link, embed, audio, video, image)
+      category
       caption
       permalink (from id)
       assets (if audio or video or image)
@@ -29,21 +30,8 @@ module.exports = class PostEditor{
     }
 
     this.form = document.createElement('form');
-    var types = ['text', 'link', 'embed', 'audio', 'video', 'image'];
-    this.typeField = field();
-    this.typeField.innerHTML = `
-      <label class="label">Post Type
-      <p class="control">
-        <span class="select">
-          <select name="type">
-            <option value="image" >image</option>
-            <option value="audio" >audio</option>
-            <option value="video" >video</option>
-            <option value="text" >text</option>
-          </select>
-        </span>
-      </p>
-      </label>`;
+    this.categoryField = field();
+    // categoryField will be updated in reset()
 
     this.captionField = field();
     this.captionField.innerHTML = `
@@ -76,7 +64,7 @@ module.exports = class PostEditor{
     this.picker = new AssetPicker(this.pickerEl);
 
     this.form.appendChild(this.titleField);
-    this.form.appendChild(this.typeField);
+    this.form.appendChild(this.categoryField);
     this.form.appendChild(this.pickerEl);
     this.form.appendChild(this.captionField);
     this.form.appendChild(this.submitGroup);
@@ -121,13 +109,13 @@ module.exports = class PostEditor{
     //todo validate the form
 
     //create json
-    var type = self.el.querySelector('[name="type"]').value;
+    var category = self.el.querySelector('[name="category"]').value;
     var caption = self.el.querySelector('[name="caption"]').value;
     var title = self.el.querySelector('[name="title"]').value;
     var assets = self.picker.assetUploader.assets;
     var date = this.date || moment().format();
     var id = this.id || Post.prototype.uuid();
-    var json = {type,caption,title,assets,date,id};
+    var json = {category,caption,title,assets,date,id};
 
     // validate
     var problems = Post.prototype.validate(json);
@@ -166,11 +154,10 @@ module.exports = class PostEditor{
 
   // load from browser by id
   load(id){
+    this.reset();
     if (!id){
-      this.reset();
       return;
     }
-    this.reset();
     var ok=false;
     fetch('/admin/post?id='+id,
       {
@@ -201,7 +188,7 @@ module.exports = class PostEditor{
     this.caption = data.caption||"";
     this.id = data.id||false;
     this.title = data.title||"";
-    this.type = data.type||"text";
+    this.category = data.category||"";
 
     console.log('TODO: load assets');
     var assets = data.assets || [];
@@ -212,18 +199,20 @@ module.exports = class PostEditor{
 
     this.el.querySelector('[name="caption"]').value = this.caption||'';
     this.el.querySelector('[name="title"]').value = this.title||'';
-    this.el.querySelector('[name="type"]').value = this.type||'';
+    this.el.querySelector('[name="category"]').value = this.category||'';
   }
 
   reset(){
     this.id = false;
     this.title="";
-    this.type="text";
+    this.category="";
     this.caption="";
 
     this.picker.assetUploader.reset();
     this.el.querySelector('[name="caption"]').value ='';
     this.el.querySelector('[name="title"]').value = '';
+    this.updateCategories();
+
   }
 
   delete(callback){
@@ -250,6 +239,35 @@ module.exports = class PostEditor{
       popup(e,'danger','Error Deleting:');
     });
 
+  }
+
+  updateCategories(){
+    loadSettings((er,settings)=>{
+      if (er){
+        return window.popup('Failed to load settings!  You should reload and try again :(','danger')
+      }
+      var categories = [];
+
+      if (typeof settings.categories == 'string'){
+        categories = settings.categories.split(',');
+      }else if (Array.isArray(settings.categories)){
+        categories = settings.categories;
+      }
+
+      var catHtml = '';
+      categories.forEach(c=>catHtml+=`<option value="${c}">${c}</option>`);
+
+      this.categoryField.innerHTML = `
+        <label class="label">Category
+        <p class="control">
+          <span class="select">
+            <select name="category">
+              ${catHtml}
+            </select>
+          </span>
+        </p>
+        </label>`;
+    });
   }
 
 

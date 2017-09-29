@@ -39,7 +39,10 @@ html
                     br
                     .content!= post.caption
                 footer.card-footer
-                  p.card-footer-item.dt-published Posted #{post.englishDate}
+                  p.card-footer-item
+                    span.dt-published Posted #{post.englishDate}
+                    if post.category
+                      span &nbsp;in #{post.category}
                   p.card-footer-item
                     a(href=post.permalink) Permalink 🔗
               br

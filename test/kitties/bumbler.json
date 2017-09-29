@@ -1,11 +1,12 @@
 {
-  "metadata": "{}",
-  "title": "kitties",
-  "description": "kitties",
   "authorName": "kitties",
   "avatar": "/assets/avatar.png",
-  "postsPerPage": "10",
+  "categories": "kitties,birdies,doggos",
+  "description": "kitties, birdies, doggoes, and more!",
+  "metadata": "{}",
+  "postsPerPage": "3",
   "publishBranch": "",
   "publishUrl": "",
-  "siteUrl": "http://localhost:8000/"
+  "siteUrl": "http://localhost:8000/",
+  "title": "kitties"
 }

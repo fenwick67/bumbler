@@ -1,6 +1,7 @@
 // manage settings
 
 var _ = require('lodash');
+var loadSettings = require('./loadSettings');
 
 module.exports = class SettingsManager {
   constructor(el){
@@ -11,6 +12,7 @@ module.exports = class SettingsManager {
       title:"Title",
       postsPerPage:"Posts per Page",
       metadata:"Metadata (json)",
+      categories:"Categories (comma seperated with no spaces)",
       description:"Site Description",
       authorName:"Author Name",
       avatar:"Avatar URL",
@@ -92,12 +94,11 @@ module.exports = class SettingsManager {
 
   }
   load(alert){
-    var ok = false;
-    fetch('/admin/settings',{credentials: "include"}).then(res=>{
-      ok = res.ok;
-      return res.json();
-    }).then(json=>{
-      var formData = _.clone(json);
+
+    loadSettings((er,formData)=>{
+      if (er){
+        return window.popup(er,'danger','Error fetching settings')
+      }
       var parent = this.form.parentElement;
       parent.removeChild(this.form);
 
@@ -107,9 +108,7 @@ module.exports = class SettingsManager {
         window.popup('Reverted settings to last save.','warning')
       }
 
-    }).catch(e=>{
-      popup(e,'danger','Error fetching settings')
-    })
+    });
 
   }
 

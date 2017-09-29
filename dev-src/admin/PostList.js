@@ -15,7 +15,7 @@ class PostList {
     this.input = document.createElement('input');
     this.input.setAttribute('type','text');
     this.input.setAttribute('class','input');
-    this.input.setAttribute('placeholder','7acbd810-39db-11e7-828d-61ad8758da0c');
+    this.input.setAttribute('placeholder','01BJCTAYSSR4T6K99WCTSBTFMG');
 
     this.button = document.createElement('a');
     this.button.setAttribute('class','button is-primary');

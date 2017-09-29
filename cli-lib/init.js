@@ -49,7 +49,8 @@ module.exports = function(){
     postsPerPage:'10',
     publishBranch: "",
     publishUrl: "",
-    siteUrl:"http://localhost:8000/"
+    siteUrl:"http://localhost:8000/",
+    categories:""
   }
   var json = {};
 
