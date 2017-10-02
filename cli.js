@@ -36,7 +36,7 @@ if (cmd && cmd.toLowerCase() == 'init'){
   init();
 }else if (cmd && cmd.toLowerCase() == 'nginx'){
   nginx(e=>{
-    if(e){throw e}    
+    if(e){throw e}
     process.exit(0);
   });
 }else if (cmd && cmd.toLowerCase() == 'hash'){
