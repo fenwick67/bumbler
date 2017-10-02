@@ -191,6 +191,9 @@ module.exports = class PostEditor{
     this.id = data.id||false;
     this.title = data.title||"";
     this.category = data.category||"";
+    if (data.date){
+      this.date = data.date;
+    }
 
     console.log('TODO: load assets');
     var assets = data.assets || [];

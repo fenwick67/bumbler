@@ -881,6 +881,9 @@ module.exports = function () {
       this.id = data.id || false;
       this.title = data.title || "";
       this.category = data.category || "";
+      if (data.date) {
+        this.date = data.date;
+      }
 
       console.log('TODO: load assets');
       var assets = data.assets || [];
@@ -16101,7 +16104,7 @@ module.exports={
         "spec": ">=6.0.0 <7.0.0",
         "type": "range"
       },
-      "C:\\Users\\dh15639\\personal\\bumbler\\node_modules\\browserify-sign"
+      "C:\\Users\\Drew\\workspace\\bumbler\\node_modules\\browserify-sign"
     ]
   ],
   "_from": "elliptic@>=6.0.0 <7.0.0",
@@ -16136,7 +16139,7 @@ module.exports={
   "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
   "_shrinkwrap": null,
   "_spec": "elliptic@^6.0.0",
-  "_where": "C:\\Users\\dh15639\\personal\\bumbler\\node_modules\\browserify-sign",
+  "_where": "C:\\Users\\Drew\\workspace\\bumbler\\node_modules\\browserify-sign",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
