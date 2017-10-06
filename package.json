@@ -1,12 +1,11 @@
 {
   "name": "bumbler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "tags": [
     "cms",
     "blog",
     "microblog",
-    "atom",
-    "webfinger"
+    "atom"
   ],
   "description": "A DIY, filesystem-based CMS for photos, music, microblogging, or whatever",
   "main": "cli.js",
