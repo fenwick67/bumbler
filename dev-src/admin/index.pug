@@ -3,15 +3,15 @@
     head
       title Bumbler Admin
       style
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no">
       link(rel="stylesheet" type="text/css" href="./style.css")
 
-    - var menuCategories = ['quick actions','posts','files','general']
-    - var menuItems = {"quick actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'<b>&#60;&#47;&#62;</b> Edit Site Template',href:"#html"},{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"}]}
+    - var menuCategories = ['actions','posts','files','general']
+    - var menuItems = {"actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"},{title:'<b>&#60;&#47;&#62;</b> Theme',href:"#html"}]}
     body
       .sidebar.menu#sidebar
         li.big
-          a(href="#") Bumbler Admin
+          a(href="#") Bumbler
         each category in menuCategories
           p.menu-label= category
           ul.menu-list

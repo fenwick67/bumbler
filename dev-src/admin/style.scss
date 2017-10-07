@@ -142,8 +142,8 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
   }
   .thumb{
     display:inline-block;
-    width:150px;
-    height:100px;
+    max-height:100px;
+    max-width:150px;
     border:solid 1px black;
   }
   .asset{
