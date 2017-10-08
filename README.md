@@ -70,5 +70,5 @@ plugin system
 
 ## Screenshots
 
-![screenshot](https://github.com/fenwick67/bumbler-themes/raw/master/masonry.png)
+![screenshot](https://github.com/fenwick67/bumbler-themes/raw/master/screenshot.png)
 ![admin screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png)
