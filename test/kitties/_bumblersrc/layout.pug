@@ -29,7 +29,7 @@ html
               for cat in site.categories
                 a.navbar-item.is-tab(href="/category/"+cat class=cat==page.category?"is-active":"")= _.capitalize(cat)
 
-    section.hero
+    section.hero.is-primary
       .hero-body
         .columns
           .column.is-0-mobile.is-2-tablet.is-3-desktop
@@ -37,20 +37,18 @@ html
             .media
               .media-left.centered
               .media-content
-                if page.category || page.number != 1
-                  nav.breadcrumb.is-large
-                    ul
+                nav.breadcrumb.is-large
+                  ul
+                    li
+                      a(href="/")= site.title
+                    if page.category
                       li
-                        a(href="/")= site.title
-                      if page.category
-                        li
-                          a(href=".")= _.capitalize(page.category)
-                      if page.number && page.number != 1
-                        li
-                          a(href="#")= page.number
-                h1.title
-                  a(href="/")= site.title
+                        a(href=".")= _.capitalize(page.category)
+                    if page.number && page.number != 1
+                      li
+                        a(href="#")= page.number
                 p= site.description
+
     section.section
       .container
         .columns
@@ -73,20 +71,47 @@ html
                     .content!= post.caption
                 footer.card-footer
                   p.card-footer-item
-                    span.dt-published Posted #{post.englishDate}
-                    if post.category
-                      span &nbsp;in #{post.category}
+                    span
+                      span.dt-published Posted #{post.englishDate}
+                      if post.category
+                        span  in 
+                          a(href="/category/"+post.category)= post.category
                   p.card-footer-item
                     a(href=post.permalink) Permalink 🔗
               br
           .column.is-0-mobile.is-2-tablet.is-3-desktop
 
+    // pagination
+    .container.section
+      .pagination
+        if page.number && (page.links.nextPage || page.links.previousPage)
+          a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous.button Previous
+          a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next.button Next page
+          if page.number
+            ul.pagination-list
+              if page.number >= 3
+                li
+                  a(href=page.links.firstPage).pagination-link= 1
+              if page.number >= 4
+                li
+                  .pagination-ellipsis &hellip;
+              if page.links.previousPage
+                li
+                  a(href=page.links.previousPage).pagination-link= page.number-1
+              li
+                a(href='#').pagination-link.is-current= page.number
+              if page.links.nextPage
+                li
+                  a(href=page.links.nextPage).pagination-link= page.number + 1
+              if page.number < site.pageCount - 2
+                li
+                  .pagination-ellipsis &hellip;
+              if page.number < site.pageCount - 1
+                li
+                  a(href=page.links.lastPage).pagination-link= site.pageCount
+    // footer
     footer.footer
       .container
-        if page.number && (page.links.nextPage || page.links.previousPage)
-          .pagination.is-large
-            a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous.button Previous page
-            a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next.button Next page
         .content.has-text-centered
           p All content ©
             strong #{site.authorName}

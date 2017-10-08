@@ -8,16 +8,33 @@ module.exports = class AssetUploader {
     this.files = [];
     this.thumbnails = [];
 
+    var div = document.createElement('div');
+
+    ['file','has-name','is-boxed'].forEach(c=>{
+      div.classList.add(c);
+    });
+
     var label = document.createElement('label');
-    label.innerHTML = "Upload Files"
-    label.classList.add('label');
+    label.classList.add('file-label');
 
     var input = document.createElement('input');
-    input.classList.add('box')
     input.setAttribute('type','file')
-    input.setAttribute('multiple','multiple')
-    element.appendChild(label);
-    element.appendChild(input)
+    input.setAttribute('multiple','multiple');
+    input.classList.add('file-input');
+    div.appendChild(label);
+    label.appendChild(input);
+
+    var s = document.createElement('span');
+    s.classList.add('file-cta');
+    s.innerHTML = `<span class="file-icon">
+        📁︎🢁
+      </span>
+      <span class="file-label">
+        Upload files…
+      </span>`
+    label.appendChild(s);
+
+    element.appendChild(div);
 
     self.input = input;
 
@@ -26,12 +43,33 @@ module.exports = class AssetUploader {
     gallery.setAttribute('class','gallery');
     element.appendChild(gallery);
 
-
     input.addEventListener('change', function(){
         for (var i = 0; i < this.files.length; i ++){
           self.addAssetFromFile(this.files[i]);
         }
     }, false);
+
+
+    var cancelDrag = function(){
+      div.style = "";
+      return false
+    }
+    div.ondragexit = div.ondragend = div.ondragleave = cancelDrag;
+
+    div.ondrop = function(event){
+      event.preventDefault();
+      cancelDrag();
+      var files = event.dataTransfer.files;
+      for (var i = 0; i < files.length; i ++){
+        self.addAssetFromFile(files[i]);
+      }
+      return false;
+    }
+
+    div.ondragover = function(event){
+      div.style = "border-style: dashed"
+      return false;
+    }
 
   }
 
@@ -80,7 +118,7 @@ module.exports = class AssetUploader {
 
     var delBtn = document.createElement('button');
     delBtn.classList.add('button')
-    delBtn.classList.add('is-warning')
+    delBtn.classList.add('is-danger')
     delBtn.innerHTML = 'remove';
     // delete it on click
     delBtn.addEventListener('click',function(e){

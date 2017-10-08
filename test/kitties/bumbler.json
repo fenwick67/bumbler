@@ -4,7 +4,7 @@
   "categories": "kitties,birdies,doggos",
   "description": "kitties, birdies, doggos, and more!",
   "metadata": "{}",
-  "postsPerPage": "3",
+  "postsPerPage": "1",
   "publishBranch": "",
   "publishUrl": "",
   "siteUrl": "http://localhost:8000/",

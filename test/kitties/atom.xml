@@ -3,7 +3,7 @@
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
 <subtitle>kitties, birdies, doggos, and more!</subtitle>
-<updated>2017-10-01T19:15:39-05:00</updated>
+<updated>2017-10-07T20:11:25-05:00</updated>
 <logo>/assets/avatar.png</logo>
 <author>
 <id>http://localhost:8000/</id>
@@ -18,6 +18,140 @@
 </author>
 <link rel="alternate" type="text/html" href="http://localhost:8000/"/>
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/feed.atom"/>
+<entry>
+<id>01BVWRJSM5789EK4CM6NM2VMJ7</id>
+<published>2017-10-07T20:11:25-05:00</published>
+<updated>2017-10-07T20:11:25-05:00</updated>
+<title>Bumbler</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Bumbler&lt;/h1&gt;&lt;a href=&#34;/assets/bumbler-text.png&#34;&gt;&lt;img src=&#34;/assets/bumbler-text.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;A straightforward, DIY CMS for photos, images, statuses, audio, blog posts or whatever.  It&amp;#39;s optimized for microblogging, but can be used for macroblogging as well.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Your site your rules.  No censorship, plus simple yet powerful theming&lt;/li&gt;
+&lt;li&gt;Host your files in their original size and format&lt;/li&gt;
+&lt;li&gt;Two ways to publish:&lt;ol&gt;
+&lt;li&gt;Self-host and instantly publish from anywhere, anytime&lt;/li&gt;
+&lt;li&gt;Builds out to static files, so you can easily write locally and push to github-pages, Neocities, or any other system&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;step 0: install Node.js v7+ and NPM, and open a terminal.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;npm install -g bumbler&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a new folder for your site&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; into your new site folder&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;bumbler init&lt;/code&gt; inside it and follow the directions&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DO NOT&lt;/strong&gt; re-use a password for the admin interface.  Seriously.  This software is pre-alpha and there are probably security holes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;publishing&#34;&gt;Publishing&lt;/h1&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self-Hosting&lt;/h2&gt;
+&lt;p&gt;If you have an extra $7/month, you can host it on DigitalOcean ($5), with backups ($1), and get a domain ($1).  Here are some tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bumbler will &lt;strong&gt;not&lt;/strong&gt; work on Heroku or other SAAS platforms with an ephemeral filesystem, because of Bumbler&amp;#39;s filesystem-based nature.  All of your files and settings will get blown away every 24 hours or so.&lt;/li&gt;
+&lt;li&gt;Install nodejs v7 using the instructions here:  &lt;a href=&#34;https://github.com/nodesource/distributions#deb&#34;&gt;https://github.com/nodesource/distributions#deb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;When running &lt;code&gt;npm install&lt;/code&gt;, use the &lt;code&gt;--production&lt;/code&gt; flag to reduce the dependencies and install time&lt;/li&gt;
+&lt;li&gt;Use HTTPS.  You can sign up for CloudFlare&amp;#39;s free plan, which includes free auto-renewing certificates.&lt;/li&gt;
+&lt;li&gt;You can use &lt;a href=&#34;http://pm2.keymetrics.io/&#34;&gt;PM2&lt;/a&gt; to easily manage app startup and shutdown&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;pm2 startup&lt;/code&gt; to install startup scripts&lt;/li&gt;
+&lt;li&gt;use only one process (because of in-memory session storage)&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;pm2 save&lt;/code&gt; to save your running process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set up backups in case your site explodes, or hackers get in and ruin everything.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;static-hosting&#34;&gt;Static Hosting&lt;/h2&gt;
+&lt;p&gt;Bumblr was &lt;em&gt;made to work &lt;strong&gt;with or without&lt;/strong&gt; a serverside application&lt;/em&gt;.  You can simply move your project files over to a HTTP server and everything will just work.  Almost everything except the admin interface is built out to static files.  &lt;/p&gt;
+&lt;p&gt;The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/&lt;/p&gt;
+&lt;h2 id=&#34;todo-items-&#34;&gt;TODO Items:&lt;/h2&gt;
+&lt;h3 id=&#34;high-priority&#34;&gt;High Priority&lt;/h3&gt;
+&lt;p&gt;Social features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Create JSON scheme for replying and sharing (reply contexts)&lt;/li&gt;
+&lt;li&gt;[ ] Share a url and parse out H-entry and/or opengraph info in the post interface&lt;/li&gt;
+&lt;li&gt;[ ] bookmarklet / plugin to share from browser.  Create an API route to redirect for sharing.&lt;/li&gt;
+&lt;li&gt;[ ] hit a peer&amp;#39;s Webmention URL when sharing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;medium-priority&#34;&gt;Medium Priority&lt;/h3&gt;
+&lt;p&gt;After implementing social features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Put a RSS feed reader into the admin interface&lt;ul&gt;
+&lt;li&gt;[ ] I can reuse some work from mastofeed for this&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;low-priority&#34;&gt;Low Priority&lt;/h3&gt;
+&lt;p&gt;plugin system&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/fenwick67/bumbler-themes/raw/master/masonry.png&#34; alt=&#34;screenshot&#34;&gt;&lt;br&gt;&lt;img src=&#34;https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png&#34; alt=&#34;admin screenshot&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
+<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/bumbler-text.png"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWRJSM5789EK4CM6NM2VMJ7.html"/>
+</entry>
+<entry>
+<id>01BVWN0S9AEDQ6HQP4MJVNE1MB</id>
+<published>2017-10-07T19:09:09-05:00</published>
+<updated>2017-10-07T19:09:09-05:00</updated>
+<title>New Post on KBnD</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/fishebig.gif&#34;&gt;&lt;img src=&#34;/assets/fishebig.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/fishebig.gif"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWN0S9AEDQ6HQP4MJVNE1MB.html"/>
+</entry>
+<entry>
+<id>01BVWN0M6AVMR5MKEVE929EQBW</id>
+<published>2017-10-07T19:09:03-05:00</published>
+<updated>2017-10-07T19:09:03-05:00</updated>
+<title>New Post on KBnD</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/pige.gif&#34;&gt;&lt;img src=&#34;/assets/pige.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/pige.gif"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWN0M6AVMR5MKEVE929EQBW.html"/>
+</entry>
+<entry>
+<id>01BVWKG9MVQ29DE126WDZNT58M</id>
+<published>2017-10-07T18:42:40-05:00</published>
+<updated>2017-10-07T18:42:40-05:00</updated>
+<title>New Post on KBnD</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/pare-shadow-big.gif&#34;&gt;&lt;img src=&#34;/assets/pare-shadow-big.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/pare-shadow-big.gif"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWKG9MVQ29DE126WDZNT58M.html"/>
+</entry>
+<entry>
+<id>01BVWG65XCJ9202SD51K2CW527</id>
+<published>2017-10-07T17:44:43-05:00</published>
+<updated>2017-10-07T17:44:43-05:00</updated>
+<title>New Post on KBnD</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/Quetzfeedingwittonnaish2008.png&#34;&gt;&lt;img src=&#34;/assets/Quetzfeedingwittonnaish2008.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
+<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/Quetzfeedingwittonnaish2008.png"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWG65XCJ9202SD51K2CW527.html"/>
+</entry>
+<entry>
+<id>01BVWD8PJBAZ3E0QHA2TEDQTS0</id>
+<published>2017-10-07T16:53:39-05:00</published>
+<updated>2017-10-07T16:53:39-05:00</updated>
+<title>New Post on KBnD</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/00coffee_coffee_coffee.gif&#34;&gt;&lt;img src=&#34;/assets/00coffee_coffee_coffee.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/00coffee_coffee_coffee.gif"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWD8PJBAZ3E0QHA2TEDQTS0.html"/>
+</entry>
 <entry>
 <id>01BV5FT3P95S4XFWAKTMEJY6Q6</id>
 <published>2017-09-28T20:34:31-05:00</published>
@@ -66,47 +200,5 @@
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
 <link rel="enclosure" type="image/png" href="http://localhost:8000/assets/kooky.png"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZV9GE03D2Y9F4MKGM643C.html"/>
-</entry>
-<entry>
-<id>01BJCZTZTG26W91NX8ASGCWCMD</id>
-<published>2017-09-28T20:34:08-05:00</published>
-<updated>2017-09-28T20:34:08-05:00</updated>
-<title>New Post on KBnD</title>
-<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/o rly.jpg&#34;&gt;&lt;img src=&#34;/assets/o rly.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/o%20rly.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZTZTG26W91NX8ASGCWCMD.html"/>
-</entry>
-<entry>
-<id>01BJCTAYSSR4T6K99WCTSBTFMG</id>
-<published>2017-09-28T20:34:01-05:00</published>
-<updated>2017-09-28T20:34:01-05:00</updated>
-<title>New Post on KBnD</title>
-<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/KERfS.gif&#34;&gt;&lt;img src=&#34;/assets/KERfS.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/Kl7in.jpg&#34;&gt;&lt;img src=&#34;/assets/Kl7in.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;dolphins are the birbs of the sea&lt;/p&gt;
-&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
-<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/KERfS.gif"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/Kl7in.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCTAYSSR4T6K99WCTSBTFMG.html"/>
-</entry>
-<entry>
-<id>01BJCSYN4CWKMMMD9ST1XXCRF2</id>
-<published>2017-09-28T20:33:52-05:00</published>
-<updated>2017-09-28T20:33:52-05:00</updated>
-<title>🐦🐦🐦🐔🐔🐔</title>
-<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;🐦🐦🐦🐔🐔🐔&lt;/h1&gt;&lt;a href=&#34;/assets/burds21.jpg&#34;&gt;&lt;img src=&#34;/assets/burds21.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/c6v8R.jpg&#34;&gt;&lt;img src=&#34;/assets/c6v8R.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/extreme_double_bird.jpg&#34;&gt;&lt;img src=&#34;/assets/extreme_double_bird.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg&#34;&gt;&lt;img src=&#34;/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;asdfasfdasdf&lt;/p&gt;
-&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/burds21.jpg"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/c6v8R.jpg"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/extreme_double_bird.jpg"/>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCSYN4CWKMMMD9ST1XXCRF2.html"/>
 </entry>
 </feed>

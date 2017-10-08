@@ -46,11 +46,16 @@ $blue:dar($blue);
 $purple:dar($purple);
 $red:dar($red);
 
+/*
+$primary:hsl(34.1, 100%, 56.5%);
+$primary-invert:rgba(0,0,0,0.7);
+*/
+
 @import "bulma";
 
 .card{background-color:$white-bis;}
 
-$bg: $white-ter;
+$bg: $white;
 $fg: $black;
 $bg2: $grey-lighter;
 $fg2: $grey-darker;
@@ -80,9 +85,10 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
     z-index:2;
     box-shadow:$shadow;
   }
-  .sidebar>.big{
-    font-size:1.4rem;
-    margin:0.5rem;
+  .sidebar>.big, .sidebar>.big *{
+    color:$primary !important;
+    text-align:center;
+    font-size:1.8rem;
     list-style-type:none;
   }
   hash-template{
@@ -98,8 +104,16 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
     flex: 1 1 auto;
     margin:1em;
   }
+  @media all and (min-width: 550px){
+      #app>*{
+        padding:2rem;
+      }
+      #sidebar{
+        min-width:10em;
+      }
+  }
   #app>*{
-    padding:2rem;
+    // padding:2rem;
     height:100%;
   }
   #popup-area{

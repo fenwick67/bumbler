@@ -27,18 +27,27 @@ module.exports = class SettingsManager {
     this.formContain = document.createElement('div');
     var btn = document.createElement('button');
     var revertBtn = document.createElement('button');
-    var btnContain = document.createElement('div')
-    btnContain.setAttribute('class','field')
+    var btnContain = document.createElement('div');
+
+    var p1 = document.createElement('p');
+    var p2 = document.createElement('p');
+    p1.setAttribute('class','control');
+    p2.setAttribute('class','control');
+
+    btnContain.setAttribute('class','field is-grouped')
     btn.setAttribute('class','button is-primary');
     btn.innerHTML = "💾&#xFE0E; Save";
     revertBtn.setAttribute('class','button is-warning');
     revertBtn.innerHTML = '⮌&#xFE0E; Revert Changes';
-    btnContain.appendChild(btn);
-    btnContain.appendChild(revertBtn);
+    btnContain.appendChild(p1);
+    p1.appendChild(btn);
+    btnContain.appendChild(p2);
+    p2.appendChild(revertBtn);
 
 
     this.formContain.appendChild(form);
     el.appendChild(this.formContain);
+    el.appendChild(document.createElement('br'));
     el.appendChild(btnContain);
 
     var self = this;
