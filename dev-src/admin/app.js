@@ -11,6 +11,11 @@ var PostList = require('./PostList');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
+// for UI purposes
+if (!localStorage['admin']){
+  localStorage['admin']="maybe?";
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
   //navigation

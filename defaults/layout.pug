@@ -4,6 +4,7 @@ html
     title= site.title
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
     style(type="text/css") .gallery{display:flex;text-align:center;justify-content:space-between;flex-direction:column}.gallery>*{flex:1 1 auto}
     <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png" />
@@ -23,6 +24,7 @@ html
         .navbar-menu#drawer
           .navbar-start
             a.navbar-item(href="/atom.xml") Atom Feed
+            a.navbar-item.is-hidden(href='/admin') Admin
           .navbar-end
             .navbar-item Categories:
             if (site.categories && site.categories.length > 1)
@@ -37,7 +39,7 @@ html
             .media
               .media-left.centered
               .media-content
-                nav.breadcrumb.is-large
+                nav.breadcrumb.is-medium
                   ul
                     li
                       a(href="/")= site.title
@@ -47,7 +49,7 @@ html
                     if page.number && page.number != 1
                       li
                         a(href="#")= page.number
-                p= site.description
+                p!= site.description
 
     section.section
       .container
@@ -75,9 +77,11 @@ html
                       span.dt-published Posted #{post.englishDate}
                       if post.category
                         span  in
-                          a(href="/category/"+post.category)= post.category
+                          a(href="/category/"+post.category)= ' '+post.category
                   p.card-footer-item
-                    a(href=post.permalink) Permalink 🔗
+                    a(href=post.permalink) Permalink
+                    b.is-hidden &nbsp;&nbsp;&nbsp;
+                    a(href='/admin/#post/edit?id='+post.id).is-hidden.button.is-warning ✎ Edit
               br
           .column.is-0-mobile.is-2-tablet.is-3-desktop
 
@@ -121,5 +125,7 @@ html
             |  flat CMS by
             b  Drew Harwell
 
-
+  // hamburger menu
   script(type="text/javascript") document.addEventListener("DOMContentLoaded",function(){document.getElementById('burger').addEventListener('click',function(){document.getElementById('drawer').classList.toggle('is-active');this.classList.toggle('is-active')})});
+  // unhide stuff if user might be an admin
+  script(type="text/javascript")!= "document.addEventListener('DOMContentLoaded',function(){if(!localStorage['admin']){return;}var els = document.querySelectorAll('.is-hidden');  if (!els){return};  for (var i = 0; i < els.length; i ++){els[i].classList.remove('is-hidden')}});"

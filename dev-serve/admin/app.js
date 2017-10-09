@@ -1141,13 +1141,15 @@ module.exports = function () {
       description: "Site Description",
       authorName: "Author Name",
       avatar: "Avatar URL",
-      siteUrl: "Site base URL (format: https://www.site.com/)"
+      siteUrl: "Site base URL (format: https://www.site.com/)",
+      reverseOrder: "Reverse order (newest on last page?) "
     };
 
     this.defaultKeys = Object.keys(this.labels);
     this.defaults = _.mapValues(this.labels, function (l) {
       return '';
     });
+    this.defaults.reverseOrder = false;
 
     var form = this.autoFormFactory(this.defaults);
     this.form = form;
@@ -1200,8 +1202,12 @@ module.exports = function () {
 
       var dat = {};
       _.each(this.form.querySelectorAll('input'), function (input) {
-        dat[input.getAttribute('name')] = input.value;
-        console.log(input.value);
+        if (input.getAttribute('type') == 'text') {
+          dat[input.getAttribute('name')] = input.value;
+        } else if (input.getAttribute('type') == 'checkbox') {
+          dat[input.getAttribute('name')] = input.checked;
+        }
+        console.log(input.getAttribute('name'), dat[input.getAttribute('name')]);
       });
       var ok = false;
 
@@ -1266,14 +1272,29 @@ module.exports = function () {
         el.setAttribute('class', 'field');
 
         var l = document.createElement('label');
-        l.classList = "label";
-        var label = _this3.labels[key];
-        l.innerHTML = label || key;
-        var i = document.createElement('input');
-        i.name = key;
-        i.type = "text";
-        i.value = value;
-        i.classList = "input";
+
+        var i;
+
+        if (typeof value == 'boolean') {
+          l.classList = "checkbox label";
+          var label = _this3.labels[key];
+          l.innerHTML = label || key;
+          var i = document.createElement('input');
+          i.name = key;
+          i.value = value;
+          i.type = "checkbox";
+          i.checked = value ? "checked" : "";
+        } else {
+          l.classList = "label";
+          var label = _this3.labels[key];
+          l.innerHTML = label || key;
+          var i = document.createElement('input');
+          i.name = key;
+          i.value = value;
+          i.type = "text";
+          i.classList = "input";
+        }
+
         l.appendChild(i);
         el.appendChild(l);
 
@@ -1302,6 +1323,11 @@ var Post = require('../../lib/Post');
 var PostList = require('./PostList');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
+
+// for UI purposes
+if (!localStorage['admin']) {
+  localStorage['admin'] = "maybe?";
+}
 
 document.addEventListener("DOMContentLoaded", function (event) {
 

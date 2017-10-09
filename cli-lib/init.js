@@ -50,7 +50,8 @@ module.exports = function(){
     publishBranch: "",
     publishUrl: "",
     siteUrl:"http://localhost:8000/",
-    categories:""
+    categories:"",
+    reverseOrder:false
   }
   var json = {};
 
