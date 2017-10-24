@@ -15,7 +15,7 @@ module.exports = class PostEditor{
     /*
       id
       date
-      category
+      tags (comma sep)
       caption
       permalink (from id)
       assets (if audio or video or image)
@@ -30,8 +30,14 @@ module.exports = class PostEditor{
     }
 
     this.form = document.createElement('form');
-    this.categoryField = field();
-    // categoryField will be updated in reset()
+    this.tagField = field();
+    this.tagField.innerHTML = `
+      <label class="label">Tags
+      <p class="control">
+        <input class="input" type="text" placeholder="(comma seperated, optional)" name="tags">
+      </p>
+      </label>`
+    // tagField will be updated in reset()
 
     this.captionField = field();
     this.captionField.innerHTML = `
@@ -64,7 +70,7 @@ module.exports = class PostEditor{
     this.picker = new AssetPicker(this.pickerEl);
 
     this.form.appendChild(this.titleField);
-    this.form.appendChild(this.categoryField);
+    this.form.appendChild(this.tagField);
     this.form.appendChild(this.pickerEl);
     this.form.appendChild(this.captionField);
     this.form.appendChild(this.submitGroup);
@@ -109,13 +115,13 @@ module.exports = class PostEditor{
     //todo validate the form
 
     //create json
-    var category = self.el.querySelector('[name="category"]').value;
+    var tags = self.el.querySelector('[name="tags"]').value;
     var caption = self.el.querySelector('[name="caption"]').value;
     var title = self.el.querySelector('[name="title"]').value;
     var assets = self.picker.assetUploader.assets;
     var date = this.date || moment().format();
     var id = this.id || Post.prototype.uuid();
-    var json = {category,caption,title,assets,date,id};
+    var json = {tags,caption,title,assets,date,id};
 
     // validate
     var problems = Post.prototype.validate(json);
@@ -190,7 +196,7 @@ module.exports = class PostEditor{
     this.caption = data.caption||"";
     this.id = data.id||false;
     this.title = data.title||"";
-    this.category = data.category||"";
+    this.tags = data.tags||"";
     if (data.date){
       this.date = data.date;
     }
@@ -204,20 +210,21 @@ module.exports = class PostEditor{
 
     this.el.querySelector('[name="caption"]').value = this.caption||'';
     this.el.querySelector('[name="title"]').value = this.title||'';
-    this.el.querySelector('[name="category"]').value = this.category||'';
+    this.el.querySelector('[name="tags"]').value = this.tags||'';
   }
 
   reset(done){
     var done = done || function(e){if (e) throw e};
     this.id = false;
     this.title="";
-    this.category="";
+    this.tags="";
     this.caption="";
 
     this.picker.assetUploader.reset();
     this.el.querySelector('[name="caption"]').value ='';
     this.el.querySelector('[name="title"]').value = '';
-    this.updateCategories(done);
+    this.el.querySelector('[name="tags"]').value = '';
+    done(null);
 
   }
 
@@ -247,40 +254,6 @@ module.exports = class PostEditor{
 
   }
 
-  updateCategories(done){
-    var done = done || function(e){if (e) throw e};
-    loadSettings((er,settings)=>{
-      if (er){
-        done(er);
-        return window.popup('Failed to load settings!  You should reload and try again :(','danger')
-      }
-      var categories = [];
-
-      if (typeof settings.categories == 'string'){
-        categories = settings.categories.split(',');
-      }else if (Array.isArray(settings.categories)){
-        categories = settings.categories;
-      }
-
-      var catHtml = '';
-      categories.forEach(c=>catHtml+=`<option value="${c}">${c}</option>`);
-
-      this.categoryField.innerHTML = `
-        <label class="label">Category
-        <p class="control">
-          <span class="select">
-            <select name="category">
-              ${catHtml}
-            </select>
-          </span>
-        </p>
-        </label>`;
-
-      done(null);
-
-    });
-
-  }
 
 
 }

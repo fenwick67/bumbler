@@ -12,7 +12,6 @@ module.exports = class SettingsManager {
       title:"Title",
       postsPerPage:"Posts per Page",
       metadata:"Metadata (json)",
-      categories:"Categories (comma seperated with no spaces)",
       description:"Site Description",
       authorName:"Author Name",
       avatar:"Avatar URL",

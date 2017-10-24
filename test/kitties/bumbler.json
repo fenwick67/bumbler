@@ -1,12 +1,12 @@
 {
   "authorName": "The Authors",
   "avatar": "/assets/avatar.png",
-  "categories": "kitties,birdies,doggos",
   "description": "kitties, birdies, doggos, and more!",
-  "metadata": "{}",
+  "metadata": "{\"featuredTags\":[\"inktober\"]}",
   "postsPerPage": "1",
   "publishBranch": "",
   "publishUrl": "",
+  "reverseOrder": false,
   "siteUrl": "http://localhost:8000/",
   "title": "KBnD"
 }

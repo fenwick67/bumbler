@@ -744,7 +744,7 @@ module.exports = function () {
     /*
       id
       date
-      category
+      tags (comma sep)
       caption
       permalink (from id)
       assets (if audio or video or image)
@@ -759,8 +759,9 @@ module.exports = function () {
     }
 
     this.form = document.createElement('form');
-    this.categoryField = field();
-    // categoryField will be updated in reset()
+    this.tagField = field();
+    this.tagField.innerHTML = '\n      <label class="label">Tags\n      <p class="control">\n        <input class="input" type="text" placeholder="(comma seperated, optional)" name="tags">\n      </p>\n      </label>';
+    // tagField will be updated in reset()
 
     this.captionField = field();
     this.captionField.innerHTML = '\n      <label class="label">Caption/Content\n      <p class="control">\n        <textarea class="textarea" placeholder="Use Markdown for bonus points" name="caption"></textarea>\n      </p>\n      </label>';
@@ -782,7 +783,7 @@ module.exports = function () {
     this.picker = new AssetPicker(this.pickerEl);
 
     this.form.appendChild(this.titleField);
-    this.form.appendChild(this.categoryField);
+    this.form.appendChild(this.tagField);
     this.form.appendChild(this.pickerEl);
     this.form.appendChild(this.captionField);
     this.form.appendChild(this.submitGroup);
@@ -830,13 +831,13 @@ module.exports = function () {
       //todo validate the form
 
       //create json
-      var category = self.el.querySelector('[name="category"]').value;
+      var tags = self.el.querySelector('[name="tags"]').value;
       var caption = self.el.querySelector('[name="caption"]').value;
       var title = self.el.querySelector('[name="title"]').value;
       var assets = self.picker.assetUploader.assets;
       var date = this.date || moment().format();
       var id = this.id || Post.prototype.uuid();
-      var json = { category: category, caption: caption, title: title, assets: assets, date: date, id: id };
+      var json = { tags: tags, caption: caption, title: title, assets: assets, date: date, id: id };
 
       // validate
       var problems = Post.prototype.validate(json);
@@ -913,7 +914,7 @@ module.exports = function () {
       this.caption = data.caption || "";
       this.id = data.id || false;
       this.title = data.title || "";
-      this.category = data.category || "";
+      this.tags = data.tags || "";
       if (data.date) {
         this.date = data.date;
       }
@@ -927,7 +928,7 @@ module.exports = function () {
 
       this.el.querySelector('[name="caption"]').value = this.caption || '';
       this.el.querySelector('[name="title"]').value = this.title || '';
-      this.el.querySelector('[name="category"]').value = this.category || '';
+      this.el.querySelector('[name="tags"]').value = this.tags || '';
     }
   }, {
     key: 'reset',
@@ -937,13 +938,14 @@ module.exports = function () {
       };
       this.id = false;
       this.title = "";
-      this.category = "";
+      this.tags = "";
       this.caption = "";
 
       this.picker.assetUploader.reset();
       this.el.querySelector('[name="caption"]').value = '';
       this.el.querySelector('[name="title"]').value = '';
-      this.updateCategories(done);
+      this.el.querySelector('[name="tags"]').value = '';
+      done(null);
     }
   }, {
     key: 'delete',
@@ -972,37 +974,6 @@ module.exports = function () {
         }
       }).catch(function (e) {
         popup(e, 'danger', 'Error Deleting:');
-      });
-    }
-  }, {
-    key: 'updateCategories',
-    value: function updateCategories(done) {
-      var _this3 = this;
-
-      var done = done || function (e) {
-        if (e) throw e;
-      };
-      loadSettings(function (er, settings) {
-        if (er) {
-          done(er);
-          return window.popup('Failed to load settings!  You should reload and try again :(', 'danger');
-        }
-        var categories = [];
-
-        if (typeof settings.categories == 'string') {
-          categories = settings.categories.split(',');
-        } else if (Array.isArray(settings.categories)) {
-          categories = settings.categories;
-        }
-
-        var catHtml = '';
-        categories.forEach(function (c) {
-          return catHtml += '<option value="' + c + '">' + c + '</option>';
-        });
-
-        _this3.categoryField.innerHTML = '\n        <label class="label">Category\n        <p class="control">\n          <span class="select">\n            <select name="category">\n              ' + catHtml + '\n            </select>\n          </span>\n        </p>\n        </label>';
-
-        done(null);
       });
     }
   }]);
@@ -1137,7 +1108,6 @@ module.exports = function () {
       title: "Title",
       postsPerPage: "Posts per Page",
       metadata: "Metadata (json)",
-      categories: "Categories (comma seperated with no spaces)",
       description: "Site Description",
       authorName: "Author Name",
       avatar: "Avatar URL",
