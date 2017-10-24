@@ -22,7 +22,8 @@ The following items are exposed to the template:
       caption: String, // the post's caption / text content.  HTML supported.
       tags: [String,String...], // the tags for the post
       assets:[{
-        url:String,
+        href:String,
+        mimetype:String,
         type:String, // audio, image, ...
         widget: String // HTML that will render the asset.  An <img> tag for images, <audio> tag for audio...
       }]
