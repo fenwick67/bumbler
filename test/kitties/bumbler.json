@@ -3,7 +3,7 @@
   "avatar": "/assets/avatar.png",
   "description": "kitties, birdies, doggos, and more!",
   "metadata": "{\"featuredTags\":[\"inktober\"]}",
-  "postsPerPage": "1",
+  "postsPerPage": "5",
   "publishBranch": "",
   "publishUrl": "",
   "reverseOrder": false,
