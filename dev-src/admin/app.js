@@ -8,6 +8,8 @@ var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
 var PostList = require('./PostList');
+var CustomPageList = require('./CustomPageList');
+var CustomPageEditor = require('./CustomPageEditor');
 var SettingsManager = require('./SettingsManager');
 var publish = require('./publisher');
 
@@ -81,6 +83,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     postList.load();
   });
 
+  // post list
+  var customPageList = null;
+  document.getElementById('custompages').addEventListener('navigate-to',function(){
+    if (!customPageList){
+      customPageList = new CustomPageList(document.getElementById('custom-page-list'));
+    }
+    customPageList.load();
+  });
+
+
   var publishInitialized = false;
   document.getElementById('publish').addEventListener('navigate-to',function(){
     if (!publishInitialized){
@@ -91,6 +103,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   document.getElementById('run-a-build').addEventListener('click',startBuild);
   document.getElementById('publish-button').addEventListener('click',publish);
+
+  // night mode
+
+  applyNightModeIfSet();
+  document.getElementById('toggle-night-mode').addEventListener('click',toggleNightMode);
+
 
   // always navigate to a hash on pageload
   navigate();
@@ -106,4 +124,19 @@ function startBuild(){
   }).catch(e=>{
     popup(e,'danger','Error starting build:')
   });
+}
+
+function toggleNightMode(){
+  var isNight = false;
+  if ( (" " + document.documentElement.className + " ").replace(/[\n\t]/g," ").indexOf(" nightmode ") > -1 ) {
+    isNight = true;
+  }
+  document.documentElement.classList.toggle('nightmode')
+  window.localStorage['nightmode'] = (!isNight).toString();
+}
+
+function applyNightModeIfSet(){
+  if (window.localStorage['nightmode'] == 'true'){
+    document.documentElement.classList.add('nightmode');
+  }
 }

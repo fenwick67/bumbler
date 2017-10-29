@@ -6,8 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no">
       link(rel="stylesheet" type="text/css" href="./style.css")
 
-    - var menuCategories = ['actions','posts','files','general']
-    - var menuItems = {"actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"},{title:'<b>&#60;&#47;&#62;</b> Theme',href:"#html"}]}
+    - var menuCategories = ['actions','posts','files','general','custom pages']
+    - var menuItems = {"actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"🌙&#xFE0E; Night Mode",href:"#",id:"toggle-night-mode",class:"button is-default"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"},{title:'<b>&#60;&#47;&#62;</b> Theme',href:"#html"}],"custom pages":[{title:'📁&#xFE0E; Manage',href:"#custompages"}]}
     body
       .sidebar.menu#sidebar
         li.big
@@ -24,6 +24,7 @@
         hash-template#files
           div
             h1.title Files
+            h2.subtitle These are located in <code>/assets</code> on your server.
             .file-view
 
         // posts
@@ -43,6 +44,7 @@
         // settings
         hash-template#html
           h1.title Edit site template
+          h2.subtitle Site templates use the <a href="https://pugjs.org">Pug</a> templating language.
           span#htmleditor
         hash-template#settings
           h1.title Settings
@@ -56,9 +58,15 @@
             a(href="#settings") &nbsp;settings&nbsp;
             | to set the repository and branch.
 
+        // custom pages
+        hash-template#custompages
+          div
+            h1.title Custom Pages
+            h2.subtitle Custom pages let you add things like an About, Contact, or FAQ page.
+            #custom-page-list
+
         hash-template#404
             h1.title Sorry, couldn't find that page :(
-
 
         script(src="./app.js")
       #popup-area

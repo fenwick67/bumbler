@@ -19,47 +19,69 @@ $purple:	hsl(271, 100%, 71%);
 $red:	hsl(348, 100%, 61%);
 
 @function inv($c){
-  @return $c;
+  @return lighten(invert($c),20%);
 }
-
-$black:inv($black);
-$black-bis:	inv($black-bis);
-$black-ter:	inv($black-ter);
-$grey-darker:	inv($grey-darker);
-$grey-dark:	inv($grey-dark);
-$grey:	inv($grey);
-$grey-light:	inv($grey-light);
-$grey-lighter:	inv($grey-lighter);
-$white-ter:	inv($white-ter);
-$white-bis:	inv($white-bis);
-$white:	inv($white);
 
 @function dar($c){
-  @return $c;
+  @return darken(desaturate($c,10%),10%);
 }
-
-$orange:dar($orange);
-$yellow:dar($yellow);
-$green:dar($green);
-$turquoise:dar($turquoise);
-$blue:dar($blue);
-$purple:dar($purple);
-$red:dar($red);
 
 /*
 $primary:hsl(34.1, 100%, 56.5%);
 $primary-invert:rgba(0,0,0,0.7);
 */
 
-@import "bulma";
 
 .card{background-color:$white-bis;}
 
 $bg: $white;
 $fg: $black;
-$bg2: $grey-lighter;
+$bg2: $grey-light;
 $fg2: $grey-darker;
 $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+
+/*
+NIGHT MAN
+*/
+.nightmode,.nightmode *{
+
+  $black:inv($black);
+  $black-bis:	inv($black-bis);
+  $black-ter:	inv($black-ter);
+  $grey-darker:	inv($grey-darker);
+  $grey-dark:	inv($grey-dark);
+  $grey:	inv($grey);
+  $grey-light:	inv($grey-light);
+  $grey-lighter:	inv($grey-lighter);
+  $white-ter:	inv($white-ter);
+  $white-bis:	inv($white-bis);
+  $white:	inv($white);
+  $bg:inv($bg);
+  $fg:inv($fg);
+  $bg2:inv($bg2);
+  $fg2:inv($fg2);
+
+  $background: $white-ter;
+
+  $orange:dar($orange);
+  $yellow:dar($yellow);
+  $green:dar($green);
+  $turquoise:dar($turquoise);
+  $blue:dar($blue);
+  $purple:dar($purple);
+  $red:dar($red);
+
+  body{
+    background-color:$bg;
+    color:$fg;
+  }
+
+  @import "bulma";
+}
+
+@import "bulma";
+
+
 
 .admin{
 
@@ -81,7 +103,7 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
   .sidebar{
     flex:0 0 auto;
     padding:0 0.5rem;
-    border-right:solid 1px #eee;
+    // border-right:solid 1px #eee;
     z-index:2;
     box-shadow:$shadow;
   }
@@ -163,10 +185,10 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
   .asset{
     display:flex;
     align-items:center;
-    border-bottom:solid 1px $grey-lighter;
+    border-bottom:solid 1px $bg2;
   }
   .asset:first-child{
-    border-top:solid 1px $grey-lighter;
+    border-top:solid 1px $bg2;
   }
   .asset>*{
     margin:0.5rem;
@@ -188,4 +210,12 @@ $shadow: 0 0 10px 1px rgba(0,0,0,0.2);
 }
 .gallery>*{
   flex:1 1 auto;
+}
+
+// simplemde styles
+html.nightmode{
+  @import "simplemde-theme-dark";
+}
+html:not(.nightmode){
+  @import "simplemde-theme-base";
 }

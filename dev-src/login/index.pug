@@ -6,19 +6,19 @@
       <link rel="stylesheet" href="/admin/style.css" type="text/css">
       style(type="text/css") html,body,.form-contain{display:flex;flex-direction:column;min-height:100%;flex:1 1 auto}.form-contain{flex:1 1 auto;align-items:center;justify-content:center;}
     body.admin
-    header
-      .hero.is-warning
-        .hero-body
-          .container
-            h1.title Please Log In.
-    .form-contain
-      .box
-        form(action="/login" method="post")
-            .field
-                label.label Username:
-                input.input(type="text" name="username")
-            .field
-                label.label Password:
-                input.input(type="password" name="password")
-            .field
-                input.button.is-primary(type="submit" value="Log In")
+      header
+        .hero.is-warning
+          .hero-body
+            .container
+              h1.title Please Log In.
+      .form-contain
+        .box
+          form(action="/login" method="post")
+              .field
+                  label.label Username:
+                  input.input(type="text" name="username")
+              .field
+                  label.label Password:
+                  input.input(type="password" name="password")
+              .field
+                  input.button.is-primary(type="submit" value="Log In")

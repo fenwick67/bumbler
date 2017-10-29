@@ -3,6 +3,7 @@ var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
 var moment = require('moment');
 var loadSettings = require('./loadSettings');
+var SimpleMDE = require('simplemde');
 
 module.exports = class PostEditor{
   constructor(el,options){
@@ -41,11 +42,24 @@ module.exports = class PostEditor{
 
     this.captionField = field();
     this.captionField.innerHTML = `
-      <label class="label">Caption/Content
-      <p class="control">
-        <textarea class="textarea" placeholder="Use Markdown for bonus points" name="caption"></textarea>
-      </p>
-      </label>`
+      <label class="label">Caption/Content</label>
+      <textarea class="textarea" name="caption"></textarea>
+      `
+    this.mde = new SimpleMDE({
+      element:this.captionField.querySelector('textarea'),
+    	toolbar: [
+        'preview', 'side-by-side', 'fullscreen', '|',
+        'code', 'quote','link',
+        {
+          name: 'image',
+          action: function customFunction(editor) {
+            // overridden later
+          },
+          className: 'fa fa-picture-o',
+          title: 'Insert Image',
+        }
+      ]
+    });
 
     this.titleField = field();
     this.titleField.innerHTML = `
@@ -67,7 +81,7 @@ module.exports = class PostEditor{
 
     this.pickerEl = document.createElement('div');
     this.pickerEl.classList.add('field');
-    this.picker = new AssetPicker(this.pickerEl);
+    this.picker = new AssetPicker(this.pickerEl,{editor:this.mde});
 
     this.form.appendChild(this.titleField);
     this.form.appendChild(this.tagField);
@@ -116,7 +130,7 @@ module.exports = class PostEditor{
 
     //create json
     var tags = self.el.querySelector('[name="tags"]').value;
-    var caption = self.el.querySelector('[name="caption"]').value;
+    var caption = self.mde.value();
     var title = self.el.querySelector('[name="title"]').value;
     var assets = self.picker.assetUploader.assets;
     var date = this.date || moment().format();
@@ -208,7 +222,7 @@ module.exports = class PostEditor{
       this.picker.assetUploader.addAssetFromHref(a.href);
     });
 
-    this.el.querySelector('[name="caption"]').value = this.caption||'';
+    this.mde.value(this.caption||'');
     this.el.querySelector('[name="title"]').value = this.title||'';
     this.el.querySelector('[name="tags"]').value = this.tags||'';
   }
@@ -221,7 +235,7 @@ module.exports = class PostEditor{
     this.caption="";
 
     this.picker.assetUploader.reset();
-    this.el.querySelector('[name="caption"]').value ='';
+    this.mde.value('');
     this.el.querySelector('[name="title"]').value = '';
     this.el.querySelector('[name="tags"]').value = '';
     done(null);
