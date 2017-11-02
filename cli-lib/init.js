@@ -26,10 +26,8 @@ module.exports = function(){
   //make dirs
   var dirs = [
     '_bumblersrc',
-    'assets',
+    '_bumblersrc/assets',
     '_bumblersrc/posts',
-    'page',
-    'post'
   ];
 
   var defaultFiles = {
@@ -114,7 +112,7 @@ module.exports = function(){
     var pug = fs.readFileSync(path.join(__dirname,'..','defaults','layout.pug'),'utf8');
     fs.writeFileSync(path.join(cwd,'_bumblersrc','layout.pug'),pug);
 
-    fs.writeFileSync(path.join(cwd,'bumbler.json'),toWrite);
+    fs.writeFileSync(path.join(cwd,'_bumblersrc','bumbler.json'),toWrite);
     hash(e=>{
       if (e){throw e}
       console.log(chalk.green('...then run '+chalk.cyan('bumbler')+' to start writing!\r\n'));

@@ -28,7 +28,7 @@ module.exports = function(done){
       console.log('==============================================================\r\n\r\n\r\n')
       console.log(chalk.green(`
 IMPORTANT: This is your bcrypt hash.  Set it as ${chalk.bold('BUMBLERHASH')} in your environment,
-or save it as ${chalk.bold('.bumblerhash')} in your project directory: `));
+or save it as ${chalk.bold('_bumblersrc/.bumblerhash')} in your project directory: `));
       console.log(result);
       console.log('\r\n')
       done(null,result);

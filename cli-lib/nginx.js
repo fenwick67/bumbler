@@ -7,7 +7,7 @@ chalk.enabled = true;
 
 module.exports = (done)=>{
 
-  var settingsController = new DiskController({path:path.join(process.cwd(),'bumbler.json')});
+  var settingsController = new DiskController({path:path.join(process.cwd(),'_bumblersrc','bumbler.json')});
   settingsController.load(er=>{
     if (er){return done(er);}
 
