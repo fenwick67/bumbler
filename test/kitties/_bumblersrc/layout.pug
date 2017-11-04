@@ -1,12 +1,17 @@
+-
+  var heroBackgroundColor= "linear-gradient(70deg,#ff51cc, #ff8989,#f2cc94)";
+  var heroTextColor = 'white';
+  // see, theme variables can go here! https://pugjs.org/language/code.html#unbuffered-code
+
 <!DOCTYPE html>
 html
   head
-    title= site.title + (page.isCustom?(' - '+page.customPage.title):"") + (page.tag?' - '+_.capitalize(page.tag):'')
+    title= site.title + (page.isCustom?(' - '+page.customPage.title):"") + (page.tag?' - '+_.capitalize(page.tag):'')+ (page.isIndex?' - Home':'')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     style(type="text/css") .gallery{display:flex;text-align:center;justify-content:space-between;align-content:space-between;flex-wrap:wrap}.gallery>*{flex:1 1 auto; width:100%;}.posts{margin:0 auto;max-width:800px;}body,html{overflow-x:hidden}.post,.post-like{margin:20px;}.hide-scroll,footer{background:#fff}
-    <link type="application/atom+xml" rel="alternate" href="/atom.xml"/> 
+    <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png" />
     meta(name="description" content=site.description)
   body
@@ -28,18 +33,16 @@ html
             a.navbar-item.is-hidden(href='/admin') Admin
           .navbar-end
 
-    .hero(style="background:linear-gradient(70deg,#ffa348, #ffd389,#f2ea94)")
+    .hero(style='background:'+heroBackgroundColor+';color:'+heroTextColor )
       .hero-body
-        .container
-          .title.has-text-centered= site.title
+        .container.has-text-centered
+          .title(style='color:'+heroTextColor)= site.title
+          p.is-size-4!= site.description
     //main
     .main
       section(style="padding:1em 0;background:#e6e6e6")
         .container.posts-container
           .posts
-            .post-like
-              section.card
-                .card-content.is-size-4!= site.description
 
             if site.tags && !page.isCustom
               .post-like

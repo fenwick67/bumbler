@@ -1,7 +1,12 @@
+-
+  var heroBackgroundColor= "linear-gradient(70deg,#ff51cc, #ff8989,#f2cc94)";
+  var heroTextColor = 'white';
+  // see, theme variables can go here! https://pugjs.org/language/code.html#unbuffered-code
+
 <!DOCTYPE html>
 html
   head
-    title= site.title
+    title= site.title + (page.isCustom?(' - '+page.customPage.title):"") + (page.tag?' - '+_.capitalize(page.tag):'')+ (page.isIndex?' - Home':'')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
@@ -27,18 +32,22 @@ html
             a.navbar-item(href="/atom.xml") Atom Feed
             a.navbar-item.is-hidden(href='/admin') Admin
           .navbar-end
+
+    .hero(style='background:'+heroBackgroundColor+';color:'+heroTextColor )
+      .hero-body
+        .container.has-text-centered
+          .title(style='color:'+heroTextColor)= site.title
+          p.is-size-4!= site.description
     //main
     .main
       section(style="padding:1em 0;background:#e6e6e6")
         .container.posts-container
           .posts
-            .post-like
-              section.card
-                .card-content.is-size-4!= site.description
-            .post-like
-              section.card
-                .card-content
-                  if site.tags
+
+            if site.tags && !page.isCustom
+              .post-like
+                section.card
+                  .card-content
                     .level.is-mobile
                       span.is-size-6 Tags:&nbsp;&nbsp;
                       .field.is-grouped.is-grouped-multiline
@@ -47,44 +56,48 @@ html
                             a(href="/tag/"+tagInfo.name).tags.has-addons
                               .tag(class=(page.tag == tagInfo.name)?'is-link':'is-dark')= tagInfo.name
                               .tag= tagInfo.count
-
-            if page.posts.length == 0
-              .content.is-large
-                  p Sorry, this page doesn't have any posts yet :(
-            each post in page.posts
-              .post
-                section.card.h-entry
-                  header.card-header
-                    if post.title
-                      p.card-header-title.p-name= post.title
-                  if post.tags
-                    div
-                      p.card-header-title
-                        span.tags
-                          for tag in post.tags
-                            a(href="/tag/"+tag).tag.is-dark= tag
-
-                  .card-content.e-content
-                    .gallery
-                      each attachment in post.assets
-                        span!= attachment.widget
-                    if post.caption
-                      br
-                      .content.is-size-5!= post.caption
-                  footer.card-footer
-                    p.card-footer-item
-                      span
-                        span.dt-published #{post.englishDate}
-                    p.card-footer-item
-                      a(href=post.permalink) Permalink
-                    p.card-footer-item.is-hidden
-                      b.is-hidden &nbsp;&nbsp;&nbsp;
-                      a(href='/admin/#post/edit?id='+post.id).is-hidden.button.is-link ✎ Edit
-              if page.tag && !page.links.nextPage
+            if page.posts
+              if page.posts.length == 0
+                .content.is-large
+                    p Sorry, this page doesn't have any posts yet :(
+              each post in page.posts
                 .post
-                  .section.card
-                    p.card-content That's all for this tag. <a href="/">Back to all posts?</a>
+                  section.card.h-entry
+                    header.card-header
+                      if post.title
+                        p.card-header-title.p-name= post.title
+                    if post.tags
+                      div
+                        p.card-header-title
+                          span.tags
+                            for tag in post.tags
+                              a(href="/tag/"+tag).tag.is-dark= tag
 
+                    .card-content.e-content
+                      .gallery
+                        each attachment in post.assets
+                          span!= attachment.widget
+                      if post.caption
+                        br
+                        .content.is-size-5!= post.caption
+                    footer.card-footer
+                      p.card-footer-item
+                        span
+                          span.dt-published #{post.englishDate}
+                      p.card-footer-item
+                        a(href=post.permalink) Permalink
+                      p.card-footer-item.is-hidden
+                        b.is-hidden &nbsp;&nbsp;&nbsp;
+                        a(href='/admin/#post/edit?id='+post.id).is-hidden.button.is-link ✎ Edit
+                if page.tag && !page.links.nextPage
+                  .post
+                    .section.card
+                      p.card-content That's all for this tag. <a href="/">Back to all posts?</a>
+            if page.isCustom
+              .post-like
+                .section.card
+                  .card-content
+                    .content!= page.customPage.content
 
     .hide-scroll
       // pagination
@@ -132,8 +145,10 @@ html
 
   // hamburger menu
   script(type="text/javascript") document.addEventListener("DOMContentLoaded",function(){document.getElementById('burger').addEventListener('click',function(){document.getElementById('drawer').classList.toggle('is-active');this.classList.toggle('is-active')})});
+
   // unhide stuff if user might be an admin
   script(type="text/javascript")!= "document.addEventListener('DOMContentLoaded',function(){if(!localStorage['admin']){return;}var els = document.querySelectorAll('.is-hidden');  if (!els){return};  for (var i = 0; i < els.length; i ++){els[i].classList.remove('is-hidden')}});"
+
   // infscroll
-  if page.number
+  if page.number == 1
     script(type="text/javascript") var infScroll = new InfiniteScroll( '.posts', {path:'.pagination-next',append:'.post',hideNav:'.hide-scroll'});
