@@ -1,8 +1,3 @@
--
-  var heroBackgroundColor= "linear-gradient(70deg,#ff51cc, #ff8989,#f2cc94)";
-  var heroTextColor = 'white';
-  // see, theme variables can go here! https://pugjs.org/language/code.html#unbuffered-code
-
 <!DOCTYPE html>
 html
   head
@@ -12,7 +7,7 @@ html
     <meta charset="utf-8" />
     style(type="text/css") .gallery{display:flex;text-align:center;justify-content:space-between;align-content:space-between;flex-wrap:wrap}.gallery>*{flex:1 1 auto; width:100%;}.posts{margin:0 auto;max-width:800px;}body,html{overflow-x:hidden}.post,.post-like{margin:20px;}.hide-scroll,footer{background:#fff}
     <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
-    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png" />
+    <link rel="icon" type="image/png" href=href=site.avatar />
     meta(name="description" content=site.description)
   body
 
@@ -33,9 +28,9 @@ html
             a.navbar-item.is-hidden(href='/admin') Admin
           .navbar-end
 
-    .hero(style='background:'+heroBackgroundColor+';color:'+heroTextColor )
+    .hero.is-link.is-bold
       .hero-body
-        .container.has-text-centered
+        .container
           .title(style='color:'+heroTextColor)= site.title
           p.is-size-4!= site.description
     //main
@@ -89,10 +84,10 @@ html
                       p.card-footer-item.is-hidden
                         b.is-hidden &nbsp;&nbsp;&nbsp;
                         a(href='/admin/#post/edit?id='+post.id).is-hidden.button.is-link ✎ Edit
-                if page.tag && !page.links.nextPage
-                  .post
-                    .section.card
-                      p.card-content That's all for this tag. <a href="/">Back to all posts?</a>
+              if page.tag && !page.links.nextPage
+                .post
+                  .section.card
+                    p.card-content That's all for this tag. <a href="/">Back to all posts?</a>
             if page.isCustom
               .post-like
                 .section.card

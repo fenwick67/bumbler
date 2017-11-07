@@ -18,7 +18,9 @@ USAGE:
   bulmblr hash   => create password login info
   bumbler [opts] => run the editor / builder
           |
-          --open => open it in a web browser when starting, for convenience
+          --open, -o      => open it in a web browser when starting, for convenience
+          --local         => listen on localhost instead of 0.0.0.0
+          --port [number] => listen on a specific port.  Alternatively, supply a PORT environment variable to set this.
 
 
   The author recommends making a dir, "cd" into it, then run "bumbler init" then "bumbler" for easy setup.
@@ -45,9 +47,13 @@ if (cmd && cmd.toLowerCase() == 'init'){
     process.exit(0);
   });
 }else{
+  var p = argv.port||process.env.PORT||process.env.port||8000;
+  var l = argv.local||false;
+  
   if (argv.open || argv.o){
-    opn('http://localhost:'+(process.env.PORT||8000)+'/admin' );
+    opn('http://localhost:'+p+'/admin' );
   }
-  run();
+  
+  run({port:p,local:l});
 
 }
