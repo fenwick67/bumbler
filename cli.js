@@ -7,6 +7,7 @@ var hash = require('./cli-lib/hash');
 var opn = require('opn');
 var nginx = require('./cli-lib/nginx');
 var cmd = argv._[0];
+var build = require('./lib/build')
 
 var help = `BUMBLER: the easy self-hosted microblog.
 
@@ -15,15 +16,18 @@ USAGE:
   bumbler init   => initialize your microblog
   bumbler nginx  => writes out an example NGINX config if you blog is in the current working directory.
   bumbler pm2    => writes out an example PM2 "process.yml" file to use with PM2.
-  bulmblr hash   => create password login info
-  bumbler [opts] => run the editor / builder
-          |
+  bumbler hash   => create password login info
+  bumbler build  => just build and exit
+
+  bumbler [opts] => run the CMS system and builder
+          │
           --open, -o      => open it in a web browser when starting, for convenience
           --local         => listen on localhost instead of 0.0.0.0
           --port [number] => listen on a specific port.  Alternatively, supply a PORT environment variable to set this.
 
 
-  The author recommends making a dir, "cd" into it, then run "bumbler init" then "bumbler" for easy setup.
+
+  The Authors recommend making a dir, "cd" into it, then run "bumbler init" then "bumbler" for easy setup.
 
   For better performance, set up NGINX.  Run "bumbler nginx" to get that set up.
 
@@ -34,7 +38,9 @@ if (argv.help || argv.h || (cmd && cmd.toLowerCase() == 'help') ){
   process.exit(0);
 }
 
-if (cmd && cmd.toLowerCase() == 'init'){
+if (cmd && cmd.toLowerCase() == 'build'){
+  build.build();
+}else if (cmd && cmd.toLowerCase() == 'init'){
   init();
 }else if (cmd && cmd.toLowerCase() == 'nginx'){
   nginx(e=>{
@@ -47,13 +53,14 @@ if (cmd && cmd.toLowerCase() == 'init'){
     process.exit(0);
   });
 }else{
+  console.log(argv);
   var p = argv.port||process.env.PORT||process.env.port||8000;
   var l = argv.local||false;
-  
+
   if (argv.open || argv.o){
     opn('http://localhost:'+p+'/admin' );
   }
-  
+
   run({port:p,local:l});
 
 }

@@ -74,7 +74,7 @@ server {
 
 
 }
-    
+
 `
     fs.writeFileSync('./bumbler-nginx',nginx,'utf8');
     console.log('wrote "bumbler-nginx" NGINX config file. ')

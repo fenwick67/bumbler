@@ -1,7 +1,8 @@
 /*
-// make directory 'build' and file 'bumbler.json'
-// create bumbler.json
-// init git repo
+ make directory 'build' and file 'bumbler.json'
+ create bumbler.json
+
+ This is synchronous because it's interactive only.
 */
 
 
@@ -28,11 +29,12 @@ module.exports = function(){
     '_bumblersrc',
     '_bumblersrc/assets',
     '_bumblersrc/posts',
+    '_bumblersrc/static'
   ];
 
   var defaultFiles = {
     'avatar.png':'assets/avatar.png',
-    'favicon.png':'assets/favicon.png',
+    'favicon.png':'_bumblersrc/favicon.png',
     'layout.pug':'_bumblersrc/layout.pug'
   }
 
