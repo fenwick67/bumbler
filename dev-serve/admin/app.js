@@ -66,7 +66,7 @@ var Asset = function () {
 Asset.prototype.fetchAll = function (callback) {
 
   var ok = false;
-  fetch('/admin/glob?pattern=' + encodeURIComponent('./_bumblersrc/assets/*'), { credentials: "include" }).then(function (response) {
+  fetch('/admin/glob?pattern=' + encodeURIComponent('./assets/*'), { credentials: "include" }).then(function (response) {
     ok = response.ok;
     if (ok) {
       return response.json();
