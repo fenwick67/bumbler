@@ -29,11 +29,12 @@ module.exports = function(){
     '_bumblersrc',
     '_bumblersrc/assets',
     '_bumblersrc/posts',
-    '_bumblersrc/static'
+    '_bumblersrc/static',
+    '_bumblersrc/pages'
   ];
 
   var defaultFiles = {
-    'avatar.png':'assets/avatar.png',
+    'avatar.png':'_bumblersrc/assets/avatar.png',
     'favicon.png':'_bumblersrc/favicon.png',
     'layout.pug':'_bumblersrc/layout.pug'
   }
