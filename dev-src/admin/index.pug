@@ -1,3 +1,27 @@
+
+- var menuCategories = ['actions','posts','files','customize','extras']
+-
+  var menuItems = {
+    "actions":[
+      {title:"👁️ View",href:"/",class:"button is-default", target:"_blank"},
+      {title:"🌙 Night Mode",href:"#",id:"toggle-night-mode",class:"button is-default"},
+      {title:"↻︎ Build",href:"#",id:"run-a-build",class:"button is-default"}
+    ],
+    "posts": [
+      {title:'➕ Create',href:"#post/create"},
+      {title:'📁 Manage',href:"#posts"}
+    ],
+    "files": [{title:'📁 Manage',href:"#files"}],
+    "customize":[
+      {title:'⚙️ Settings',href:"#settings"},
+      {title:'🌺 Theme',href:"#html"},
+      {title:'📄 Custom Pages',href:"#custompages"}
+    ],
+    "extras": [
+      {title:'💻&#xFE0E; Scripts',href:"#scripts"}
+    ]
+  }
+
 <!DOCTYPE html>
   html.admin
     head
@@ -5,9 +29,6 @@
       style
       <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no">
       link(rel="stylesheet" type="text/css" href="./style.css")
-
-    - var menuCategories = ['actions','posts','files','general','custom pages']
-    - var menuItems = {"actions":[{title:"👁️&#xFE0E; View",href:"/",class:"button is-default", target:"_blank"},{title:"🌙&#xFE0E; Night Mode",href:"#",id:"toggle-night-mode",class:"button is-default"},{title:"↻︎&#xFE0E; Build",href:"#",id:"run-a-build",class:"button is-default"}], posts: [{title:'➕&#xFE0E; Create',href:"#post/create"},{title:'📁&#xFE0E; Manage',href:"#posts"}], files: [{title:'📁&#xFE0E; Manage',href:"#files"}], general: [{title:'✈️&#xFE0E; Publish',href:"#publish"},{title:'⚙️&#xFE0E; Settings',href:"#settings"},{title:'<b>&#60;&#47;&#62;</b> Theme',href:"#html"}],"custom pages":[{title:'📁&#xFE0E; Manage',href:"#custompages"}]}
     body
       .sidebar.menu#sidebar
         li.big
@@ -57,6 +78,10 @@
             | Edit your
             a(href="#settings") &nbsp;settings&nbsp;
             | to set the repository and branch.
+
+        hash-template#scripts
+          h1.title Scripts
+          div
 
         // custom pages
         hash-template#custompages

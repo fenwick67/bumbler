@@ -28,7 +28,7 @@ module.exports = class PopupManager {
     // body
     var msgBody = document.createElement('div');
     msgBody.setAttribute('class','message-body');
-    msgBody.innerHTML = message;
+    msgBody.innerHTML = message.replace(/\n/g,'<br>');
 
     popup.appendChild(header);
     popup.appendChild(msgBody);

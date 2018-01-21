@@ -2,7 +2,7 @@ var PopupManager = require('./PopupManager');
 var Asset = require('./Asset');
 var AssetView = require('./AssetView');
 var AssetsView = require('./AssetsView');
-var FileEditor = require('./FileEditor');
+var PugEditor = require('./PugEditor');
 var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
@@ -11,6 +11,7 @@ var PostList = require('./PostList');
 var CustomPageList = require('./CustomPageList');
 var CustomPageEditor = require('./CustomPageEditor');
 var SettingsManager = require('./SettingsManager');
+var ScriptsView = require('./ScriptsView');
 var publish = require('./publisher');
 
 // for UI purposes
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var htmlEditor = null;
   document.getElementById('html').addEventListener('navigate-to',function(){
     if (!htmlEditor){
-      htmlEditor = new FileEditor('/admin/html',document.getElementById('htmleditor'),'pug');
+      htmlEditor = new PugEditor('/admin/html',document.getElementById('htmleditor'),'pug');
     }
     htmlEditor.load();
   });
@@ -92,13 +93,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     customPageList.load();
   });
 
-
+  // publish
   var publishInitialized = false;
   document.getElementById('publish').addEventListener('navigate-to',function(){
     if (!publishInitialized){
       publishInitialized = true;
       this.querySelector('[name="build"]').addEventListener('click',startBuild);
     }
+  });
+
+  //scripts
+  var scriptsView = null;
+  document.getElementById('scripts').addEventListener('navigate-to',function(){
+    if (!scriptsView){
+      scriptsView = new ScriptsView(this.querySelector('div'));
+    }
+    scriptsView.load();
   })
 
   document.getElementById('run-a-build').addEventListener('click',startBuild);
