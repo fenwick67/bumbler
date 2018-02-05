@@ -124,7 +124,7 @@ module.exports = function(pluginLib,pluginReady){
   };
 
   // we're ready right away
-  pluginReady(null,hooks);
+  pluginReady(null,{hooks});
 }
 ```
 
@@ -148,7 +148,7 @@ module.exports = function(pluginLib,pluginReady){
   var hooks = {};
 
   // we're ready right away
-  pluginReady(null,hooks);
+  pluginReady(null,{hooks});
 }
 
 ```

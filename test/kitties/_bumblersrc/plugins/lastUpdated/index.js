@@ -5,6 +5,7 @@ This plugin simply sets the site.lastUpdated key in the template with the curren
 */
 module.exports = function(pluginLib,ready){
 
+
   var hooks = {
     beforePageRender:  function (oldData,done){
       // create a copy of the data
@@ -21,8 +22,8 @@ module.exports = function(pluginLib,ready){
 
     }
   }
-
-  // signal that we're ready, and send our hooks
-  ready(null,hooks);
+  
+  // we don't do any IO so we're actually ready now
+  return ready(null,{name:"last-updated",hooks:hooks});
 
 }

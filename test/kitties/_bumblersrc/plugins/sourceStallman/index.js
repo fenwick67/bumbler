@@ -18,7 +18,7 @@ function serializeFeedEntry(item){
 module.exports = function(pluginLib,ready){
 
   // we don't use hooks so we can just say we're ready now.
-  ready(null,{});
+  ready(null,{name:"source-stallman"});
 
   function check(){
     // first grab the most recent details we have cached
