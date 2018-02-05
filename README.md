@@ -8,7 +8,14 @@ A straightforward, file-based CMS and build system for photos, art, statuses, au
 
 Look at the example deployment [here](https://bumblerexample.pw/), and check out some example themes [here](http://fenwick67.github.io/bumbler-themes).
 
-## Features
+
+# Screenshots
+
+![admin screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png)
+
+![screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/screenshot.png)
+
+# Features
 
 * Static files for ＭＡＸＳＰＥＥＤ, easy migration, and easy administration
 * Built-in support for
@@ -25,6 +32,8 @@ Look at the example deployment [here](https://bumblerexample.pw/), and check out
 
 Along with all of the other features the indie web has to offer.
 
+# User guide
+
 ## Installation
 
 step 0: install Node.js v7+ and NPM, and open a terminal.
@@ -33,11 +42,11 @@ step 0: install Node.js v7+ and NPM, and open a terminal.
 2. Create a new folder for your site
 3. `cd` into your new site folder
 4. Run `bumbler init` inside it and follow the directions
-  - **DO NOT** re-use a password for the admin interface.  Seriously.  This software is pre-alpha and there are probably security holes.
+  - **DO NOT** re-use a password for the admin interface.  Seriously.  This software is pre-alpha.
 
 ## Directories
 
-Bumbler creates a folder called `_bumblersrc`, which is where all of your site data is stored before building.  Here's the directory structure:
+Bumbler creates a folder called `_bumblersrc`, which is where all of your site data is stored for building your site.  Here's the directory structure:
 
 ```bash
 _bumblersrc/
@@ -46,6 +55,8 @@ _bumblersrc/
   ║  #┌────────────────────┴────────────────────────┐   
   ╠═static/       # Put static files here           │
   ╠═favicon.png   # Put an icon for your site here  │
+  ╠═plugins/      # plugins go in here              |
+  ╠═scripts/      # scripts go in here              |
   ║  #└─────────────────────────────────────────────┘
   ║
   ║  # Things you should just use the UI for:
@@ -63,7 +74,7 @@ Bumbler works on Windows, with one caveat.
 
 On Windows, you need administrator access to create symbolic links, which Bumbler will do.
 
-# Publishing
+# Publishing Guide
 
 ## Self-Hosting
 
@@ -85,23 +96,76 @@ Bumblr was *made to work **with or without** a serverside application*.  You can
 
 The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/
 
-## TODO Items:
+# Developer Guide
 
-### High Priority
-* [ ] Save as Draft
-* [ ] Create JSON scheme for replying and sharing (reply contexts)
-* [ ] Share a url and parse out H-entry and/or opengraph info in the post interface
+## Plugins
 
-### Medium Priority
+Bumbler has a plugin system!
 
-* [ ] Put a RSS feed reader into the admin interface
-  - [ ] I can reuse some work from mastofeed for this
+Your plugin gets passed two parameters: the plugin library and a ready callback.  
 
-### Low Priority
+You must call the ready callback with any errors and any hooks you want to handle.  
 
-plugin system
+Here's a simple example with hooks:
 
-## Screenshots
+```javascript
+// _bumblersrc/plugins/last-updated.js
 
-![screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/screenshot.png)
-![admin screenshot](https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png)
+// Put a generationDate value on every page when the site builds
+
+module.exports = function(pluginLib,pluginReady){
+
+  var hooks = {
+    beforePageRender:function(oldPage,done){
+      var page = JSON.parse(JSON.stringify(oldPage));
+      page.generationDate = new Date().toISOString();
+      done(null,page);
+    }
+  };
+
+  // we're ready right away
+  pluginReady(null,hooks);
+}
+```
+
+Here's a more complex example of how you could use Bumbler to publish some other feed's data:
+
+```javascript
+// _bumblersrc/plugins/feed-subscriber/index.js
+
+const subscribe = require('theoretical-atom-subscription-library');
+
+module.exports = function(pluginLib,pluginReady){
+
+  subscribe('www.myotherwebsite.com/atomfeed.xml').on('new-post',item=>{
+    var postData = {title:item.title,caption:item.caption};
+    pluginLib.putPost(postData,(er)=>{      
+      pluginLib.buildPages();
+    });
+  });
+
+  // this plugin uses no hooks
+  var hooks = {};
+
+  // we're ready right away
+  pluginReady(null,hooks);
+}
+
+```
+
+### Available hooks
+
+```
+beforePageRender: function(existingPageData,done)
+  => you must call done(error,modifiedData)
+```
+
+### `pluginLib` methods
+
+```
+pluginLib.putPost(postObject,done)
+  => add a post, or modify it by its ID.  Use this to create new posts from another source.
+
+pluginLib.buildPages(done)
+  => rebuild the site pages if you add a new post, or any other reason.
+```

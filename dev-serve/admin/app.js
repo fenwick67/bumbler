@@ -1785,8 +1785,6 @@ module.exports = function () {
     _classCallCheck(this, SettingsManager);
 
     this.labels = {
-      publishUrl: "Git Publish URL",
-      publishBranch: "Git Publish Branch",
       title: "Title",
       postsPerPage: "Posts per Page",
       metadata: "Metadata (json)",
@@ -2222,8 +2220,6 @@ module.exports = function publish() {
 },{}],19:[function(require,module,exports){
 'use strict';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* post
@@ -2244,36 +2240,40 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var ulid = require('ulid');
 var _ = require('lodash');
 
-var Post = function () {
-  function Post(json) {
-    _classCallCheck(this, Post);
+var Post = function Post(json) {
+  _classCallCheck(this, Post);
 
-    // jsonize it (remove funcs etc)
-    var json = JSON.parse(JSON.stringify(json));
+  // jsonize it (remove funcs etc)
+  var json = JSON.parse(JSON.stringify(json));
 
-    // validate it
-    var problem = Post.prototype.validate(json);
-    if (problem) {
-      throw new TypeError(problem);
-    }
-
-    // inherit from json but don't override my methods
-    _.defaults(this, json);
-
-    // add permalink
-    this.permalink = '/posts/' + this.id;
+  // validate it
+  var problem = Post.prototype.validate(json);
+  if (problem) {
+    throw new TypeError(problem);
   }
 
-  // asyncronous render
+  // inherit from json but don't override my methods
+  _.defaults(this, json);
 
-
-  _createClass(Post, [{
-    key: 'render',
-    value: function render(callback) {}
-  }]);
-
-  return Post;
-}();
+  if (!this.id) {
+    this.id = ulid();
+  }
+  if (!this.permalink) {
+    this.permalink = '/posts/' + this.id;
+  }
+  if (!this.title) {
+    this.title = '';
+  }
+  if (!this.date) {
+    this.date = new Date().toISOString();
+  }
+  if (!this.tags) {
+    this.tags = '';
+  }
+  if (!this.assets) {
+    this.assets = [];
+  }
+};
 
 // NOTE TO SELF: this needs to return an array of Strings if there are problems, or return falsy if there are no problems
 

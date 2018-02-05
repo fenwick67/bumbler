@@ -73,11 +73,13 @@ html
                               a(href="/tag/"+tag).tag.is-dark= tag
 
                     .card-content.e-content
-                      .gallery
-                        each attachment in post.assets
-                          span!= attachment.widget
-                      if post.caption
+                      if post.assets && post.assets.length > 0
+                        .gallery
+                          each attachment in post.assets
+                            span!= attachment.widget
+                      if post.caption && post.assets && post.assets.length > 0
                         br
+                      if post.caption
                         .content.is-size-5!= post.caption
                     footer.card-footer
                       p.card-footer-item
@@ -88,10 +90,10 @@ html
                       p.card-footer-item.is-hidden
                         b.is-hidden &nbsp;&nbsp;&nbsp;
                         a(href='/admin/#post/edit?id='+post.id).is-hidden.button.is-link ✎ Edit
-                if page.tag && !page.links.nextPage
-                  .post
-                    .section.card
-                      p.card-content That's all for this tag. <a href="/">Back to all posts?</a>
+              if page.tag && !page.links.nextPage
+                .post
+                  .section.card
+                    p.card-content That's all for this tag. <a href="/">Back to all posts?</a>
             if page.isCustom
               .post-like
                 .section.card
@@ -131,13 +133,16 @@ html
     footer.section
       .container
         .content.has-text-centered
-          p All content © 
+          p All content ©
             strong #{site.authorName}
             |  #{new Date().getFullYear()}.
           p
             a(href="https://github.com/fenwick67/bumbler") Bumbler
             |  flat CMS by
             b  Drew Harwell
+          // test plugin!
+          if site.lastUpdated
+            p= site.lastUpdated
 
   // infinite scroll:
   <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>

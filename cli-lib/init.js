@@ -48,8 +48,6 @@ module.exports = function(){
     authorName:dir,
     avatar:"/assets/avatar.png",
     postsPerPage:'10',
-    publishBranch: "",
-    publishUrl: "",
     siteUrl:"http://localhost:8000/",
     categories:"",
     reverseOrder:false

@@ -4,8 +4,6 @@
   "description": "kitties, birdies, doggos, and more!",
   "metadata": "{\"featuredTags\":[\"inktober\"]}",
   "postsPerPage": "5",
-  "publishBranch": "",
-  "publishUrl": "",
   "reverseOrder": false,
   "siteUrl": "http://localhost:8000/",
   "title": "KBnD"

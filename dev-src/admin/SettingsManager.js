@@ -7,8 +7,6 @@ module.exports = class SettingsManager {
   constructor(el){
 
     this.labels = {
-      publishUrl: "Git Publish URL",
-      publishBranch: "Git Publish Branch",
       title:"Title",
       postsPerPage:"Posts per Page",
       metadata:"Metadata (json)",

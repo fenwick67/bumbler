@@ -1,0 +1,8 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.0",
+    "feedme": "^1.1.2",
+    "sanitize-html": "^1.17.0"
+  }
+}
