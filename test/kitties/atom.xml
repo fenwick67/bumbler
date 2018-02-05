@@ -3,7 +3,7 @@
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
 <subtitle>kitties, birdies, doggos, and more!</subtitle>
-<updated>2018-02-04T18:27:37-06:00</updated>
+<updated>2018-02-04T21:30:48-06:00</updated>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
 <id>http://localhost:8000/</id>
@@ -19,48 +19,48 @@
 <link rel="alternate" type="text/html" href="http://localhost:8000/"/>
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/feed.atom"/>
 <entry>
-<id>http://localhost:8000/post/01C5HFZWP25MC8HS8FGM0B330Z.html</id>
-<published>2018-02-04T22:46:36.482Z</published>
-<updated>2018-02-04T22:46:36.482Z</updated>
-<title>Attractive-looking people</title>
+<id>http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html</id>
+<published>2018-02-04T00:00:00.000Z</published>
+<updated>2018-02-04T00:00:00.000Z</updated>
+<title>Emergency room treatment</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Attractive-looking people&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/lifeandstyle/2018/jan/31/hunky-tory-attractive-people-more-likely-to-be-rightwing-study-finds&#34;&gt; Attractive-looking people tend to be more right-wing, &lt;/a&gt; because they don&amp;#39;t understand the struggles others tend to face.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Emergency room treatment&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/1/29/16906558/anthem-emergency-room-coverage-denials-inappropriate&#34;&gt; Anthem medical insurance refuses to pay for emergency room treatment &lt;/a&gt; if the problem was not really urgent.  Since patients have no way to know that on their own, this means they risk bankruptcy every time they go.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <activity:object>
-<id>http://localhost:8000/post/01C5HFZWP25MC8HS8FGM0B330Z.html</id>
-<published>2018-02-04T22:46:36.482Z</published>
-<updated>2018-02-04T22:46:36.482Z</updated>
-<title>Attractive-looking people</title>
+<id>http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html</id>
+<published>2018-02-04T00:00:00.000Z</published>
+<updated>2018-02-04T00:00:00.000Z</updated>
+<title>Emergency room treatment</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Attractive-looking people&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/lifeandstyle/2018/jan/31/hunky-tory-attractive-people-more-likely-to-be-rightwing-study-finds&#34;&gt; Attractive-looking people tend to be more right-wing, &lt;/a&gt; because they don&amp;#39;t understand the struggles others tend to face.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Emergency room treatment&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/1/29/16906558/anthem-emergency-room-coverage-denials-inappropriate&#34;&gt; Anthem medical insurance refuses to pay for emergency room treatment &lt;/a&gt; if the problem was not really urgent.  Since patients have no way to know that on their own, this means they risk bankruptcy every time they go.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5HFZWP25MC8HS8FGM0B330Z.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html"/>
 </activity:object>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5HFZWP25MC8HS8FGM0B330Z.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5HFZWNZHBZEM57XPG12X4ZA.html</id>
-<published>2018-02-04T22:46:36.479Z</published>
-<updated>2018-02-04T22:46:36.479Z</updated>
-<title>Emergency room treatment</title>
+<id>http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html</id>
+<published>2018-01-31T00:00:00.000Z</published>
+<updated>2018-01-31T00:00:00.000Z</updated>
+<title>&#34;Microschools&#34;</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Emergency room treatment&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/1/29/16906558/anthem-emergency-room-coverage-denials-inappropriate&#34;&gt; Anthem medical insurance refuses to pay for emergency room treatment &lt;/a&gt; if the problem was not really urgent.  Since patients have no way to know that on their own, this means they risk bankruptcy every time they go.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;&#34;Microschools&#34;&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;http://reason.com/archives/2018/01/27/are-microschools-the-next-big&#34;&gt; &amp;quot;Microschools&amp;quot; try to break the rigidity of standardized education. &lt;/a&gt;   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <activity:object>
-<id>http://localhost:8000/post/01C5HFZWNZHBZEM57XPG12X4ZA.html</id>
-<published>2018-02-04T22:46:36.479Z</published>
-<updated>2018-02-04T22:46:36.479Z</updated>
-<title>Emergency room treatment</title>
+<id>http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html</id>
+<published>2018-01-31T00:00:00.000Z</published>
+<updated>2018-01-31T00:00:00.000Z</updated>
+<title>&#34;Microschools&#34;</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Emergency room treatment&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/1/29/16906558/anthem-emergency-room-coverage-denials-inappropriate&#34;&gt; Anthem medical insurance refuses to pay for emergency room treatment &lt;/a&gt; if the problem was not really urgent.  Since patients have no way to know that on their own, this means they risk bankruptcy every time they go.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;&#34;Microschools&#34;&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;http://reason.com/archives/2018/01/27/are-microschools-the-next-big&#34;&gt; &amp;quot;Microschools&amp;quot; try to break the rigidity of standardized education. &lt;/a&gt;   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <category term=""/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5HFZWNZHBZEM57XPG12X4ZA.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html"/>
 </activity:object>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5HFZWNZHBZEM57XPG12X4ZA.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html"/>
 </entry>
 <entry>
 <id>http://localhost:8000/post/01C16XJ7Y96Z9Y9P2DQR17ZC1C.html</id>

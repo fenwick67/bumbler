@@ -47,17 +47,18 @@ module.exports = function(pluginLib,ready){
         parser.on('item', (item) => {
           var id = serializeFeedEntry(item);
           parsedEntryIds.push(id);
+
           if (oldEntryIds.indexOf(id) > -1){
             // don't publish this
             return;
           }
-
           // create the item
-          toCreate.push({
+          toCreate.unshift({
             caption:sanitize(item.description.replace(/\n/g,'&nbsp;')),
             title:item.title,
             permalink:item.permalink,
-            tags:"stallman"
+            tags:"stallman",
+            date:item.pubdate?new Date(item.pubdate):new Date()
           });
 
         });
