@@ -2,6 +2,7 @@
 
 var _ = require('lodash');
 var loadSettings = require('./loadSettings');
+const api = require('./rpc').api;
 
 module.exports = class SettingsManager {
   constructor(el){
@@ -76,40 +77,22 @@ module.exports = class SettingsManager {
       }
       console.log(input.getAttribute('name'),dat[input.getAttribute('name')])
     })
-    var ok = false;
 
-    fetch('/admin/settings',{
-      method:"POST",
-      body:JSON.stringify(dat),
-      headers:{'Content-Type': 'application/json'},
-      credentials: "include"
-    }).then(res=>{
-      ok = res.ok;
-      if (ok){
-        return res.json();
+    api.setSettings(dat,function(er){
+      if(!er){
+        popup("Settings saved.",'success',)
       }else{
-        throw new Error('bad response')
+        popup(er,'danger','Error saving settings')
       }
-    }).then(json=>{
-      var formData = _.clone(json);
-      var parent = this.form.parentElement;
-      parent.removeChild(this.form);
-
-      this.form = this.autoFormFactory(formData);
-      parent.appendChild(this.form);
-      popup("Settings saved.",'success',)
-
-    }).catch(e=>{
-      popup(e,'danger','Error saving settings')
-    })
+    });
 
 
   }
   load(alert){
 
-    loadSettings((er,formData)=>{
+    api.getSettings((er,formData)=>{
       if (er){
-        return window.popup(er,'danger','Error fetching settings')
+        return window.popup(er,'danger','Error getting settings')
       }
       var parent = this.form.parentElement;
       parent.removeChild(this.form);

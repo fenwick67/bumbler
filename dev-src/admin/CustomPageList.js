@@ -1,5 +1,6 @@
 var _ = require('lodash');
 var ulid = require('ulid');
+const api = require('./rpc').api;
 
 module.exports = class CustomPageList{
 
@@ -157,44 +158,26 @@ module.exports = class CustomPageList{
     var ok = false;
     var self = this;
     var _done = function(e){if (done){done(e)}}
-    fetch('/admin/custom-pages',{credentials:'include'}).then(res=>{
-      ok = res.ok;
-      if(ok){
-        return res.json();
-      }else{
-        return res.text();
-      }
-    }).then(data=>{
-      if (ok){
+    api.getCustomPages((er,data)=>{
+      if(!er){
         self.setPages(data);
         _done(null)
       }else{
-        popup(data,'danger','Error fetching pages:')
-        _done(new Error(data))
-      }
-    })
-  }
-
-  submitPage(page,done){
-    var ok = false;
-    var self = this;
-    var _done = function(e){if (done){done(e)}}
-    fetch('/admin/custom-page',{
-      credentials:'include',
-      method:"POST",
-      body:JSON.stringify(page),
-      headers:{'Content-Type': 'application/json'}
-    }).then(res=>{
-      ok = res.ok;
-      return res.text();
-    }).then(data=>{
-      if (ok){
-        self.load(_done);
-      }else{
-        popup(data,'danger','Error submitting custom page:')
+        popup(er,'danger','Error fetching pages:')
         _done(new Error(data))
       }
     });
+  }
+
+  submitPage(page,done){
+    var self = this;
+    var _done = function(e){if (done){done(e)}}
+    api.putCustomPage(page,er=>{
+      if(er){
+        popup(data,'danger','Error submitting custom page:')
+      }
+      _done(er);
+    })
   }
 
   deletePage(id,done){

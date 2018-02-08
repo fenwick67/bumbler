@@ -1,5 +1,7 @@
 var _ = require('lodash');
 
+const api = require('./rpc').api;
+
 module.exports = class ScriptsView{
 
   constructor(element,options){
@@ -11,26 +13,14 @@ module.exports = class ScriptsView{
   }
 
   load(){
-    // load scripts from server
-    var ok = false;
-    fetch('/admin/scripts',{credentials:"include"}).then(res=>{
-      ok = res.ok;
-      if(ok){
-        return res.json();
-      }else{
-        return res.text();
-      }
-    }).then(data=>{
-      if (ok){
+    api.getScripts((er,data)=>{
+      if(!er){
         this.scriptNames = data;
+        this.loaded = true;
       }else{
-        popup(data,'danger','Error fetching scripts:')
+        popup(er,'danger','Error fetching scripts:')
       }
-      this.loaded = true;
-    }).catch(function(e){
-      popup(e,'danger','Error:')
     });
-
   }
 
 

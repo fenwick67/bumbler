@@ -87,18 +87,14 @@ module.exports = class FileEditor{
 
   delete(){
     var contents = this.textarea.value;
-    var ok = true;
-    fetch(this.href,{method: "DELETE",credentials:'include'}).then(req=>{
-      ok = req.ok;
-      return req.text();
-    }).then(text=>{
-      if (ok){
-        window.popup('deleted','success')
+
+    api.deleteFile(this.href,er=>{
+      if(er){
+        return window.popup('error: '+er,'danger','Error Deleting');
       }else{
-        window.popup('error: '+text,'danger','Error Deleting')
+        window.popup('deleted','success');
       }
-    }).catch(er=>{
-      window.popup('error: '+er,'danger','Error Deleting')
+
     })
   }
 

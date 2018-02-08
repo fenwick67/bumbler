@@ -1,4 +1,5 @@
 var _ = require('lodash');
+const api = require('./rpc').api;
 
 module.exports = class CustomPageEditor{
 
@@ -7,18 +8,9 @@ module.exports = class CustomPageEditor{
   }
 
   load(id){
-    var ok = false;
-    var self = this;
-    fetch('/admin/custom-pages',{credentials:'include'}).then(res=>{
-      ok = res.ok;
-      if(ok){
-        return res.json()
-      }else{
-        return res.text();
-      }
-    }).then(data=>{
-      if (ok){
-        self.setPages(data);
+    api.getCustomPages((er,pages)=>{
+      if(!er){
+        self.setPages(pages);
       }else{
         popup(data,'danger','Error fetching pages:')
       }

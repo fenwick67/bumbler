@@ -1,4 +1,5 @@
 var _ = require('lodash');
+const api = require('./rpc').api;
 
 
 // Asset that has been uploaded
@@ -38,42 +39,13 @@ class Asset{
 
     var cb = callback || function(){};
     var filename = _.last(this.href.split('/'));
-    var ok = false;
-    fetch('/admin/asset?filename='+filename,{method:"DELETE",credentials:'include'}).then(response=>{
-      ok = response.ok;
-      return response.text();
-    }).then(text=>{
-      return cb(ok?null:new Error(text));
-    }).catch(error=>{
-      return cb(error);
-    });
+    api.deleteAsset(filename,callback)
 
   }
 }
 
 Asset.prototype.fetchAll = function(callback){
-
-  var ok = false;
-  fetch('/admin/glob?pattern='+encodeURIComponent('./assets/*'),{credentials: "include"}).then(response=>{
-    ok = response.ok;
-    if (ok){
-      return response.json();
-    }else{
-      return response.text();
-    }
-  }).then(data=>{
-    if (ok){
-      var assets = [];
-      data.forEach(file=>{
-        assets.push(new Asset(file));
-      });
-      callback(null,assets)
-    }else{
-      // data is response text
-      callback(data)
-    }
-
-  });
+  return api.getAssets(callback);
 }
 
 module.exports = Asset;

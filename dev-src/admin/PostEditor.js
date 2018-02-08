@@ -4,6 +4,7 @@ var Asset = require('./Asset');
 var moment = require('moment');
 var loadSettings = require('./loadSettings');
 var SimpleMDE = require('simplemde');
+const api = require('./rpc').api;
 
 module.exports = class PostEditor{
   constructor(el,options){
@@ -150,22 +151,13 @@ module.exports = class PostEditor{
         return popup(er,'danger','Error uploading files')
       }
 
-      // 4 post it up
-      var ok = false;
-      fetch('/admin/post',
-        {
-          method:'POST',
-          body:JSON.stringify(json),
-          headers:{'Content-Type': 'application/json'},
-          credentials: "include"
-        }).then(res=>{
-          ok = res.ok;
-          if (ok){
-            popup('uploaded post!');
-            self.reset();
-          }else{
-            popup('failed to upload','danger','Error');
-          }
+      api.putPost(json,function(er){
+        if (!er){
+          popup('uploaded post!');
+          self.reset();
+        }else{
+          popup(er,'danger','Error');
+        }
       });
 
     });
@@ -178,25 +170,15 @@ module.exports = class PostEditor{
       if (!id){
         return;
       }
-      var ok=false;
-      fetch('/admin/post?id='+id,
-        {
-          headers:{'Content-Type': 'application/json'},
-          credentials: "include"
-        }).then(res=>{
-          ok = res.ok;
-          if (ok){
-            return res.json();
-          }else{
-            popup('Failed to load post','danger','Error');
-          }
-      }).then(data=>{
-        if (ok){
-          this.populate(data);
+      api.getPost(id,function(er,post){
+
+        if (!er){
+          this.populate(post);
         }
-      }).catch(e=>{
-        console.error(e);
-        popup('Failed to load post','danger','Error')
+        else{
+          window.popup(er,'warning','error loading post')
+        }
+
       });
 
     });
@@ -249,21 +231,13 @@ module.exports = class PostEditor{
       return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE THIS'))
     }
 
-    var ok = false;
-    fetch('/admin/post?id='+id,
-      {
-        method:'DELETE',
-        credentials: "include"
-      }).then(res=>{
-        ok = res.ok;
-        if (ok){
-          popup('deleted post','success');
-          navigate('posts')
-        }else{
-          popup('failed to delete','danger');
-        }
-    }).catch(e=>{
-      popup(e,'danger','Error Deleting:');
+    api.deletePost(id,function(er){
+      if(!er){
+        popup('deleted post','success');
+        navigate('posts')
+      }else{
+        popup('failed to delete','danger');
+      }
     });
 
   }

@@ -1,5 +1,7 @@
 // show a list of posts
 
+const api = require('./rpc').api;
+
 class PostList {
 
   constructor(el){
@@ -69,20 +71,14 @@ class PostList {
   load(){
     var ok = false;
     var self = this;
-    fetch('/admin/posts',{credentials:'include'}).then(res=>{
-      ok = res.ok;
-      if(ok){
-        return res.json()
-      }else{
-        return res.text();
-      }
-    }).then(data=>{
-      if (ok){
+    api.getPosts(function(er,data){
+      if (!er){
         self.setIds(data);
       }else{
-        popup(data,'danger','Error fetching posts:')
+        popup(er,'danger','Error getting posts:')
       }
     })
+
   }
 
 }
