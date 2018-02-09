@@ -17,7 +17,7 @@ module.exports = class AssetsView{
       if (er){
         popup('Error fetching assets: '+er,'danger');
       }else{
-        this.assets = assets;
+        this.assets = assets.map(a=>new Asset(a));
         this.render();
       }
     });

@@ -23,7 +23,7 @@ exports.api = new Proxy({},{
 
       var params = [];
       for (var i = 0; i < arguments.length-1;i++){
-        params.push(parameters[i]);
+        params.push(arguments[i]);
       }
       var body = {
         method:name,

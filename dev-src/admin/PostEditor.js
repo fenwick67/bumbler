@@ -2,7 +2,6 @@ var Post = require('../../lib/Post')
 var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
 var moment = require('moment');
-var loadSettings = require('./loadSettings');
 var SimpleMDE = require('simplemde');
 const api = require('./rpc').api;
 
@@ -153,7 +152,7 @@ module.exports = class PostEditor{
 
       api.putPost(json,function(er){
         if (!er){
-          popup('uploaded post!');
+          popup('uploaded post!','success');
           self.reset();
         }else{
           popup(er,'danger','Error');
@@ -170,7 +169,7 @@ module.exports = class PostEditor{
       if (!id){
         return;
       }
-      api.getPost(id,function(er,post){
+      api.getPost(id,(er,post)=>{
 
         if (!er){
           this.populate(post);

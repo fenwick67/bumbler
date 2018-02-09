@@ -46,17 +46,13 @@ module.exports = class ScriptsView{
       button.innerHTML = name;
 
       button.addEventListener('click',()=>{
-        var ok = false;
-        fetch('/admin/script/'+name+'/run',{credentials:'include',method:'POST'}).then(response=>{
-          ok = response.ok;
-          return response.text();
-        }).then(responseText=>{
-          if (ok){
-            popup(responseText,'success',name+' ran successfully')
+        api.runScript(name,function(er,result){
+          if(er){
+            popup(er,'error','error running '+name);
           }else{
-            popup(responseText,'error','error running '+name)
+            popup(result,'success',name+' ran successfully');
           }
-        })
+        });
 
       })
 

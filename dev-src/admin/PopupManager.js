@@ -10,6 +10,7 @@ module.exports = class PopupManager {
     }
   }
   show(message,type,headerText){
+    var message = message?message.toString():'';
     var type = type||'primary';
     var popup = document.createElement('article');
     popup.setAttribute('class','fadein popup message is-'+type);
@@ -43,21 +44,27 @@ module.exports = class PopupManager {
     }
 
 
-    setTimeout(function(){
+    var fadeTimeout = setTimeout(function(){
       popup.classList.add('fadeout');
     },5000)
 
-    setTimeout(remove,6000)
-
-    button.addEventListener('click',remove)
-
-    //add to DOM
-    this.el.appendChild(popup);
-
+    var removeTimeout = setTimeout(remove,6000)
 
     setTimeout(function(){
       popup.classList.remove('fadein');
     },100)
+
+    popup.addEventListener('click',function(e){
+      if (e.target == button){
+        remove();
+      }else{
+        clearTimeout(fadeTimeout);
+        clearTimeout(removeTimeout);
+      }
+    },false);
+
+    //add to DOM
+    this.el.appendChild(popup);
 
   }
 }

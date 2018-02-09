@@ -5,19 +5,23 @@
   "assets": [
     {
       "href": "/assets/burds21.jpg",
-      "type": "image"
+      "type": "image",
+      "uploaded": true
     },
     {
       "href": "/assets/c6v8R.jpg",
-      "type": "image"
+      "type": "image",
+      "uploaded": true
     },
     {
       "href": "/assets/extreme_double_bird.jpg",
-      "type": "image"
+      "type": "image",
+      "uploaded": true
     },
     {
       "href": "/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg",
-      "type": "image"
+      "type": "image",
+      "uploaded": true
     }
   ],
   "date": "2017-09-28T20:33:52-05:00",

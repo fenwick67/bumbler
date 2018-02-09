@@ -12,7 +12,8 @@ var CustomPageList = require('./CustomPageList');
 var CustomPageEditor = require('./CustomPageEditor');
 var SettingsManager = require('./SettingsManager');
 var ScriptsView = require('./ScriptsView');
-var publish = require('./publisher');
+
+const api = require('./rpc').api;
 
 // for UI purposes
 if (!localStorage['admin']){
@@ -93,14 +94,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     customPageList.load();
   });
 
-  // publish
-  var publishInitialized = false;
-  document.getElementById('publish').addEventListener('navigate-to',function(){
-    if (!publishInitialized){
-      publishInitialized = true;
-      this.querySelector('[name="build"]').addEventListener('click',startBuild);
-    }
-  });
 
   //scripts
   var scriptsView = null;
@@ -112,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   })
 
   document.getElementById('run-a-build').addEventListener('click',startBuild);
-  document.getElementById('publish-button').addEventListener('click',publish);
 
   // night mode
 
@@ -128,12 +120,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function startBuild(){
-  fetch('/admin/build',{method:"POST",credentials: "include"}).then(res=>{
-    if (!res.ok){throw new Error('response not ok');return;}
-    popup('Build triggered.','info')
-  }).catch(e=>{
-    popup(e,'danger','Error starting build:')
-  });
+  popup('build started');
+  api.build(er=>{
+    if(!er){
+      popup('build complete!','success')
+    }else{
+      popup(e,'danger','Error running build:')
+    }
+  })
 }
 
 function toggleNightMode(){

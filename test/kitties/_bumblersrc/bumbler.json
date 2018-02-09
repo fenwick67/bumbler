@@ -1,7 +1,7 @@
 {
   "authorName": "The Authors",
   "avatar": "/assets/avatar.png",
-  "description": "kitties, birdies, doggos, and more!",
+  "description": "kitties, birdies, doggos, and more",
   "metadata": "{\"featuredTags\":[\"inktober\"]}",
   "postsPerPage": "5",
   "reverseOrder": false,

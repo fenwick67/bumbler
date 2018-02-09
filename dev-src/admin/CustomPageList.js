@@ -1,5 +1,5 @@
 var _ = require('lodash');
-var ulid = require('ulid');
+var ulid = require('ulid').ulid;
 const api = require('./rpc').api;
 
 module.exports = class CustomPageList{
@@ -130,6 +130,7 @@ module.exports = class CustomPageList{
         this.clearForm();
         window.popup('saved page successfully','success');
         this.hideEditor();
+        this.load();
       }
     });
 

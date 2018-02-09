@@ -1,8 +1,8 @@
 // manage settings
 
 var _ = require('lodash');
-var loadSettings = require('./loadSettings');
 const api = require('./rpc').api;
+var loadSettings = api.getSettings;
 
 module.exports = class SettingsManager {
   constructor(el){
@@ -80,7 +80,7 @@ module.exports = class SettingsManager {
 
     api.setSettings(dat,function(er){
       if(!er){
-        popup("Settings saved.",'success',)
+        popup("Settings saved.",'success')
       }else{
         popup(er,'danger','Error saving settings')
       }
