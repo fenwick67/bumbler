@@ -1,6 +1,6 @@
 {
   "name": "bumbler",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "tags": [
     "cms",
     "blog",
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/fenwick67/bumbler.git"
   },
   "author": "Drew Harwell",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/fenwick67/bumbler/issues"
   },
