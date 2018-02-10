@@ -25,9 +25,13 @@ exports.api = new Proxy({},{
       for (var i = 0; i < arguments.length-1;i++){
         params.push(arguments[i]);
       }
+      
+      var jwt = localStorage.getItem('jwt');
+
       var body = {
         method:name,
-        parameters:params
+        parameters:params,
+        token:jwt
       };
 
       var fn = name;
@@ -37,8 +41,10 @@ exports.api = new Proxy({},{
 
       fetch(url,{
         method:"POST",
-        credentials:"include",
-        headers:{'Content-Type': 'application/json'},
+        headers:{
+          'Content-Type': 'application/json',
+          "Authorization":"Bearer "+jwt
+        },
         body:JSON.stringify(body)
       }).then(res=>{
         ok = res.ok;

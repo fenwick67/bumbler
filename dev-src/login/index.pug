@@ -13,12 +13,13 @@
               h1.title Please Log In.
       .form-contain
         .box
-          form(action="/login" method="post")
+          form#form
               .field
                   label.label Username:
-                  input.input(type="text" name="username")
+                  input.input(type="text" name="username")#username
               .field
                   label.label Password:
-                  input.input(type="password" name="password")
+                  input.input(type="password" name="password")#password
               .field
                   input.button.is-primary(type="submit" value="Log In")
+    script(type="text/javascript" src="login.js")

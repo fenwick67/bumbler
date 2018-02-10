@@ -274,6 +274,7 @@ If your template DOES include assets, don't worry about this.`;
     var xhr = new XMLHttpRequest();
     var fd = new FormData();
     xhr.open("POST", url, true);
+    xhr.setRequestHeader('Authorization','Bearer '+localStorage.getItem('jwt'))
     var done = false;
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200) {

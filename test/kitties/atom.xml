@@ -3,7 +3,7 @@
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
-<updated>2018-02-08T22:58:39-06:00</updated>
+<updated>2018-02-09T20:35:03-06:00</updated>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
 <id>http://localhost:8000/</id>
@@ -19,27 +19,26 @@
 <link rel="alternate" type="text/html" href="http://localhost:8000/"/>
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/feed.atom"/>
 <entry>
-<id>http://localhost:8000/post/01C5WCDYBCDRC3ERZ8M4ZXWMBB.html</id>
-<published>2018-02-08T22:16:01-06:00</published>
-<updated>2018-02-08T22:16:01-06:00</updated>
-<title>New Post on KBnD</title>
+<id>http://localhost:8000/post/01C5YG5W00VAM55FQM45HHRKHA.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Volunteer</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;aaaaaaaaaaaa&lt;/p&gt;
-&lt;/span&gt;&lt;/p&gt;</content>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Volunteer&lt;/h1&gt;&lt;span&gt;&lt;p&gt;I am looking for people to help web sites put free licenses      on their Javascript code.&lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <activity:object>
-<id>http://localhost:8000/post/01C5WCDYBCDRC3ERZ8M4ZXWMBB.html</id>
-<published>2018-02-08T22:16:01-06:00</published>
-<updated>2018-02-08T22:16:01-06:00</updated>
-<title>New Post on KBnD</title>
+<id>http://localhost:8000/post/01C5YG5W00VAM55FQM45HHRKHA.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Volunteer</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;aaaaaaaaaaaa&lt;/p&gt;
-&lt;/span&gt;&lt;/p&gt;</content>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5WCDYBCDRC3ERZ8M4ZXWMBB.html"/>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Volunteer&lt;/h1&gt;&lt;span&gt;&lt;p&gt;I am looking for people to help web sites put free licenses      on their Javascript code.&lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00VAM55FQM45HHRKHA.html"/>
 </activity:object>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="The Authors"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5WCDYBCDRC3ERZ8M4ZXWMBB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00VAM55FQM45HHRKHA.html"/>
 </entry>
 <entry>
 <id>http://localhost:8000/post/01C5WAYS0AYCRX84JVET7MPJBV.html</id>

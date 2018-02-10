@@ -6,6 +6,8 @@ var browserify = require('browserify');
 var babelify = require('babelify')
 var fs = require('fs')
 
+var UglifyJS = require("uglify-js");
+
 gulp.task('pug',function(){
   return gulp.src('./dev-src/**/*.pug')
     .pipe(pug())
@@ -14,9 +16,12 @@ gulp.task('pug',function(){
 
 gulp.task('browserify', function(done) {
     browserify('./dev-src/admin/app.js')
+      //.plugin('tinyify',{flat:false})
       .transform(babelify)
       .bundle(function(er,buf){
-        fs.writeFile('./dev-serve/admin/app.js',buf,done)
+        if(er){throw er}
+        var res = UglifyJS.minify(buf.toString('utf8'));
+        fs.writeFile('./dev-serve/admin/app.js',res.code,done)
       });
 });
 

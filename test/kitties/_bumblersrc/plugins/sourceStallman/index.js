@@ -54,7 +54,7 @@ module.exports = function(pluginLib,ready){
           }
           // create the item
           toCreate.unshift({
-            caption:sanitize(item.description.replace(/\n/g,'&nbsp;')),
+            caption:'Stallman Sez: \n\n'+sanitize(item.description.replace(/\n/g,'&nbsp;')),
             title:item.title,
             permalink:item.permalink,
             tags:"stallman",
