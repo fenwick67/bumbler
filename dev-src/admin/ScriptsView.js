@@ -1,66 +1,47 @@
 var _ = require('lodash');
-
+import Vue from 'vue/dist/vue.js'
 const api = require('./rpc').api;
 
-module.exports = class ScriptsView{
+module.exports = function ScriptsView(element,options){
 
-  constructor(element,options){
-    this.list = document.createElement('div');
-    this.list.innerHTML = 'loading...';
-    element.appendChild(this.list);
-    this._scriptNames = [];
-    this.load();
-  }
-
-  load(){
-    api.getScripts((er,data)=>{
-      if(!er){
-        this.scriptNames = data;
-        this.loaded = true;
-      }else{
-        popup(er,'danger','Error fetching scripts:')
-      }
-    });
-  }
-
-
-  get scriptNames(){
-    return this._scriptNames;
-  }
-
-  set scriptNames(val){
-    var self = this;
-
-    self._urls = val;
-    if (val.length == 0){
-      return self.list.innerHTML = 'No scripts found!  Drop some in _bumblersrc/scripts.'
-    }
-
-    // update DOM
-    self.list.innerHTML = '';
-
-    val.forEach((name)=>{
-      var button = document.createElement('a');
-      button.classList.add('button');
-      button.classList.add('is-primary');
-      button.innerHTML = name;
-
-      button.addEventListener('click',()=>{
+  var view = new Vue({
+    el:element,
+    data:{
+      scriptNames:[],
+      loaded:false
+    },
+    template:`
+    <div>
+      <div v-for="name in scriptNames">
+        <a class="button is-primary" @click="runScript(name)">{{name}}</a>
+      </div>
+    </div>
+    `,
+    methods:{
+      load(){
+        api.getScripts((er,data)=>{
+          if(!er){
+            this.scriptNames = data;
+            this.loaded = true;
+          }else{
+            popup(er,'danger','Error fetching scripts:')
+          }
+        });
+      },
+      runScript(name){
         api.runScript(name,function(er,result){
           if(er){
-            popup(er,'error','error running '+name);
+            popup(er,'error','error running script '+name);
           }else{
             popup(result,'success',name+' ran successfully');
           }
         });
+      }
+    }
+  })
 
-      })
+  view.load();
 
-      self.list.appendChild(button);
-
-    })
-
-  }
-
+  return view;
 
 }

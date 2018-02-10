@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (!postList){
       postList = new PostList(document.getElementById('posts-list'));
     }
-    postList.clear();
     postList.load();
   });
 

@@ -1,42 +1,45 @@
 var Asset = require('./Asset');
 var AssetView = require('./AssetView');
+import Vue from 'vue/dist/vue.js'
 
 // view ALL assets
 
 module.exports = class AssetsView{
 
   constructor(el){
-    this.el = el;
-    this.el.innerHTML = 'loading...';
-    this.assets = [];
-    this.assetViews = [];
-  }
 
-  load(){
-    Asset.prototype.fetchAll((er,assets)=>{
-      if (er){
-        popup('Error fetching assets: '+er,'danger');
-      }else{
-        this.assets = assets.map(a=>new Asset(a));
-        this.render();
+    return new Vue({
+      el:el,
+      components:{
+        'asset-view':AssetView
+      },
+      data:{
+        assets:[],
+      },
+      template:`
+        <div>
+          <span v-for="asset in assets">
+            <asset-view :asset="asset"></asset-view>
+          </span>
+        </div>
+      `,
+      methods:{
+        load(){
+          Asset.prototype.fetchAll((er,assets)=>{
+            if (er){
+              popup('Error fetching assets: '+er,'danger');
+            }else{
+              this.assets = assets.map(a=>new Asset(a));
+            }
+          });
+        }
       }
-    });
+    })
+
+
   }
 
-  add(asset){
-    var assetContain = document.createElement('div');
-    var av = new AssetView(asset,assetContain);
-    this.assetViews.push(av);
-    this.el.appendChild(assetContain);
-  }
 
-  render(){
-    this.el.innerHTML = '';
-    this.assetViews = [];
-    this.assets.forEach(a=>{
-      this.add(a);
-    });
-  }
 
 
 }

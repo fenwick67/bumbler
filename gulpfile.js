@@ -20,8 +20,10 @@ gulp.task('browserify', function(done) {
       .transform(babelify)
       .bundle(function(er,buf){
         if(er){throw er}
-        var res = UglifyJS.minify(buf.toString('utf8'));
-        fs.writeFile('./dev-serve/admin/app.js',res.code,done)
+        //var res = UglifyJS.minify(buf.toString('utf8'));
+        //fs.writeFile('./dev-serve/admin/app.js',res.code,done)
+
+        fs.writeFile('./dev-serve/admin/app.js',buf,done)
       });
 });
 

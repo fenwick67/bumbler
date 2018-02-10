@@ -1,85 +1,65 @@
 // show a list of posts
 
 const api = require('./rpc').api;
+import Vue from 'vue/dist/vue.js'
 
-class PostList {
+function PostList(el) {
 
-  constructor(el){
-    var self = this;
-    this.element = el;
+    this.currentId='';
+    this.loading = false;
+    this.postIds = [];
 
-    this.enterElement = document.createElement('div');
-    this.enterElement.setAttribute('class','level')
+    var view = new Vue({
+      el:el,
+      data:{
+        currentId:'',
+        loading: false,
+        postIds: []
+      },
+      template:`
+      <div>
+        <div class="level"> Enter a post ID to edit, or pick from a recent one below
+          <div class="level">
+            <input class="input" placeholder="01BJCTAYSSR4T6K99WCTSBTFMG" type="text" v-model="currentId">
+            <a class="button" target="_top" @click="view(currentId)">View</a>
+            <a class="button is-primary" @click="edit(currentId)">Edit</a>
+          </div>
+        </div>
+        <div>
+          <div v-if="loading">
+            <span> Loading... </span>
+          </div>
+          <div class="level" v-for="id in postIds">
+            <pre>{{ id }}</pre>
+             <a class="button is-default" @click="view(id)">View</a>
+             <a class="button is-primary" @click="edit(id)">Edit</a>
+          </div>
+        </div>
+      </div>
+      `,
 
-    this.label = document.createElement('div');
-    this.label.setAttribute('class','level')
-    this.label.innerHTML = "Enter a post ID to edit, or pick from a recent one below";
-    this.input = document.createElement('input');
-    this.input.setAttribute('type','text');
-    this.input.setAttribute('class','input');
-    this.input.setAttribute('placeholder','01BJCTAYSSR4T6K99WCTSBTFMG');
-
-    this.button = document.createElement('a');
-    this.button.setAttribute('class','button is-primary');
-    this.button.innerHTML = "Edit";
-    this.button.addEventListener('click',e=>{
-      window.location = '/admin/#post/edit?id='+self.input.value;
-    })
-
-    this.viewButton = document.createElement('a');
-    this.viewButton.setAttribute('class','button');
-    this.viewButton.setAttribute('target','_top');
-
-    this.viewButton.innerHTML = "View";
-    this.input.addEventListener('change',e=>{
-      self.viewButton.href = '/post/'+self.input.value+'.html';
-    })
-
-    this.label.appendChild(this.enterElement);
-
-    this.enterElement.appendChild(this.input);
-    this.enterElement.appendChild(this.viewButton);
-    this.enterElement.appendChild(this.button);
-    this.element.appendChild(this.label);
-
-    this.listElement = document.createElement('div');
-    this.element.appendChild(this.listElement);
-
-  }
-
-  addId(id){
-    var el = document.createElement('div');
-    el.classList.add('level')
-    el.innerHTML = `<pre>${id}</pre> <a class="button is-default" href="/post/${id}.html">View<a><a class="button is-primary" href="#post/edit?id=${id}">Edit</a>`
-    this.listElement.appendChild(el);
-  }
-
-  setIds(ids){
-    // faster operation, add multiple IDs
-    var h = '';
-
-    ids.forEach(id=>{
-      h+=`<div class="level"><pre>${id}</pre> <a class="button is-default" href="/post/${id}.html">View<a><a class="button is-primary" href="#post/edit?id=${id}">Edit</a></div>`;
-    })
-    this.listElement.innerHTML = h;
-  }
-
-  clear(){
-    this.listElement.innerHTML = "";
-  }
-
-  load(){
-    var ok = false;
-    var self = this;
-    api.getPosts(function(er,data){
-      if (!er){
-        self.setIds(data);
-      }else{
-        popup(er,'danger','Error getting posts:')
+      methods:{
+        view(id){
+          window.location.href=`/post/${id}.html`
+        },
+        edit(id){
+          window.location.href=`#post/edit?id=${id}`
+        },
+        load(){
+          this.loading=true;
+          api.getPosts((er,data)=>{
+            this.loading=false;
+            if (!er){
+              this.postIds = data;
+            }else{
+              popup(er,'danger','Error getting posts:')
+            }
+          })
+        }
       }
     })
 
-  }
+    return view;
 
 }
 

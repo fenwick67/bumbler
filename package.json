@@ -66,6 +66,7 @@
     "simplemde": "^1.11.2",
     "simplemde-theme-base": "git@github.com:xcatliu/simplemde-theme-base.git#c2e86f3a0dde118d28c7dd66bc0e7740d6526171",
     "simplemde-theme-dark": "git@github.com:xcatliu/simplemde-theme-dark.git#ef6ae7d0b3d03464ba4e2a0c99776a9e371cef8f",
-    "uglify-js": "^3.3.10"
+    "uglify-js": "^3.3.10",
+    "vue": "^2.5.13"
   }
 }
