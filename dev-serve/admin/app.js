@@ -561,6 +561,7 @@ module.exports = function (element, options) {
             popup('Deleted custom page: ' + page.title, 'success');
           }
           _this2.loadAll();
+          window.startBuild();
         });
       },
       createNew: function createNew() {

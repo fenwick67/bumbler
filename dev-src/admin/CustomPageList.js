@@ -79,6 +79,7 @@ module.exports = function(element,options){
               popup('Deleted custom page: '+page.title,'success')
             }
             this.loadAll()
+            window.startBuild();
           })
         },
         createNew(){
