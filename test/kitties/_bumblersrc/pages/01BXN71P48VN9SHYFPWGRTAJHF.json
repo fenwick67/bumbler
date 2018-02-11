@@ -1,6 +1,6 @@
 {
   "route": "faq",
-  "title": "Frequently Asked Qs",
-  "content": "<p>Here are some of the most frequently asked questions:</p>\n<ul>\n<li>Where do babies come from?</li>\n<li>Why is the sky blue?</li>\n<li>Why does it have to happen? Why does death happen?</li>\n</ul>",
+  "title": "Frequently Asked Q",
+  "content": "<p>Here are some of the most frequently asked questions:</p>\n<ul>\n  <li>Where do babies come from?</li>\n  <li>Why is the sky blue?</li>\n  <li>Why does it have to happen? Why does death happen?</li>\n</ul>",
   "id": "01BXN71P48VN9SHYFPWGRTAJHF"
 }

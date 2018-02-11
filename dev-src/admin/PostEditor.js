@@ -154,6 +154,7 @@ module.exports = class PostEditor{
         if (!er){
           popup('uploaded post!','success');
           self.reset();
+          window.startBuild();
         }else{
           popup(er,'danger','Error');
         }
@@ -233,6 +234,7 @@ module.exports = class PostEditor{
     api.deletePost(id,function(er){
       if(!er){
         popup('deleted post','success');
+        window.startBuild();
         navigate('posts')
       }else{
         popup('failed to delete','danger');

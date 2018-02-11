@@ -1,7 +1,6 @@
-import Vue from 'vue/dist/vue.js'
-
 // view into an asset
-// i.e. in a list or whatever
+
+// this is a Vue component!
 module.exports =  {
   props:['asset'],
   data:function(){

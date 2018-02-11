@@ -9,7 +9,6 @@ var PostEditor = require('./PostEditor');
 var Post = require('../../lib/Post');
 var PostList = require('./PostList');
 var CustomPageList = require('./CustomPageList');
-var CustomPageEditor = require('./CustomPageEditor');
 var SettingsManager = require('./SettingsManager');
 var ScriptsView = require('./ScriptsView');
 
@@ -19,6 +18,30 @@ const api = require('./rpc').api;
 if (!localStorage['admin']){
   localStorage['admin']="maybe?";
 }
+
+/*
+  not logged in.
+
+  NOTE that this isn't a security measure!
+    It's a user feature that redirects them if the JWT isn't valid.
+    If we didn't, all the operations would just fail.
+*/
+if (!localStorage['jwt']){
+  window.location.href='/login';
+}
+api.echo(er=>{
+  if(er){
+    window.location.href='/login';
+  }
+})
+
+document.querySelector('#logout').addEventListener('click',function(){
+  // log out
+  localStorage['jwt']='';
+  window.location.href='/login';
+})
+
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -44,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (!settingsManager){
       settingsManager = new SettingsManager(this.querySelector('form'));
     }
+    settingsManager.load();
   })
 
   // html editor
@@ -128,6 +152,9 @@ function startBuild(){
     }
   })
 }
+
+// make globally accessible
+window.startBuild = startBuild;
 
 function toggleNightMode(){
   var isNight = false;

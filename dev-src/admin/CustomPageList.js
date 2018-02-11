@@ -1,209 +1,125 @@
 var _ = require('lodash');
-var ulid = require('ulid').ulid;
 const api = require('./rpc').api;
+import Vue from 'vue/dist/vue.js';
+var ulid = require('ulid').ulid;
 
-module.exports = class CustomPageList{
-
-  constructor(element,options){
+module.exports = function(element,options){
     var self = this;
     this.element = element;
-    this.table = document.createElement('table');
-    this.table.setAttribute('class','table');
-    this.table.innerHTML = '<thead><tr><th>title</th><th>route</th><th></th></tr></thead>'
-    this.list = document.createElement('tbody');
-    this.table.appendChild(this.list);
-    this.element.appendChild(this.table);
-    this.pages = [];
-    this.editor = document.createElement('div');
-    this.form = document.createElement('form');
-    this.form.innerHTML = `
-    <input type="text" name="id" style="display:none">
-    <label class="label">Title
-      <p class="control">
-        <input class="input" type="text" name="title">
-      </p>
-    </label>
-    <label class="label">Filename / route
-      <p class="control">
-        <input class="input" type="text" name="route">
-      </p>
-    </label>
-    <label class="label">Content (HTML fragment)
-      <p class="control">
-        <textarea name="content" class="textarea textedit">
-      </p>
-    </label>
-    `;
-    this.editor.appendChild(this.form);
 
-    var submitButton = document.createElement('a');
-    submitButton.setAttribute('class','button is-success');
-    submitButton.innerHTML = 'Save';
-    this.form.appendChild(submitButton);
-    submitButton.addEventListener( 'click', e=>self.savePage() );
-
-    var cancelButton = document.createElement('a');
-    cancelButton.setAttribute('class','button is-warning');
-    cancelButton.innerHTML = 'Cancel';
-    this.form.appendChild(cancelButton);
-    cancelButton.addEventListener( 'click', e=> {self.clearForm(); self.hideEditor()} );
-
-    var newButton = document.createElement('a');
-    newButton.setAttribute('class','button is-success');
-    newButton.innerHTML = 'Add New Page';
-    this.element.appendChild(newButton);
-    newButton.addEventListener('click',e=>{self.newPage()})
-
-    this.element.appendChild(this.editor);
-
-    this.hideEditor();
-  }
-
-  setPages(pages){
-    var self = this;
-    this.clear();
-    this.pages = pages;
-    // populate
-    pages.forEach(page=>{
-      var item = document.createElement("tr");
-      item.innerHTML = `<td>${page.title}</td><td><a href="/${page.route}.html" target="_blank">${page.route}</a></td>`;
-
-      var btn = document.createElement('button');
-      btn.setAttribute('class','button is-primary');
-      btn.innerHTML = 'Edit';
-      btn.addEventListener('click',function(){
-        self.editPage(page.id);
-      })
-      item.appendChild(btn);
-
-      var delBtn = document.createElement('button');
-      delBtn.setAttribute('class','button is-danger');
-      delBtn.innerHTML = 'Delete';
-      delBtn.addEventListener('click',function(){
-        self.deletePage(page.id);
-      })
-      item.appendChild(delBtn);
-
-      this.list.appendChild(item);
-    });
-  }
-
-  editPage(id){
-    this.load(er=>{
-      var toEdit = _.find(this.pages,{id});
-      this.currentPost = toEdit;
-      ['route','title','content','id'].forEach(s=>{
-        this.form.querySelector('[name="'+s+'"]').value = toEdit[s]||'';
-      })
-      this.showEditor();
-    });
-  }
-
-  newPage(){
-    var id = ulid();
-    var toEdit = {id};
-    ['route','title','content','id'].forEach(s=>{
-      this.form.querySelector('[name="'+s+'"]').value = toEdit[s]||'';
-    })
-    this.showEditor();
-  }
-
-  savePage(){
-    console.log('saving');
-    var page = {};
-    var ok = true;
-    ['route','title','content','id'].forEach(s=>{
-      page[s] = this.form.querySelector('[name="'+s+'"]').value;
-      if (!page[s]){
-        ok = false;
-        window.popup('Page is missing attribute: '+s,'danger');
-      }
-    });
-    if (!ok){
-      return;
-    }
-    // now POST it
-    this.submitPage(page,er=>{
-      if (er){
-        window.popup(er,'danger')
-      }else{
-        this.clearForm();
-        window.popup('saved page successfully','success');
-        this.hideEditor();
-        this.load();
+    var view = new Vue({
+      el:element,
+      data:function(){
+        return {
+          pages:[],
+          editing:false,
+          currentPage:null
+        }
+      },
+      template:`
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>title</th>
+              <th>route</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="page in pages">
+              <td>{{ page.title }}</td>
+              <td>
+                <a :href="'/'+page.route+'.html'" target="_blank">{{ page.route }}</a>
+              </td>
+              <button class="button is-primary" @click="edit(page.id, $event)">Edit</button>
+              <button class="button is-danger" @click="deletePage(page, $event)">Delete</button>
+            </tr>
+          </tbody>
+        </table>
+        <a class="button is-success" @click="createNew" v-if="!currentPage">Add New Page</a>
+        <div v-if="currentPage">
+          <form>
+            <input name="id" style="display:none" type="text">
+              <label class="label">Title
+                <p class="control">
+                  <input class="input" type="text" v-model="currentPage.title">
+                </p>
+              </label>
+              <label class="label">Filename / route
+                <p class="control">
+                  <input class="input" type="text" v-model="currentPage.route">
+                </p>
+              </label>
+              <label class="label">Content (HTML fragment)
+                <p class="control">
+                  <textarea name="content" class="textarea textedit" v-model="currentPage.content">
+                  </textarea>
+                </p>
+              </label>
+            <a class="button is-success" @click="save(currentPage, $event)">Save</a>
+            <a class="button is-warning" @click="cancel">Cancel</a>
+          </form>
+        </div>
+      </div>
+      `,
+      methods:{
+        edit(id){
+          this.loadAll(er=>{
+            console.log(id);
+            console.log(this.pages);
+            this.currentPage = _.filter(this.pages,p=>p.id == id)[0];
+          });
+        },
+        deletePage(page){
+          api.deleteCustomPage(page,er=>{
+            if(er){
+              popup(data,'danger','Error deleting custom page:');
+            }else{
+              popup('Deleted custom page: '+page.title,'success')
+            }
+            this.loadAll()
+          })
+        },
+        createNew(){
+          var id = ulid();
+          var p =  {id};
+          this.pages.push(p);
+          this.currentPage=p;
+        },
+        save(page){
+          api.putCustomPage(page,er=>{
+            if(er){
+              popup(data,'danger','Error submitting custom page:')
+            }else{
+              popup('saved page','success')
+              this.currentPage = null;
+              window.startBuild();
+            }
+          })
+        },
+        loadAll(done){
+          var _done = function(e){if (done){done(e)}}
+          api.getCustomPages((er,data)=>{
+            if(!er){
+              this.pages = data;
+              _done(null)
+            }else{
+              popup(er,'danger','Error fetching pages:')
+              _done(new Error(data))
+            }
+          });
+        },
+        load(){
+          return this.loadAll();
+        },
+        cancel(){
+          this.currentPage = null;
+          return this.loadAll();
+        }
       }
     });
 
-  }
-
-  clearForm(){
-    ['route','title','content','id'].forEach(s=>{
-      this.form.querySelector('[name="'+s+'"]').value = '';
-    });
-  }
-
-  showEditor(){
-    this.editor.style='';
-  }
-  hideEditor(){
-    this.editor.style='display:none';
-  }
-
-  clear(){
-    this.list.innerHTML = '';
-    // clear editor as well
-    this.clearForm();
-  }
-
-  load(done){
-    var ok = false;
-    var self = this;
-    var _done = function(e){if (done){done(e)}}
-    api.getCustomPages((er,data)=>{
-      if(!er){
-        self.setPages(data);
-        _done(null)
-      }else{
-        popup(er,'danger','Error fetching pages:')
-        _done(new Error(data))
-      }
-    });
-  }
-
-  submitPage(page,done){
-    var self = this;
-    var _done = function(e){if (done){done(e)}}
-    api.putCustomPage(page,er=>{
-      if(er){
-        popup(data,'danger','Error submitting custom page:')
-      }
-      _done(er);
-    })
-  }
-
-  deletePage(id,done){
-    var ok = false;
-    var self = this;
-    var _done = function(e){if (done){done(e)}}
-    if (!window.confirm("are you SURE you want to delete this page?")){
-      return;
-    }
-    fetch('/admin/custom-page?id='+id,{
-      credentials:'include',
-      method:"DELETE",
-      headers:{'Content-Type': 'application/json'}
-    }).then(res=>{
-      ok = res.ok;
-      return res.text();
-    }).then(data=>{
-      if (ok){
-        self.load(_done);
-        popup('Deleted custom page','warning')
-      }else{
-        popup(data,'danger','Error deleting custom page:')
-        _done(new Error(data))
-      }
-    });
-  }
+    return view;
 
 }

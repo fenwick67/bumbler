@@ -20,7 +20,7 @@ class PugEditor{
       el:element,
       data:self,
       template:`
-        <span id="htmleditor">
+        <span id="htmleditor" @keydown.ctrl.83.prevent="save">
           <div class="field">
             <p class="control">
               <textarea name="data" class="textarea textedit" style="height: 663px;" v-model="pugTemplate"></textarea>
@@ -64,6 +64,7 @@ class PugEditor{
             api.setTemplate(contents,er=>{
               if(!er){
                 window.popup('Saved template','success')
+                window.startBuild();
               }else{
                 window.popup(er.toString(),'warning','error saving')
               }

@@ -25,7 +25,7 @@ exports.api = new Proxy({},{
       for (var i = 0; i < arguments.length-1;i++){
         params.push(arguments[i]);
       }
-      
+
       var jwt = localStorage.getItem('jwt');
 
       var body = {

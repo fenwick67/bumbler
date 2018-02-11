@@ -20,6 +20,8 @@ https://staltz.com/open-analytics.html
 
 module.exports = function(pluginLib,ready){
 
+  return ready(null,{});
+
   // (hissing sounds)
   var lastIndex = Number(fs.readFileSync(lastIndexFile,'utf8'))||0;
 

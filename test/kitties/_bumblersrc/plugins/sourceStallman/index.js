@@ -93,7 +93,7 @@ module.exports = function(pluginLib,ready){
   }
 
   // check every 30 minutes and also right now
-  setInterval(check,30*60*1000);
+  setInterval(check,30*60*60*1000);
   check();
 
 }

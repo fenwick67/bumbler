@@ -1,5 +1,4 @@
 var AssetUploader = require('./AssetUploader');
-var AssetView = require('./AssetView');
 
 // pick or upload assets
 
