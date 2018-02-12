@@ -17,6 +17,7 @@ $turquoise:	hsl(171, 100%, 41%);
 $blue:	hsl(217, 71%, 53%);
 $purple:	hsl(271, 100%, 71%);
 $red:	hsl(348, 100%, 61%);
+$link: hsl(217, 71%, 53%);
 
 @function inv($c){
   @return lighten(invert($c),20%);
@@ -30,7 +31,11 @@ $red:	hsl(348, 100%, 61%);
 $primary:hsl(34.1, 100%, 56.5%);
 $primary-invert:rgba(0,0,0,0.7);
 */
-
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
 
 .card{background-color:$white-bis;}
 
@@ -108,7 +113,7 @@ NIGHT MAN
     box-shadow:$shadow;
   }
   .sidebar>.big, .sidebar>.big *{
-    color:$primary !important;
+    color:$link !important;
     text-align:center;
     font-size:1.8rem;
     list-style-type:none;
@@ -131,7 +136,7 @@ NIGHT MAN
         padding:2rem;
       }
       #sidebar{
-        min-width:10em;
+        min-width:5em;
       }
   }
   #app>*{

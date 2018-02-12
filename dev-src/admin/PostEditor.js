@@ -1,248 +1,259 @@
-var Post = require('../../lib/Post')
-var AssetPicker = require('./AssetPicker.js')
 var Asset = require('./Asset');
-var moment = require('moment');
-var SimpleMDE = require('simplemde');
 const api = require('./rpc').api;
 
-module.exports = class PostEditor{
-  constructor(el,options){
-    var self = this;
-    this.el = el;
-    this.options = options || {};
-    this.id = this.options.id || null;
-    this.canDelete = this.options.canDelete || false;
-    // add appropriate fields to this
-    /*
-      id
-      date
-      tags (comma sep)
-      caption
-      permalink (from id)
-      assets (if audio or video or image)
-      title (if a link or embed or text)
-    */
+import Vue from 'vue/dist/vue.js';
+import each from 'async/each';
+import { ulid } from 'ulid';
 
-    // get a field
-    function field(classes){
-      var l = document.createElement('div');
-      l.setAttribute( 'class','field'+(classes?(' '+classes):'') );
-      return l;
-    }
+module.exports = function(el,options){
+  var el = el;
+  var options = options || {};
+  var id = options.id || null;
+  var canDelete = options.canDelete || !!options.id || false;
+  var post = {
+    tags:'',
+    assets:[]
+  };
+  var files = [];
 
-    this.form = document.createElement('form');
-    this.tagField = field();
-    this.tagField.innerHTML = `
-      <label class="label">Tags
-      <p class="control">
-        <input class="input" type="text" placeholder="(comma seperated, optional)" name="tags">
-      </p>
-      </label>`
-    // tagField will be updated in reset()
+  var tpl = `
+  <div class="editor">
+    <div>
+      <div class="field">
+        <label class="label">Title
+          <p class="control">
+            <input v-model="post.title" class="input" placeholder="(optional)" name="title" type="text">
+          </p>
+        </label>
+      </div>
+      <div class="field">
+        <label class="label">Tags
+        <p class="control">
+          <input v-model="post.tags" class="input" placeholder="(comma seperated, optional)" name="tags" type="text">
+        </p>
+        </label>
+      </div>
+      <div class="tags">
+        <span class="tag is-link" v-for=" tag in tagsList ">
+          {{ tag }}
+        </span>
+      </div>
+      <div class="field">
+        <div>
+          <label class="label">Assets</label>
+          <div class="file has-name is-boxed">
+            <label class="file-label">
+              <input multiple="multiple" class="file-input" type="file" style="display:none" @change="fileInputChanged">
+              <span class="file-cta">
+                <span class="file-icon">📁︎🢁</span>
+                <span class="file-label">
+                  Upload assets…
+                </span>
+              </span>
+            </label>
+          </div>
+          <div class="gallery">
+            <div v-for="asset in post.assets" class="level">
+              <img v-if="asset.type=='image'" :src="asset._preview||asset.href" class="thumb"></img>
+              <span v-else>{{ asset.type }}</span>
+              <i> {{ asset.href }} </i>
+              <a v-if="asset._uploaded === false" class="button is-success" @click="uploadAsset(asset)">🢁 Upload now</a>
+              <a class="button is-danger" @click="removeAsset(asset,$event)">❌&#xFE0E; Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Caption/Content</label>
+        <textarea v-model="post.caption" class="textarea" name="caption"></textarea>
+      </div>
+      <div class="field is-grouped">
+        <p class="control">
+          <button @click="save" class="button is-link">💾︎ Submit Post</button>
+          <button @click="deletePost" v-if="canDelete" class="button is-danger">❌&#xFE0E; Delete</button>
+        </p>
+      </div>
+    </div>
+  </div>`
 
-    this.captionField = field();
-    this.captionField.innerHTML = `
-      <label class="label">Caption/Content</label>
-      <textarea class="textarea" name="caption"></textarea>
-      `
-    this.mde = new SimpleMDE({
-      element:this.captionField.querySelector('textarea'),
-    	toolbar: [
-        'preview', 'side-by-side', 'fullscreen', '|',
-        'code', 'quote','link',
-        {
-          name: 'image',
-          action: function customFunction(editor) {
-            // overridden later
-          },
-          className: 'fa fa-picture-o',
-          title: 'Insert Image',
+  var view = new Vue({
+    el:el,
+    template:tpl,
+    data:{options,post,canDelete,files},
+    computed:{
+      tagsList:function(){
+        var tags = this.post&&typeof this.post.tags == 'string'?this.post.tags:'';
+        var t = tags.split(/,\s*/g);
+        t = t.filter(s=>!!s);
+        return t;
+      }
+    },
+    methods:{
+
+      save:function(){
+        console.log('saving');
+
+        var assets = JSON.parse(JSON.stringify(this.post.assets));
+        assets = assets.map(a=>{
+          Object.keys(a).forEach(k=>{
+            if (k.charAt(0) === '_'){
+              delete a[k];
+            }
+          })
+          return a;
+        });
+
+        var json = {
+          tags:this.post.tags||'',
+          caption:this.post.caption||'',
+          title:this.post.title||'',
+          assets:assets||[],
+          date:this.post.date || new Date().toISOString(),
+          id:this.post.id || ulid()
+        };
+
+
+        // upload
+        this.uploadAll(er=>{
+          if (er){
+            return popup(er,'danger','Error uploading files')
+          }
+
+          api.putPost(json,(er)=>{
+            if (!er){
+              popup('uploaded post!','success');
+              this.post = {};
+              window.startBuild();
+            }else{
+              popup(er,'danger','Error');
+            }
+          });
+
+        });
+
+      },
+
+      // load from browser by id
+      load(id){
+        api.getPost(id,(er,post)=>{
+          if (!er){
+            this.post = post;
+          }
+          else{
+            window.popup(er,'warning','error loading post')
+          }
+        });
+      },
+
+      deletePost(callback){
+        var callback = typeof callback === 'function'?callback:function(){};
+        var id = this.post.id;
+        if (!id){
+          return callback(new Error('I HAVE NO ID SO IUNNO HOW TO DELETE THIS'))
         }
-      ]
-    });
 
-    this.titleField = field();
-    this.titleField.innerHTML = `
-    <label class="label">Title
-     <p class="control">
-       <input class="input" type="text" placeholder="(optional)" name="title">
-     </p>
-     </label>
-    `;
+        api.deletePost(id,function(er){
+          if(!er){
+            popup('deleted post','success');
+            navigate('posts')
+            window.startBuild();
+          }else{
+            popup('failed to delete','danger');
+          }
+          callback(er);
+        });
 
-    this.submitGroup = field('is-grouped');
-    this.submitButton = document.createElement('button');
-    this.submitButton.innerHTML = "💾&#xFE0E; Submit Post";
-    this.submitButton.setAttribute('class',"button is-primary");
-    var submitP = document.createElement('p');
-    submitP.setAttribute('class','control');
-    submitP.appendChild(this.submitButton);
-    this.submitGroup.appendChild(submitP);
+      },
 
-    this.pickerEl = document.createElement('div');
-    this.pickerEl.classList.add('field');
-    this.picker = new AssetPicker(this.pickerEl,{editor:this.mde});
+      uploadAsset(asset,callback){
+        var file = asset._file;
+        var cb = callback || function(){};
+        var url = '/admin/asset';
+        var xhr = new XMLHttpRequest();
+        var fd = new FormData();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader('Authorization','Bearer '+localStorage.getItem('jwt'))
+        var done = false;
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            // Every thing ok, file uploaded
+            asset._uploaded = true;
 
-    this.form.appendChild(this.titleField);
-    this.form.appendChild(this.tagField);
-    this.form.appendChild(this.pickerEl);
-    this.form.appendChild(this.captionField);
-    this.form.appendChild(this.submitGroup);
-
-    if (this.canDelete){
-      this.deleteButton = document.createElement('button');
-      this.deleteButton.innerHTML = "X Delete Post";
-      this.deleteButton.setAttribute('class',"button is-danger");
-      submitP.appendChild(this.deleteButton);
-      this.deleteButton.addEventListener('click',e=>{
-        e.preventDefault();
-
-        // delet this
-        self.delete();
-      })
-    }
-
-    this.el.appendChild(this.form);
-
-    function _save(e){
-      e.preventDefault();
-      self.save();
-      return false;
-    }
-    this.submitButton.addEventListener('click',_save);
-
-    if (this.id){
-      this.load(this.id);
-    }
-  }
+            cb(null);
+          }else if (xhr.status != 200 && xhr.readyState == 4){
+            cb(xhr.responseText);
+          }
+        };
+        fd.append("upload_file", file);
+        xhr.send(fd);
 
 
-  // save from dom => server
-  save(){
-    console.log('saving');
-    var self = this;
-    // 1 create json
-    // 2 validate
-    // 3 upload files
-    // 4 POST the post
+      },
 
-    //todo validate the form
+      uploadAll(done){
+        var done = done || function(){};
+        each(this.post.assets,(a,cb)=>{
+          if(a._uploaded === false){
+            this.uploadAsset(a,cb)
+          }else{
+            cb(null);
+          }
+        },done);
+      },
 
-    //create json
-    var tags = self.el.querySelector('[name="tags"]').value;
-    var caption = self.mde.value();
-    var title = self.el.querySelector('[name="title"]').value;
-    var assets = self.picker.assetUploader.assets;
-    var date = this.date || moment().format();
-    var id = this.id || Post.prototype.uuid();
-    var json = {tags,caption,title,assets,date,id};
+      removeAsset(a){
+        var idx = this.post.assets.indexOf(a)
+        if (idx > -1){
+          this.post.assets.splice(idx,1);
+        }
+      },
 
-    // validate
-    var problems = Post.prototype.validate(json);
-    if (problems){
-      popup(problems,'danger','Post error:')
-      return;
-    }
+      createAssetFromFile(file){
+        var a = new Asset('/assets/'+file.name);
+        a._uploaded = false;
+        a._file = file;
+        a._preview = null;
+        this.post.assets.push(a);
 
-    // upload
-    this.picker.assetUploader.uploadAll(function(er){
-      if (er){
-        return popup(er,'danger','Error uploading files')
+        // actually read the file and render it
+        var reader = new FileReader();
+        if (isImg(file.name)){
+          reader.onload = function() {
+            a._preview = reader.result;
+          };
+          reader.readAsDataURL(file);
+        }
+
+        return a;
+      },
+
+      fileInputChanged:function(e){
+        var input = e.target;
+        for (var i = 0; i < input.files.length; i ++){
+          this.post.assets.push(this.createAssetFromFile(input.files[i]))
+        }
       }
 
-      api.putPost(json,function(er){
-        if (!er){
-          popup('uploaded post!','success');
-          self.reset();
-          window.startBuild();
-        }else{
-          popup(er,'danger','Error');
-        }
-      });
-
-    });
-
-  }
-
-  // load from browser by id
-  load(id){
-    this.reset(er=>{
-      if (!id){
-        return;
-      }
-      api.getPost(id,(er,post)=>{
-
-        if (!er){
-          this.populate(post);
-        }
-        else{
-          window.popup(er,'warning','error loading post')
-        }
-
-      });
-
-    });
-
-  }
-
-  populate(data){
-    this.picker.assetUploader.reset();
-    //
-
-    this.caption = data.caption||"";
-    this.id = data.id||false;
-    this.title = data.title||"";
-    this.tags = data.tags||"";
-    if (data.date){
-      this.date = data.date;
     }
 
-    console.log('TODO: load assets');
-    var assets = data.assets || [];
+  });
 
-    assets.forEach(a=>{
-      this.picker.assetUploader.addAssetFromHref(a.href);
-    });
-
-    this.mde.value(this.caption||'');
-    this.el.querySelector('[name="title"]').value = this.title||'';
-    this.el.querySelector('[name="tags"]').value = this.tags||'';
+  if (id){
+    view.load(id);
   }
 
-  reset(done){
-    var done = done || function(e){if (e) throw e};
-    this.id = false;
-    this.title="";
-    this.tags="";
-    this.caption="";
+  return view;
 
-    this.picker.assetUploader.reset();
-    this.mde.value('');
-    this.el.querySelector('[name="title"]').value = '';
-    this.el.querySelector('[name="tags"]').value = '';
-    done(null);
+}
 
+function isImg(filename){
+  function getExt(n){
+    var i = n.lastIndexOf('.');
+    if (i > -1){
+      return n.slice(i+1);
+    }else{return ''}
   }
-
-  delete(callback){
-    var callback = callback || function(e){if(e){throw e}}
-    var id = this.id;
-    if (!id){
-      return callback(new Error('I HAVE NO ID SO I DUNNO HOW TO DELETE THIS'))
-    }
-
-    api.deletePost(id,function(er){
-      if(!er){
-        popup('deleted post','success');
-        window.startBuild();
-        navigate('posts')
-      }else{
-        popup('failed to delete','danger');
-      }
-    });
-
-  }
-
-
-
+  var ext = getExt(filename).toLowerCase();
+  var n = ['png','gif','bmp','svg','tif','jpg','jpeg'];
+  return (n.indexOf(ext) > -1)
 }

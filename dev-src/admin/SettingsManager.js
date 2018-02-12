@@ -1,6 +1,5 @@
 // manage settings
 
-var _ = require('lodash');
 const api = require('./rpc').api;
 var loadSettings = api.getSettings;
 import Vue from 'vue/dist/vue.js';
@@ -50,7 +49,7 @@ module.exports = function SettingsManager (el){
       <br>
       <div class="field is-grouped">
         <p class="control">
-          <button class="button is-primary" @click="save">💾︎ Save</button>
+          <button class="button is-success" @click="save">💾︎ Save</button>
         </p>
         <p class="control">
           <button class="button is-warning" @click="reload">⮌︎ Revert Changes</button>

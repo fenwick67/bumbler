@@ -3,8 +3,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var browserify = require('browserify');
-var babelify = require('babelify')
-var fs = require('fs')
+var babelify = require('babelify');
+var fs = require('fs');
+var envify = require('envify/custom');
 
 var UglifyJS = require("uglify-js");
 
@@ -20,13 +21,26 @@ gulp.task('browserify', function(done) {
       .transform(babelify)
       .bundle(function(er,buf){
         if(er){throw er}
-        //var res = UglifyJS.minify(buf.toString('utf8'));
-        //fs.writeFile('./dev-serve/admin/app.js',res.code,done)
-
         fs.writeFile('./dev-serve/admin/app.js',buf,done)
       });
 });
 
+gulp.task('browserify-prod',function(done){
+  browserify('./dev-src/admin/app.js')
+    .transform(
+      // Required in order to process node_modules files
+      { global: true },
+      envify({ NODE_ENV: 'production' })
+    )
+    .transform(babelify)
+    .bundle(function(er,buf){
+      if(er){throw er}
+
+      var res = UglifyJS.minify(buf.toString('utf8'));
+      fs.writeFile('./dev-serve/admin/app.js',res.code,done)
+
+    });
+})
 
 gulp.task('sass', function () {
   return gulp.src('./dev-src/**/*.scss')
@@ -34,6 +48,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dev-serve'));
 });
 
+gulp.task('prod',gulp.series('sass','pug','browserify-prod'));
 gulp.task('default',gulp.series('sass','pug','browserify'));
 
 gulp.task('watch',

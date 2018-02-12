@@ -17,13 +17,13 @@ module.exports =  {
       <span v-else class="thumb"></span>
 
       <b>{{ asset.href }}</b>
-      <a class="button is-default" :href="asset.href" target="_top">view</a>
-      <a class="button is-danger" @click="deleteAsset" >Delete</a>
+      <a class="button is-default" :href="asset.href" target="_top">👁️ View</a>
+      <a class="button is-danger" @click="deleteAsset" >❌&#xFE0E; Delete</a>
     </div>
   `,
   methods:{
     deleteAsset:function(){
-      if (!window.confirm("Do you REALLY want to delete "+self.asset.href+"?\nNote that this won't delete the post")){
+      if (!window.confirm("Do you REALLY want to delete "+this.asset.href+"?\nNote that this won't delete the post")){
         return;
       }
       this.asset.delete(er=>{

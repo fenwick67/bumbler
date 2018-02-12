@@ -1,25 +1,25 @@
-
+- // note :&#xFE0E; is to make emoji characters into text
 - var menuCategories = ['actions','posts','files','customize','extras']
 -
   var menuItems = {
     "actions":[
       {title:"👁️ View",href:"/",class:"button is-default", target:"_blank"},
-      {title:"🌙 Night Mode",href:"#",id:"toggle-night-mode",class:"button is-default"},
+      {title:"🌙 Nighttime",href:"#",id:"toggle-night-mode",class:"button is-default"},
       {title:"↻︎ Build",href:"#",id:"run-a-build",class:"button is-default"},
       {title:"🚫 Log Out",href:"#",id:"logout",class:"button is-default"}
     ],
     "posts": [
-      {title:'➕ Create',href:"#post/create"},
+      {title:'➕&#xFE0E; Create',href:"#post/create"},
       {title:'📁 Manage',href:"#posts"}
     ],
     "files": [{title:'📁 Manage',href:"#files"}],
     "customize":[
       {title:'⚙️ Settings',href:"#settings"},
       {title:'🌺 Theme',href:"#html"},
-      {title:'📄 Custom Pages',href:"#custompages"}
+      {title:'📄 Pages',href:"#custompages"}
     ],
     "extras": [
-      {title:'💻&#xFE0E; Scripts',href:"#scripts"}
+      {title:'💻 Scripts',href:"#scripts"}
     ]
   }
 
@@ -28,7 +28,7 @@
     head
       title Bumbler Admin
       style
-      <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       link(rel="stylesheet" type="text/css" href="./style.css")
     body
       .sidebar.menu#sidebar
@@ -42,7 +42,9 @@
                 a(href=t.href class=t.class?t.class:'' id=t.id?t.id:'' target=t.target?t.target:'')!= t.title
 
       #app
-
+        noscript
+          p Hey buddy.  You'll need Javascript to use Bumbler's admin interface.
+          p Don't worry: <a href="https://github.com/fenwick67/bumbler">it's Free Software</a> and doesn't track anything, period.
         hash-template#files
           div
             h1.title Files

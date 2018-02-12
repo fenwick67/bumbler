@@ -1,6 +1,5 @@
-var _ = require('lodash');
 const api = require('./rpc').api;
-
+var each = require('lodash/each')
 
 // Asset that has been uploaded
 // has a href and a type
@@ -19,8 +18,8 @@ class Asset{
         'video':['mp4'],
         'image':['png','gif','bmp','svg','tif','jpg','jpeg']
       }
-      _.each(types,(extensions,key)=>{
-        _.each(extensions,extension=>{
+      each(types,(extensions,key)=>{
+        each(extensions,extension=>{
           if (x == extension){
             type=key;
             return false;
@@ -38,7 +37,8 @@ class Asset{
   delete(callback){
 
     var cb = callback || function(){};
-    var filename = _.last(this.href.split('/'));
+    var split = this.href.split('/');
+    var filename = split[split.length - 1];
     api.deleteAsset(filename,callback)
 
   }

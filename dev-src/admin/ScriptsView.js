@@ -1,4 +1,3 @@
-var _ = require('lodash');
 import Vue from 'vue/dist/vue.js'
 const api = require('./rpc').api;
 
@@ -13,7 +12,7 @@ module.exports = function ScriptsView(element,options){
     template:`
     <div>
       <div v-for="name in scriptNames">
-        <a class="button is-primary" @click="runScript(name)">{{name}}</a>
+        <a class="button is-link" @click="runScript(name)">{{name}}</a>
       </div>
     </div>
     `,

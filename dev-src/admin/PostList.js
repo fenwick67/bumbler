@@ -21,8 +21,8 @@ function PostList(el) {
         <div class="level"> Enter a post ID to edit, or pick from a recent one below
           <div class="level">
             <input class="input" placeholder="01BJCTAYSSR4T6K99WCTSBTFMG" type="text" v-model="currentId">
-            <a class="button" target="_top" @click="view(currentId)">View</a>
-            <a class="button is-primary" @click="edit(currentId)">Edit</a>
+            <a class="button" target="_top" @click="view(currentId)">👁️ View</a>
+            <a class="button is-link" @click="edit(currentId)">✏️ Edit</a>
           </div>
         </div>
         <div>
@@ -31,8 +31,8 @@ function PostList(el) {
           </div>
           <div class="level" v-for="id in postIds">
             <pre>{{ id }}</pre>
-             <a class="button is-default" @click="view(id)">View</a>
-             <a class="button is-primary" @click="edit(id)">Edit</a>
+             <a class="button is-default" @click="view(id)">👁️ View</a>
+             <a class="button is-link" @click="edit(id)">✏️ Edit</a>
           </div>
         </div>
       </div>

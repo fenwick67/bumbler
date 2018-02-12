@@ -7,10 +7,13 @@
       style(type="text/css") html,body,.form-contain{display:flex;flex-direction:column;min-height:100%;flex:1 1 auto}.form-contain{min-height:calc(100% - 10rem);flex:1 1 auto;align-items:center;justify-content:center;}
     body.admin
       header
-        .hero.is-warning
+        .hero.is-link
           .hero-body
             .container
-              h1.title 🔑&#xFE0E; Please Log In.
+              h1.title 🔑 Please Log In.
+      noscript
+        p Hey buddy.  You'll need Javascript to use Bumbler's admin interface.
+        p Don't worry: <a href="https://github.com/fenwick67/bumbler">it's Free Software</a> and doesn't track anything, period.
       .form-contain
         .box
           form#form
@@ -21,5 +24,5 @@
                   label.label Password:
                   input.input(type="password" name="password")#password
               .field
-                  input.button.is-primary(type="submit" value="Log In")
+                  input.button.is-link(type="submit" value="Log In")
     script(type="text/javascript" src="login.js")

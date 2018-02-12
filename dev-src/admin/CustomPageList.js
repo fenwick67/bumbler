@@ -1,7 +1,6 @@
-var _ = require('lodash');
 const api = require('./rpc').api;
 import Vue from 'vue/dist/vue.js';
-var ulid = require('ulid').ulid;
+import { ulid } from 'ulid';
 
 module.exports = function(element,options){
     var self = this;
@@ -32,12 +31,12 @@ module.exports = function(element,options){
               <td>
                 <a :href="'/'+page.route+'.html'" target="_blank">{{ page.route }}</a>
               </td>
-              <button class="button is-primary" @click="edit(page.id, $event)">Edit</button>
-              <button class="button is-danger" @click="deletePage(page, $event)">Delete</button>
+              <button class="button is-link" @click="edit(page.id, $event)">✏️ Edit</button>
+              <button class="button is-danger" @click="deletePage(page, $event)">❌&#xFE0E; Delete</button>
             </tr>
           </tbody>
         </table>
-        <a class="button is-success" @click="createNew" v-if="!currentPage">Add New Page</a>
+        <a class="button is-link" @click="createNew" v-if="!currentPage">➕&#xFE0E; Add New Page</a>
         <div v-if="currentPage">
           <form>
             <input name="id" style="display:none" type="text">
@@ -57,8 +56,8 @@ module.exports = function(element,options){
                   </textarea>
                 </p>
               </label>
-            <a class="button is-success" @click="save(currentPage, $event)">Save</a>
-            <a class="button is-warning" @click="cancel">Cancel</a>
+            <a class="button is-success" @click="save(currentPage, $event)">💾︎ Save</a>
+            <a class="button is-warning" @click="cancel">⮌︎ Cancel</a>
           </form>
         </div>
       </div>
@@ -68,7 +67,7 @@ module.exports = function(element,options){
           this.loadAll(er=>{
             console.log(id);
             console.log(this.pages);
-            this.currentPage = _.filter(this.pages,p=>p.id == id)[0];
+            this.currentPage = this.pages.filter(p=>p.id == id)[0];
           });
         },
         deletePage(page){

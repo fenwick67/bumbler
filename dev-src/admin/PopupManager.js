@@ -11,7 +11,7 @@ module.exports = class PopupManager {
   }
   show(message,type,headerText){
     var message = message?message.toString():'';
-    var type = type||'primary';
+    var type = type||'default';
     var popup = document.createElement('article');
     popup.setAttribute('class','fadein popup message is-'+type);
     // header

@@ -28,7 +28,7 @@ class PugEditor{
           </div>
           <div class="field is-grouped">
             <p class="control">
-              <button class="button is-primary" @click="save">💾︎ Save</button>
+              <button class="button is-success" @click="save">💾︎ Save</button>
             </p>
             <p class="control">
               <button class="button is-warning" @click="load(true)">⮌︎ Revert Changes</button>

@@ -3,10 +3,8 @@ var Asset = require('./Asset');
 var AssetView = require('./AssetView');
 var AssetsView = require('./AssetsView');
 var PugEditor = require('./PugEditor');
-var AssetUploader = require('./AssetUploader');
 var initNavigation = require('./initNavigation')
 var PostEditor = require('./PostEditor');
-var Post = require('../../lib/Post');
 var PostList = require('./PostList');
 var CustomPageList = require('./CustomPageList');
 var SettingsManager = require('./SettingsManager');
@@ -85,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var el = this.querySelector('.editor')
       postCreator = new PostEditor(el);
     }
-    postCreator.load();
   });
 
   var postEditor = null;
@@ -95,7 +92,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       postEditor = new PostEditor(el,{canDelete:true });
     }
     var id = window.location.hash.replace(/.*id=/,'');
-    postEditor.load(id);
+    if(id){
+      console.log(id);
+      postEditor.load(id);
+    }
   });
 
 
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function startBuild(){
-  popup('build started');
+  popup('build started','link');
   api.build(er=>{
     if(!er){
       popup('build complete!','success')
