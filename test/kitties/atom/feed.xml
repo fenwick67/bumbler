@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-02-27T21:16:01-06:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/2.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/><entry>
+<id>http://localhost:8000/post/01C7A8Y300Y4X7R2R8EGFTK7XQ.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Russian manipulation</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Russian manipulation&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Calling Russian manipulation &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/23/russian-bots-us-election-coup-d-etat&#34;&gt;&amp;quot;a new cold war&amp;quot;&lt;/a&gt; is somewhat of an exaggeration. &lt;/p&gt;&lt;p&gt; It is not necessary for the Russian &lt;a href=&#34;/glossary.html#trump&#34;&gt;troll&lt;/a&gt; system to be invincible for it to be important enough to condemn, or to prosecute US politicians that collaborated with it.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300Y4X7R2R8EGFTK7XQ.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300XP2QQB0TNJW71H91.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Decline of US hegemony</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Decline of US hegemony&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Most of the world &lt;a href=&#34;https://www.commondreams.org/views/2018/02/22/world-will-not-mourn-decline-us-hegemony&#34;&gt;won&amp;#39;t mourn the end&lt;/a&gt; of the period of US hegemony, during which it has launched many wars and overthrown many governments to make the world safe for plutocracy. &lt;/p&gt;&lt;p&gt; I take exception to two of the points in the article.  First, the &amp;quot;idea that government has direct responsibility for the welfare of its people&amp;quot; does not necessarily mean a communist dictatorship.  It could refer to social democracy, such as the New Deal in the US. &lt;/p&gt;&lt;p&gt; Second, the brief US attack on Serbia was intended to stop violent ethnic cleansing in Kosovo.  I won&amp;#39;t argue that this was the only or the best way to do it, but it wasn&amp;#39;t bare-faced aggression and it did stop the attacks against Albanian Kosovars. &lt;/p&gt;&lt;p&gt; Reducing US world interventions won&amp;#39;t necessarily mean peace.  Chinese hegemony is not likely to care much about human rights either.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300XP2QQB0TNJW71H91.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300TAM3KT8CQ9H7EMRS.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Human-fighting robot</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Human-fighting robot&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A US company is already developing a robot to &lt;a href=&#34;https://www.theguardian.com/technology/2018/feb/21/boston-dynamics-teaching-robot-dog-fight-back-humans&#34;&gt;fight with humans&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300TAM3KT8CQ9H7EMRS.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300RAEKDHP46TWF7W7R.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Flattening Rohingya villages</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Flattening Rohingya villages&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Burmese army is &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/24/myanmar-rohingya-villages-bulldozed-satellite-images&#34;&gt;flattening all traces&lt;/a&gt; of Rohingya villages that it burned last year.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300RAEKDHP46TWF7W7R.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300R50VDM932RZCY97M.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Governor&#39;s blackmailing</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Governor&#39;s blackmailing&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Republican governor of Missouri &lt;a href=&#34;https://www.dailykos.com/story/2018/2/22/1743972/-Missouri-Governor-Eric-Greitens-indicted-for-Felony-Invasion-of-Privacy-is-now-in-sheriff-s-custody&#34;&gt;faces charges&lt;/a&gt; for taking a nude photo of a lover without permission and then trying to blackmail her with it. &lt;/p&gt;&lt;p&gt; The aim of his blackmail attempt — not that it makes any ethical difference — was to enforce her silence about their affair.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300R50VDM932RZCY97M.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300Q4SZCS3PVH79KGVA.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Armed thug at Stoneman Douglas</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Armed thug at Stoneman Douglas&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Stoneman Douglas had an armed &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt; for protection.  While the shooting was going on, person took up a position at a door and &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/22/stoneman-douglas-shooting-armed-guard-did-not-go-in&#34;&gt;did not go in&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I can&amp;#39;t blame per much.  To enter a building where someone else is shooting people is rather dangerous.  Most likely the &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt; wasn&amp;#39;t trained for that. &lt;/p&gt;&lt;p&gt; What this mainly proves is how foolish it is to expect some armed teacher to stop a massacre.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300Q4SZCS3PVH79KGVA.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300N94N2M3WB9RCTGBX.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Republicans on gun regulations</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Republicans on gun regulations&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Republicans say we don&amp;#39;t need gun regulations because dangerously insane people won&amp;#39;t be able to buy guns, &lt;a href=&#34;https://www.dailykos.com/story/2018/2/22/1743872/-NRA-s-Dana-Loesch-wants-us-to-blame-people-who-are-crazy-for-mass-shootings-facts-be-damned&#34;&gt;while opposing measures&lt;/a&gt; to block dangerously insane people from buying guns.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300N94N2M3WB9RCTGBX.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300KC803GQER2PXB5WG.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Patrick Ryan</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Patrick Ryan&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://theintercept.com/2018/02/22/patrick-ryan-congress-berico-dataminr/&#34;&gt;Surveillance magnate Patrick Ryan&lt;/a&gt; wants to run for Congress as a Democrat. &lt;/p&gt;&lt;p&gt; With Democrats like these, who needs Republicans?   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300KC803GQER2PXB5WG.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300JQ7PD7336ZNRV8TY.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Social reliability score</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Social reliability score&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Although China&amp;#39;s social reliability score is set up by the state, a set of private businesses &lt;a href=&#34;https://www.theatlantic.com/technology/archive/2018/02/chinas-dangerous-dream-of-urban-control/553097/&#34;&gt;could do the same thing&lt;/a&gt; if we don&amp;#39;t stop them.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300JQ7PD7336ZNRV8TY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300HVB8GKSTE7M7BQPR.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Vote-counting machines</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Vote-counting machines&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Vote-counting machines that use a cellular modem to transmit results are &lt;a href=&#34;https://freedom-to-tinker.com/2018/02/22/are-voting-machine-modems-truly-divorced-from-the-internet/&#34;&gt;connected by it to the internet&lt;/a&gt;, and therefore insecure.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300HVB8GKSTE7M7BQPR.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300GPWVZR33J55D2Y20.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Disney&#39;s bogus bonus</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Disney&#39;s bogus bonus&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.dailykos.com/story/2018/2/20/1743175/-Disney-is-using-tax-cut-bonus-to-try-to-force-union-workers-to-accept-low-pay&#34;&gt;Disney&amp;#39;s bogus bonus&lt;/a&gt;, which excludes the workers that are negotiating a contract.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300GPWVZR33J55D2Y20.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300EXME91BDDNZX5KR8.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Urgent: Stop NRA support</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Stop NRA support&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Everyone: &lt;a href=&#34;https://act.credoaction.com/sign/NRA_Sponsors&#34;&gt;Call on companies&lt;/a&gt; to stop giving support to the NRA.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300EXME91BDDNZX5KR8.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300DPQ5TXH1XKFWWTD0.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>The bully&#39;s known wrongs</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;The bully&#39;s known wrongs&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;/glossary.html#bully&#34;&gt;The bully&lt;/a&gt;&amp;#39;s possible collusion with Russia could be criminal, but it is not as damaging as the wrongs &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/trump-russia-mueller-investigation-democrats&#34;&gt;we know he is doing&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300DPQ5TXH1XKFWWTD0.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300DFKVVWQXS3EENE7Q.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Urgent: Free Toffiq al-Bihani</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Free Toffiq al-Bihani&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens: &lt;a href=&#34;https://e-activist.com/page/17643/action/1?ea.url.id=1265696&#34;&gt;Call on Mattis&lt;/a&gt; to free Toffiq al-Bihani, and to end imprisonment without trial. &lt;/p&gt;&lt;p&gt; Here&amp;#39;s the message I put in. &lt;blockquote&gt; Dear Secretary Mattis, &lt;p&gt; I urge you to immediately transfer Toffiq al-Bihani, who has been imprisoned at GuantÃ¡namo without charge or fair trial since 2003. He faces no charges and the US already said there is no reason to keep him in prison. &lt;/p&gt;&lt;p&gt; Imprisonment without trial is vicious and the fact that the US practices this is a blot on our country.  Secondarily, it inspires hatred which can express itself as terrorism.  Justice and human rights demand that the US give each prisoner in Guantanamo a fair trial or release him.  Those who are convicted should be treated according to the US constitution, which prohibits cruel and unusual punishment. &lt;/p&gt;&lt;p&gt; Those responsible for torture and enforced disappearance must be brought to justice in fair trial. &lt;/p&gt;&lt;p&gt; In the name of our country&amp;#39;s honor, and the Constitution you have sworn to defend, &lt;/p&gt;&lt;/blockquote&gt;   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300DFKVVWQXS3EENE7Q.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300AE6G2TWKJD5JAVVT.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Cheapening human life</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Cheapening human life&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The resistance to gun control in the US fits in a broader tendency to &lt;a href=&#34;https://www.commondreams.org/views/2018/02/23/cheapening-human-life&#34;&gt;cheapen human life&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Still we should keep in mind that only a powerful minority of Americans oppose stricter gun regulations.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300AE6G2TWKJD5JAVVT.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y300A60J71M2XF2VQ47A.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Lawsuits for reporting flaws</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Lawsuits for reporting flaws&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Security investigators and reporters in the US &lt;a href=&#34;http://www.zdnet.com/article/chilling-effect-lawsuits-threaten-security-research-need-it-most/&#34;&gt;face lawsuits&lt;/a&gt; when they report flaws. &lt;/p&gt;&lt;p&gt; In the long term, the way to be safe is to insist on software that the users control — free software.  This doesn&amp;#39;t guarantee no bugs ever, but it means that the users can fix any bugs (and &lt;a href=&#34;https://gnu.org/malware/&#34;&gt;any malicious functionalities&lt;/a&gt;!) rather than being at the mercy of the one company that can do it.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300A60J71M2XF2VQ47A.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y3006DJ1S42JE2ZY1XFV.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Democratic candidates</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Democratic candidates&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Democratic Party establishment is &lt;a href=&#34;https://theintercept.com/2018/02/22/national-democrats-go-nuclear-publicly-slam-a-dem-candidate-as-corrupt-for-far-less-than-its-own-officials-do/&#34;&gt;fighting hard for&lt;/a&gt; right-wing Democrat Fletcher against activist Moser. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t give to Democrat Congressional Campaign Committee.  I give to progressive candidates (as far as I can tell) and organizations that support them.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3006DJ1S42JE2ZY1XFV.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y30069E6S8F5P7DPRJ06.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Google&#39;s AMP plan</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Google&#39;s AMP plan&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.socpub.com/articles/chris-graham-why-google-amp-threat-open-web-15847&#34;&gt;AMP is Google&amp;#39;s plan&lt;/a&gt; to try to pressure web sites to become part of a single empire of the web. &lt;/p&gt;&lt;p&gt; Mobile operating systems that support cr…apps are similar in spirit — intended to lead people away from the interoperable web. &lt;/p&gt;&lt;p&gt; Javascript does it in another way.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y30069E6S8F5P7DPRJ06.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y3004Z53TQACQVFPDR3S.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Organ transplants</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Organ transplants&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; People in Venezuela who have had organ transplants, if they are not rich, &lt;a href=&#34;https://www.reuters.com/article/us-venezuela-transplants/with-medicine-running-out-venezuelans-with-transplants-live-in-fear-idUSKCN1G41FR&#34;&gt;can&amp;#39;t get the medicines necessary&lt;/a&gt; to protect the transplanted organs from their immune systems. People who need kidney dialysis are in trouble too, as many dialysis machines are broken. &lt;/p&gt;&lt;p&gt; Contrast this with the US where &lt;a href=&#34;/glossary.html#scrotus&#34;&gt;SCROTUS&lt;/a&gt; are trying to cut the funds to pay for these treatments for &lt;a href=&#34;https://stallman.org/archives/2017-nov-feb.html#20_December_2017_(Tax_attacks_and_medical_insurance)&#34;&gt;Americans that are not rich&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3004Z53TQACQVFPDR3S.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y3003K5XV2D5NQMBEZ5T.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>US corruption</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;US corruption&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The US hasn&amp;#39;t got a lot of corruption in everyday life, but in bigger things it is &lt;a href=&#34;https://www.commondreams.org/views/2018/02/23/top-ten-signs-us-most-corrupt-nation-world-2018-edn&#34;&gt;as corrupt as can be&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3003K5XV2D5NQMBEZ5T.html"/>
+</entry>
+</feed>

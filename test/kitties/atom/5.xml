@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-02-27T21:16:01-06:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/6.xml"/>
+<link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/4.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/><entry>
+<id>http://localhost:8000/post/01C72HQY00B0GRS38WX1ZDBEGZ.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Cross-partisan discussion</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Cross-partisan discussion&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/17/american-democracy-four-pillars-activism-arlie-hochschild&#34;&gt;Cross-partisan discussion groups&lt;/a&gt; enable Americans to get to know people from the other side of politics.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00B0GRS38WX1ZDBEGZ.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY0094TEGCRBPE5Y4KPP.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Palestinian children</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Palestinian children&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Israeli soldiers &lt;a href=&#34;https://972mag.com/watch-soldiers-arrest-palestinian-children-for-throwing-stones-without-proof/133216/&#34;&gt;arrested Palestinian children&lt;/a&gt; because they were in the area where someone threw stones.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY0094TEGCRBPE5Y4KPP.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY0080VRTQ63HSR8X0MV.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>More spying on everyone</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;More spying on everyone&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The US immigration thugs are pushing for &lt;a href=&#34;https://reason.com/archives/2018/02/20/border-bouncers-dont-need-big-brother-sp&#34;&gt;more and more spying&lt;/a&gt; on everyone. &lt;/p&gt;&lt;p&gt; Whatever they get, other agencies will get.  Eventually the fourth amendment will be effectively a no-op.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY0080VRTQ63HSR8X0MV.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY005QP2GV7PS45VDXNA.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Drone radio-tracking system</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Drone radio-tracking system&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A new radio-tracking system for commercial drones would also potentially &lt;a href=&#34;https://www.theguardian.com/business/2018/feb/20/vodafone-pilots-new-software-to-thwart-rogue-drones&#34;&gt;force them to land&lt;/a&gt; when they reach a prohibited area. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t know whether this includes a radio back door or not.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY005QP2GV7PS45VDXNA.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY004S3HGG1S4MSB30VK.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>War on workers</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;War on workers&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Trump Administrationâs &lt;a href=&#34;https://www.commondreams.org/views/2018/02/19/trump-administrations-war-workers&#34;&gt;War on Workers&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY004S3HGG1S4MSB30VK.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY0045NPWDS6NMBHXAS1.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Marjory Stoneman Douglas</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Marjory Stoneman Douglas&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The school shooting in Florida was in a high school named after journalist &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/who-was-marjory-stoneman-douglas&#34;&gt;Marjory Stoneman Douglas&lt;/a&gt; because of her campaigns for women&amp;#39;s rights, racial equality and preserving the Everglades.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY0045NPWDS6NMBHXAS1.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY003ZHRYAEGP4AYG94G.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Arctic sea ice</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Arctic sea ice&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Arctic sea ice has &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/2018-starts-record-lows-arctic-sea-ice-extent&#34;&gt;reached a record low&lt;/a&gt;, less than ever in the past 12,000 years or more.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY003ZHRYAEGP4AYG94G.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY0037KE00FJH5M12MRZ.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Wage theft</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Wage theft&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &amp;quot;Wage theft is the rule, not the exception, for low-wage workers.&amp;quot; In the US, it adds up to &lt;a href=&#34;https://www.commondreams.org/news/2018/02/19/shady-bosses-stealing-15-billion-wages-low-income-workers-report&#34;&gt;15 billion dollars per year&lt;/a&gt;, stolen from the people who can least afford to lose it.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY0037KE00FJH5M12MRZ.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY002YA7QYN370TJEX8S.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Urgent: Budget bill amendments</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Budget bill amendments&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens: &lt;a href=&#34;http://salsa4.salsalabs.com/o/51152/p/salsa/web/common/public/signup?signup_page_KEY=11168&#34;&gt;phone your congresscritter&lt;/a&gt; to oppose budget bill amendments that would allow rich people to put even more money into political campaigns.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY002YA7QYN370TJEX8S.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700YX3AQMN03R9M3TGB.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Syrian Kurds in Afrin</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Syrian Kurds in Afrin&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Syrian Kurds in Afrin have asked Assad to &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/turkey-warns-assad-not-intervene-kurdish-enclave-afrin&#34;&gt;defend them from Turkey&lt;/a&gt;. ErdoÄan warned Assad that Turkey would attack Assad.  And Assad&amp;#39;s Russian backers, too? &lt;/p&gt;&lt;p&gt; It is very strange for a breakaway part of Syria to ally in effect with Syria (and thus maybe Russia).  Even stranger to ally with Syria and the US at the same time.  I don&amp;#39;t know what to make of this.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700YX3AQMN03R9M3TGB.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700XTBFCWSE1Z89QCW1.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Temperature study</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Temperature study&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A study measured temperatures for the past 11,000 years, since the end of the last ice age.  It has &lt;a href=&#34;https://www.theguardian.com/environment/climate-consensus-97-per-cent/2018/feb/19/pollen-data-shows-humans-reversed-natural-global-cooling&#34;&gt;never been as hot&lt;/a&gt; as it is now.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700XTBFCWSE1Z89QCW1.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700VY7GTAJ4QDD1WM9A.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Animals and the wall</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Animals and the wall&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; If the bully&amp;#39;s wall is built, it would &lt;a href=&#34;https://www.commondreams.org/views/2018/02/18/rewriting-biological-history-trump-border-wall-puts-wildlife-risk&#34;&gt;put bison and jaguars in danger&lt;/a&gt; in Mexico and the US. &lt;/p&gt;&lt;p&gt; 180 already-endangered species would be harmed. &lt;/p&gt;&lt;p&gt; Is it possible to make openings that these animals could get through, and watch them closely enough that humans could not get through? Is it possible to make small holes for smaller animals to get through? &lt;/p&gt;&lt;p&gt; If this could be done, the wall would be a foolish expenditure but not a cause of extinction.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700VY7GTAJ4QDD1WM9A.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700TAVC315RMGPPWZY6.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>New privatized prison</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;New privatized prison&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Texas has a new privatized prison, which pretends to be a &amp;quot;treatment program&amp;quot; for ex-cons, except that &lt;a href=&#34;http://www.texasobserver.org/a-prison-by-any-other-name/&#34;&gt;there is no treatment&lt;/a&gt; and prisoners are never released except to die.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700TAVC315RMGPPWZY6.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700SP41VSRABCTNZSZB.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Registered intermediaries</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Registered intermediaries&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/society/2018/feb/17/child-witnesses-one-girl-evidence-hamster&#34;&gt;&amp;quot;Registered intermediaries&amp;quot;&lt;/a&gt; help young children testify about sexual abuse. &lt;/p&gt;&lt;p&gt; In the US, &amp;quot;recovered memory&amp;quot; therapists used to convince vulnerable people that they &amp;quot;remembered&amp;quot; being sexually abused while children — but the abuse had not really happened.  Some people were imprisoned for years then exonerated. &lt;/p&gt;&lt;p&gt; It might be the case that these &amp;quot;intermediaries&amp;quot; are doing the same thing, some of the time.  Or maybe they take care to avoid it.  The article does not address the issue.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700SP41VSRABCTNZSZB.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700PA21BB14MGH83DEP.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Hostility towards Oxfam</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Hostility towards Oxfam&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Oxfam faces an inexplicable climate of hostility, in which everything it says is taken as a &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/16/oxfam-boss-mark-goldring-anything-we-say-is-being-manipulated-weve-been-savaged&#34;&gt;sign of wrongdoing&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; You can see this bias when people label this uproar with the terms &amp;quot;sex exploitation&amp;quot; and &amp;quot;sexual abuse&amp;quot;.  At that point enters the premise that doing business with a sex worker is a wrong that deserves condemnation. Then the attack typically condemns the organization because someone on its staff did this &amp;quot;wrong&amp;quot;. &lt;/p&gt;&lt;p&gt; If an Oxfam staffer hires a country music band, a genre which I dislike rather strongly, should I say Oxfam has a music exploitation scandal?   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700PA21BB14MGH83DEP.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700P1D5T7VQ3PHHW8ZS.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Undercover thug resigned</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Undercover thug resigned&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; An undercover &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt;, sent to infiltrate dissidents that opposed fox hunting by pretending to love one of them, &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/18/police-spy-christine-greening-long-term-relationship-activist-tom-frampton-after-quitting-covert-role&#34;&gt;fell in love for real&lt;/a&gt; and resigned.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700P1D5T7VQ3PHHW8ZS.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700N5NFXMJB1PY5B1DS.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>&#39;State of emergency&#39; in Ethiopia</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;&#39;State of emergency&#39; in Ethiopia&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/16/state-of-emergency-declared-in-ethiopia-amid-political-unrest&#34;&gt;What is happening in Ethiopia?&lt;/a&gt; &lt;/p&gt;&lt;p&gt; This &amp;quot;state of emergency&amp;quot; shows something big is happening.  What is it?   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700N5NFXMJB1PY5B1DS.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>UK and Qadhafi</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;UK and Qadhafi&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/extent-of-uk-cooperation-with-gaddafi-regime-libya-mi6-revealed&#34;&gt;How the UK told Qadhafi&lt;/a&gt; where to find exiled dissidents so he could kidnap them.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Cash propaganda</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Cash propaganda&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/krona-public-toilets-cashless-sweden-coin&#34;&gt;Look at the propaganda&lt;/a&gt; designed to dishearten people about the privacy of cash. &lt;/p&gt;&lt;p&gt; It takes a gently derisive tone towards some minor practical inconveniences of tracked digital payments, while suggesting they will soon be solved. The result is to disparage the idea that there is something serious at stake. &lt;/p&gt;&lt;p&gt; If you live in Sweden — or any other country — plan in advance to carry cash, and only pay cash in stores.  If a store won&amp;#39;t take cash, say &amp;quot;I&amp;#39;m going to another store that will.&amp;quot; &lt;/p&gt;&lt;p&gt; You can easily think of bogus objections, if you are willing to exaggerate — so ignore them instead. &lt;/p&gt;&lt;p&gt; If you find yourself without cash one day, don&amp;#39;t give up — just do better the next day. &lt;/p&gt;&lt;p&gt; And don&amp;#39;t use a pay toilet no matter how they want you to pay.  It is vicious and cruel to make people pay to use a toilet.  I have money, and I could afford to pay, but &lt;em&gt;some people can&amp;#39;t&lt;/em&gt;.  I have boycotted pay toilets for 10 years.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700CST5ANFKY5WSPYZA.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Urgent: Fire LA thug</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Fire LA thug&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Everyone: &lt;a href=&#34;http://act.colorofchange.org/sign/Bye_Kevin/&#34;&gt;call on Los Angeles&lt;/a&gt; to fire the thug that shot a gun at a group of teenagers because they were crossing a lawn.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700CST5ANFKY5WSPYZA.html"/>
+</entry>
+</feed>

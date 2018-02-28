@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-02-27T21:16:01-06:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/4.xml"/>
+<link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/2.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/><entry>
+<id>http://localhost:8000/post/01C77PHC003RBJST2Q3CRQ41Z6.html</id>
+<published>2018-02-26T00:00:00.000Z</published>
+<updated>2018-02-26T00:00:00.000Z</updated>
+<title>Fascists in Italy</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Fascists in Italy&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; People that overtly call themselves fascists have &lt;a href=&#34;https://www.theguardian.com/news/2018/feb/22/casapound-italy-mussolini-fascism-mainstream&#34;&gt;started a political party&lt;/a&gt; in Italy. &lt;/p&gt;&lt;p&gt; &amp;quot;No ideology, only rhetoric&amp;quot; — sounds a bit like &lt;a href=&#34;/glossary.html#trump&#34;&gt;the troll&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC003RBJST2Q3CRQ41Z6.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C77PHC003QVCB4WEB6DQHQ8B.html</id>
+<published>2018-02-26T00:00:00.000Z</published>
+<updated>2018-02-26T00:00:00.000Z</updated>
+<title>Plans for North Korea</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Plans for North Korea&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A Republican US senator &lt;a href=&#34;https://theintercept.com/2018/02/21/gop-senator-says-trump-is-ready-to-start-war-with-north-korea-that-would-be-one-of-the-worst-catastrophic-events-in-history/&#34;&gt;told a security conference&lt;/a&gt; that the bully was planning to bomb North Korea to try to destroy its nuclear weapons capability.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC003QVCB4WEB6DQHQ8B.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C77PHC003MD99R6THJD39ND3.html</id>
+<published>2018-02-26T00:00:00.000Z</published>
+<updated>2018-02-26T00:00:00.000Z</updated>
+<title>Volunteer</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Volunteer&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt;I am looking for people to American Promise (americanpromise.net) is looking for a Boston        area        volunteer to help suggest and implement changes to their web site to        reduce use of DropBox and nonfree JavaScript code.  Ideally it would        function properly even with JavaScript disabled.        &lt;/p&gt;&lt;p&gt;      To volunteer, please write to Johannes      Epke         and to me at rms at gnu dot org.&lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC003MD99R6THJD39ND3.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C77PHC002XV4G7SV8821YH2A.html</id>
+<published>2018-02-26T00:00:00.000Z</published>
+<updated>2018-02-26T00:00:00.000Z</updated>
+<title>Aid that helps locals</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Aid that helps locals&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; We Need &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/22/we-need-aid-that-helps-locals-not-multinationals-and-bloated-ngos&#34;&gt;Aid That Helps Locals&lt;/a&gt;, Not Multinationals and Bloated NGOs.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC002XV4G7SV8821YH2A.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C77PHC001HQ6SXTGSWE000EX.html</id>
+<published>2018-02-26T00:00:00.000Z</published>
+<updated>2018-02-26T00:00:00.000Z</updated>
+<title>Civil rights ratings</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Civil rights ratings&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The NAACP &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/21/naacp-releases-legislative-report-card-2017-congress&#34;&gt;scores members of the US Congress&lt;/a&gt; on how they voted on civil rights issues in 2017.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC001HQ6SXTGSWE000EX.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00WMW1APG5423PWHJW.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>South Australia electricity</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;South Australia electricity&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; South Australia, a state in Australia, will aim to meet &lt;a href=&#34;https://www.theguardian.com/australia-news/2018/feb/21/all-in-on-renewable-energy-jay-weatherill-to-ramp-up-sa-target-to-75&#34;&gt;25% of peak electric demand&lt;/a&gt; from storage — batteries and pumped hydro power. This goes with a target of 75% total electricity from renewable sources.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00WMW1APG5423PWHJW.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00W50N63R8RZ0QZN3R.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>&#39;Global threats&#39; list</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;&#39;Global threats&#39; list&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The US military&amp;#39;s list of &amp;quot;global threats&amp;quot; doesn&amp;#39;t change much: it&amp;#39;s always calculated to appear to &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/trumps-national-defense-strategy&#34;&gt;justify increased spending&lt;/a&gt; on every part of the military. &lt;/p&gt;&lt;p&gt; It&amp;#39;s not clear that the &amp;quot;rogue states&amp;quot; are more rogue than the US, or that the US can&amp;#39;t coexist peacefully with them.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00W50N63R8RZ0QZN3R.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00TERQSHBG8JQR8R4D.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Florida conspiracy theory</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Florida conspiracy theory&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A Florida state representative&amp;#39;s staffer &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/20/florida-shooting-conspiracy-theory-actors-benjamin-kelly-shawn-harrison&#34;&gt;promoted a conspiracy theory&lt;/a&gt; accusation against the activist students that survived the school shooting.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00TERQSHBG8JQR8R4D.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00T8XSM6H3CJQDPC7G.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Media and war crimes</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Media and war crimes&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/views/2018/02/16/us-stumbled-torture-says-nyt-reporter&#34;&gt;An analyzed example&lt;/a&gt; of how the mainstream media legitimize US war crimes: the New York Times said that the US &amp;quot;stumbled into torture&amp;quot; and that drone attacks that kill civilians merely &amp;quot;go wrong&amp;quot;. &lt;/p&gt;&lt;p&gt; &lt;a href=&#34;/glossary.html#dubya&#34;&gt;Dubya&lt;/a&gt; pushed hard for use of torture, including finding subordinates to &lt;a href=&#34;https://stallman.org/archives/2005-sep-dec.html#16%20December%202005%20(Torture)&#34;&gt;create legalistic excuses&lt;/a&gt; for it. As for the drone attacks, the US &lt;a href=&#34;https://stallman.org/archives/2012-nov-feb.html#28_December_2012_(US_drone_strikes_that_killed_civilians)&#34;&gt;resists acknowledging&lt;/a&gt; that they kill civilians.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00T8XSM6H3CJQDPC7G.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00MFE9SQNWWTFFYXSN.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Assad regime</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Assad regime&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Assad Regime &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/20/its-not-a-war-its-a-massacre-scores-killed-in-syrian-enclave-eastern-ghouta&#34;&gt;Uses Barrel Bombs&lt;/a&gt; and Attacks Hospitals in Rebel-Held Eastern Ghouta.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00MFE9SQNWWTFFYXSN.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00M4BZ03Z7FF5FA16M.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Crime of rudeness</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Crime of rudeness&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The UK &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/20/woman-who-left-abusive-note-on-ambulance-admits-public-order-offence&#34;&gt;makes it a crime&lt;/a&gt; to say &amp;quot;move your fucking van&amp;quot;. &lt;/p&gt;&lt;p&gt; I disapprove totally of what she said — she was talking to ambulance crew who had come to take a sick person to a hospital — but the state should not punish people for rude language.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00M4BZ03Z7FF5FA16M.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00KNHAHFB9EWAQASEE.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Urgent: Massachusetts and the NRA</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Massachusetts and the NRA&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Citizens of Massachusetts: &lt;a href=&#34;https://petitions.moveon.org/sign/gov-charlie-baker-dump&#34;&gt;call on the state government&lt;/a&gt; to drop its support for the NRA.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00KNHAHFB9EWAQASEE.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00GZXG2YVNKBHQQBQW.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Honduran protester raids</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Honduran protester raids&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Honduran thugs are &lt;a href=&#34;https://theintercept.com/2018/02/20/honduras-election-protest-tigres/&#34;&gt;raiding homes at night&lt;/a&gt; to arrest protesters against election fraud. &lt;/p&gt;&lt;p&gt; They have also shot and killed protesters on various occasions.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00GZXG2YVNKBHQQBQW.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00G8Q82MPMCH9YDKX0.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Global heating and cities</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Global heating and cities&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;/glossary.html#global heating&#34;&gt;Global heating&lt;/a&gt; will expose cities to floods, droughts and heat waves, due to extreme weather.  &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/21/climate-change-will-push-european-cities-towards-breaking-point&#34;&gt;Most cities are not ready&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00G8Q82MPMCH9YDKX0.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00FQHR14SJVJCT81HX.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Drug prices</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Drug prices&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A combination of two cheap drugs, important to avoid the dangerous mistake of taking one without the other, has been jacked up in price to the point that &lt;a href=&#34;https://arstechnica.com/science/2018/02/price-of-2-in-1-drug-spikes-to-3000-separately-the-two-drugs-cost-36/&#34;&gt;patients can&amp;#39;t afford it&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00FQHR14SJVJCT81HX.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00F63RY8B9AV643NN4.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>al-Shabaab</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;al-Shabaab&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/21/al-shabaab-extortion-indoctrination-somalia&#34;&gt;A defector reports&lt;/a&gt; that al-Shabaab imposes crushing taxes on the people it controls and conscripts 8-year-olds to train them as fanatical soldiers. &lt;/p&gt;&lt;p&gt; However, people still think that al-Shabaab courts are honest while government courts are corrupt.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00F63RY8B9AV643NN4.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00EQGXA8R4F5A564RC.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gun laws</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Gun laws&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Republicans offer to &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/20/trump-gun-control-bump-stock-ban-background-check-law&#34;&gt;exchange tiny steps&lt;/a&gt; towards gun control for passage of their bill to undermine all states&amp;#39; gun regulations. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t think it is sufficient to prohibit the sale of certain kinds of guns and accessories.  We need to collect them and make them non-functional.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00EQGXA8R4F5A564RC.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00CVSKC459DJSKK8Z2.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Sexual harassment</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Sexual harassment&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/women-have-changed-the-mood-now-we-need-to-change-policy&#34;&gt;On what is needed&lt;/a&gt; to put an end to sexual harassment by men that have power over women&amp;#39;s careers.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00CVSKC459DJSKK8Z2.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00BR5QQQ38C0F2MCWM.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gun control support</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Gun control support&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US gun owners &lt;a href=&#34;https://www.dailykos.com/story/2018/2/20/1743202/-Quinnipiac-poll-Support-for-gun-control-tops-2-1-the-highest-ever&#34;&gt;overwhelmingly support&lt;/a&gt; some kinds of gun control regulations.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00BR5QQQ38C0F2MCWM.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00B3QKMD7AWJ5F2NM5.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gerrymandering</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Gerrymandering&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The cheater &lt;a href=&#34;https://www.commondreams.org/news/2018/02/20/trump-blatantly-backs-gerrymandering-call-gop-fight-new-pa-maps&#34;&gt;openly endorsed rigging elections&lt;/a&gt; through gerrymandering.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00B3QKMD7AWJ5F2NM5.html"/>
+</entry>
+</feed>

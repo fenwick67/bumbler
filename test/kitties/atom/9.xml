@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-02-27T21:16:01-06:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/10.xml"/>
+<link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/8.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/><entry>
+<id>http://localhost:8000/post/01C5SBCE00N3VRKYEHGJFDN7X7.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Arms divestment</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Arms divestment&lt;/h1&gt;&lt;span&gt;&lt;p&gt; A &lt;a href=&#34;https://www.commondreams.org/views/2018/02/05/congress-feeds-merchants-death-people-must-divest&#34;&gt;campaign for divestment&lt;/a&gt; from arms manufacturers.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE00N3VRKYEHGJFDN7X7.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE00JF9Z1J519ETM5HY4.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Journalism Protection Act</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Journalism Protection Act&lt;/h1&gt;&lt;span&gt;&lt;p&gt; The &lt;a href=&#34;https://www.commondreams.org/news/2018/02/05/countering-trumps-hostility-toward-media-bill-would-protect-journalists-intimidation&#34;&gt;Journalism Protection Act&lt;/a&gt; would, if enacted, prohibit attacking and intimidating journalists.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE00JF9Z1J519ETM5HY4.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE00H5Y2BQ75SYACQ7S5.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>ISP service for state governments</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;ISP service for state governments&lt;/h1&gt;&lt;span&gt;&lt;p&gt; New Jersey &lt;a href=&#34;https://arstechnica.com/tech-policy/2018/02/isps-must-follow-net-neutrality-in-new-jersey-governor-declares/&#34;&gt;has joined the states&lt;/a&gt; that demand ISPs respect network neutrality for all customers in order to sell service to the state government.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE00H5Y2BQ75SYACQ7S5.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE00EVKHMNTPM7HXE0FV.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Hong Kong protesters</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Hong Kong protesters&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Hong Kong has reduced the sentences for some protest leaders, &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/06/hong-kong-activists-have-jail-sentences-overturned&#34;&gt;&amp;quot;this time only&amp;quot;&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I suppose this is a plan to avoid creating martyrs while still repressing future protests.  It doesn&amp;#39;t reduce the injustice of criminalizing dissent.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE00EVKHMNTPM7HXE0FV.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE00DDD02JHNJXMGNEB9.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Poor People&#39;s Campaign</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Poor People&#39;s Campaign&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Decrying &amp;#39;Dog-Eat-Dog System,&amp;#39; &lt;a href=&#34;https://www.commondreams.org/news/2018/02/05/decrying-dog-eat-dog-system-poorpeoplescampaign-kicks-40-days-moral-action&#34;&gt; #PoorPeoplesCampaign Kicks Off 40 Days of &amp;#39;Moral Action&amp;#39;. &lt;/a&gt;  &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE00DDD02JHNJXMGNEB9.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE00CHZGTNP9V22WD3W6.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Equifax investigation halted</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Equifax investigation halted&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Mulvaney, acting director of the Consumer Financial Protection Bureau, &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/05/equifax-gave-mulvaney-thousands-now-hes-putting-cfpbs-investigation-ice&#34;&gt; has halted an investigation of Equifax, &lt;/a&gt; apparently because of all the campaign contributions it sent his way. &lt;/p&gt;&lt;p&gt; Corruption is the Republican Way.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE00CHZGTNP9V22WD3W6.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0093ATBGY11J303RJR.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Missing climate report</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Missing climate report&lt;/h1&gt;&lt;span&gt;&lt;p&gt; The State Department has not issued the climate report &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/05/trump-administration-threatened-lawsuit-over-missing-climate-report&#34;&gt;required by a UN treaty&lt;/a&gt;. Sabotage, I expect.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0093ATBGY11J303RJR.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE008QJF6HHA4RXZRA71.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Malnutrition deaths</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Malnutrition deaths&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/society/2018/feb/05/figures-show-rise-in-malnutrition-deaths-in-england-and-wales&#34;&gt; Deaths due to malnutrition are increasing in England, &lt;/a&gt; as welfare often provides too little money for poor people to pay for housing, medical care and food, for themselves or for their children. &lt;/p&gt;&lt;p&gt; Many US college students skip food because they are broke. &lt;a href=&#34;https://www.bostonglobe.com/metro/2018/02/04/even-elite-colleges-students-going-hungry/GMDfGe89ocg31Fm1cmzR2J/story.html?s_campaign=8315&#34;&gt; At MIT, 10% of the students each week skipped a meal due to lack of funds. &lt;/a&gt;   This is not yet malnutrition, but it can retard their studies, and it would never happen if the educational system worked.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE008QJF6HHA4RXZRA71.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0078P1FGNM95G37YVQ.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>The darkest hour</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;The darkest hour&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/views/2018/02/05/degeneration-nation-2018-darkest-hour&#34;&gt; Our democracy and our ecosphere are under attack, as well as the very idea of honesty. &lt;/a&gt; Movements to overcome these attacks are growing, however.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0078P1FGNM95G37YVQ.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE006B4G6CX7JZRP1009.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Banning face covering</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Banning face covering&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Denmark &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/06/danish-government-proposes-ban-on-full-face-veils&#34;&gt;is proposing&lt;/a&gt; to prohibit people from covering their faces in public. &lt;/p&gt;&lt;p&gt; Unless the law also ban face recognition systems pointed at public places, in an effective way that can&amp;#39;t easily be bypassed, this would attack everyone&amp;#39;s rights. &lt;/p&gt;&lt;p&gt; If you live in Denmark, please talk with your legislators!   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE006B4G6CX7JZRP1009.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0057J84XZAMEPT28E0.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Nunes memo assertions</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Nunes memo assertions&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Even if you suppose the Nunes memo is honest and accurate, its assertions &lt;a href=&#34;http://msnbcmedia.msn.com/i/TODAY/z_Creative/inline-headers/FINAL%20DRAFT%20--%20Dear%20Colleague%20on%20Nunes%20Memo.pdf&#34;&gt;don&amp;#39;t support the conclusions&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0057J84XZAMEPT28E0.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0050C9GR7ZJ7VBCW9S.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Urgent: Matchbox workers</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Matchbox workers&lt;/h1&gt;&lt;span&gt;&lt;p&gt; US citizens: &lt;a href=&#34;https://www.coworker.org/petitions/matchbox-respect-your-workers-rights&#34;&gt;stand by the workers&lt;/a&gt; that Matchbox Food Group fired.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0050C9GR7ZJ7VBCW9S.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE003GCA1WA2TW08T4HE.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Shooting unarmed man</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Shooting unarmed man&lt;/h1&gt;&lt;span&gt;&lt;p&gt; A sheriff in Tennessee ordered thugs to &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/06/tennessee-sheriff-caught-on-tape-killing-suspect-lawsuit&#34;&gt;shoot an unarmed man&lt;/a&gt; rather than risk damage to &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt; cars. &lt;/p&gt;&lt;p&gt; A lawsuit is too good for him.  He should spend decades in prison.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE003GCA1WA2TW08T4HE.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE001NG1NSBT1CDPS3XY.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Facebook data-collection</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Facebook data-collection&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Proposed US laws would &lt;a href=&#34;https://www.commondreams.org/news/2018/02/05/promoting-humane-technology-former-facebook-workers-aim-shield-public-social-medias&#34;&gt; limit how Facebook collects and uses personal data, &lt;/a&gt; but just a little. &lt;/p&gt;&lt;p&gt; I conjecture that the reason these laws don&amp;#39;t doesn&amp;#39;t go far enough is that they were written based on the unstated premise that we cannot greatly reduce the profits of Facebook and other surveillance companies. &lt;/p&gt;&lt;p&gt; In my view, ending massive data-collection must take priority over their profits.  It would be no loss to society if we drove them out of business as a side effect of protecting ourselves from them.  Indeed, by refusing to give Facebook any data, I am taking a personal step to that end. &lt;a href=&#34;https://stallman.org/facebook.html&#34;&gt; I set up my page about Facebook &lt;/a&gt;    hoping to convince you to join me. &lt;/p&gt;&lt;p&gt; We should not limit ourselves to acting individually.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE001NG1NSBT1CDPS3XY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE001MANXA796KK1YPZM.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Urgent: Fire Scott Lloyd</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Fire Scott Lloyd&lt;/h1&gt;&lt;span&gt;&lt;p&gt; US citizens: &lt;a href=&#34;https://secure.ppaction.org/site/Advocacy?cmd=display&amp;amp;page=UserAction&amp;amp;id=22082&amp;amp;s_src=ScottLloyd_0218_Alert_c4_e1&amp;amp;s_subsrc=4NALz1808E1N1V&#34;&gt; call for firing Scott Lloyd as head of the Office of Refugee Resettlement. &lt;/a&gt;   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE001MANXA796KK1YPZM.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE001AW2FRXYPECBTRDY.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Attempt to censor</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Attempt to censor&lt;/h1&gt;&lt;span&gt;&lt;p&gt; The Centers for Medicare and Medicaid Services, run by a &lt;a href=&#34;/glossary.html#saboteur&#34;&gt;saboteur&lt;/a&gt;, &lt;a href=&#34;https://www.dailykos.com/story/2018/2/5/1738959/-Trump-administration-just-yanked-press-access-of-a-journalist-who-wouldn-t-censor-his-story&#34;&gt; demanded that a reporter change his story &lt;/a&gt; or the company he works for would be excluded from future discussions with the press. &lt;/p&gt;&lt;p&gt; So far the company has stood firm, but that&amp;#39;s not enough.  The other news organizations should agree to provide their material to that one.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE001AW2FRXYPECBTRDY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE000KK5F959NR2X9EF8.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Livestreaming a march</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Livestreaming a march&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Vietnam &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/06/vietnam-jails-activist-for-14-years-for-livestreaming-pollution-march&#34;&gt;Jails Activist for 14 Years&lt;/a&gt; for Livestreaming Pollution March. &lt;/p&gt;&lt;p&gt; Repression of protests is despicable.  It&amp;#39;s &lt;a href=&#34;https://stallman.org/archives/2017-jan-apr.html#9_March_2017_(Threat_of_prison_for_protesters)&#34;&gt;even more despicable&lt;/a&gt; when &lt;a href=&#34;https://stallman.org/archives/2017-sep-dec.html#30_September_2017_(Pipeline_protesters)&#34;&gt;the US does it&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE000KK5F959NR2X9EF8.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE000CMNA3WVP0ZPXAF7.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Ozone depletion</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Ozone depletion&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Ozone depletion in the stratosphere is getting worse, &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/06/ozone-layer-not-recovering-over-populated-areas-scientists-warn&#34;&gt; in the latitudes where people mainly live. &lt;/a&gt; &lt;/p&gt;&lt;p&gt; This despite the fact that the depletion over Antarctica is gradually decreasing.    &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE000CMNA3WVP0ZPXAF7.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0002CHSEK9RD7RD079.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Urgent: Super Bowl athletes</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Super Bowl athletes&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Everyone: &lt;a href=&#34;http://act.colorofchange.org/sign/SuperBowlBoycott/&#34;&gt;thank athletes from the Super Bowl&lt;/a&gt; that refuse to visit the bully at the White House.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0002CHSEK9RD7RD079.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00ZGC6JR20J5VNFA8S.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Urgent: Close Guantanamo</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Urgent: Close Guantanamo&lt;/h1&gt;&lt;span&gt;&lt;p&gt; US citizens: &lt;a href=&#34;https://act.amnestyusa.org/page/19175/action/1?ea.url.id=1250789&#34;&gt;call on your congresscritter&lt;/a&gt; to close the Guantanamo prison. &lt;/p&gt;&lt;p&gt; I suggest explicitly saying also that each prisoner should get a fair trial or be released.  Otherwise your congresscritter might think you want imprisonment without trial extended from a foreign naval base to the US itself.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00ZGC6JR20J5VNFA8S.html"/>
+</entry>
+</feed>

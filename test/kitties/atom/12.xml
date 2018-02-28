@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-02-27T21:16:01-06:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/>
+<link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/11.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/><entry>
+<id>http://localhost:8000/post/01C5M6K0009VYJSXE2V2YPD9EJ.html</id>
+<published>2018-02-06T00:00:00.000Z</published>
+<updated>2018-02-06T00:00:00.000Z</updated>
+<title>Expelled reporter</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Expelled reporter&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Indonesia &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/04/bbc-journalist-rebecca-henschke-papua-tweets-hurt-soldiers-feelings&#34;&gt;expelled a BBC reporter&lt;/a&gt; for an erroneous tweet that criticized the quality of food sent for malnourished children in Papua. &lt;/p&gt;&lt;p&gt; Her error was to confuse food imported for sale in stores with food aid.  She corrected the error later. &lt;/p&gt;&lt;p&gt; Errors are to be avoided.  However, to interrogate and expel journalists for what they publish — even for errors — is much worse than an error.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5M6K0009VYJSXE2V2YPD9EJ.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5M6K0009NQRVH92VHCAM6P0.html</id>
+<published>2018-02-06T00:00:00.000Z</published>
+<updated>2018-02-06T00:00:00.000Z</updated>
+<title>Human rights setbacks</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Human rights setbacks&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Fundamental human rights are &lt;a href=&#34;https://www.theguardian.com/inequality/2018/jan/31/human-rights-new-rule-of-law-index-reveals-global-fall-basic-justice&#34;&gt;suffering a setback&lt;/a&gt; in most of the countries covered by the global survey.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5M6K0009NQRVH92VHCAM6P0.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5M6K0009MGDQJQZMJBE8KHE.html</id>
+<published>2018-02-06T00:00:00.000Z</published>
+<updated>2018-02-06T00:00:00.000Z</updated>
+<title>Dumped in Gaza</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Dumped in Gaza&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Israel &lt;a href=&#34;https://www.theguardian.com/world/2018/jan/31/palestine-teenager-arrest-gaza-strip&#34;&gt;arrested a Palestinian teenager&lt;/a&gt; who lives near Jerusalem, and dumped her in Gaza where she had never been.  There is no way to get from Gaza to the West Bank, because Israel never fulfilled its commitment to the PLO to set one up. &lt;/p&gt;&lt;p&gt; Of course, there was a bureaucratic excuse for this.  So what?  States are supposed to treat people humanely, not screw them just because they can.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5M6K0009MGDQJQZMJBE8KHE.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5M6K0005XWAYV4PH9XX982M.html</id>
+<published>2018-02-06T00:00:00.000Z</published>
+<updated>2018-02-06T00:00:00.000Z</updated>
+<title>Automated debt collection</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Automated debt collection&lt;/h1&gt;&lt;span&gt;&lt;p&gt; It is no accident that the right-wing government of Australia set up an automated debt collection system that bullied thousands of people about &lt;a href=&#34;https://logicmag.io/03-austerity-is-an-algorithm/&#34;&gt;nonexistent debts&lt;/a&gt; for nonexistent welfare fraud, and wouldn&amp;#39;t listen to their counterevidence. &lt;/p&gt;&lt;p&gt; Part of the reason is that right-wingers demonize anyone that needs help.  Another part is they followed the typical right-wing practice of privatizing the debt collection.  Naturally the system didn&amp;#39;t want to hear when the debt wasn&amp;#39;t real.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5M6K0005XWAYV4PH9XX982M.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5M6K0002ME6PENEGP3J3CVC.html</id>
+<published>2018-02-06T00:00:00.000Z</published>
+<updated>2018-02-06T00:00:00.000Z</updated>
+<title>Total solitude</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Total solitude&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Modern patterns of living push old people into lives of total solitude. Cohousing could &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/04/ageing-nhs-loneliness-co-housing&#34;&gt;help people avoid this fate&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Automated and internet sales are part of the problem.  How about discouraging those?   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5M6K0002ME6PENEGP3J3CVC.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html</id>
+<published>2018-02-04T00:00:00.000Z</published>
+<updated>2018-02-04T00:00:00.000Z</updated>
+<title>Emergency room treatment</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Emergency room treatment&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/1/29/16906558/anthem-emergency-room-coverage-denials-inappropriate&#34;&gt; Anthem medical insurance refuses to pay for emergency room treatment &lt;/a&gt; if the problem was not really urgent.  Since patients have no way to know that on their own, this means they risk bankruptcy every time they go.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html</id>
+<published>2018-01-31T00:00:00.000Z</published>
+<updated>2018-01-31T00:00:00.000Z</updated>
+<title>&#34;Microschools&#34;</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;&#34;Microschools&#34;&lt;/h1&gt;&lt;span&gt;&lt;p&gt; &lt;a href=&#34;http://reason.com/archives/2018/01/27/are-microschools-the-next-big&#34;&gt; &amp;quot;Microschools&amp;quot; try to break the rigidity of standardized education. &lt;/a&gt;   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C52FV9T2YC1726NCQPZN1TT9.html</id>
+<published>2018-01-30T02:55:29.602Z</published>
+<updated>2018-01-30T02:55:29.602Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;blockquote&gt;
+&lt;p&gt;is it a &amp;quot;joke religion&amp;quot; if people celebrate a personification of some ideal while knowing fully well that it is a constructed character?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is basically what Satanism is&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="scuttlebutt"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C52FV9T2YC1726NCQPZN1TT9.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C36VX21MZ78DMZ5PPVE066HZ.html</id>
+<published>2018-01-06T23:11:44.180Z</published>
+<updated>2018-01-06T23:11:44.180Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;I can&amp;#39;t believe on the entire scuttleverse there are no posts about #tidepods&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="scuttlebutt"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C36VX21MZ78DMZ5PPVE066HZ.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C2T4EQER0855FJVWM0F52ZF3.html</id>
+<published>2018-01-02T00:31:04.152Z</published>
+<updated>2018-01-02T00:31:04.152Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;Possums are honestly adorable&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="scuttlebutt"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2T4EQER0855FJVWM0F52ZF3.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C2MYECHRESJ63NHBCPVT6WN6.html</id>
+<published>2017-12-31T00:09:49.368Z</published>
+<updated>2017-12-31T00:09:49.368Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;The custom non-unicode ones aren&amp;#39;t here but that&amp;#39;s fine with me IMO, they stunk for interoperability.&lt;/p&gt;
+&lt;p&gt;🦕💨   🦖 &lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="scuttlebutt"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2MYECHRESJ63NHBCPVT6WN6.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C2GATWAPCTAY1J8Y2JQ8GVWW.html</id>
+<published>2017-12-29T05:10:09.494Z</published>
+<updated>2017-12-29T05:10:09.494Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;GoTenna &lt;em&gt;does&lt;/em&gt; have an SDK for Android and iOS but the details are all obfuscated away.  Even then, messages are restricted to very short lengths to deal with the 900MHz FCC restrictions.  There are also lots of 900MHz radios on Adafruit et cetera, but there&amp;#39;s no unified, open 900MHz mesh protocol sadly.  &lt;/p&gt;
+&lt;p&gt;FreedomBox is supposedly &lt;a href=&#34;https://wiki.debian.org/FreedomBox/Design/MeshNetwork&#34;&gt;working toward 2.4GHz mesh networking&lt;/a&gt; but I don&amp;#39;t think it&amp;#39;s working yet.&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="scuttlebutt"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2GATWAPCTAY1J8Y2JQ8GVWW.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C2FMKPA895690NKK4NHFXV90.html</id>
+<published>2017-12-28T22:41:45.288Z</published>
+<updated>2017-12-28T22:41:45.288Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;span&gt;&lt;p&gt;The comic is really cute.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ve always liked dinosaurs but personally I love them even more with feathers.&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="scuttlebutt"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2FMKPA895690NKK4NHFXV90.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BXZHJTZVQ114Q3T541X27SWE.html</id>
+<published>2017-11-02T18:38:13-05:00</published>
+<updated>2017-11-02T18:38:13-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/3112-221541.jpg&#34;&gt;&lt;img src=&#34;/assets/3112-221541.jpg&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/3112-221541.jpg"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BXZHJTZVQ114Q3T541X27SWE.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BX660Z3D6PP3WPM6WG1PS49Y.html</id>
+<published>2017-10-23T22:15:12-05:00</published>
+<updated>2017-10-23T22:15:12-05:00</updated>
+<title>aaaaaa</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;aaaaaa&lt;/h1&gt;&lt;a href=&#34;/assets/IMG_0062.JPG&#34;&gt;&lt;img src=&#34;/assets/IMG_0062.JPG&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/IMG_0062.JPG"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BX660Z3D6PP3WPM6WG1PS49Y.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BVWRJSM5789EK4CM6NM2VMJ7.html</id>
+<published>2017-10-07T20:11:25-05:00</published>
+<updated>2017-10-07T20:11:25-05:00</updated>
+<title>Bumbler</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Bumbler&lt;/h1&gt;&lt;a href=&#34;/assets/bumbler-text.png&#34;&gt;&lt;img src=&#34;/assets/bumbler-text.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;A straightforward, DIY CMS for photos, images, statuses, audio, blog posts or whatever.  It&amp;#39;s optimized for microblogging, but can be used for macroblogging as well.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Your site your rules.  No censorship, plus simple yet powerful theming&lt;/li&gt;
+&lt;li&gt;Host your files in their original size and format&lt;/li&gt;
+&lt;li&gt;Two ways to publish:&lt;ol&gt;
+&lt;li&gt;Self-host and instantly publish from anywhere, anytime&lt;/li&gt;
+&lt;li&gt;Builds out to static files, so you can easily write locally and push to github-pages, Neocities, or any other system&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;step 0: install Node.js v7+ and NPM, and open a terminal.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;npm install -g bumbler&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a new folder for your site&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; into your new site folder&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;bumbler init&lt;/code&gt; inside it and follow the directions&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DO NOT&lt;/strong&gt; re-use a password for the admin interface.  Seriously.  This software is pre-alpha and there are probably security holes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;publishing&#34;&gt;Publishing&lt;/h1&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self-Hosting&lt;/h2&gt;
+&lt;p&gt;If you have an extra $7/month, you can host it on DigitalOcean ($5), with backups ($1), and get a domain ($1).  Here are some tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bumbler will &lt;strong&gt;not&lt;/strong&gt; work on Heroku or other SAAS platforms with an ephemeral filesystem, because of Bumbler&amp;#39;s filesystem-based nature.  All of your files and settings will get blown away every 24 hours or so.&lt;/li&gt;
+&lt;li&gt;Install nodejs v7 using the instructions here:  &lt;a href=&#34;https://github.com/nodesource/distributions#deb&#34;&gt;https://github.com/nodesource/distributions#deb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;When running &lt;code&gt;npm install&lt;/code&gt;, use the &lt;code&gt;--production&lt;/code&gt; flag to reduce the dependencies and install time&lt;/li&gt;
+&lt;li&gt;Use HTTPS.  You can sign up for CloudFlare&amp;#39;s free plan, which includes free auto-renewing certificates.&lt;/li&gt;
+&lt;li&gt;You can use &lt;a href=&#34;http://pm2.keymetrics.io/&#34;&gt;PM2&lt;/a&gt; to easily manage app startup and shutdown&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;pm2 startup&lt;/code&gt; to install startup scripts&lt;/li&gt;
+&lt;li&gt;use only one process (because of in-memory session storage)&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;pm2 save&lt;/code&gt; to save your running process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set up backups in case your site explodes, or hackers get in and ruin everything.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;static-hosting&#34;&gt;Static Hosting&lt;/h2&gt;
+&lt;p&gt;Bumblr was &lt;em&gt;made to work &lt;strong&gt;with or without&lt;/strong&gt; a serverside application&lt;/em&gt;.  You can simply move your project files over to a HTTP server and everything will just work.  Almost everything except the admin interface is built out to static files.  &lt;/p&gt;
+&lt;p&gt;The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/&lt;/p&gt;
+&lt;h2 id=&#34;todo-items-&#34;&gt;TODO Items:&lt;/h2&gt;
+&lt;h3 id=&#34;high-priority&#34;&gt;High Priority&lt;/h3&gt;
+&lt;p&gt;Social features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Create JSON scheme for replying and sharing (reply contexts)&lt;/li&gt;
+&lt;li&gt;[ ] Share a url and parse out H-entry and/or opengraph info in the post interface&lt;/li&gt;
+&lt;li&gt;[ ] bookmarklet / plugin to share from browser.  Create an API route to redirect for sharing.&lt;/li&gt;
+&lt;li&gt;[ ] hit a peer&amp;#39;s Webmention URL when sharing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;medium-priority&#34;&gt;Medium Priority&lt;/h3&gt;
+&lt;p&gt;After implementing social features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Put a RSS feed reader into the admin interface&lt;ul&gt;
+&lt;li&gt;[ ] I can reuse some work from mastofeed for this&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;low-priority&#34;&gt;Low Priority&lt;/h3&gt;
+&lt;p&gt;plugin system&lt;/p&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/fenwick67/bumbler-themes/raw/master/masonry.png&#34; alt=&#34;screenshot&#34;&gt;&lt;br&gt;&lt;img src=&#34;https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png&#34; alt=&#34;admin screenshot&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/bumbler-text.png"/>
+<category term="blog"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWRJSM5789EK4CM6NM2VMJ7.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BVWN0S9AEDQ6HQP4MJVNE1MB.html</id>
+<published>2017-10-07T19:09:09-05:00</published>
+<updated>2017-10-07T19:09:09-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/fishebig.gif&#34;&gt;&lt;img src=&#34;/assets/fishebig.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/fishebig.gif"/>
+<category term="fish"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWN0S9AEDQ6HQP4MJVNE1MB.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BVWN0M6AVMR5MKEVE929EQBW.html</id>
+<published>2017-10-07T19:09:03-05:00</published>
+<updated>2017-10-07T19:09:03-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/pige.gif&#34;&gt;&lt;img src=&#34;/assets/pige.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/pige.gif"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWN0M6AVMR5MKEVE929EQBW.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BVWKG9MVQ29DE126WDZNT58M.html</id>
+<published>2017-10-07T18:42:40-05:00</published>
+<updated>2017-10-07T18:42:40-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/pare-shadow-big.gif&#34;&gt;&lt;img src=&#34;/assets/pare-shadow-big.gif&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/pare-shadow-big.gif"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWKG9MVQ29DE126WDZNT58M.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BVWG65XCJ9202SD51K2CW527.html</id>
+<published>2017-10-07T17:44:43-05:00</published>
+<updated>2017-10-07T17:44:43-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&#34;/assets/Quetzfeedingwittonnaish2008.png&#34;&gt;&lt;img src=&#34;/assets/Quetzfeedingwittonnaish2008.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/Quetzfeedingwittonnaish2008.png"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWG65XCJ9202SD51K2CW527.html"/>
+</entry>
+</feed>

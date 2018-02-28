@@ -1,0 +1,11 @@
+{
+  "metadata": "{}",
+  "title": "doggos",
+  "description": "doggos",
+  "authorName": "doggos",
+  "avatar": "/assets/avatar.png",
+  "postsPerPage": "10",
+  "siteUrl": "http://localhost:8000/",
+  "categories": "",
+  "reverseOrder": false
+}
