@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-06-10T13:46:02-05:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/17.xml"/>
+<link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/15.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/19.xml"/><entry>
+<id>http://localhost:8000/post/01C5SBCE006B4G6CX7JZRP1009.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Banning face covering</title>
+<content type="html" xml:lang="en">&lt;p&gt; Denmark &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/06/danish-government-proposes-ban-on-full-face-veils&#34;&gt;is proposing&lt;/a&gt; to prohibit people from covering their faces in public. &lt;/p&gt;&lt;p&gt; Unless the law also ban face recognition systems pointed at public places, in an effective way that can&amp;#39;t easily be bypassed, this would attack everyone&amp;#39;s rights. &lt;/p&gt;&lt;p&gt; If you live in Denmark, please talk with your legislators!   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE006B4G6CX7JZRP1009.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0057J84XZAMEPT28E0.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Nunes memo assertions</title>
+<content type="html" xml:lang="en">&lt;p&gt; Even if you suppose the Nunes memo is honest and accurate, its assertions &lt;a href=&#34;http://msnbcmedia.msn.com/i/TODAY/z_Creative/inline-headers/FINAL%20DRAFT%20--%20Dear%20Colleague%20on%20Nunes%20Memo.pdf&#34;&gt;don&amp;#39;t support the conclusions&lt;/a&gt;.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0057J84XZAMEPT28E0.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0050C9GR7ZJ7VBCW9S.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Urgent: Matchbox workers</title>
+<content type="html" xml:lang="en">&lt;p&gt; US citizens: &lt;a href=&#34;https://www.coworker.org/petitions/matchbox-respect-your-workers-rights&#34;&gt;stand by the workers&lt;/a&gt; that Matchbox Food Group fired.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0050C9GR7ZJ7VBCW9S.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE003GCA1WA2TW08T4HE.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Shooting unarmed man</title>
+<content type="html" xml:lang="en">&lt;p&gt; A sheriff in Tennessee ordered thugs to &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/06/tennessee-sheriff-caught-on-tape-killing-suspect-lawsuit&#34;&gt;shoot an unarmed man&lt;/a&gt; rather than risk damage to &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt; cars. &lt;/p&gt;&lt;p&gt; A lawsuit is too good for him.  He should spend decades in prison.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE003GCA1WA2TW08T4HE.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE001NG1NSBT1CDPS3XY.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Facebook data-collection</title>
+<content type="html" xml:lang="en">&lt;p&gt; Proposed US laws would &lt;a href=&#34;https://www.commondreams.org/news/2018/02/05/promoting-humane-technology-former-facebook-workers-aim-shield-public-social-medias&#34;&gt; limit how Facebook collects and uses personal data, &lt;/a&gt; but just a little. &lt;/p&gt;&lt;p&gt; I conjecture that the reason these laws don&amp;#39;t doesn&amp;#39;t go far enough is that they were written based on the unstated premise that we cannot greatly reduce the profits of Facebook and other surveillance companies. &lt;/p&gt;&lt;p&gt; In my view, ending massive data-collection must take priority over their profits.  It would be no loss to society if we drove them out of business as a side effect of protecting ourselves from them.  Indeed, by refusing to give Facebook any data, I am taking a personal step to that end. &lt;a href=&#34;https://stallman.org/facebook.html&#34;&gt; I set up my page about Facebook &lt;/a&gt;    hoping to convince you to join me. &lt;/p&gt;&lt;p&gt; We should not limit ourselves to acting individually.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE001NG1NSBT1CDPS3XY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE001MANXA796KK1YPZM.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Urgent: Fire Scott Lloyd</title>
+<content type="html" xml:lang="en">&lt;p&gt; US citizens: &lt;a href=&#34;https://secure.ppaction.org/site/Advocacy?cmd=display&amp;amp;page=UserAction&amp;amp;id=22082&amp;amp;s_src=ScottLloyd_0218_Alert_c4_e1&amp;amp;s_subsrc=4NALz1808E1N1V&#34;&gt; call for firing Scott Lloyd as head of the Office of Refugee Resettlement. &lt;/a&gt;   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE001MANXA796KK1YPZM.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE001AW2FRXYPECBTRDY.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Attempt to censor</title>
+<content type="html" xml:lang="en">&lt;p&gt; The Centers for Medicare and Medicaid Services, run by a &lt;a href=&#34;/glossary.html#saboteur&#34;&gt;saboteur&lt;/a&gt;, &lt;a href=&#34;https://www.dailykos.com/story/2018/2/5/1738959/-Trump-administration-just-yanked-press-access-of-a-journalist-who-wouldn-t-censor-his-story&#34;&gt; demanded that a reporter change his story &lt;/a&gt; or the company he works for would be excluded from future discussions with the press. &lt;/p&gt;&lt;p&gt; So far the company has stood firm, but that&amp;#39;s not enough.  The other news organizations should agree to provide their material to that one.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE001AW2FRXYPECBTRDY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE000KK5F959NR2X9EF8.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Livestreaming a march</title>
+<content type="html" xml:lang="en">&lt;p&gt; Vietnam &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/06/vietnam-jails-activist-for-14-years-for-livestreaming-pollution-march&#34;&gt;Jails Activist for 14 Years&lt;/a&gt; for Livestreaming Pollution March. &lt;/p&gt;&lt;p&gt; Repression of protests is despicable.  It&amp;#39;s &lt;a href=&#34;https://stallman.org/archives/2017-jan-apr.html#9_March_2017_(Threat_of_prison_for_protesters)&#34;&gt;even more despicable&lt;/a&gt; when &lt;a href=&#34;https://stallman.org/archives/2017-sep-dec.html#30_September_2017_(Pipeline_protesters)&#34;&gt;the US does it&lt;/a&gt;.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE000KK5F959NR2X9EF8.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE000CMNA3WVP0ZPXAF7.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Ozone depletion</title>
+<content type="html" xml:lang="en">&lt;p&gt; Ozone depletion in the stratosphere is getting worse, &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/06/ozone-layer-not-recovering-over-populated-areas-scientists-warn&#34;&gt; in the latitudes where people mainly live. &lt;/a&gt; &lt;/p&gt;&lt;p&gt; This despite the fact that the depletion over Antarctica is gradually decreasing.    &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE000CMNA3WVP0ZPXAF7.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5SBCE0002CHSEK9RD7RD079.html</id>
+<published>2018-02-08T00:00:00.000Z</published>
+<updated>2018-02-08T00:00:00.000Z</updated>
+<title>Urgent: Super Bowl athletes</title>
+<content type="html" xml:lang="en">&lt;p&gt; Everyone: &lt;a href=&#34;http://act.colorofchange.org/sign/SuperBowlBoycott/&#34;&gt;thank athletes from the Super Bowl&lt;/a&gt; that refuse to visit the bully at the White House.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5SBCE0002CHSEK9RD7RD079.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00ZGC6JR20J5VNFA8S.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Urgent: Close Guantanamo</title>
+<content type="html" xml:lang="en">&lt;p&gt; US citizens: &lt;a href=&#34;https://act.amnestyusa.org/page/19175/action/1?ea.url.id=1250789&#34;&gt;call on your congresscritter&lt;/a&gt; to close the Guantanamo prison. &lt;/p&gt;&lt;p&gt; I suggest explicitly saying also that each prisoner should get a fair trial or be released.  Otherwise your congresscritter might think you want imprisonment without trial extended from a foreign naval base to the US itself.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00ZGC6JR20J5VNFA8S.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00YRMPY3TPHGCHB444.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Sex education in Kenya</title>
+<content type="html" xml:lang="en">&lt;p&gt; Religious fanatics in Kenya &lt;a href=&#34;https://www.theguardian.com/global-development/2018/feb/05/dangerous-proposal-campaigners-kenya-condemn-sex-education-plan&#34;&gt;oppose national sex education&lt;/a&gt;. Apparently their religion adores ignorance and avoidable distress.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00YRMPY3TPHGCHB444.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00XMPZP23CZC12D348.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>War is mutating</title>
+<content type="html" xml:lang="en">&lt;p&gt; War is mutating into an &lt;a href=&#34;https://www.theguardian.com/cities/2018/jan/30/new-war-rise-endless-urban-conflict-saskia-sassen&#34;&gt;urban guerrilla&lt;/a&gt; in which there is no one with the authority to make peace.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00XMPZP23CZC12D348.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00XER8VR8CARHHA15Y.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>&#39;Facilitated communication&#39;</title>
+<content type="html" xml:lang="en">&lt;p&gt; The myth of &amp;quot;facilitated communication&amp;quot;, which when investigated proves to be pure pseudoscience, continues to &lt;a href=&#34;https://www.theguardian.com/science/blog/2018/feb/05/why-communication-from-a-locked-in-child-is-a-miracle-we-must-question&#34;&gt;take in the loved ones&lt;/a&gt; of people who cannot communicate. They desperately wish for it to be true, for themselves to have communication with that person.  But that doesn&amp;#39;t imply it is true. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t believe it is a kindness to tell someone a comforting lie.  To get someone accustomed to a false view of the world is an injury to per.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00XER8VR8CARHHA15Y.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00TCSYQ25ASRQK8W0R.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Walkable neighborhoods</title>
+<content type="html" xml:lang="en">&lt;p&gt; Neighborhoods that invite walking around seem to &lt;a href=&#34;https://www.theguardian.com/cities/2018/feb/05/walkable-cities-reduce-blood-pressure-study-finds&#34;&gt;make people more healthy&lt;/a&gt;.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00TCSYQ25ASRQK8W0R.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00TARKSGR9259PHPGF.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Chao&#39;s shipping business</title>
+<content type="html" xml:lang="en">&lt;p&gt; Saboteur of Transportation Chao&amp;#39;s family shipping business &lt;a href=&#34;https://theintercept.com/2018/02/05/mitch-mcconnell-elaine-chao-offshore-paradise-papers/&#34;&gt;dodges taxes&lt;/a&gt; by being incorporated in a tax shelter country.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00TARKSGR9259PHPGF.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00T4THP4134HJDQTTP.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>UK immigrant data</title>
+<content type="html" xml:lang="en">&lt;p&gt; The UK &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/05/brexit-data-protection-rules-immigrants&#34;&gt;plans to facilitate&lt;/a&gt; collecting and maintaining inaccurate data about immigrants and would-be immigrants.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00T4THP4134HJDQTTP.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00SZ7KAKFK6VA2SKX6.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Photos with heads</title>
+<content type="html" xml:lang="en">&lt;p&gt; People are upset that dentistry students and their professor &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/05/yale-dental-students-selfie-severed-heads&#34;&gt;had themselves photographed&lt;/a&gt; with heads of deceased people that had willed their bodies to science. &lt;/p&gt;&lt;p&gt; I have to ask, who did they hurt by making the photos? I cannot see how this matters at all.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00SZ7KAKFK6VA2SKX6.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00QZBWR6YSRKAZSBH3.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Returning to Syria</title>
+<content type="html" xml:lang="en">&lt;p&gt; Governments are &lt;a href=&#34;https://www.theguardian.com/global-development/2018/feb/05/syrian-refugees-at-risk-of-forced-return-home&#34;&gt;pressuring Syrian refugees to return home&lt;/a&gt; even though the war continues. &lt;/p&gt;&lt;p&gt; There are some places in Syria that some refugees could safely return to.  But we can be sure that deportation-mad officials will underestimate the danger so they can force more refugees back to Syria even where it isn&amp;#39;t safe.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00QZBWR6YSRKAZSBH3.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5PRZQ00QM4M7HNDR143ZQKZ.html</id>
+<published>2018-02-07T00:00:00.000Z</published>
+<updated>2018-02-07T00:00:00.000Z</updated>
+<title>Criticism of China</title>
+<content type="html" xml:lang="en">&lt;p&gt; The Chinese government has set up numerous organizations in Australia to &lt;a href=&#34;https://www.theguardian.com/australia-news/2018/jan/31/chinese-government-exerts-influence-across-australian-society-mps-told&#34;&gt;suppress criticism of China&lt;/a&gt;, especially by Chinese students, but also targeting universities, businesses, publishers and so on.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00QM4M7HNDR143ZQKZ.html"/>
+</entry>
+</feed>

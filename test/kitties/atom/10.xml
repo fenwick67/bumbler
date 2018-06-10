@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-02-27T21:16:01-06:00</updated>
+<updated>2018-06-10T13:46:02-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,184 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/11.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/9.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/><entry>
-<id>http://localhost:8000/post/01C5PRZQ00YRMPY3TPHGCHB444.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Sex education in Kenya</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Sex education in Kenya&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Religious fanatics in Kenya &lt;a href=&#34;https://www.theguardian.com/global-development/2018/feb/05/dangerous-proposal-campaigners-kenya-condemn-sex-education-plan&#34;&gt;oppose national sex education&lt;/a&gt;. Apparently their religion adores ignorance and avoidable distress.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/19.xml"/><entry>
+<id>http://localhost:8000/post/01C7544N00MFE9SQNWWTFFYXSN.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Assad regime</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Assad Regime &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/20/its-not-a-war-its-a-massacre-scores-killed-in-syrian-enclave-eastern-ghouta&#34;&gt;Uses Barrel Bombs&lt;/a&gt; and Attacks Hospitals in Rebel-Held Eastern Ghouta.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00YRMPY3TPHGCHB444.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00MFE9SQNWWTFFYXSN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00XMPZP23CZC12D348.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>War is mutating</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;War is mutating&lt;/h1&gt;&lt;span&gt;&lt;p&gt; War is mutating into an &lt;a href=&#34;https://www.theguardian.com/cities/2018/jan/30/new-war-rise-endless-urban-conflict-saskia-sassen&#34;&gt;urban guerrilla&lt;/a&gt; in which there is no one with the authority to make peace.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00M4BZ03Z7FF5FA16M.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Crime of rudeness</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The UK &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/20/woman-who-left-abusive-note-on-ambulance-admits-public-order-offence&#34;&gt;makes it a crime&lt;/a&gt; to say &amp;quot;move your fucking van&amp;quot;. &lt;/p&gt;&lt;p&gt; I disapprove totally of what she said — she was talking to ambulance crew who had come to take a sick person to a hospital — but the state should not punish people for rude language.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00XMPZP23CZC12D348.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00M4BZ03Z7FF5FA16M.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00XER8VR8CARHHA15Y.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>&#39;Facilitated communication&#39;</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;&#39;Facilitated communication&#39;&lt;/h1&gt;&lt;span&gt;&lt;p&gt; The myth of &amp;quot;facilitated communication&amp;quot;, which when investigated proves to be pure pseudoscience, continues to &lt;a href=&#34;https://www.theguardian.com/science/blog/2018/feb/05/why-communication-from-a-locked-in-child-is-a-miracle-we-must-question&#34;&gt;take in the loved ones&lt;/a&gt; of people who cannot communicate. They desperately wish for it to be true, for themselves to have communication with that person.  But that doesn&amp;#39;t imply it is true. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t believe it is a kindness to tell someone a comforting lie.  To get someone accustomed to a false view of the world is an injury to per.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00KNHAHFB9EWAQASEE.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Urgent: Massachusetts and the NRA</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Citizens of Massachusetts: &lt;a href=&#34;https://petitions.moveon.org/sign/gov-charlie-baker-dump&#34;&gt;call on the state government&lt;/a&gt; to drop its support for the NRA.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00XER8VR8CARHHA15Y.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00KNHAHFB9EWAQASEE.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00TCSYQ25ASRQK8W0R.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Walkable neighborhoods</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Walkable neighborhoods&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Neighborhoods that invite walking around seem to &lt;a href=&#34;https://www.theguardian.com/cities/2018/feb/05/walkable-cities-reduce-blood-pressure-study-finds&#34;&gt;make people more healthy&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00GZXG2YVNKBHQQBQW.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Honduran protester raids</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Honduran thugs are &lt;a href=&#34;https://theintercept.com/2018/02/20/honduras-election-protest-tigres/&#34;&gt;raiding homes at night&lt;/a&gt; to arrest protesters against election fraud. &lt;/p&gt;&lt;p&gt; They have also shot and killed protesters on various occasions.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00TCSYQ25ASRQK8W0R.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00GZXG2YVNKBHQQBQW.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00TARKSGR9259PHPGF.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Chao&#39;s shipping business</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Chao&#39;s shipping business&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Saboteur of Transportation Chao&amp;#39;s family shipping business &lt;a href=&#34;https://theintercept.com/2018/02/05/mitch-mcconnell-elaine-chao-offshore-paradise-papers/&#34;&gt;dodges taxes&lt;/a&gt; by being incorporated in a tax shelter country.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00G8Q82MPMCH9YDKX0.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Global heating and cities</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;/glossary.html#global heating&#34;&gt;Global heating&lt;/a&gt; will expose cities to floods, droughts and heat waves, due to extreme weather.  &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/21/climate-change-will-push-european-cities-towards-breaking-point&#34;&gt;Most cities are not ready&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00TARKSGR9259PHPGF.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00G8Q82MPMCH9YDKX0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00T4THP4134HJDQTTP.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>UK immigrant data</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;UK immigrant data&lt;/h1&gt;&lt;span&gt;&lt;p&gt; The UK &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/05/brexit-data-protection-rules-immigrants&#34;&gt;plans to facilitate&lt;/a&gt; collecting and maintaining inaccurate data about immigrants and would-be immigrants.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00FQHR14SJVJCT81HX.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Drug prices</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A combination of two cheap drugs, important to avoid the dangerous mistake of taking one without the other, has been jacked up in price to the point that &lt;a href=&#34;https://arstechnica.com/science/2018/02/price-of-2-in-1-drug-spikes-to-3000-separately-the-two-drugs-cost-36/&#34;&gt;patients can&amp;#39;t afford it&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00T4THP4134HJDQTTP.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00FQHR14SJVJCT81HX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00SZ7KAKFK6VA2SKX6.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Photos with heads</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Photos with heads&lt;/h1&gt;&lt;span&gt;&lt;p&gt; People are upset that dentistry students and their professor &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/05/yale-dental-students-selfie-severed-heads&#34;&gt;had themselves photographed&lt;/a&gt; with heads of deceased people that had willed their bodies to science. &lt;/p&gt;&lt;p&gt; I have to ask, who did they hurt by making the photos? I cannot see how this matters at all.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00F63RY8B9AV643NN4.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>al-Shabaab</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/21/al-shabaab-extortion-indoctrination-somalia&#34;&gt;A defector reports&lt;/a&gt; that al-Shabaab imposes crushing taxes on the people it controls and conscripts 8-year-olds to train them as fanatical soldiers. &lt;/p&gt;&lt;p&gt; However, people still think that al-Shabaab courts are honest while government courts are corrupt.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00SZ7KAKFK6VA2SKX6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00F63RY8B9AV643NN4.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00QZBWR6YSRKAZSBH3.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Returning to Syria</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Returning to Syria&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Governments are &lt;a href=&#34;https://www.theguardian.com/global-development/2018/feb/05/syrian-refugees-at-risk-of-forced-return-home&#34;&gt;pressuring Syrian refugees to return home&lt;/a&gt; even though the war continues. &lt;/p&gt;&lt;p&gt; There are some places in Syria that some refugees could safely return to.  But we can be sure that deportation-mad officials will underestimate the danger so they can force more refugees back to Syria even where it isn&amp;#39;t safe.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00EQGXA8R4F5A564RC.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gun laws</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Republicans offer to &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/20/trump-gun-control-bump-stock-ban-background-check-law&#34;&gt;exchange tiny steps&lt;/a&gt; towards gun control for passage of their bill to undermine all states&amp;#39; gun regulations. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t think it is sufficient to prohibit the sale of certain kinds of guns and accessories.  We need to collect them and make them non-functional.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00QZBWR6YSRKAZSBH3.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00EQGXA8R4F5A564RC.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00QM4M7HNDR143ZQKZ.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Criticism of China</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Criticism of China&lt;/h1&gt;&lt;span&gt;&lt;p&gt; The Chinese government has set up numerous organizations in Australia to &lt;a href=&#34;https://www.theguardian.com/australia-news/2018/jan/31/chinese-government-exerts-influence-across-australian-society-mps-told&#34;&gt;suppress criticism of China&lt;/a&gt;, especially by Chinese students, but also targeting universities, businesses, publishers and so on.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00CVSKC459DJSKK8Z2.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Sexual harassment</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/women-have-changed-the-mood-now-we-need-to-change-policy&#34;&gt;On what is needed&lt;/a&gt; to put an end to sexual harassment by men that have power over women&amp;#39;s careers.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00QM4M7HNDR143ZQKZ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00CVSKC459DJSKK8Z2.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00NFGYN1KPZJ89WEW7.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Race bias and class bias</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Race bias and class bias&lt;/h1&gt;&lt;span&gt;&lt;p&gt; How race bias interacts with class bias in determining &lt;a href=&#34;https://theintercept.com/2018/02/05/mass-incarceration-class-predictor-race/&#34;&gt;who will be imprisoned&lt;/a&gt; in the US. &lt;/p&gt;&lt;p&gt; Direct racial bias affects mainly the jailing of poor people, but many other kinds of bias tend to make blacks poor.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00BR5QQQ38C0F2MCWM.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gun control support</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US gun owners &lt;a href=&#34;https://www.dailykos.com/story/2018/2/20/1743202/-Quinnipiac-poll-Support-for-gun-control-tops-2-1-the-highest-ever&#34;&gt;overwhelmingly support&lt;/a&gt; some kinds of gun control regulations.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00NFGYN1KPZJ89WEW7.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00BR5QQQ38C0F2MCWM.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00K7XRDEZN94XF8CQ6.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Boko Haram and desertification</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Boko Haram and desertification&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Tying the support for Boko Haram &lt;a href=&#34;https://www.theguardian.com/environment/earth-insight/2014/may/09/behind-rise-nigeria-boko-haram-climate-disaster-peak-oil-depletion&#34;&gt;to desertification&lt;/a&gt; caused by global heating effects. &lt;/p&gt;&lt;p&gt; The article also says that Algeria has boosted al Qa&amp;#39;ida in the region, with tacit US backing.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00B3QKMD7AWJ5F2NM5.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gerrymandering</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The cheater &lt;a href=&#34;https://www.commondreams.org/news/2018/02/20/trump-blatantly-backs-gerrymandering-call-gop-fight-new-pa-maps&#34;&gt;openly endorsed rigging elections&lt;/a&gt; through gerrymandering.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00K7XRDEZN94XF8CQ6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00B3QKMD7AWJ5F2NM5.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00J57JVGFVNVWR6WJV.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Punished without trial</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Punished without trial&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Men accused of rape or sexual harassment are &lt;a href=&#34;https://theintercept.com/2018/02/05/the-nunes-memo-and-katie-roiphe-article-show-how-concerns-for-due-process-and-civil-liberties-are-highly-selective-and-self-centered/&#34;&gt;not the only Americans&lt;/a&gt; in danger of being punished without a trial. &lt;/p&gt;&lt;p&gt; Human rights are for everyone, not just wealthy and powerful men.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00AMGZ33SNDXJ39DH7.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Precarious part-time employment</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Precarious part-time employment is &lt;a href=&#34;https://www.theguardian.com/society/2018/feb/21/rise-in-zero-hours-jobs-for-single-parents-risks-causing-child-poverty&#34;&gt;making children poor&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00J57JVGFVNVWR6WJV.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00AMGZ33SNDXJ39DH7.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00GAC9XCZGMVER6XF5.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Harm from plastic</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Harm from plastic&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Businesses that distribute plastic to the public should &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/05/big-business-not-taxpayers-should-pay-to-clean-up-plastic-waste&#34;&gt;pay for the harm it does&lt;/a&gt;, and will do. &lt;/p&gt;&lt;p&gt; This damage could include &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/05/whale-and-shark-species-at-increasing-risk-from-microplastic-pollution-study&#34;&gt;extinction of filter-feeding whales&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; The two major uses of petroleum are to burn, and to make plastic. Since both of them cause great damage, we have got to end petroleum extraction.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N0097ZG68XJQGDTNMFT.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Surveillance in the Philippines</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The UK &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/21/britain-sold-spying-gear-to-philippines-despite-dutertes-brutal-drugs-war&#34;&gt;sold surveillance equipment&lt;/a&gt; to the Philippines even as Do-dirty had set up death squads.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00GAC9XCZGMVER6XF5.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N0097ZG68XJQGDTNMFT.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00DQ4YQ7Z8NP638RS4.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Spontaneous moral symmetry breaking</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Spontaneous moral symmetry breaking&lt;/h1&gt;&lt;span&gt;&lt;p&gt; I&amp;#39;ve coined the term &amp;quot;spontaneous moral symmetry breaking&amp;quot; to describe situations where there is a valid moral imperative to do something the same way others mostly do it.  For instance, driving on whichever side of the road is generally driven on where you are is right because it tends to avoid collisions. &lt;/p&gt;&lt;p&gt; This is to be distinguished from peer pressure to conform; that is not a valid moral imperative.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N006Z5M1QVHK7V00E1K.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Arizona districting</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Arizona Republicans have failed three times to defeat the state&amp;#39;s independent election districting commission, and failed.  &lt;a href=&#34;https://www.dailykos.com/story/2018/2/20/1741796/-Razing-Arizona-Republican-lawmakers-assault-independent-redistricting-commission-AGAIN&#34;&gt;Now they are trying again.&lt;/a&gt;   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00DQ4YQ7Z8NP638RS4.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N006Z5M1QVHK7V00E1K.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00A5RQ9HWDT5GQHRTN.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Research exaggeration</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Research exaggeration&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Universities often &lt;a href=&#34;https://www.theguardian.com/science/blog/2014/dec/10/science-health-news-hype-press-releases-universities&#34;&gt;exaggerate the importance&lt;/a&gt; of their research results, as a PR practice.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N006B08YCPEFC4FHX68.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Racism in infrastructure</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Since the 1930s, the US has &lt;a href=&#34;https://www.theguardian.com/cities/2018/feb/21/roads-nowhere-infrastructure-american-inequality&#34;&gt;built racism into its infrastructure&lt;/a&gt;. Surely the bigot&amp;#39;s infrastructure plan will do more of this.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00A5RQ9HWDT5GQHRTN.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N006B08YCPEFC4FHX68.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ009QXVG9MY9VX3N0B2.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Loneliness</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Loneliness&lt;/h1&gt;&lt;span&gt;&lt;p&gt; People need attention, and paradoxically lack of attention makes people act in ways that repel attention, driving them into a &lt;a href=&#34;https://www.theguardian.com/society/2018/feb/05/crimes-of-attention-stalkers-killers-jihadists-longing&#34;&gt;pit of loneliness&lt;/a&gt; that digs itself deeper despite their best efforts. &lt;/p&gt;&lt;p&gt; A tiny fraction may be driven by this to commit various crimes, but the number of people that suffer without committing crimes is enormous. &lt;/p&gt;&lt;p&gt; I wonder if humans have a systematic tendency to reject any behaviors that are often signs of loneliness precisely because they may indicate loneliness.  We might feel we dislike them for various unrelated reasons, all stand-ins for the fact that they suggest loneliness.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N00567W93G8AMPPT17Y.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Urgent: Payment to Stormy Daniels</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens: call on the Federal Election Commission and the Justice Department to &lt;a href=&#34;https://petitions.moveon.org/sign/investigate-trumps-hush&#34;&gt;investigate the payment&lt;/a&gt; made to Stormy Daniels, which may have violated campaign finance laws.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ009QXVG9MY9VX3N0B2.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00567W93G8AMPPT17Y.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ008TF0P89K0KP5CMGW.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Foster parent agencies</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Foster parent agencies&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Privatizing the agencies that find foster parents made the job &lt;a href=&#34;https://www.theguardian.com/society/2018/jan/30/private-foster-care-agencies-increasing-cost-of-finding-children-homes&#34;&gt;cost a lot more&lt;/a&gt;. A little of that increased cost provided a raise for the foster parents, but most of it went to the business owners, through a tax-dodging scheme. &lt;/p&gt;&lt;p&gt; Privatizing the supervision of convicts on probation was supposedly going to do a better job of keeping them out of crime, and more efficiently.  &lt;a href=&#34;https://www.theguardian.com/society/2018/feb/03/private-firms-fail-cut-rates-reoffending-low-medium-risk-offenders&#34;&gt;It didn&amp;#39;t work&lt;/a&gt;. This is what I would have expected, for two reasons — one specific, and one general. &lt;/p&gt;&lt;p&gt; The general reason is that privatizing government services usually does a bad job.  It has to cut corners in order to squeeze out profit. It has to pay people less, so it gets workers who are less capable and has them spend less time on each job (convict). &lt;/p&gt;&lt;p&gt; The specific reason is that human contact helps guide people away from crime.  The way these companies increase &amp;quot;efficiency&amp;quot; means less human contact.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N0049W9C7ATKC38PP4J.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Water infrastructure</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/20/nestle-and-others-cashing-us-water-infrastructure-crisis&#34;&gt;NestlÃ© and Others Cashing in&lt;/a&gt; On U.S. Water Infrastructure Crisis.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ008TF0P89K0KP5CMGW.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N0049W9C7ATKC38PP4J.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ00807MFP4VDV4N6Q9P.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Surveillance advertising</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Surveillance advertising&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Surveillance advertising is making the internet &lt;a href=&#34;https://edri.org/enditorial-living-as-if-being-at-an-airport/&#34;&gt;like an airport&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; You can prevent this, personally, by refusing to run nonfree software (which includes nearly all mobile apps), and refusing to talk to surveillance web sites.  If stopping them feels like a sacrifice, think about how they mistreat you, and you&amp;#39;ll realize that the real sacrifice was using them.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C7544N000ZB4AQ9TF2ZAQJNV.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Social isolation</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Since social isolation tends to make people sick, social help can &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/town-cure-illness-community-frome-somerset-isolation&#34;&gt;keep people healthy&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ00807MFP4VDV4N6Q9P.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N000ZB4AQ9TF2ZAQJNV.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ005YWTTPR973Y941B8.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>OxyContin</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;OxyContin&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Protecting heavily addictive OxyContin was a &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/05/opioids-crisis-democrats-joe-kennedy&#34;&gt;bipartisan effort&lt;/a&gt;.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C72HQY00ZZYXPQSB4EHRSPXG.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Distraction from domestic violence</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; For Republicans, the school shooting in Florida was a &lt;a href=&#34;https://www.washingtonpost.com/politics/for-the-weary-white-house-florida-shooting-offered-a-reprieve-from-scandals/2018/02/19/04293442-158a-11e8-92c9-376b4fe57ff7_story.html&#34;&gt;welcome distraction&lt;/a&gt; from condemnation for covering up the domestic violence of White House staff.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ005YWTTPR973Y941B8.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00ZZYXPQSB4EHRSPXG.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5PRZQ0049K4RKCV9XVVK8HV.html</id>
-<published>2018-02-07T00:00:00.000Z</published>
-<updated>2018-02-07T00:00:00.000Z</updated>
-<title>Bombing Syrian civilians</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Bombing Syrian civilians&lt;/h1&gt;&lt;span&gt;&lt;p&gt; Russia and Assad retaliated for the downing of a Russian plane by &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/05/russian-and-regime-jets-bomb-civilian-areas-in-north-west-syria-idlib&#34;&gt;bombing civilians&lt;/a&gt; in Syria.   &lt;/p&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C72HQY00X1TQXY7QAQ3YBV3G.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Mink farm</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; An undercover &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt; in the UK infiltrated the animal rights group that released minks from cages where they were being bred, and &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/20/police-admit-officers-role-in-mass-release-of-mink-by-protesters&#34;&gt;participated in the action&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Releasing minks in Britain, where they are a harmful invasive species, was a significant act of ecological sabotage, comparable (though on a much smaller scale) to palm-oil plantations and oil pipelines. However, they were sure to escape some day, just as an oil pipeline is sure to leak from time to time.  The root of the problem was breeding minks in a place where they would be dangerous.  This should not be allowed.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5PRZQ0049K4RKCV9XVVK8HV.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00X1TQXY7QAQ3YBV3G.html"/>
 </entry>
 </feed>

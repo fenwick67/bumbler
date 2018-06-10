@@ -208,12 +208,12 @@ module.exports = function(el,options){
         }
       },
 
+      // do note: this only creates an asset, it doesn't add it to the post.assets!
       createAssetFromFile(file){
         var a = new Asset('/assets/'+file.name);
         a._uploaded = false;
         a._file = file;
         a._preview = null;
-        this.post.assets.push(a);
 
         // actually read the file and render it
         var reader = new FileReader();

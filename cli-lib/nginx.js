@@ -26,7 +26,7 @@ server {
 
     root ${process.cwd()};
 
-    client_max_body_size 50M;
+    client_max_body_size 256M;
 
     error_page  404  /404.html;
 
