@@ -35,6 +35,7 @@ module.exports = function(pluginLib,ready){
       console.log(`${nPeers} peers in the network`)
     })
 
+    /*
     // connect to stuff when it comes online
     inviteCodes.forEach(code=>{
       sbot.invite.accept(code,er=>{
@@ -42,7 +43,8 @@ module.exports = function(pluginLib,ready){
         else{console.log('invite accepted to '+code)}
       });
     });
-
+    */
+    
     // https://scuttlebot.io/apis/scuttlebot/ssb.html#createuserstream-source
     var userStream = sbot.createUserStream({ id:drewsId, gt:lastIndex, live:true });
 

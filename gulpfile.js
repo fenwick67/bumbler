@@ -49,6 +49,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('prod',gulp.series('sass','pug','browserify-prod'));
+gulp.task('dist',gulp.series('prod'))
 gulp.task('default',gulp.series('sass','pug','browserify'));
 
 gulp.task('watch',

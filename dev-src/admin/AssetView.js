@@ -23,7 +23,7 @@ module.exports =  {
   `,
   methods:{
     deleteAsset:function(){
-      if (!window.confirm("Do you REALLY want to delete "+this.asset.href+"?\nNote that this won't delete the post")){
+      if (!window.confirm("Do you REALLY want to delete "+this.asset.href+"?\nNote that this won't delete any posts that contain it.")){
         return;
       }
       this.asset.delete(er=>{

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-06-10T13:49:09-05:00</updated>
+<updated>2018-06-10T17:55:56-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/9.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/7.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/19.xml"/><entry>
-<id>http://localhost:8000/post/01C7A8Y300HVB8GKSTE7M7BQPR.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Vote-counting machines</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
+<id>http://localhost:8000/post/01CF6KWH00SXV3AN3SADMVVGAG.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Nightmare for lawful immigrants</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Vote-counting machines that use a cellular modem to transmit results are &lt;a href=&#34;https://freedom-to-tinker.com/2018/02/22/are-voting-machine-modems-truly-divorced-from-the-internet/&#34;&gt;connected by it to the internet&lt;/a&gt;, and therefore insecure.   &lt;/p&gt;</content>
+&lt;p&gt; A lawful immigrant to the UK was &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/may/31/a-shadow-of-myself-the-home-office-lost-records-and-ruined-lives&#34;&gt;dropped into a Kafkaesque nightmare&lt;/a&gt; when the government lost her passport and then made impossible requirements for her to get another one. &lt;/p&gt;&lt;p&gt; She has been destitute for 10 years. &lt;/p&gt;&lt;p&gt; This sort of thing has happened to &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/may/31/vital-immigration-papers-lost-by-uk-home-office&#34;&gt;thousands of people&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Everyone makes mistakes.  However, when a system punishes the victims of its mistakes, that&amp;#39;s inexcusable.  One must suspect that the agency does this because it was directed to create a &amp;quot;hostile environment&amp;quot;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300HVB8GKSTE7M7BQPR.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00SXV3AN3SADMVVGAG.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y300GPWVZR33J55D2Y20.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Disney&#39;s bogus bonus</title>
+<id>http://localhost:8000/post/01CF6KWH00S1523VFSS9E452F6.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Face recognition door camera</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.dailykos.com/story/2018/2/20/1743175/-Disney-is-using-tax-cut-bonus-to-try-to-force-union-workers-to-accept-low-pay&#34;&gt;Disney&amp;#39;s bogus bonus&lt;/a&gt;, which excludes the workers that are negotiating a contract.   &lt;/p&gt;</content>
+&lt;p&gt; Google&amp;#39;s face recognition door camera is a  &lt;a href=&#34;https://www.theguardian.com/technology/2018/may/31/nest-hello-google-launches-facial-recognition-data-doorbell-uk-privacy-concerns-amazon-ring&#34;&gt;threat to people&amp;#39;s privacy as they pass by&lt;/a&gt; on the street. &lt;/p&gt;&lt;p&gt; I think it would be legitimate to make such a camera system if it does not send people&amp;#39;s image over the internet unless they approach very close to the system, and if it can recognize only the faces of specific people who have contributed their photos for the purpose.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300GPWVZR33J55D2Y20.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00S1523VFSS9E452F6.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y300EXME91BDDNZX5KR8.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Urgent: Stop NRA support</title>
+<id>http://localhost:8000/post/01CF6KWH00RQNBX4ZH99WJA01T.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Assange</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Everyone: &lt;a href=&#34;https://act.credoaction.com/sign/NRA_Sponsors&#34;&gt;Call on companies&lt;/a&gt; to stop giving support to the NRA.   &lt;/p&gt;</content>
+&lt;p&gt; Assange will be welcome to stay in the Ecuadorian embassy  &lt;a href=&#34;https://www.theguardian.com/media/2018/may/31/julian-assange-ecuador-president-lenin-moreno&#34;&gt;provided he avoids making political statements&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300EXME91BDDNZX5KR8.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00RQNBX4ZH99WJA01T.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y300DPQ5TXH1XKFWWTD0.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>The bully&#39;s known wrongs</title>
+<id>http://localhost:8000/post/01CF6KWH00NCZ2YNYYZTCFG2BN.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Tax on &#39;social media use&#39;</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;/glossary.html#bully&#34;&gt;The bully&lt;/a&gt;&amp;#39;s possible collusion with Russia could be criminal, but it is not as damaging as the wrongs &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/trump-russia-mueller-investigation-democrats&#34;&gt;we know he is doing&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Uganda has &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/social-media-use-taxed-in-uganda-to-tackle-gossip&#34;&gt;put a tax on &amp;quot;social media use&amp;quot;&lt;/a&gt; to discourage citizens from communicating with anyone.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300DPQ5TXH1XKFWWTD0.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00NCZ2YNYYZTCFG2BN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y300DFKVVWQXS3EENE7Q.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Urgent: Free Toffiq al-Bihani</title>
+<id>http://localhost:8000/post/01CF6KWH00M6R9C0MJHQQQKWGH.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Ruling on US torture bases</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;https://e-activist.com/page/17643/action/1?ea.url.id=1265696&#34;&gt;Call on Mattis&lt;/a&gt; to free Toffiq al-Bihani, and to end imprisonment without trial. &lt;/p&gt;&lt;p&gt; Here&amp;#39;s the message I put in. &lt;blockquote&gt; Dear Secretary Mattis, &lt;p&gt; I urge you to immediately transfer Toffiq al-Bihani, who has been imprisoned at GuantÃ¡namo without charge or fair trial since 2003. He faces no charges and the US already said there is no reason to keep him in prison. &lt;/p&gt;&lt;p&gt; Imprisonment without trial is vicious and the fact that the US practices this is a blot on our country.  Secondarily, it inspires hatred which can express itself as terrorism.  Justice and human rights demand that the US give each prisoner in Guantanamo a fair trial or release him.  Those who are convicted should be treated according to the US constitution, which prohibits cruel and unusual punishment. &lt;/p&gt;&lt;p&gt; Those responsible for torture and enforced disappearance must be brought to justice in fair trial. &lt;/p&gt;&lt;p&gt; In the name of our country&amp;#39;s honor, and the Constitution you have sworn to defend, &lt;/p&gt;&lt;/blockquote&gt;   &lt;/p&gt;</content>
+&lt;p&gt; 13 years later, the European Court of Human Rights ruled that the countries that allowed the US to operate torture bases on their territory &lt;a href=&#34;https://www.commondreams.org/newswire/2018/05/31/eu-anti-torture-ruling-shows-need-uk-public-inquiry&#34;&gt;acted illegally&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300DFKVVWQXS3EENE7Q.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00M6R9C0MJHQQQKWGH.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y300AE6G2TWKJD5JAVVT.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Cheapening human life</title>
+<id>http://localhost:8000/post/01CF6KWH00KYNBBZ6HC0DA2TK4.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Sea, ice, snow, and the Inuit</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The resistance to gun control in the US fits in a broader tendency to &lt;a href=&#34;https://www.commondreams.org/views/2018/02/23/cheapening-human-life&#34;&gt;cheapen human life&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Still we should keep in mind that only a powerful minority of Americans oppose stricter gun regulations.   &lt;/p&gt;</content>
+&lt;p&gt; &amp;#39;Sea, Ice, Snow, It&amp;#39;s  &lt;a href=&#34;https://www.theguardian.com/world/2018/may/30/canada-inuits-climate-change-impact-global-warming-melting-ice&#34;&gt;All Changing&lt;/a&gt;&amp;#39;: Inuit Culture Struggles with Warming World.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300AE6G2TWKJD5JAVVT.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00KYNBBZ6HC0DA2TK4.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y300A60J71M2XF2VQ47A.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Lawsuits for reporting flaws</title>
+<id>http://localhost:8000/post/01CF6KWH00KX2KHZWMZHHK19DE.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Republican-appointed judges</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Security investigators and reporters in the US &lt;a href=&#34;http://www.zdnet.com/article/chilling-effect-lawsuits-threaten-security-research-need-it-most/&#34;&gt;face lawsuits&lt;/a&gt; when they report flaws. &lt;/p&gt;&lt;p&gt; In the long term, the way to be safe is to insist on software that the users control — free software.  This doesn&amp;#39;t guarantee no bugs ever, but it means that the users can fix any bugs (and &lt;a href=&#34;https://gnu.org/malware/&#34;&gt;any malicious functionalities&lt;/a&gt;!) rather than being at the mercy of the one company that can do it.   &lt;/p&gt;</content>
+&lt;p&gt; Federal judges appointed by Republicans tend to be  &lt;a href=&#34;https://www.dailykos.com/stories/2018/5/30/1768212/-Now-there-s-proof-Republican-judges-are-more-racist-A-lot-more-racist&#34;&gt;biased against blacks&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300A60J71M2XF2VQ47A.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00KX2KHZWMZHHK19DE.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y3006DJ1S42JE2ZY1XFV.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Democratic candidates</title>
+<id>http://localhost:8000/post/01CF6KWH00K3ZAPJC7W0JKMX0Z.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Right-wing ruling party of Spain</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Democratic Party establishment is &lt;a href=&#34;https://theintercept.com/2018/02/22/national-democrats-go-nuclear-publicly-slam-a-dem-candidate-as-corrupt-for-far-less-than-its-own-officials-do/&#34;&gt;fighting hard for&lt;/a&gt; right-wing Democrat Fletcher against activist Moser. &lt;/p&gt;&lt;p&gt; I don&amp;#39;t give to Democrat Congressional Campaign Committee.  I give to progressive candidates (as far as I can tell) and organizations that support them.   &lt;/p&gt;</content>
+&lt;p&gt; The right-wing ruling party of Spain has  &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/mariano-rajoy-ousted-as-spain-prime-minister&#34;&gt;lost power due to the corruption convictions of some of its leaders&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; The new governing party is the Socialist Party, which has proved rather weak in confronting plutocracy, but we can hope it will eliminate some of the oppressive measures, such as making it a crime to post photos of uniformed &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; in the act of attacking people and prosecuting squatters in abandoned buildings.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3006DJ1S42JE2ZY1XFV.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00K3ZAPJC7W0JKMX0Z.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y30069E6S8F5P7DPRJ06.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Google&#39;s AMP plan</title>
+<id>http://localhost:8000/post/01CF6KWH00JPDF1ZDT8WNBH2JE.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Investigation of China deals</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.socpub.com/articles/chris-graham-why-google-amp-threat-open-web-15847&#34;&gt;AMP is Google&amp;#39;s plan&lt;/a&gt; to try to pressure web sites to become part of a single empire of the web. &lt;/p&gt;&lt;p&gt; Mobile operating systems that support cr…apps are similar in spirit — intended to lead people away from the interoperable web. &lt;/p&gt;&lt;p&gt; Javascript does it in another way.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/amid-signs-cronyism-nepotism-and-conflicts-interest-watchdog-demands-probe-trump-zte&#34;&gt;Calling for House and Senate investigations&lt;/a&gt; of the Trump family&amp;#39;s prima facie corruption in deals with China. &lt;/p&gt;&lt;p&gt; The cheater is &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/democrats-demand-oversight-hearing-trump-white-house-stonewalls-gao-investigators&#34;&gt;refusing to cooperate&lt;/a&gt; with the Government Accountability Office.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y30069E6S8F5P7DPRJ06.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00JPDF1ZDT8WNBH2JE.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y3004Z53TQACQVFPDR3S.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Organ transplants</title>
+<id>http://localhost:8000/post/01CF6KWH00J4K9P70Z2J5NDRA2.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Offshore windfarms and fish</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; People in Venezuela who have had organ transplants, if they are not rich, &lt;a href=&#34;https://www.reuters.com/article/us-venezuela-transplants/with-medicine-running-out-venezuelans-with-transplants-live-in-fear-idUSKCN1G41FR&#34;&gt;can&amp;#39;t get the medicines necessary&lt;/a&gt; to protect the transplanted organs from their immune systems. People who need kidney dialysis are in trouble too, as many dialysis machines are broken. &lt;/p&gt;&lt;p&gt; Contrast this with the US where &lt;a href=&#34;/glossary.html#scrotus&#34;&gt;SCROTUS&lt;/a&gt; are trying to cut the funds to pay for these treatments for &lt;a href=&#34;https://stallman.org/archives/2017-nov-feb.html#20_December_2017_(Tax_attacks_and_medical_insurance)&#34;&gt;Americans that are not rich&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Offshore windfarms off the Netherlands are &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/01/dutch-fishermen-to-sail-fleet-into-amsterdam-in-wind-turbine-protest&#34;&gt;driving away fish&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; If the species found in the area are not threatened overall, I think the renewable electricity is more important than the fishing in that area. &lt;/p&gt;&lt;p&gt; However, it is worth looking for ways to reduce the impact.  There may be an alternative to pile driving as a way to emplace the wind turbines.  Also, taller turbine poles could reduce the electromagnetic fields that reach the water.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3004Z53TQACQVFPDR3S.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00J4K9P70Z2J5NDRA2.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y3003K5XV2D5NQMBEZ5T.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>US corruption</title>
+<id>http://localhost:8000/post/01CF6KWH00HQ0QBXJTQTMJ0X8X.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Exiled Russian journalist</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The US hasn&amp;#39;t got a lot of corruption in everyday life, but in bigger things it is &lt;a href=&#34;https://www.commondreams.org/views/2018/02/23/top-ten-signs-us-most-corrupt-nation-world-2018-edn&#34;&gt;as corrupt as can be&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Arkady Babchenko, Russian journalist exiled to Ukraine,  &lt;a href=&#34;https://www.theguardian.com/world/2018/may/30/russian-journalist-arkady-babchenko-who-was-reported-killed-is-still-alive&#34;&gt;reportedly faked his death&lt;/a&gt; in coordination with a state effort to catch real assassins that were sent to kill him. &lt;/p&gt;&lt;p&gt; I&amp;#39;d like to find out how the trick was intended to catch them.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3003K5XV2D5NQMBEZ5T.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00HQ0QBXJTQTMJ0X8X.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y3001P5FCF9T29Q1ZFQF.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Methane leaks from fracking</title>
+<id>http://localhost:8000/post/01CF6KWH00H5ZY2CT9Z7EKFF4Z.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Urgent: Disney employee pay</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Methane leaks from fracking in Pennsylvania have the same &lt;a href=&#34;/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt; effect as &lt;a href=&#34;https://thinkprogress.org/stunning-new-research-finds-fracking-a-major-source-of-carbon-pollution-in-pennsylvania-9d2bdb63f2ec/&#34;&gt;11 coal-fired power plants&lt;/a&gt;. Much of this comes from abandoned wells, which no longer provide any fuel but still leak.   &lt;/p&gt;</content>
+&lt;p&gt; Everyone: &lt;a href=&#34;https://go.berniesanders.com/page/s/disney-greed&#34;&gt;call on Disney&lt;/a&gt; to pay all employees at least $15 per hour.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3001P5FCF9T29Q1ZFQF.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00H5ZY2CT9Z7EKFF4Z.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7A8Y3000GXAM593H05WF47F.html</id>
-<published>2018-02-27T00:00:00.000Z</published>
-<updated>2018-02-27T00:00:00.000Z</updated>
-<title>Microsoft lawsuit</title>
+<id>http://localhost:8000/post/01CF6KWH00G9Q6B9KZX6E8XPPN.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Inauguration protesters</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A number of users are &lt;a href=&#34;https://www.bleepingcomputer.com/news/microsoft/man-sues-microsoft-seek&#34;&gt;suing Microsoft&lt;/a&gt; for forcibly downgrading their computers from Windows 7 to Windows 10. &lt;/p&gt;&lt;p&gt; That&amp;#39;s one way of protecting yourself from a universal back door. But it provides only a little protection.  What you really need to do us &lt;a href=&#34;https://gnu.org&#34;&gt;switch to GNU/Linux&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/victory-dissent-government-drops-charges-against-group-j20-protesters&#34;&gt;A judge dropped charges&lt;/a&gt; against some inauguration protesters because US prosecutors were shown to have violated their right to a fair trial.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3000GXAM593H05WF47F.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00G9Q6B9KZX6E8XPPN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00ZFAWD6E821E2B2H9.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Environmental compensation</title>
+<id>http://localhost:8000/post/01CF6KWH00EN01M0D0XSC9RWEE.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>War on Drugs</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; International courts are &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/international-law-cross-border-victims-environment-rulings&#34;&gt;taking small steps&lt;/a&gt; toward recognizing environmental degradation as a cause for compensation. &lt;/p&gt;&lt;p&gt; Compensation may be sufficient when the total damage is small compared to the wealth of humanity.  However, the damage that &lt;a href=&#34;/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt; threatens to do will be so big that compensation is impossible.  We must instead prevent it.   &lt;/p&gt;</content>
+&lt;p&gt; Americans are  &lt;a href=&#34;https://reason.com/archives/2018/05/30/an-overdose-is-not-a-murder&#34;&gt;imprisoned for sharing drugs when that leads to an overdose&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; This extends the War on Drugs by adding a form of terrorism to the tactics.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00ZFAWD6E821E2B2H9.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00EN01M0D0XSC9RWEE.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00YKCTEMCSB4JRVS89.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Veiled racism</title>
+<id>http://localhost:8000/post/01CF6KWH00E0D2C2FJEZH1HWH9.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Applying for work as an ex-convict</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Political attacks on immigrants can be a &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/21/some-use-immigration-as-euphemism-for-race-says-diane-abbott&#34;&gt;way to veil racism&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Education Is One Way Out of Prison.   &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/31/education-prison-work-ex-offenders-university-convictions&#34;&gt;Let&amp;#39;s Make Work Another&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; One of the problems is that you can no longer make a living from the jobs that are not highly competitive.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00YKCTEMCSB4JRVS89.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00E0D2C2FJEZH1HWH9.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00VYASA7S39TB2BNYD.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Employees&#39; sex lives</title>
+<id>http://localhost:8000/post/01CF6KWH00CCMGWYRKNFS0Z13P.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Disability and assisted suicide</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A US appeals court ruled that government agencies &lt;a href=&#34;https://www.dailykos.com/stories/2018/2/12/1740718/-Ninth-Circuit-decision-could-lead-to-SCOTUS-showdown-over-your-right-to-a-private-sex-life&#34;&gt;can&amp;#39;t fire employees&lt;/a&gt; over their private sex lives. &lt;/p&gt;&lt;p&gt; I hope that the Supreme Court eventually supports this decision, but I am not optimistic.   &lt;/p&gt;&lt;p&gt; I refuse to criticize anyone for &amp;quot;adultery&amp;quot;, because it consists of breaking a promise that many people find almost impossible to keep, and in many cases is bad for them.  People make this promise because of social pressure that many do not see a way to resist.  Under such circumstances, I refuse to criticize them for breaking it. &lt;/p&gt;&lt;p&gt; This is why I refuse to criticize the &lt;a href=&#34;/glossary.html#bully&#34;&gt;bully&lt;/a&gt; for having affairs with attractive celebrities. &lt;/p&gt;&lt;p&gt; &lt;a href=&#34;/glossary.html#bully&#34;&gt;The bully&lt;/a&gt; is doing tremendous harm to the US and the world.  Let&amp;#39;s not get distracted from this by peccadilloes.   &lt;/p&gt;</content>
+&lt;p&gt; Disabled people in the UK &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/01/disabled-people-assisted-dying-safeguards-pressure&#34;&gt;fear the legalization&lt;/a&gt; of assisted suicide. They expect to be pressured into suicide by a state that saves money by leaving them totally helpless. &lt;/p&gt;&lt;p&gt; There is no fundamental conflict between providing the disabled with what they need for a decent life, if that is possible, and giving people a way out of a life which is inevitably hell.  To do both, we need to put an end to plutocracy.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00VYASA7S39TB2BNYD.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00CCMGWYRKNFS0Z13P.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00TEF1967Q8M72HS7C.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Deporting old people</title>
+<id>http://localhost:8000/post/01CF6KWH00C9B0294F583R8EM7.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Sun cream labeling</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The UK government, as part of its policy of maximum cruelty to immigrants, is trying to &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/21/ive-been-here-for-50-years-the-scandal-of-the-former-commonwealth-citizens-threatened-with-deportation&#34;&gt;squeeze out old people&lt;/a&gt; that are legally allowed to live there but haven&amp;#39;t got documents to prove it.   &lt;/p&gt;</content>
+&lt;p&gt; The system for labeling sun cream is  &lt;a href=&#34;https://www.theguardian.com/society/2018/jun/01/britons-risking-skin-damage-and-cancer-due-to-suncare-ignorance&#34;&gt;confusing&lt;/a&gt;, so most people misunderstand it. &lt;/p&gt;&lt;p&gt; Correcting this should not be left to the good will of companies.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00TEF1967Q8M72HS7C.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00C9B0294F583R8EM7.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00TAJ7TXKDTN6GG7BQ.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Glyphosate petition</title>
+<id>http://localhost:8000/post/01CF6KWH00C8RH2MYJFZETPNWN.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Obstruction of justice by violent thug</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Monsanto has &lt;a href=&#34;http://www.gmwatch.org/en/news/latest-news/18131-now-monsanto-goes-after-civil-society&#34;&gt;given Avaaz a subpoena&lt;/a&gt; demanding the name and other info of everyone who signed a petition against glyphosate. &lt;/p&gt;&lt;p&gt; I used to sign Avaaz petitions, but they started using nonfree Javascript code, at which I decided not to sign or post them.  But I have asked someone to check whether it is possible to sign them now.   &lt;/p&gt;</content>
+&lt;p&gt; A New Jersey &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt;  &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/01/police-officer-woman-beach-punched-new-jersey-emily-weinman&#34;&gt;punched a teenager in the head, then slammed her to the ground&lt;/a&gt;, after determining that she was not drunk. &lt;/p&gt;&lt;p&gt; For a &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; to switch off a bodycam while attacking a person ought to be considered obstruction of justice.  The &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; should go to prison for that alone, and serve additional time for the violence itself. &lt;/p&gt;&lt;p&gt; As for Ms Weinman, even if she spit intentionally at the &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; who had already brutalized her, that should be considered self-defense.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00TAJ7TXKDTN6GG7BQ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00C8RH2MYJFZETPNWN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00SC0YWVFHYFY40TV6.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Solar-powered economy</title>
+<id>http://localhost:8000/post/01CF6KWH00BME5BYJ356CZ3MGB.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Successful blacks</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/views/2018/02/21/red-clouds-revolution-oglalla-sioux-freeing-themselves-fossil-fuel&#34;&gt;Launching US indigenous tribes&lt;/a&gt; into a solar-powered economy.   &lt;/p&gt;</content>
+&lt;p&gt; Successful blacks find that lots of people  &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/30/raheem-sterling-media-young-black-men-footballer-tattoo&#34;&gt;look for minor excuses to criticize them&lt;/a&gt;. Clearly, the real motive for these criticisms has to be racism.  They demand that the successful black be twice as clean as a white needs to be. &lt;/p&gt;&lt;p&gt; I&amp;#39;ve encountered a little of this.  There are people who criticize me for insignificant things, making mountains out of molehills.  Clearly their motive for doing this is something other than what they criticize.  I suspect that they don&amp;#39;t like the free software movement — but, lacking rational arguments against it, they hope do use irrational associations to harm it.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00SC0YWVFHYFY40TV6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00BME5BYJ356CZ3MGB.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00REZD4J77W7EFVYZT.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Non-native farmed fish</title>
+<id>http://localhost:8000/post/01CF6KWH00B6FG99RHWT59VS00.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Google&#39;s lobbying group</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Washington State is in the process of legislating a ban on fish farms that hold non-native fish, because if the fish escape it can cause permanent ecological damage.  A Canadian company &lt;a href=&#34;https://www.commondreams.org/views/2018/02/21/canadian-company-threatens-nafta-investor-state-challenge-over-washington-state&#34;&gt;plans to sue using NAFTA&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; This is possible due to the ISDS (&lt;a href=&#34;https://stallman.org/business-supremacy-treaties.html&#34;&gt;I Sue Democratic States&lt;/a&gt;) provision of NAFTA.   &lt;/p&gt;</content>
+&lt;p&gt; Google operates a lobbying group that  &lt;a href=&#34;https://theintercept.com/2018/05/30/google-engine-advocacy-tech-startups/&#34;&gt;pretends to represent new startups&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00REZD4J77W7EFVYZT.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00B6FG99RHWT59VS00.html"/>
 </entry>
 </feed>

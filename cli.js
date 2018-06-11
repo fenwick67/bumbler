@@ -1,18 +1,33 @@
 #!/usr/bin/env node
 
-var init = require('./cli-lib/init');
 var argv = require('yargs').argv;
-var run = require('./lib/run');
-var hash = require('./cli-lib/hash');
-var opn = require('opn');
-var nginx = require('./cli-lib/nginx');
 var cmd = argv._[0];
-var build = require('./lib/build')
+var opn = require('opn');
+
+var build;
+var init;
+var run;
+var hash;
+var nginx;
+var sysvinit;
+
+/*
+this is kinda hacky but, for changing the CWD to work, don't require() anything
+that may cache the CWD until after we change it.
+*/
+function requireTheRest(){
+  build = require('./lib/build')
+  init = require('./cli-lib/init');
+  run = require('./lib/run');
+  hash = require('./cli-lib/hash');
+  nginx = require('./cli-lib/nginx');
+  sysvinit = require('./cli-lib/sysvinit');
+}
 
 var help = `BUMBLER: the easy self-hosted microblog.
 
-This program is free software: you can redistribute it and/or modify 
-it under the terms of the GNU General Public License as published by 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
@@ -31,20 +46,20 @@ USAGE:
   bumbler init   => initialize your microblog
   bumbler nginx  => writes out an example NGINX config if you blog is in the current working directory.
   bumbler pm2    => writes out an example PM2 "process.yml" file to use with PM2.
+  bumbler sysv   => writes out an example SysVInit service file "bumbler.sh" to use with sysvinit
   bumbler hash   => create password login info
-  bumbler build  => just build and exit
+  bumbler build  => just build a static site and exit
 
   bumbler [opts] => run the CMS system and builder
           │
           --open, -o      => open it in a web browser when starting, for convenience
           --local         => listen on localhost instead of 0.0.0.0
           --port [number] => listen on a specific port.  Alternatively, supply a PORT environment variable to set this.
+          --dir [dir]     => specify the directory it is installed (default is CWD)
 
+  To get started, the authors recommend making a new directory for your site, "cd" into it, then run "bumbler init" then "bumbler".
 
-
-  The Authors recommend making a dir, "cd" into it, then run "bumbler init" then "bumbler" for easy setup.
-
-  For better performance, set up NGINX.  Run "bumbler nginx" to get that set up.
+  For better performance, set up NGINX to serve files for you.  Run "bumbler nginx" to get that set up.
 
   `
 
@@ -52,6 +67,19 @@ if (argv.help || argv.h || (cmd && cmd.toLowerCase() == 'help') ){
   console.log(help);
   process.exit(0);
 }
+
+if (argv.sysv || argv.sysvinit){
+  requireTheRest();
+  sysvinit();
+  process.exit(0);
+}
+
+// handle changing dirs
+if (argv.dir){
+  process.chdir(argv.dir);
+}
+
+requireTheRest();
 
 if (cmd && cmd.toLowerCase() == 'build'){
   build.build();
@@ -68,7 +96,6 @@ if (cmd && cmd.toLowerCase() == 'build'){
     process.exit(0);
   });
 }else{
-  console.log(argv);
   var p = argv.port||process.env.PORT||process.env.port||8000;
   var l = argv.local||false;
 

@@ -49,7 +49,7 @@ module.exports = function(pluginLib,ready){
           parsedEntryIds.push(id);
 
           if (oldEntryIds.indexOf(id) > -1){
-            // don't publish this
+            // don't publish this if we've already handled it
             return;
           }
           // create the item
@@ -70,6 +70,8 @@ module.exports = function(pluginLib,ready){
             console.log("no new items to parse from Stallman\'s feed");
             return;
           }
+
+          // the posts get written to bumbler, via pluginLib
           async.eachSeries(toCreate,pluginLib.putPost,function done(er){
             if (er){console.error(er);return;}
 

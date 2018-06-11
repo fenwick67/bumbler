@@ -87,7 +87,7 @@ One easy way to make this work is to drop a shell script in `_bumblersrsc/script
 
 # Developer Guide
 
-## Plugins
+## Developing Plugins
 
 Bumbler has a plugin system!
 
@@ -158,3 +158,14 @@ pluginLib.putPost(postObject,done)
 pluginLib.buildPages(done)
   => rebuild the site pages if you add a new post, or any other reason.
 ```
+
+## Developing Bumbler itself
+
+The easiest way to develop is in one terminal run `gulp watch` and in another terminal run `cli.js --dir test/kitties`.
+
+Building is handled by Gulp.  There are a few commands you can run:
+* `gulp` builds bumbler for development
+* `gulp dist` builds bumbler for distribution / production
+* `gulp watch` builds bumbler for development and will build it again whenever files change
+
+This project compiles pug to html, scss to css, and js to js via browserify + babel.  All built source files are located in `dev-src/`

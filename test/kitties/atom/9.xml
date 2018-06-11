@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-06-10T13:49:09-05:00</updated>
+<updated>2018-06-10T17:55:56-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/10.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/8.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/19.xml"/><entry>
-<id>http://localhost:8000/post/01C77PHC00Q57REF52GA5ART86.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Pennsylvania judges</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
+<id>http://localhost:8000/post/01CF6KWH00AZ6G5KT7AFQYRCJZ.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Copyright censorship system</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Republican Pennsylvania state legislators are &lt;a href=&#34;https://www.dailykos.com/story/2018/2/21/1743438/-Pennsylvania-Republicans-utterly-rejecting-democracy-want-to-impeach-judges-who-ordered-new-maps&#34;&gt;seriously planning to impeach most judges&lt;/a&gt; of the state&amp;#39;s Supreme Court specifically for instating nonbiased legislative districts. &lt;/p&gt;&lt;p&gt; Can anything be done to stop them from seizing power?   &lt;/p&gt;</content>
+&lt;p&gt; Presenting hypothetical future products that would be prohibited by the copyright censorship system that the EU is  &lt;a href=&#34;https://boingboing.net/2018/05/28/futurecrime.html&#34;&gt;planning to impose&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00Q57REF52GA5ART86.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00AZ6G5KT7AFQYRCJZ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00Q2X79PKQBH1TWSNB.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Koch questions</title>
+<id>http://localhost:8000/post/01CF6KWH00A64GW8G7210KCHDX.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Cameroon developing civil war</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Jonathan Smucker asked his congresscritter &amp;quot;how much the Koch brothers are getting in tax cuts and how much they&amp;#39;re contributing to your campaign.&amp;quot;  The congresscritter &lt;a href=&#34;https://www.commondreams.org/news/2018/02/21/activist-ejected-meeting-lawmaker-after-asking-how-much-money-hes-getting-koch&#34;&gt;had him thrown out&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Cameroon is  &lt;a href=&#34;https://www.theguardian.com/global-development/2018/may/30/cameroon-killings-escalate-anglophone-crisis&#34;&gt;developing a civil war&lt;/a&gt; between those whose second language is French and those whose second language is English. &lt;/p&gt;&lt;p&gt; As usual, they are not fighting about anything significant, it is mere factionalism.  In that country, the factions have coalesced around one&amp;#39;s second language.  It could just as well have been which end of the egg to open.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00Q2X79PKQBH1TWSNB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00A64GW8G7210KCHDX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00NF340VQN3GS34NSW.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Bahraini political prisoner</title>
+<id>http://localhost:8000/post/01CF6KWH009F27VSME83DCQWD1.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Economy minister of Italy</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A Bahraini political prisoner has been &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/21/us-seriously-concerned-over-jailing-of-bahraini-activist-nabeel-rajab&#34;&gt;sentenced to more years in prison&lt;/a&gt; for saying that Bahrain tortures political prisoners, and for insulting &lt;a href=&#34;/glossary.html#salafi&#34;&gt;Salafi Arabia&lt;/a&gt; by criticizing its air campaign against Yemen. &lt;/p&gt;&lt;p&gt; He&amp;#39;s surely right in criticizing that.  As for the torture, if he says Bahrain uses torture he surely knows. &lt;/p&gt;&lt;p&gt; For either of those statements to be a crime is in itself sufficient to conclude that Bahrain is a repressive, evil state — if we didn&amp;#39;t &lt;a href=&#34;https://stallman.org/archives/2016-nov-feb.html#16_November_2016_(Repression_in_Bahrain)&#34;&gt;already know that&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Italy&amp;#39;s two governing parties have agreed to &lt;a href=&#34;https://www.theguardian.com/world/2018/may/31/italys-populist-leaders-strike-deal-resurrect-coalition&#34;&gt;replace the proposed economy minister&lt;/a&gt; that was vetoed because he was willing simply to think about separating Italy from the euro. &lt;/p&gt;&lt;p&gt; I think that reforming the euro-zone rules would be better than pulling Italy and Greece out of the euro zone.  However, as long as governments are unwilling to threaten to leave, the &lt;a href=&#34;https://stallman.org/glossary.html#bankster&#34;&gt;banksters&lt;/a&gt; won&amp;#39;t even consider reforming the rules.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00NF340VQN3GS34NSW.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH009F27VSME83DCQWD1.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00N7KQDTGFNAGPSZH6.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Walmart jobs</title>
+<id>http://localhost:8000/post/01CF6KWH0098DEEV0AJSRH7PY3.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Protection of nature</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Walmart&amp;#39;s profits and stock price are rising, so it is &lt;a href=&#34;https://www.dailykos.com/stories/2018/2/13/1741079/-The-winning-continues-as-Walmart-announces-another-massive-round-of-layoffs&#34;&gt;eliminating some 10,000 management jobs&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I refuse to shop at Walmart in the US; I don&amp;#39;t like the way it pays most of its employees so little that they &lt;a href=&#34;https://stallman.org/archives/2015-jan-apr.html#07_March_2015_(Walmarts_raise_not_enough)&#34;&gt;need public assistance&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; New Zealand aims to eliminate some introduced predators — rats, possums, and stoats — to  &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/save-kiwi-new-zealand-protect-bird-species&#34;&gt;protect kiwis and other native birds&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; We exaggerate the extent to which native peoples actively protected nature.  Humans have a tendency to hunt animals to extinction, until they learn better.  It was the Maori that wiped out the moas, and presumably the aboriginals of Australia that wiped out the giant bird Dromornis, and presumably the Malagasy that wiped out the elephant birds. &lt;/p&gt;&lt;p&gt; Fortunately, humans can also learn to protect nature.  In the 1700s, European traders organized a system of territories to limit hunting of beavers in Canada, so that the natives wouldn&amp;#39;t hunt them to extinction and bring the profitable beaver fur trade to a halt.  This was good for all the humans involved, as well as for the beavers as a species. &lt;/p&gt;&lt;p&gt; The question is whether today&amp;#39;s civilization can learn to protect nature and work hard enough to succeed in doing it. &lt;/p&gt;&lt;p&gt; 2050 might be fine as a target for eliminating those predators from New Zealand, if civilization continues so that New Zealand remains able to carry out the plan.  But that slow time scale offers plenty of time for something to happen that would bring the effort to a halt. &lt;/p&gt;&lt;p&gt; Meanwhile, what about the cats?  Domestic and feral cats kill tremendous numbers of birds, all around the world, including endangered birds. &lt;/p&gt;&lt;p&gt; The world is full of eco-menaces that humans actively keep in check. These include invasive species, pollution in the ground, and nuclear waste.  If technological civilization falls, there will still be humans (I expect), but they won&amp;#39;t have the means to stop these menaces from spreading.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00N7KQDTGFNAGPSZH6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0098DEEV0AJSRH7PY3.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00MMF4HR62RBHTSJF6.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Urgent: Gun control</title>
+<id>http://localhost:8000/post/01CF6KWH008PR8ZYG0NB35450T.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Charter schools</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: Support &lt;a href=&#34;https://act.democracyforamerica.com/sign/parkland_gun_reform/&#34;&gt;commonsense gun control&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; A plan for increasing charter schools in North Carolina is  &lt;a href=&#34;https://www.commondreams.org/views/2018/05/31/new-charter-school-plan-should-alarm-nation&#34;&gt;designed so that they will be segregated&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00MMF4HR62RBHTSJF6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH008PR8ZYG0NB35450T.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00HNXY1MXQCVEV1617.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Union workers under attack</title>
+<id>http://localhost:8000/post/01CF6KWH008MSPN50JEPJ5MNR6.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>US deportation thugs</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Concerted Attack On Public Sector Union Workers Is &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/21/concerted-attack-public-sector-union-workers-coordinated-effort-financed-wealthy&#34;&gt;A Coordinated Effort&lt;/a&gt; Financed By Wealthy Donors.   &lt;/p&gt;</content>
+&lt;p&gt; US deportation &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; seem to have  &lt;a href=&#34;https://www.commondreams.org/news/2018/05/30/denied-care-and-held-ice-box-cell-asylum-seekers-death-ice-custody-exposes-systemic&#34;&gt;killed asylum seeker Roxsana Hernandez&lt;/a&gt; by exposing her to cold for two weeks, combined with hunger and sleep deprivation. &lt;/p&gt;&lt;p&gt; None of those is legitimate treatment of prisoners &amp;amp;mdash not even prisoners that have been convicted of crimes. &lt;/p&gt;&lt;p&gt; Apparently the &lt;a href=&#34;https://stallman.org/glossary.html#bully&#34;&gt;bully&lt;/a&gt; has unleashed the thugs&amp;#39; brutality, so that they eagerly new ways to make their prisoners suffer.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00HNXY1MXQCVEV1617.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH008MSPN50JEPJ5MNR6.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00CWF4G3TKNXVB03CB.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Leaving Gaza</title>
+<id>http://localhost:8000/post/01CF6KWH007A389KAR2S0ST211.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Hamas proposes cease fire</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Egypt is allowing selected people to leave Gaza &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/21/thousands-of-gazans-rush-to-border-as-egypt-opens-crossing&#34;&gt;during just four days&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Hamas has  &lt;a href=&#34;https://www.theguardian.com/world/2018/may/30/hamas-groups-agree-gaza-ceasefire-if-israel-reciprocates&#34;&gt;proposed a cease fire&lt;/a&gt; with Israel.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00CWF4G3TKNXVB03CB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH007A389KAR2S0ST211.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00CVXN3P8Q1MKPEG80.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Immigration subpoenas</title>
+<id>http://localhost:8000/post/01CF6KWH006T5JJ6G860KR0VMF.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Australia&#39;s investment in fossil fuels</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Jordon Dyrdahl-Roberts was a legal secretary in the Montana Department of Labor.  When told he would have to work on subpoenas from the US immigration thugs, &lt;a href=&#34;https://www.washingtonpost.com/news/posteverything/wp/2018/02/16/i-was-asked-to-help-ice-at-my-government-job-i-couldnt-do-that-so-i-quit/&#34;&gt;he immediately quit&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Australia&amp;#39;s big four banks stopped investing in coal but  &lt;a href=&#34;https://www.theguardian.com/australia-news/2018/may/31/big-four-banks-quit-coal-only-to-invest-in-other-fossil-fuels-research-finds&#34;&gt;shifted the investment into oil and gas&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00CVXN3P8Q1MKPEG80.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH006T5JJ6G860KR0VMF.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC00BEDCFWGEBESQ41ZY.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Student protests</title>
+<id>http://localhost:8000/post/01CF6KWH006PHPKN3H3JRYP7PX.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Virginia approves expansion of Medicaid</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Florida high school students &lt;a href=&#34;Https://www.theguardian.com/us-news/2018/feb/21/florida-students-confront-lawmakers-on-gun-control-as-thousands-walk-out&#34;&gt;went to the state capitol&lt;/a&gt; to demand gun control.  Thousands of students left school to protest. &lt;/p&gt;&lt;p&gt; The school superintendent of Needville, Texas, declared he would &lt;a href=&#34;https://www.dailykos.com/story/2018/2/21/1743418/-Texas-school-district-threatens-suspension-if-students-protest-to-prevent-the-next-mass-shooting&#34;&gt;suspend any students&lt;/a&gt; that walk out of school to protest. &lt;/p&gt;&lt;p&gt; I hope all the high school students in that district walk out to protest at his office, to show they are not going to be intimidated. &lt;/p&gt;&lt;p&gt; If he follows through with the threat to &amp;quot;suspend&amp;quot; them, they can organize a three-day teach-in, where they will learn things that are more important than what is normally taught in school.   &lt;/p&gt;</content>
+&lt;p&gt; Virginia has  &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/imposed-work-requirements-taint-medicaid-expansion-victory-virginia&#34;&gt;approved expansion of Medicaid&lt;/a&gt; — that is, participation in part of Obama&amp;#39;s medical care program. &lt;/p&gt;&lt;p&gt; Republicans fight to the death to prevent expansion of Medicaid — poor people&amp;#39;s death, that is.  Republicans oppose this program on principle because it provides government help to people who they believe aren&amp;#39;t rich enough to deserve it.  But they also oppose it more specifically because it was a victory for Democrats.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00BEDCFWGEBESQ41ZY.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH006PHPKN3H3JRYP7PX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC009G9ZM28GBJDNP39J.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Purpose of education</title>
+<id>http://localhost:8000/post/01CF6KWH0068QR0PT1QBJ7X434.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Urgent: Children taken away</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Measuring education in terms of increased income afterwards is &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/economists-dont-know-crap-about-education&#34;&gt;missing the main point&lt;/a&gt; of education. &lt;/p&gt;&lt;p&gt; We used to acknowledge clearly that the purpose of education was to prepare people to be capable citizens of a democracy.  The mere attempt to judge issues of education in narrow economic terms indicates a basic error.   &lt;/p&gt;</content>
+&lt;p&gt; US citizens: &lt;a href=&#34;https://actionnetwork.org/petitions/where-are-the-children?nowrapper=true&#34;&gt;tell the government&lt;/a&gt; to stop taking children away from border-crossing parents.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC009G9ZM28GBJDNP39J.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0068QR0PT1QBJ7X434.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC007RNSH50W9HE29X10.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Urgent: California&#39;s deserts</title>
+<id>http://localhost:8000/post/01CF6KWH0061JVPZSGMBHRJVAA.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>FBI&#39;s use of informants</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;https://act.credoaction.com/sign/save-the-desert&#34;&gt;Call on the Bureau of Land Management&lt;/a&gt; to protect California&amp;#39;s deserts.   &lt;/p&gt;</content>
+&lt;p&gt; The  &lt;a href=&#34;https://theintercept.com/2018/05/31/spygate-trump-russia-fbi-informants/&#34;&gt;FBI&amp;#39;s Use of Informants&lt;/a&gt; Is Full of Problems, but What Happened in &amp;quot;Spygate&amp;quot; Isn’t One of Them.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC007RNSH50W9HE29X10.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0061JVPZSGMBHRJVAA.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC003RBJST2Q3CRQ41Z6.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Fascists in Italy</title>
+<id>http://localhost:8000/post/01CF6KWH0053SWADWE2D91YBNV.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Political &#34;optics&#34;</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; People that overtly call themselves fascists have &lt;a href=&#34;https://www.theguardian.com/news/2018/feb/22/casapound-italy-mussolini-fascism-mainstream&#34;&gt;started a political party&lt;/a&gt; in Italy. &lt;/p&gt;&lt;p&gt; &amp;quot;No ideology, only rhetoric&amp;quot; — sounds a bit like &lt;a href=&#34;/glossary.html#trump&#34;&gt;the troll&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Demanding to save face — the insistence that one has never been wrong — makes today&amp;#39;s politics unable to correct any problem. The constant focus on  &lt;a href=&#34;https://www.theguardian.com/us-news/2018/may/30/politicians-admitting-wrong-brexit-trump&#34;&gt;minor details of political &amp;quot;optics&amp;quot;&lt;/a&gt;, rather than on substance, makes it even worse. &lt;/p&gt;&lt;p&gt; I try to focus on substance rather than optics, but I don&amp;#39;t know whether I do this enough.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC003RBJST2Q3CRQ41Z6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0053SWADWE2D91YBNV.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC003QVCB4WEB6DQHQ8B.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Plans for North Korea</title>
+<id>http://localhost:8000/post/01CF6KWH002D84B4MJX6FSRP90.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Rohingya</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A Republican US senator &lt;a href=&#34;https://theintercept.com/2018/02/21/gop-senator-says-trump-is-ready-to-start-war-with-north-korea-that-would-be-one-of-the-worst-catastrophic-events-in-history/&#34;&gt;told a security conference&lt;/a&gt; that the bully was planning to bomb North Korea to try to destroy its nuclear weapons capability.   &lt;/p&gt;</content>
+&lt;p&gt; The UN has made a deal that would eventually  &lt;a href=&#34;https://www.theguardian.com/global/2018/jun/01/myanmar-and-un-announce-deal-for-safe-return-of-rohingya&#34;&gt;enable some of the Rohingya to return to Burma&lt;/a&gt;.  However, if the majority of Rohingya, who don&amp;#39;t have any papers, are excluded, it isn&amp;#39;t much of a deal.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC003QVCB4WEB6DQHQ8B.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH002D84B4MJX6FSRP90.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC003MD99R6THJD39ND3.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Volunteer</title>
+<id>http://localhost:8000/post/01CF6KWH001WF3FJW3BDMD4YE0.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Meat and fish multinationals</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt;I am looking for people to American Promise (americanpromise.net) is looking for a Boston        area        volunteer to help suggest and implement changes to their web site to        reduce use of DropBox and nonfree JavaScript code.  Ideally it would        function properly even with JavaScript disabled.        &lt;/p&gt;&lt;p&gt;      To volunteer, please write to Johannes      Epke         and to me at rms at gnu dot org.&lt;/p&gt;</content>
+&lt;p&gt; Meat and Fish Multinationals  &lt;a href=&#34;https://www.theguardian.com/environment/2018/may/30/meat-and-fish-protein-multinationals-jeopardising-paris-climate-goals&#34;&gt;&amp;quot;Jeopardising Paris Climate Goals&amp;quot;&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC003MD99R6THJD39ND3.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH001WF3FJW3BDMD4YE0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC002XV4G7SV8821YH2A.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Aid that helps locals</title>
+<id>http://localhost:8000/post/01CF6KWH001VDP2N61KD6VTBK0.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Election cheating</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; We Need &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/22/we-need-aid-that-helps-locals-not-multinationals-and-bloated-ngos&#34;&gt;Aid That Helps Locals&lt;/a&gt;, Not Multinationals and Bloated NGOs.   &lt;/p&gt;</content>
+&lt;p&gt; This year&amp;#39;s congressional election will &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/aging-paperless-voting-machines-hotly-contested-districts-stoke-fears-ahead-midterms&#34;&gt;remain vulnerable to cheating&lt;/a&gt; through computerized voting machines.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC002XV4G7SV8821YH2A.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH001VDP2N61KD6VTBK0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C77PHC001HQ6SXTGSWE000EX.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Civil rights ratings</title>
+<id>http://localhost:8000/post/01CF6KWH00057MVNB7KMXM0VK8.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Poor People&#39;s Campaign</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The NAACP &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/21/naacp-releases-legislative-report-card-2017-congress&#34;&gt;scores members of the US Congress&lt;/a&gt; on how they voted on civil rights issues in 2017.   &lt;/p&gt;</content>
+&lt;p&gt; Hundreds of protesters from the Poor People&amp;#39;s Campaign have been  &lt;a href=&#34;https://www.commondreams.org/news/2018/05/29/hundreds-arrested-nationwide-poor-peoples-campaign-demands-end-war-economy&#34;&gt;arrested&lt;/a&gt; at Senator McConnell&amp;#39;s office and various state capitals.  &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC001HQ6SXTGSWE000EX.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00057MVNB7KMXM0VK8.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7544N00WMW1APG5423PWHJW.html</id>
-<published>2018-02-25T00:00:00.000Z</published>
-<updated>2018-02-25T00:00:00.000Z</updated>
-<title>South Australia electricity</title>
+<id>http://localhost:8000/post/01C7A8Y300Y4X7R2R8EGFTK7XQ.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Russian manipulation</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; South Australia, a state in Australia, will aim to meet &lt;a href=&#34;https://www.theguardian.com/australia-news/2018/feb/21/all-in-on-renewable-energy-jay-weatherill-to-ramp-up-sa-target-to-75&#34;&gt;25% of peak electric demand&lt;/a&gt; from storage — batteries and pumped hydro power. This goes with a target of 75% total electricity from renewable sources.   &lt;/p&gt;</content>
+&lt;p&gt; Calling Russian manipulation &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/23/russian-bots-us-election-coup-d-etat&#34;&gt;&amp;quot;a new cold war&amp;quot;&lt;/a&gt; is somewhat of an exaggeration. &lt;/p&gt;&lt;p&gt; It is not necessary for the Russian &lt;a href=&#34;/glossary.html#trump&#34;&gt;troll&lt;/a&gt; system to be invincible for it to be important enough to condemn, or to prosecute US politicians that collaborated with it.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00WMW1APG5423PWHJW.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300Y4X7R2R8EGFTK7XQ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7544N00W50N63R8RZ0QZN3R.html</id>
-<published>2018-02-25T00:00:00.000Z</published>
-<updated>2018-02-25T00:00:00.000Z</updated>
-<title>&#39;Global threats&#39; list</title>
+<id>http://localhost:8000/post/01C7A8Y300XP2QQB0TNJW71H91.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Decline of US hegemony</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The US military&amp;#39;s list of &amp;quot;global threats&amp;quot; doesn&amp;#39;t change much: it&amp;#39;s always calculated to appear to &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/trumps-national-defense-strategy&#34;&gt;justify increased spending&lt;/a&gt; on every part of the military. &lt;/p&gt;&lt;p&gt; It&amp;#39;s not clear that the &amp;quot;rogue states&amp;quot; are more rogue than the US, or that the US can&amp;#39;t coexist peacefully with them.   &lt;/p&gt;</content>
+&lt;p&gt; Most of the world &lt;a href=&#34;https://www.commondreams.org/views/2018/02/22/world-will-not-mourn-decline-us-hegemony&#34;&gt;won&amp;#39;t mourn the end&lt;/a&gt; of the period of US hegemony, during which it has launched many wars and overthrown many governments to make the world safe for plutocracy. &lt;/p&gt;&lt;p&gt; I take exception to two of the points in the article.  First, the &amp;quot;idea that government has direct responsibility for the welfare of its people&amp;quot; does not necessarily mean a communist dictatorship.  It could refer to social democracy, such as the New Deal in the US. &lt;/p&gt;&lt;p&gt; Second, the brief US attack on Serbia was intended to stop violent ethnic cleansing in Kosovo.  I won&amp;#39;t argue that this was the only or the best way to do it, but it wasn&amp;#39;t bare-faced aggression and it did stop the attacks against Albanian Kosovars. &lt;/p&gt;&lt;p&gt; Reducing US world interventions won&amp;#39;t necessarily mean peace.  Chinese hegemony is not likely to care much about human rights either.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00W50N63R8RZ0QZN3R.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300XP2QQB0TNJW71H91.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7544N00TERQSHBG8JQR8R4D.html</id>
-<published>2018-02-25T00:00:00.000Z</published>
-<updated>2018-02-25T00:00:00.000Z</updated>
-<title>Florida conspiracy theory</title>
+<id>http://localhost:8000/post/01C7A8Y300TAM3KT8CQ9H7EMRS.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Human-fighting robot</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A Florida state representative&amp;#39;s staffer &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/20/florida-shooting-conspiracy-theory-actors-benjamin-kelly-shawn-harrison&#34;&gt;promoted a conspiracy theory&lt;/a&gt; accusation against the activist students that survived the school shooting.   &lt;/p&gt;</content>
+&lt;p&gt; A US company is already developing a robot to &lt;a href=&#34;https://www.theguardian.com/technology/2018/feb/21/boston-dynamics-teaching-robot-dog-fight-back-humans&#34;&gt;fight with humans&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00TERQSHBG8JQR8R4D.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300TAM3KT8CQ9H7EMRS.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C7544N00T8XSM6H3CJQDPC7G.html</id>
-<published>2018-02-25T00:00:00.000Z</published>
-<updated>2018-02-25T00:00:00.000Z</updated>
-<title>Media and war crimes</title>
+<id>http://localhost:8000/post/01C7A8Y300RAEKDHP46TWF7W7R.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Flattening Rohingya villages</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/views/2018/02/16/us-stumbled-torture-says-nyt-reporter&#34;&gt;An analyzed example&lt;/a&gt; of how the mainstream media legitimize US war crimes: the New York Times said that the US &amp;quot;stumbled into torture&amp;quot; and that drone attacks that kill civilians merely &amp;quot;go wrong&amp;quot;. &lt;/p&gt;&lt;p&gt; &lt;a href=&#34;/glossary.html#dubya&#34;&gt;Dubya&lt;/a&gt; pushed hard for use of torture, including finding subordinates to &lt;a href=&#34;https://stallman.org/archives/2005-sep-dec.html#16%20December%202005%20(Torture)&#34;&gt;create legalistic excuses&lt;/a&gt; for it. As for the drone attacks, the US &lt;a href=&#34;https://stallman.org/archives/2012-nov-feb.html#28_December_2012_(US_drone_strikes_that_killed_civilians)&#34;&gt;resists acknowledging&lt;/a&gt; that they kill civilians.   &lt;/p&gt;</content>
+&lt;p&gt; The Burmese army is &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/24/myanmar-rohingya-villages-bulldozed-satellite-images&#34;&gt;flattening all traces&lt;/a&gt; of Rohingya villages that it burned last year.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00T8XSM6H3CJQDPC7G.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y300RAEKDHP46TWF7W7R.html"/>
 </entry>
 </feed>

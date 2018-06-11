@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>http://localhost:8000/feed.atom</id>
+<title>KBnD</title>
+<updated>2018-06-10T17:55:55-05:00</updated>
+<subtitle>kitties, birdies, doggos, and more</subtitle>
+<logo>http://localhost:8000/assets/avatar.png</logo>
+<author>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>http://localhost:8000/</uri>
+<name>The Authors</name>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="http://localhost:8000/assets/avatar.png"/>
+<poco:displayName>The Authors</poco:displayName>
+<poco:note>kitties, birdies, doggos, and more</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="http://localhost:8000/"/>
+<link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/21.xml"/>
+<link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
+<id>http://localhost:8000/post/01BJCZV9GE03D2Y9F4MKGM643C.html</id>
+<published>2017-09-28T20:34:16-05:00</published>
+<updated>2017-09-28T20:34:16-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en"></content>
+<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/kooky.png"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZV9GE03D2Y9F4MKGM643C.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BJCZTZTG26W91NX8ASGCWCMD.html</id>
+<published>2017-09-28T20:34:08-05:00</published>
+<updated>2017-09-28T20:34:08-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en"></content>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/o%20rly.jpg"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZTZTG26W91NX8ASGCWCMD.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BJCTAYSSR4T6K99WCTSBTFMG.html</id>
+<published>2017-09-28T20:34:01-05:00</published>
+<updated>2017-09-28T20:34:01-05:00</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;Dolphins are the birbs of the sea!&lt;/p&gt;
+</content>
+<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/KERfS.gif"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/Kl7in.jpg"/>
+<category term="birds"/>
+<category term="dolphins"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCTAYSSR4T6K99WCTSBTFMG.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01BJCSYN4CWKMMMD9ST1XXCRF2.html</id>
+<published>2017-09-28T20:33:52-05:00</published>
+<updated>2017-09-28T20:33:52-05:00</updated>
+<title>🐦🐦🐦🐔🐔🐔🐔</title>
+<content type="html" xml:lang="en">&lt;p&gt;asdfasfdasdf&lt;/p&gt;
+</content>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/burds21.jpg"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/c6v8R.jpg"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/extreme_double_bird.jpg"/>
+<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/f08ee69d094794ce29e012373a71ba8d89058ab4.jpeg"/>
+<category term="birds"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCSYN4CWKMMMD9ST1XXCRF2.html"/>
+</entry>
+</feed>
