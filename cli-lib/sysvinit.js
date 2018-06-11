@@ -19,7 +19,7 @@ module.exports = function(){
 # Description:       microblog software
 ### END INIT INFO
 
-SCRIPT="\`which bumbler\` --dir='${cwd}'"
+SCRIPT="$(command -v bumbler) --dir='${cwd}'"
 RUNAS=${user}
 
 PIDFILE=/var/run/bumbler.pid

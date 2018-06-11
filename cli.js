@@ -68,7 +68,7 @@ if (argv.help || argv.h || (cmd && cmd.toLowerCase() == 'help') ){
   process.exit(0);
 }
 
-if (argv.sysv || argv.sysvinit){
+if (cmd && (cmd.toLowerCase() == 'sysv' || cmd.toLowerCase() == 'sysvinit') ){
   requireTheRest();
   sysvinit();
   process.exit(0);
