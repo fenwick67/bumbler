@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-06-10T19:44:35-05:00</updated>
+<updated>2018-07-08T13:34:25-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/6.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/4.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
-<id>http://localhost:8000/post/01CFEB2P00F5XX9X49N5MJ5FBV.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Anniversary of Tank Man</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CHH9DC00N2H4Y54Z9TSCXDZZ.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>North American pharmaceutical reform</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Chinese are commemorating the &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/04/tankman2018-hero-of-tiananmen-protest-remembered-across-globe&#34;&gt;anniversary of Tank Man&lt;/a&gt;, who blocked for a while the tanks that were sent to slaughter protesting students in Beijing.   &lt;/p&gt;</content>
+&lt;p&gt;A &lt;a href=&#34;https://www.commondreams.org/newswire/2018/05/17/doctors-us-and-canada-launch-sweeping-pharmaceutical-reform-proposal&#34;&gt;team of doctors propose thorough reform&lt;/a&gt; of the US (and Canadian) pharmaceutical system, designed to correct many of the problems of the existing system.&lt;/p&gt; &lt;p&gt;I&#39;m glad to see it includes taking control of clinical trials away from pharma companies.  I&#39;ve advocated this for a long time.  &lt;a href=&#34;https://stallman.org/archives/2009-may-aug.html#05 July 2009 (Pharma&#39;s phony &#39;gift&#39; to Health Care Reform)&#34;&gt;We need true clinical trials&lt;/a&gt;, rather than funding-perverted c(l)ynical trials.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00F5XX9X49N5MJ5FBV.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00N2H4Y54Z9TSCXDZZ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00F5MSF9887G2F6YB6.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Deaths from heat waves</title>
+<id>http://localhost:8000/post/01CHH9DC00N0ARCZFFCTMSR4F8.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Deportation prison deals</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; India has &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/02/india-heat-wave-deaths-public-health-measures&#34;&gt;launched effective programs&lt;/a&gt; that have reduced deaths from heat waves. &lt;/p&gt;&lt;p&gt; If we keep heating up the atmosphere, we will make this a moving target.  It is more effective to turn the heat down than to cope with its increase.   &lt;/p&gt;</content>
+&lt;p&gt; Many US cities and counties &lt;a href=&#34;https://www.nytimes.com/2018/06/28/us/migrant-shelters-ice-contracts-counties.html&#34;&gt;have cancelled deals&lt;/a&gt; with the deportation thugs to hold their prisoners.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00F5MSF9887G2F6YB6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00N0ARCZFFCTMSR4F8.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00EZ0XPHF1YNW6FM57.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Hong Kong activists</title>
+<id>http://localhost:8000/post/01CHH9DC00K856721KVHYAQW1J.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Wars and inequality</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Hong Kong Independence Activists Sentenced to &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/04/hong-kong-independence-activists-sentenced-to-four-weeks-jail&#34;&gt;Four Weeks&amp;#39; Jail&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; It is actually Hong Kong that will be in jail.   &lt;/p&gt;</content>
+&lt;p&gt; How America&#39;s Wars &lt;a href=&#34;https://www.commondreams.org/views/2018/06/28/how-americas-wars-fund-inequality-home&#34;&gt;Fund Inequality at Home&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00EZ0XPHF1YNW6FM57.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00K856721KVHYAQW1J.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00E24JNGZFN6CEWG77.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Abortion and freedom</title>
+<id>http://localhost:8000/post/01CHH9DC00JG4FHTBBRFDAQK7S.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Supreme court appointments</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &amp;quot;An abortion at the age of 23 &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/02/an-abortion-at-the-age-of-23-gave-me-freedom&#34;&gt;gave me freedom.&lt;/a&gt;&amp;quot; Even for women who don&amp;#39;t desperately need an abortion, abortion rights are crucial.   &lt;/p&gt;</content>
+&lt;p&gt; Senator McConnell said that blocking the appointment of a supreme court justice for a whole year until the 2016 election was not mere partisanship &lt;a href=&#34;https://www.commondreams.org/news/2018/06/27/midtermsbeforescotus-takes-democrats-told-stiffen-their-spines&#34;&gt;but a civic duty&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Naturally this time he intends to rush the process of replacing Kennedy.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00E24JNGZFN6CEWG77.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00JG4FHTBBRFDAQK7S.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00DZC0EEVV50RW6Z2T.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Languages in the US</title>
+<id>http://localhost:8000/post/01CHH9DC00HHMTWMJK5DTFGGT1.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Britain: Homeless fined or jailed</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Irrational mob violence against non-English-speakers has flared up in the US &lt;a href=&#34;https://web.archive.org/web/20180531124213/https://blogs.illinois.edu/view/25/653544&#34;&gt;a number of times&lt;/a&gt; since 100 years ago. &lt;/p&gt;&lt;p&gt; Foolish people do this because non-English-speakers make good scapegoats. I wonder, do billionaires speak some special language we could ban? &lt;/p&gt;&lt;p&gt; I have to correct one flippant point: English did not become dominant in what is now the US in the 17th century.  I&amp;#39;ve read that around 1800 German seemed to be the most common language in the US of the time, though I can&amp;#39;t be sure that is accurate. &lt;/p&gt;&lt;p&gt; The US expanded westward in the 19th century to lands that surely didn&amp;#39;t use English much before that.  After the US conquered parts of Mexico in the 1840s, the inhabitants continued speaking Spanish for quite some time.   &lt;/p&gt;</content>
+&lt;p&gt;Many &lt;a href=&#34;https://www.theguardian.com/society/2018/may/20/homeless-people-fined-imprisoned-pspo-england-wales&#34;&gt;towns in Britain repress homeless beggars&lt;/a&gt;, fining them or jailing them for begging.  It almost resembles the US.&lt;/p&gt; &lt;p&gt;If you don&#39;t want people to beg, don&#39;t make them destitute!&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00DZC0EEVV50RW6Z2T.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00HHMTWMJK5DTFGGT1.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00DJC8YP7WJ0D6QBTG.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Returning to Fukushima area</title>
+<id>http://localhost:8000/post/01CHH9DC00GTATA73SX9G503QT.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Union membership</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Some of the evacuated areas near Fukushima are now safe, but most people are &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/03/was-fallout-from-fukushima-exaggerated&#34;&gt;afraid to return&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; If a nuclear power plant accident does not pollute the surrounding area with radiation, it is a disaster anyway, simply because of the loss of a plant that cost billions of dollars to build.   &lt;/p&gt;</content>
+&lt;p&gt; Young American workers are &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/29/can-millennials-save-unions-in-america&#34;&gt;joining and organizing unions&lt;/a&gt;, reinvigorating them.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00DJC8YP7WJ0D6QBTG.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00GTATA73SX9G503QT.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00DGAP6A5XY5J37GV5.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>DoE civil rights cases</title>
+<id>http://localhost:8000/post/01CHH9DC00ER6M9C12NAPNEE9X.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Nature disappearing</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Department of Education, under the control of &lt;a href=&#34;https://stallman.org/glossary.html#saboteur&#34;&gt;Saboteur&lt;/a&gt; DeVos, has dismissed &lt;a href=&#34;https://www.commondreams.org/news/2018/06/01/advocates-see-hundreds-civil-rights-cases-dismissed-trumps-education-dept-national&#34;&gt;hundreds of civil rights cases&lt;/a&gt; — not based on their merits but rather based on Republicans&amp;#39; lack of merit.   &lt;/p&gt;</content>
+&lt;p&gt; George Monbiot says that &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/29/natural-world-disappearing-save-it&#34;&gt;nature is disappearing&lt;/a&gt; in front of relentless human alteration of ecosystems: one after another, species that used to be abundant have become rare or disappeared entirely where he lives.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00DGAP6A5XY5J37GV5.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00ER6M9C12NAPNEE9X.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00DAW819MGAHYXRBVJ.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>US ambassador to Germany</title>
+<id>http://localhost:8000/post/01CHH9DC00EAAHQJVTSK59V07K.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Seaweed in place of plastic</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The US ambassador to Germany &lt;a href=&#34;https://theintercept.com/2018/06/04/trumps-ambassador-berlin-promises-help-far-right-nationalists-take-power/&#34;&gt;tried to meddle&lt;/a&gt; in German internal politics. &lt;/p&gt;&lt;p&gt; The Germans have been too gentle in response.  &lt;a href=&#34;https://stallman.org/glossary.html#bully&#34;&gt;The bully&lt;/a&gt; is likely to think of this as ineffectual resistance which means he should continue along the same lines. &lt;/p&gt;&lt;p&gt; I urge Germany to expel that ambassador.   &lt;/p&gt;</content>
+&lt;p&gt; Indonesia could &lt;a href=&#34;https://www.theguardian.com/environment/blog/2018/jun/27/could-seaweed-solve-indonesias-plastic-crisis&#34;&gt;use seaweed to replace plastic&lt;/a&gt; for food packaging, ten years from now. &lt;/p&gt;&lt;p&gt; But it will require government pressure to stop using plastic.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00DAW819MGAHYXRBVJ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00EAAHQJVTSK59V07K.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00CD7AWX2Y3PWZ6R8E.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Urgent: Ronald Mortenson</title>
+<id>http://localhost:8000/post/01CHH9DC00DBVXP0S77K46A1TS.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Farm bill blocked</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;https://act.credoaction.com/sign/block_Mortensen&#34;&gt;call on the Senate&lt;/a&gt; to block the nomination of anti-immigrant bigot Ronald Mortenson to be in charge of assistance to refugees.   &lt;/p&gt;</content>
+&lt;p&gt;The disastrous &lt;a href=&#34;https://www.theguardian.com/us-news/2018/may/18/farm-bill-paul-ryan-food-stamps-house-freedom-caucus&#34;&gt;Republican farm bill was blocked&lt;/a&gt; because some Republicans demand more repression of immigrants.&lt;/p&gt; &lt;p&gt;We can&#39;t expect this to save us permanently from the &lt;a href=&#34;https://stallman.org/archives/2012-may-aug.html#08_July_2012_(House_Farm_Bill)&#34;&gt;nasty&lt;/a&gt; &lt;a href=&#34;https://stallman.org/archives/2018-mar-jun.html#25_June_2018_(Farm_bill_and_the_environment)&#34;&gt;provisions&lt;/a&gt; of the farm bill.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00CD7AWX2Y3PWZ6R8E.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00DBVXP0S77K46A1TS.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00AWKKG9PDDKS3ZHBR.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Coal and nuclear bailouts</title>
+<id>http://localhost:8000/post/01CHH9DC00CGGZMCW8N0KAFVYQ.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Database law in California</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The saboteur-in-chief wants to force electric utilities to &lt;a href=&#34;https://www.commondreams.org/newswire/2018/06/01/sierra-club-statement-trump-administrations-latest-attempt-bail-out-money-losing&#34;&gt;buy electricity from failing coal and nuclear plants&lt;/a&gt;, to keep them running and endangering people. &lt;/p&gt;&lt;p&gt; To create an excuse, the saboteurs would pretend there is an emergency.   &lt;/p&gt;</content>
+&lt;p&gt; California has adopted a &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/28/california-privacy-bill-data-harvesting&#34;&gt;stricter-than-usual law&lt;/a&gt; to regulate commercial databases. &lt;/p&gt;&lt;p&gt; It will probably do some good, but if it does what the article suggests, it won&#39;t stop the recordings made from cameras and microphones in the street and in buses, or real-time face recognition on their images, and I doubt it will do much good regarding phone company tracking of phone calls, messages and locations.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00AWKKG9PDDKS3ZHBR.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00CGGZMCW8N0KAFVYQ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P009S313SRTADBST1FP.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Publix campaign contributions</title>
+<id>http://localhost:8000/post/01CHH9DC00C0JAQ6RBYNSRPK0N.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Dark patterns</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Publix supermarkets said it would &lt;a href=&#34;http://www.tampabay.com/florida-politics/buzz/2018/05/25/publix-suspends-political-contributions-amid-statewide-protests/&#34;&gt;stop making campaign contributions&lt;/a&gt;. Those were directed at right-wing candidates. &lt;/p&gt;&lt;p&gt; I suppose the owners will continue supporting them, though.   &lt;/p&gt;</content>
+&lt;p&gt; A report surveys how companies including Facebook, Google and Microsoft design systems to &lt;a href=&#34;https://edri.org/ncc-report-on-dark-patterns/&#34;&gt;hamper users from exercizing their rights&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P009S313SRTADBST1FP.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00C0JAQ6RBYNSRPK0N.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P009J3SDJGHJV2NJ61F.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Obstruction of justice</title>
+<id>http://localhost:8000/post/01CHH9DC00C08GBFXDM4SPVM2Q.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Rendition in the UK</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The cheater&amp;#39;s lawyers claim that the US president &lt;a href=&#34;https://www.commondreams.org/news/2018/06/03/ludicrous-critics-slay-memo-trump-lawyers-claiming-president-above-law&#34;&gt;cannot ever be said to commit&lt;/a&gt; obstruction of justice, because he is in charge of all investigations. &lt;/p&gt;&lt;p&gt; Trump&amp;#39;s Lawyers Want Legal Immunity for the President.  &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/04/trump-russia-pardon-power-president&#34;&gt;Who Will Stop Them?&lt;/a&gt;   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/jun/28/uks-role-in-rendition-and-torture-of-terrorism-suspects-key-findings&#34;&gt;UK law was designed&lt;/a&gt; to allow spy agencies to kidnap people and hand them over to dictators to be tortured. &lt;/p&gt;&lt;p&gt; Successive governments have &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/jun/28/uk-risk-future-human-rights-abuses-isc-reports&#34;&gt;covered up the details&lt;/a&gt; to protect the agents involved and the ministers who gave them orders. As a result, similar things could easily happen again.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P009J3SDJGHJV2NJ61F.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00C08GBFXDM4SPVM2Q.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P0095PAEG7EBKECFH9Z.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Asylum seekers in Hungary</title>
+<id>http://localhost:8000/post/01CHH9DC008GFWBHNB6QKJ77HM.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Intervening for Palestinians</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/04/no-entry-hungarys-crackdown-on-helping-refugees&#34;&gt;Hungary will jail people&lt;/a&gt; for informing asylum seekers of their legal rights. &lt;/p&gt;&lt;p&gt; What this means is that the state plans to cheat them of their rights.   &lt;/p&gt;</content>
+&lt;p&gt; &amp;quot;As Israelis, we call on the world to &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/29/israelis-call-world-intervene-behalf-palestinians&#34;&gt;intervene on behalf of Palestinians&lt;/a&gt;.&amp;quot;   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P0095PAEG7EBKECFH9Z.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC008GFWBHNB6QKJ77HM.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P007C2F42326B89MDG6.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Whales eating plastic bags</title>
+<id>http://localhost:8000/post/01CHH9DC008D0GE2MXEJRZ0D0B.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Carbon emissions tax</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A whale was found dying from eating &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/03/whale-dies-from-eating-more-than-80-plastic-bags&#34;&gt;more than 80 plastic bags&lt;/a&gt;. Apparently they filled up the whale&amp;#39;s stomach, so it starved.   &lt;/p&gt;</content>
+&lt;p&gt; Republicans representing oil companies are proposing a carbon emissions tax.  However, at the the &lt;a href=&#34;https://truthout.org/articles/oil-companies-and-lobbyists-say-theyre-ready-to-solve-climate-change-check-the-fine-print/&#34;&gt;cost of big concessions&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P007C2F42326B89MDG6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC008D0GE2MXEJRZ0D0B.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P006Y2G6FZ7GDWVSBTG.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Old and right-wing</title>
+<id>http://localhost:8000/post/01CHH9DC007MX2CGSJSRX56TG9.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>LocationSmart phone tracking</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; One reason old Americans tend to be more right-wing is that poor people and blacks &lt;a href=&#34;http://nymag.com/daily/intelligencer/2018/05/poor-people-often-dont-survive-to-become-seniors-who-vote.html&#34;&gt;tend to die younger&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt;The LocationSmart web site enabled anyone to roughly  &lt;a href=&#34;https://krebsonsecurity.com/2018/05/tracking-firm-locationsmart-leaked-location-data-for-customers-of-all-major-u-s-mobile-carriers-in-real-time-via-its-web-site/&#34;&gt;track the position of any mobile phone&lt;/a&gt;, due to completely missing security.&lt;/p&gt; &lt;p&gt;However, anyone willing to commit a crime can get the same data through &lt;a href=&#34;https://stallman.org/archives/2012-sep-dec.html#17_December_2012_(Location_privacy_bill)&#34;&gt;the bad security of the SS7 protocol&lt;/a&gt; through which one phone network talks with another phone network.&lt;/p&gt; &lt;p&gt;Even worse, the data is easily available the government.&lt;/p&gt; &lt;p&gt;This is one reason I refuse to carry a mobile phone. The other is that &lt;a href=&#34;https://gnu.org/malware/malware-mobiles.html&#34;&gt;it can be modified through a back door&lt;/a&gt; to listen and transmit all conversations in its vicinity.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P006Y2G6FZ7GDWVSBTG.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC007MX2CGSJSRX56TG9.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P0065BH4GAQ2TPPC9XP.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Break up the big banks</title>
+<id>http://localhost:8000/post/01CHH9DC0079Z9XV0CYEBW0MD5.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Amazon warehouse like prison</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The weak Dodd-Frank compromise bank regulation law, just recently weakened even further with the help of plutocratist democrats, shows the need to &lt;a href=&#34;https://www.commondreams.org/views/2018/06/02/why-only-answer-break-biggest-wall-street-banks&#34;&gt;break up the big banks&lt;/a&gt; into much smaller pieces. &lt;/p&gt;&lt;p&gt; An adaptation of &lt;a href=&#34;https://stallman.org/articles/progressive-tax-on-business-gross-income.html&#34;&gt;my tax proposal&lt;/a&gt; could pressure each big bank to split itself up.   &lt;/p&gt;</content>
+&lt;p&gt;Working in an Amazon warehouse is like being in prison &lt;a href=&#34;http://www.businessinsider.com/amazon-warehouse-like-prison-where-workers-used-pee-bottle-2018-4?r=UK&amp;amp;IR=T&#34;&gt;with a sentence of hard and hurried labor&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;The workers don&#39;t have breaks even enough to go to the toilet.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P0065BH4GAQ2TPPC9XP.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC0079Z9XV0CYEBW0MD5.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P000Q9SENKY5WP96MF2.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Very urgent: Net Neutrality rules</title>
+<id>http://localhost:8000/post/01CHH9DC006XAJQ9YS0VFDFG2P.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Prisoners and elections</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: by June 10, phone your congresscritter and demand person vote to continue the partial Network Neutrality rules. &lt;/p&gt;&lt;p&gt; The Capitol Switchboard numbers are 202-224-3121, 888-818-6641 and 888-355-3588.   &lt;/p&gt;</content>
+&lt;p&gt; The number of prisoners in the US is so high that it &lt;a href=&#34;https://www.commondreams.org/newswire/2018/06/28/new-report-examines-business-mass-incarceration-damage-it-does-democracy&#34;&gt;directly alters elections&lt;/a&gt;. Groups that suffer bigotry are imprisoned unfairly more than others, even after committing similar crimes, and that costs them voting strength.  Moreover, prisons placed in right-wing areas make their votes count extra.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P000Q9SENKY5WP96MF2.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC006XAJQ9YS0VFDFG2P.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFBRNZ00WAXX3M73R1F391KY.html</id>
-<published>2018-06-07T00:00:00.000Z</published>
-<updated>2018-06-07T00:00:00.000Z</updated>
-<title>Inauguration protesters</title>
+<id>http://localhost:8000/post/01CHH9DC006TTPSMQV4BPG8PB5.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Protesting family imprisonment</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A judge dropped charges against some inauguration protesters because US prosecutors were shown to have  &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/victory-dissent-government-drops-charges-against-group-j20-protesters&#34;&gt;violated their right to a fair trial&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/28/us-immigration-protest-trump-washington-senate&#34;&gt;600 protesters held a sit-in&lt;/a&gt; in a US Senate office building, demanding an end to imprisonment of refugee families. &lt;/p&gt;&lt;p&gt; I think that the &lt;a href=&#34;https://stallman.org/glossary.html#bully&#34;&gt;bully&lt;/a&gt; will use this as an excuse to increase repression. He has no desire for civil peace, any more than international peace.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFBRNZ00WAXX3M73R1F391KY.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC006TTPSMQV4BPG8PB5.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFBRNZ00K9MDYKFPWCE8RCF8.html</id>
-<published>2018-06-07T00:00:00.000Z</published>
-<updated>2018-06-07T00:00:00.000Z</updated>
-<title>Nicaragua&#39;s suppression forces</title>
+<id>http://localhost:8000/post/01CHH9DC005V3YGXXJED9SHR7Q.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Flight attendant&#39;s moral responsibility</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Nicaragua&amp;#39;s suppression forces  &lt;a href=&#34;https://www.theguardian.com/world/2018/may/31/nicaragua-peace-talks-daniel-ortega-abandoned-mothers-day-protest&#34;&gt;killed 11 more protesters&lt;/a&gt; in a massive demonstration led by mothers of protesters previously killed.   &lt;/p&gt;</content>
+&lt;p&gt;Flight attendant  &lt;a href=&#34;https://www.houstonchronicle.com/local/gray-matters/article/Flight-attendant-I-won-t-work-flights-that-13008372.php&#34;&gt;Hunt Palmquist vowed&lt;/a&gt; he would refuse to work on flights to transport immigrant child prisoners.&lt;/p&gt; &lt;p&gt;He realized that if he helped do this, he would morally responsible for his actions.&lt;/p&gt; &lt;p&gt;His response may be the reason that some airlines have since refused to carry those prisoners.  We should pressure the other airlines in the US to do the same.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFBRNZ00K9MDYKFPWCE8RCF8.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC005V3YGXXJED9SHR7Q.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFBRNZ00K8Y2P2690AQHP52X.html</id>
-<published>2018-06-07T00:00:00.000Z</published>
-<updated>2018-06-07T00:00:00.000Z</updated>
-<title>4 cents in damages for killing black man</title>
+<id>http://localhost:8000/post/01CHH9DC005FTP290ENCEQC0NV.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Facebook disinformation plan</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Florida &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; kills a black man over nothing but their own imagination and panic.  Relatives sued, and a jury awarded them  &lt;a href=&#34;https://www.commondreams.org/further/2018/05/31/whats-black-life-worth-trumps-america-four-bucks-evidently-oops-scratch-four&#34;&gt;4 cents in damages&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt;Facebook plans to work with a right-wing think-tank &lt;a href=&#34;https://www.commondreams.org/news/2018/05/18/alarming-facebook-teams-think-tank-funded-saudi-arabia-and-military-contractors&#34;&gt;funded by rich fossil fuel interests&lt;/a&gt;, supposedly to &amp;quot;protect&amp;quot; democracy.&lt;/p&gt; &lt;p&gt;The funding suggests that what they plan to protect is plutocracy&lt;/p&gt; &lt;p&gt;This is one more reason to stop being used by Facebook.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFBRNZ00K8Y2P2690AQHP52X.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC005FTP290ENCEQC0NV.html"/>
 </entry>
 </feed>

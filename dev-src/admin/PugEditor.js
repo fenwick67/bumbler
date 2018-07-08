@@ -134,6 +134,7 @@ function getSampleData(){
 
   var data = {
     _:_,
+    linkTo:function(){return '#'},
     site:{
       authorName:"Your Name",
       title:"Site Title",

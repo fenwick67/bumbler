@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-06-10T19:44:35-05:00</updated>
+<updated>2018-07-08T13:34:26-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,271 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/20.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
-<id>http://localhost:8000/post/01C5M6K0002ME6PENEGP3J3CVC.html</id>
-<published>2018-02-06T00:00:00.000Z</published>
-<updated>2018-02-06T00:00:00.000Z</updated>
-<title>Total solitude</title>
-<content type="html" xml:lang="en">&lt;p&gt; Modern patterns of living push old people into lives of total solitude. Cohousing could &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/04/ageing-nhs-loneliness-co-housing&#34;&gt;help people avoid this fate&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Automated and internet sales are part of the problem.  How about discouraging those?   &lt;/p&gt;</content>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01C5YG5W00EQNCYR6FVJW1VWCT.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Hamster at an airport</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Spirit airlines told a passenger she could bring her miniature hamster on board — then when she arrived, told her no, so &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/08/spirit-airlines-emotional-support-hamster-flush-toilet-florida&#34;&gt;she had to kill it&lt;/a&gt; in order to get home. &lt;/p&gt;&lt;p&gt; The airline spokesjerk expressed shock that she killed her hamster, pretending that this wasn&#39;t compelled by the airline&#39;s decision.  What else was she supposed to do — remain indefinitely at the airport, effectively homeless?  Spend a week going home by bus and miss classes? &lt;/p&gt;&lt;p&gt; The airline should have cages for use to keep small animals in the hold, if it doesn&#39;t want to carry them in the cabin.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5M6K0002ME6PENEGP3J3CVC.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00EQNCYR6FVJW1VWCT.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html</id>
-<published>2018-02-04T00:00:00.000Z</published>
-<updated>2018-02-04T00:00:00.000Z</updated>
-<title>Emergency room treatment</title>
-<content type="html" xml:lang="en">&lt;p&gt; &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/1/29/16906558/anthem-emergency-room-coverage-denials-inappropriate&#34;&gt; Anthem medical insurance refuses to pay for emergency room treatment &lt;/a&gt; if the problem was not really urgent.  Since patients have no way to know that on their own, this means they risk bankruptcy every time they go.   &lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C5YG5W00ARJ15MT7Z5XDERY3.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Hosting fundraisers</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Andrew Wheeler, hoping for Senate confirmation as deputy &lt;a href=&#34;/glossary.html#saboteur&#34;&gt;saboteur&lt;/a&gt; of the EPA, smoothed the path to committee approval &lt;a href=&#34;https://theintercept.com/2018/02/07/coal-lobbyist-andrew-wheeler-epa-deputy-confirmation/&#34;&gt; by corrupting two Republican senators. &lt;/a&gt;   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7YWZ91T237HJXQA0KF.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00ARJ15MT7Z5XDERY3.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html</id>
-<published>2018-01-31T00:00:00.000Z</published>
-<updated>2018-01-31T00:00:00.000Z</updated>
-<title>&#34;Microschools&#34;</title>
-<content type="html" xml:lang="en">&lt;p&gt; &lt;a href=&#34;http://reason.com/archives/2018/01/27/are-microschools-the-next-big&#34;&gt; &amp;quot;Microschools&amp;quot; try to break the rigidity of standardized education. &lt;/a&gt;   &lt;/p&gt;</content>
+<id>http://localhost:8000/post/01C5YG5W009QN5EQ2TD49A40BQ.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Data for immigration agency</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The US immigration thug agency &lt;a href=&#34;https://www.dailykos.com/story/2018/2/8/1739815/-An-emboldened-ICE-reportedly-wants-to-become-a-part-of-the-U-S-intelligence-community&#34;&gt;has asked for access&lt;/a&gt; to all the government&#39;s secret surveillance data, which supposedly is collected to &amp;quot;protect&amp;quot; us from &amp;quot;terrorists&amp;quot;. &lt;/p&gt;&lt;p&gt; If we tolerate government collection of data about Americans in general, the government will use it against us in ever increasing ways.  &lt;a href=&#34;https://gnu.org/philosophy/surveillance-vs-democracy.html&#34;&gt;We must put an end&lt;/a&gt; to this data collection.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5J06A7VGS0KATMM67KN9J0P.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W009QN5EQ2TD49A40BQ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C52FV9T2YC1726NCQPZN1TT9.html</id>
-<published>2018-01-30T02:55:29.602Z</published>
-<updated>2018-01-30T02:55:29.602Z</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;blockquote&gt;
-&lt;p&gt;is it a &amp;quot;joke religion&amp;quot; if people celebrate a personification of some ideal while knowing fully well that it is a constructed character?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This is basically what Satanism is&lt;/p&gt;
-</content>
-<category term="scuttlebutt"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C52FV9T2YC1726NCQPZN1TT9.html"/>
+<id>http://localhost:8000/post/01C5YG5W0094C7SBDDSFMHH2Q6.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>John Perry Barlow</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The death of John Perry Barlow &lt;a href=&#34;https://www.theguardian.com/technology/2018/feb/08/john-perry-barlow-open-internet-dream-dying&#34;&gt;is a reminder&lt;/a&gt; of the time when we thought the internet could bring people freedom. &lt;/p&gt;&lt;p&gt; The good that the internet can do is being blocked by censorship and drowned out by intentional lies, while the bad (total surveillance and the War on Sharing) is growing without restraint. &lt;/p&gt;&lt;p&gt; If you want freedom, the first step is to build the strength to say &amp;quot;no thanks&amp;quot; when someone offers you convenience in exchange.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W0094C7SBDDSFMHH2Q6.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C36VX21MZ78DMZ5PPVE066HZ.html</id>
-<published>2018-01-06T23:11:44.180Z</published>
-<updated>2018-01-06T23:11:44.180Z</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;p&gt;I can&amp;#39;t believe on the entire scuttleverse there are no posts about #tidepods&lt;/p&gt;
-</content>
-<category term="scuttlebutt"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C36VX21MZ78DMZ5PPVE066HZ.html"/>
+<id>http://localhost:8000/post/01C5YG5W00814KWDDZT3H3Q8VN.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Total surveillance system</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; China&#39;s total surveillance system will be used for &lt;a href=&#34;https://www.sbs.com.au/news/big-brother-is-coming-inside-china-s-plan-to-rate-its-1-3-billion-citizens&#34;&gt; imposing regimentation on any and all aspects of life. &lt;/a&gt; &lt;/p&gt;&lt;p&gt; The US is also moving toward a system of total regimentation, in its usual sloppy commercially dominated way, that the state piggybacks on.  If you want to resist this, stop using digital payments -- pay cash!   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00814KWDDZT3H3Q8VN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C2T4EQER0855FJVWM0F52ZF3.html</id>
-<published>2018-01-02T00:31:04.152Z</published>
-<updated>2018-01-02T00:31:04.152Z</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;p&gt;Possums are honestly adorable&lt;/p&gt;
-</content>
-<category term="scuttlebutt"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2T4EQER0855FJVWM0F52ZF3.html"/>
+<id>http://localhost:8000/post/01C5YG5W007Y989KWGSB0FCXFC.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Bikini baristas</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; When drive-through cafes employ women wearing only underclothes, &lt;a href=&#34;https://www.theguardian.com/us-news/2018/feb/07/bikini-baristas-cover-up-coffee-washington-state&#34;&gt; is that a form of exploitation that they should be protected from? &lt;/a&gt; &lt;/p&gt;&lt;p&gt; I don&#39;t object to these businesses.  What I object to is a society that pays millions of workers so little that some might feel they have no choice but to work in these jobs.  People who feel uncomfortable doing them should not have to do them.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W007Y989KWGSB0FCXFC.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C2MYECHRESJ63NHBCPVT6WN6.html</id>
-<published>2017-12-31T00:09:49.368Z</published>
-<updated>2017-12-31T00:09:49.368Z</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;p&gt;The custom non-unicode ones aren&amp;#39;t here but that&amp;#39;s fine with me IMO, they stunk for interoperability.&lt;/p&gt;
-&lt;p&gt;🦕💨   🦖 &lt;/p&gt;
-</content>
-<category term="scuttlebutt"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2MYECHRESJ63NHBCPVT6WN6.html"/>
+<id>http://localhost:8000/post/01C5YG5W007R5JVSC6NV5AYV4G.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Coal seam gas</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; With &lt;a href=&#34;/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt; bringing frequent deep droughts in many regions, &lt;a href=&#34;https://www.theguardian.com/global-development/2018/feb/07/day-zero-what-cape-town-can-learn-from-australia-millennium-drought-water-crisis&#34;&gt; how could they think of using fossil fuels in ways that also need lots of fresh water? &lt;/a&gt; I refer to coal seam gas production. &lt;/p&gt;&lt;p&gt; It must take a lot of money to convince enough people not to do the right thing by insisting on renewable energy instead. &lt;/p&gt;&lt;p&gt; Truly long-term defense against running out of water requires defending against population increase.  We must ask for everyone&#39;s cooperation in this.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W007R5JVSC6NV5AYV4G.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C2GATWAPCTAY1J8Y2JQ8GVWW.html</id>
-<published>2017-12-29T05:10:09.494Z</published>
-<updated>2017-12-29T05:10:09.494Z</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;p&gt;GoTenna &lt;em&gt;does&lt;/em&gt; have an SDK for Android and iOS but the details are all obfuscated away.  Even then, messages are restricted to very short lengths to deal with the 900MHz FCC restrictions.  There are also lots of 900MHz radios on Adafruit et cetera, but there&amp;#39;s no unified, open 900MHz mesh protocol sadly.  &lt;/p&gt;
-&lt;p&gt;FreedomBox is supposedly &lt;a href=&#34;https://wiki.debian.org/FreedomBox/Design/MeshNetwork&#34;&gt;working toward 2.4GHz mesh networking&lt;/a&gt; but I don&amp;#39;t think it&amp;#39;s working yet.&lt;/p&gt;
-</content>
-<category term="scuttlebutt"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2GATWAPCTAY1J8Y2JQ8GVWW.html"/>
+<id>http://localhost:8000/post/01C5YG5W006BX0SM9SG84FZ7NM.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Military parade</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;/glossary.html#bully&#34;&gt;The bully&lt;/a&gt; wants to be seen as resembling &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/07/trump-military-parade-would-be-despot-strongman-tactics&#34;&gt; despots that hold military parades. &lt;/a&gt; &lt;/p&gt;&lt;p&gt; I think the way to oppose this is with a celebration of the peaceful and truly great achievements of the US, such as the Bill of Rights, the New Deal, the Marshall Plan, Social Security, Medicaid, and the Endangered Species Act.  Let&#39;s oppose cruel and twisted patriotism with benevolent patriotism.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W006BX0SM9SG84FZ7NM.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C2FMKPA895690NKK4NHFXV90.html</id>
-<published>2017-12-28T22:41:45.288Z</published>
-<updated>2017-12-28T22:41:45.288Z</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;p&gt;The comic is really cute.&lt;/p&gt;
-&lt;p&gt;I&amp;#39;ve always liked dinosaurs but personally I love them even more with feathers.&lt;/p&gt;
-</content>
-<category term="scuttlebutt"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C2FMKPA895690NKK4NHFXV90.html"/>
+<id>http://localhost:8000/post/01C5YG5W003ZZ1FKMXAYV9DG6K.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Limiting Medicaid</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;/glossary.html#bully&#34;&gt;The bully&lt;/a&gt; wants to limit Medicaid benefits for people with incurable diseases.  That means that they will get treatment only until they &lt;a href=&#34;https://boingboing.net/2018/02/07/are-there-no-workhouses-3.html&#34;&gt;reach the arbitrary limit&lt;/a&gt;; then, I suppose, they will be put out on the street.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W003ZZ1FKMXAYV9DG6K.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BXZHJTZVQ114Q3T541X27SWE.html</id>
-<published>2017-11-02T18:38:13-05:00</published>
-<updated>2017-11-02T18:38:13-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/3112-221541.jpg"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BXZHJTZVQ114Q3T541X27SWE.html"/>
+<id>http://localhost:8000/post/01C5YG5W0028HXKKASZVEY6CW5.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Greenhouse gas emissions</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The US is doing so little to reduce greenhouse gas emissions that they are now &lt;a href=&#34;https://www.commondreams.org/newswire/2018/02/07/frightening-new-carbon-emissions-projections-require-bold-policy-solutions&#34;&gt;predicted to increase&lt;/a&gt;, for a few decades. &lt;/p&gt;&lt;p&gt; A few decades from now, the effects of &lt;a href=&#34;/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt; will make emissions decrease, but that will be because disaster is already advanced. &lt;/p&gt;&lt;p&gt; The &lt;a href=&#34;/glossary.html#planet&#34;&gt;planet roasters&lt;/a&gt; believe they can give their descendants an escape from the disaster they are bringing on the rest of the world. The rest of humanity needs to show them that they can&#39;t do that; that the only way their descendants can survive is if the rest of humanity does too.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W0028HXKKASZVEY6CW5.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BX660Z3D6PP3WPM6WG1PS49Y.html</id>
-<published>2017-10-23T22:15:12-05:00</published>
-<updated>2017-10-23T22:15:12-05:00</updated>
-<title>aaaaaa</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/IMG_0062.JPG"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BX660Z3D6PP3WPM6WG1PS49Y.html"/>
+<id>http://localhost:8000/post/01C5VXS500ZVDKP7A1G51P01CT.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>Urgent: Investigate NRA</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens: &lt;a href=&#34;http://act.demandprogress.org/sign/tell-congress-investigate-whether-nra-illegally-funneled-russian-money-2016-election/&#34;&gt;call on Congress&lt;/a&gt; to investigate NRA for funneling Russian money to political campaigns.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500ZVDKP7A1G51P01CT.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BVWRJSM5789EK4CM6NM2VMJ7.html</id>
-<published>2017-10-07T20:11:25-05:00</published>
-<updated>2017-10-07T20:11:25-05:00</updated>
-<title>Bumbler</title>
-<content type="html" xml:lang="en">&lt;p&gt;A straightforward, DIY CMS for photos, images, statuses, audio, blog posts or whatever.  It&amp;#39;s optimized for microblogging, but can be used for macroblogging as well.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Your site your rules.  No censorship, plus simple yet powerful theming&lt;/li&gt;
-&lt;li&gt;Host your files in their original size and format&lt;/li&gt;
-&lt;li&gt;Two ways to publish:&lt;ol&gt;
-&lt;li&gt;Self-host and instantly publish from anywhere, anytime&lt;/li&gt;
-&lt;li&gt;Builds out to static files, so you can easily write locally and push to github-pages, Neocities, or any other system&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-&lt;p&gt;step 0: install Node.js v7+ and NPM, and open a terminal.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;npm install -g bumbler&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Create a new folder for your site&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; into your new site folder&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;bumbler init&lt;/code&gt; inside it and follow the directions&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;DO NOT&lt;/strong&gt; re-use a password for the admin interface.  Seriously.  This software is pre-alpha and there are probably security holes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;publishing&#34;&gt;Publishing&lt;/h1&gt;
-&lt;h2 id=&#34;self-hosting&#34;&gt;Self-Hosting&lt;/h2&gt;
-&lt;p&gt;If you have an extra $7/month, you can host it on DigitalOcean ($5), with backups ($1), and get a domain ($1).  Here are some tips:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bumbler will &lt;strong&gt;not&lt;/strong&gt; work on Heroku or other SAAS platforms with an ephemeral filesystem, because of Bumbler&amp;#39;s filesystem-based nature.  All of your files and settings will get blown away every 24 hours or so.&lt;/li&gt;
-&lt;li&gt;Install nodejs v7 using the instructions here:  &lt;a href=&#34;https://github.com/nodesource/distributions#deb&#34;&gt;https://github.com/nodesource/distributions#deb&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;When running &lt;code&gt;npm install&lt;/code&gt;, use the &lt;code&gt;--production&lt;/code&gt; flag to reduce the dependencies and install time&lt;/li&gt;
-&lt;li&gt;Use HTTPS.  You can sign up for CloudFlare&amp;#39;s free plan, which includes free auto-renewing certificates.&lt;/li&gt;
-&lt;li&gt;You can use &lt;a href=&#34;http://pm2.keymetrics.io/&#34;&gt;PM2&lt;/a&gt; to easily manage app startup and shutdown&lt;ul&gt;
-&lt;li&gt;use &lt;code&gt;pm2 startup&lt;/code&gt; to install startup scripts&lt;/li&gt;
-&lt;li&gt;use only one process (because of in-memory session storage)&lt;/li&gt;
-&lt;li&gt;use &lt;code&gt;pm2 save&lt;/code&gt; to save your running process&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Set up backups in case your site explodes, or hackers get in and ruin everything.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;static-hosting&#34;&gt;Static Hosting&lt;/h2&gt;
-&lt;p&gt;Bumblr was &lt;em&gt;made to work &lt;strong&gt;with or without&lt;/strong&gt; a serverside application&lt;/em&gt;.  You can simply move your project files over to a HTTP server and everything will just work.  Almost everything except the admin interface is built out to static files.  &lt;/p&gt;
-&lt;p&gt;The only caveat here is that right now it needs to be the root of the domain.  So you will need to set it up at yoursite.com/ or subdomain.othersite.com/&lt;/p&gt;
-&lt;h2 id=&#34;todo-items-&#34;&gt;TODO Items:&lt;/h2&gt;
-&lt;h3 id=&#34;high-priority&#34;&gt;High Priority&lt;/h3&gt;
-&lt;p&gt;Social features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] Create JSON scheme for replying and sharing (reply contexts)&lt;/li&gt;
-&lt;li&gt;[ ] Share a url and parse out H-entry and/or opengraph info in the post interface&lt;/li&gt;
-&lt;li&gt;[ ] bookmarklet / plugin to share from browser.  Create an API route to redirect for sharing.&lt;/li&gt;
-&lt;li&gt;[ ] hit a peer&amp;#39;s Webmention URL when sharing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;medium-priority&#34;&gt;Medium Priority&lt;/h3&gt;
-&lt;p&gt;After implementing social features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[ ] Put a RSS feed reader into the admin interface&lt;ul&gt;
-&lt;li&gt;[ ] I can reuse some work from mastofeed for this&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;low-priority&#34;&gt;Low Priority&lt;/h3&gt;
-&lt;p&gt;plugin system&lt;/p&gt;
-&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://github.com/fenwick67/bumbler-themes/raw/master/masonry.png&#34; alt=&#34;screenshot&#34;&gt;&lt;br&gt;&lt;img src=&#34;https://github.com/fenwick67/bumbler/raw/master/doc/admin-screenshot.png&#34; alt=&#34;admin screenshot&#34;&gt;&lt;/p&gt;
-</content>
-<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/bumbler-text.png"/>
-<category term="blog"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWRJSM5789EK4CM6NM2VMJ7.html"/>
+<id>http://localhost:8000/post/01C5VXS500Z3R4W17HR9SFV3G9.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>Locking phones away</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Requiring participants to lock their portable phones temporarily in bags &lt;a href=&#34;https://www.washingtonpost.com/news/inspired-life/wp/2018/02/05/this-millennial-discovered-a-surprisingly-simple-solution-to-smartphone-addiction-schools-love-it/&#34;&gt;improves the quality of interaction&lt;/a&gt; at gatherings and events, and helps education. &lt;/p&gt;&lt;p&gt; It&#39;s a step forward, but people should not think this prevents all the &lt;a href=&#34;https://gnu.org/malware/malware-mobiles.html&#34;&gt;harm and wrong&lt;/a&gt; portable phones do.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500Z3R4W17HR9SFV3G9.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BVWN0S9AEDQ6HQP4MJVNE1MB.html</id>
-<published>2017-10-07T19:09:09-05:00</published>
-<updated>2017-10-07T19:09:09-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/fishebig.gif"/>
-<category term="fish"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWN0S9AEDQ6HQP4MJVNE1MB.html"/>
+<id>http://localhost:8000/post/01C5VXS500YPV91YYC8PQXVAAB.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>Purging books</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Many university libraries &lt;a href=&#34;http://www.latimes.com/sns-bc-us--libraries-book-purge-20180207-story.html&#34;&gt;are purging books&lt;/a&gt; — they will be available only digitally. &lt;/p&gt;&lt;p&gt; Since ebooks are typically distributed &lt;a href=&#34;https://stallman.org/ebooks.pdf&#34;&gt;in an unjust way&lt;/a&gt;, I&#39;m afraid some of those injustices will apply to these books.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500YPV91YYC8PQXVAAB.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BVWN0M6AVMR5MKEVE929EQBW.html</id>
-<published>2017-10-07T19:09:03-05:00</published>
-<updated>2017-10-07T19:09:03-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/pige.gif"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWN0M6AVMR5MKEVE929EQBW.html"/>
+<id>http://localhost:8000/post/01C5VXS500Y83R00M7M27GRD4K.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>Urgent: Antiquities Act</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens: &lt;a href=&#34;https://act.nrdc.org/letter/af-senate-monuments-180201&#34;&gt;call on the Senate&lt;/a&gt; to support the Antiquities Act to protect national monuments.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500Y83R00M7M27GRD4K.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BVWKG9MVQ29DE126WDZNT58M.html</id>
-<published>2017-10-07T18:42:40-05:00</published>
-<updated>2017-10-07T18:42:40-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/pare-shadow-big.gif"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWKG9MVQ29DE126WDZNT58M.html"/>
+<id>http://localhost:8000/post/01C5VXS500Y67SJ3C09SRRFNX9.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>The Republican Party</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Republican Party considered a sort of group madness that, in advanced stages, &lt;a href=&#34;https://www.commondreams.org/views/2018/02/07/where-do-republicans-go-here&#34;&gt;disconnects people totally&lt;/a&gt; from their loyalty to anything bigger — such as their country or the truth.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500Y67SJ3C09SRRFNX9.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BVWG65XCJ9202SD51K2CW527.html</id>
-<published>2017-10-07T17:44:43-05:00</published>
-<updated>2017-10-07T17:44:43-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/png" href="http://localhost:8000/assets/Quetzfeedingwittonnaish2008.png"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWG65XCJ9202SD51K2CW527.html"/>
+<id>http://localhost:8000/post/01C5VXS500XNPNW8DCHV0KV3KJ.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>The Maldives</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; It is hard to find aspect in the governance of the Maldives &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/07/maldives-political-soap-opera-judicial-reform&#34;&gt;that isn&#39;t crooked&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; This is what I fear the Republicans will do to the US.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500XNPNW8DCHV0KV3KJ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BVWD8PJBAZ3E0QHA2TEDQTS0.html</id>
-<published>2017-10-07T16:53:39-05:00</published>
-<updated>2017-10-07T16:53:39-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/gif" href="http://localhost:8000/assets/00coffee_coffee_coffee.gif"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BVWD8PJBAZ3E0QHA2TEDQTS0.html"/>
+<id>http://localhost:8000/post/01C5VXS500VSJZ291R58QT7D06.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>EU data privacy directive</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A &lt;a href=&#34;https://www.politico.eu/article/europe-data-protection-privacy-standards-gdpr-general-protection-data-regulation/&#34;&gt;new EU data privacy directive&lt;/a&gt; will limit certain ways that companies intentionally abuse people&#39;s data. &lt;/p&gt;&lt;p&gt; Companies will still be able to misuse people&#39;s data, just not in all of the same ways.  For instance, Facebook will still be able to sell targeted advertising aimed at its useds.  That doesn&#39;t violate these new rules. &lt;/p&gt;&lt;p&gt; Also, this directive does nothing to protect people from Big Brother. The directive has no effect on how states in the EU forcibly take the data once companies have collected.  The only benefit for dissidents will be if the directive convinces some companies to hold less data about people.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500VSJZ291R58QT7D06.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BV5FT3P95S4XFWAKTMEJY6Q6.html</id>
-<published>2017-09-28T20:34:31-05:00</published>
-<updated>2017-09-28T20:34:31-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en">&lt;p&gt;Update!&lt;/p&gt;
-</content>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/2ca9c9f0dfc9956b.jpg"/>
-<category term="dogs"/>
-<category term="birds"/>
-<category term="chips"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BV5FT3P95S4XFWAKTMEJY6Q6.html"/>
+<id>http://localhost:8000/post/01C5VXS500RZ83NHAACQS1PDS1.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>WHO funding</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; SCROTUS threaten to &lt;a href=&#34;https://www.commondreams.org/news/2018/02/07/siding-monsanto-gop-threatens-cut-who-funds-over-glyphosate-finding&#34;&gt;cut off funding for WHO&lt;/a&gt; because it reported that Glyphosate is probably carcinogenic.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500RZ83NHAACQS1PDS1.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BJCZVHC1ZK2TK1NB0EWH5K8S.html</id>
-<published>2017-09-28T20:34:26-05:00</published>
-<updated>2017-09-28T20:34:26-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/bird%20on%20skateboard.jpg"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZVHC1ZK2TK1NB0EWH5K8S.html"/>
+<id>http://localhost:8000/post/01C5VXS500RNW8RAEH2WHA8JXV.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>Urgent: Medicaid</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens: &lt;a href=&#34;https://act.credoaction.com/sign/trump_medicaid&#34;&gt;call on all state governors&lt;/a&gt; not to help the bully destroy Medicaid.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500RNW8RAEH2WHA8JXV.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01BJCZVCN70YK0R0MCYD72W41T.html</id>
-<published>2017-09-28T20:35:01-05:00</published>
-<updated>2017-09-28T20:35:01-05:00</updated>
-<title>New Post on KBnD</title>
-<content type="html" xml:lang="en"></content>
-<link rel="enclosure" type="image/jpeg" href="http://localhost:8000/assets/g2VlV.jpg"/>
-<category term="birds"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01BJCZVCN70YK0R0MCYD72W41T.html"/>
+<id>http://localhost:8000/post/01C5VXS500QXKGAFVWJ5Z9GD0F.html</id>
+<published>2018-02-09T00:00:00.000Z</published>
+<updated>2018-02-09T00:00:00.000Z</updated>
+<title>Self-checkout machines</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The self-checkout machines that replace human sales clerks &lt;a href=&#34;https://www.theatlantic.com/magazine/archive/2018/03/stealing-from-self-checkout/550940/&#34;&gt;also encourage shoplifting&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Shoplifting in a supermarket is not uniformly wrong.  Poor people are morally entitled to steal food to eat, if they can&#39;t afford to buy it, and the suffering imposed by the plutocratic state often puts them in that situation. &lt;/p&gt;&lt;p&gt; But I hope this convinces the stores to get rid of those machines and hire more human beings. &lt;/p&gt;&lt;p&gt; You can join me in helping to make that happen.  When I enter the store I pass by those machines and tell the people using them, &amp;quot;If you use those machines, you are putting other Americans out of work.  When I realized that I decided to go always to the human sales clerks so that they can stay employed.&amp;quot;  I do the same thing when I leave. &lt;/p&gt;&lt;p&gt; You can do it too.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500QXKGAFVWJ5Z9GD0F.html"/>
 </entry>
 </feed>

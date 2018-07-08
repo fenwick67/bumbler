@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-06-10T19:44:35-05:00</updated>
+<updated>2018-07-08T13:34:26-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/8.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/6.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
-<id>http://localhost:8000/post/01CF9698007WRP9RFEY7K607G1.html</id>
-<published>2018-06-06T00:00:00.000Z</published>
-<updated>2018-06-06T00:00:00.000Z</updated>
-<title>Training scheme in the UK</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CFKFW400MZY1KSK33SC3VNS2.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Gender neutral role &#34;in the home&#34;</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A &amp;quot;training&amp;quot; scheme in the UK &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/01/capita-scheme-graduates-tied-servitude-graduate-schemes-young-people&#34;&gt;traps trainees in debt servitude&lt;/a&gt;. No wonder the &amp;quot;training&amp;quot; is not actually useful.   &lt;/p&gt;</content>
+&lt;p&gt; The Irish Republic&#39;s constitution has a clause about preserving women&#39;s role &amp;quot;in the home&amp;quot;, which is now recognized as &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/03/irish-feminists-target-women-in-the-home-clause-in-constitution&#34;&gt;sexist&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I think it is better to make the clause gender-neutral than to repeal it.  Repealing it would tend to lead to less state aid to parents; making it gender-neutral would lead to more.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF9698007WRP9RFEY7K607G1.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400MZY1KSK33SC3VNS2.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF9698005HP88RWDD3705Z30.html</id>
-<published>2018-06-06T00:00:00.000Z</published>
-<updated>2018-06-06T00:00:00.000Z</updated>
-<title>Anti-abortion policy</title>
+<id>http://localhost:8000/post/01CFKFW400M0F3DJ4KD0Q5ZQ8D.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Airport expansion</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Senator Warren &lt;a href=&#34;https://www.commondreams.org/views/2018/05/31/trumps-new-proposal-another-attempt-government-control-womens-bodies&#34;&gt;describes the anti-abortion policy&lt;/a&gt; that the bully aims to impose on the US.   &lt;/p&gt;</content>
+&lt;p&gt; If we take the danger of &lt;a href=&#34;https://stallman.org/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt; disaster seriously, we must &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/05/the-guardian-view-on-heathrow-expansion-better-never-than-so-late&#34;&gt;put an end to airport expansion&lt;/a&gt; and start resisting plans to increase the number of flights.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF9698005HP88RWDD3705Z30.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400M0F3DJ4KD0Q5ZQ8D.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF9698004F9XHQSGNGB0FRMQ.html</id>
-<published>2018-06-06T00:00:00.000Z</published>
-<updated>2018-06-06T00:00:00.000Z</updated>
-<title>Puerto Rico lawsuit</title>
+<id>http://localhost:8000/post/01CFKFW400KB6H7NA1NY2T106W.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Search rankings and elections</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Puerto Rico is &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/puerto-rico-sues-to-obtain-data-on-deaths-from-hurricane-maria&#34;&gt;suing the US government&lt;/a&gt; demanding release of data on people killed by the hurricane.   &lt;/p&gt;</content>
+&lt;p&gt; Google could manipulate elections simply by jiggering with search ranking.  Experiments show that this can &lt;a href=&#34;https://theconversation.com/when-will-google-defend-democracy-96838&#34;&gt;influence how people vote&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; It would be very difficult to make regulations against this that a search engine company could not evade.  The computation of search ranking is complex, for good reasons including stopping sites from gaming the system; this creates many places to hide the manipulation and many ways to disguise it. &lt;/p&gt;&lt;p&gt; I am not sure what the solution could be. &lt;/p&gt;&lt;p&gt; When I want to check some facts, the first place I look is Wikipedia.  To do a search for articles, then read them, takes a long time, so I rarely go that way. &lt;/p&gt;&lt;p&gt; It is a shame that the writer endorses the prejudices embodied by &lt;a href=&#34;https://gnu.org/philosophy/words-to-avoid.html#Consume&#34;&gt;using the word &amp;quot;consume&amp;quot;&lt;/a&gt; to refer to reading articles.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF9698004F9XHQSGNGB0FRMQ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400KB6H7NA1NY2T106W.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF9698003HFMHCN9KQSKZFBE.html</id>
-<published>2018-06-06T00:00:00.000Z</published>
-<updated>2018-06-06T00:00:00.000Z</updated>
-<title>&#39;Strategic silence&#39;</title>
+<id>http://localhost:8000/post/01CFKFW400K9V08KMENGDTNZG8.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Fee for seeing doctor in prison</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &amp;quot;When confronted with white supremacists, newspaper editors should &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/01/extremist-ideas-media-coverage-kkk&#34;&gt;consider &amp;#39;strategic silence&amp;#39;&lt;/a&gt;.&amp;quot;   &lt;/p&gt;</content>
+&lt;p&gt; Many US prisons charge prisoners a small fee to see a doctor — but it can &lt;a href=&#34;https://www.themarshallproject.org/2018/05/30/the-580-co-pay?ref=hp-2-111&#34;&gt;take a prisoner a month&lt;/a&gt; to make that small fee on prison wages.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF9698003HFMHCN9KQSKZFBE.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400K9V08KMENGDTNZG8.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF9698000M8B5HKNHSHDZJGZ.html</id>
-<published>2018-06-06T00:00:00.000Z</published>
-<updated>2018-06-06T00:00:00.000Z</updated>
-<title>Gaza protesters shot</title>
+<id>http://localhost:8000/post/01CFKFW400K5VV552HRDP06ASX.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Overuse of antibiotics on farms</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Gazans protested again, and Israelis shot some, including &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/palestinian-woman-shot-during-protest-dead-near-gaza-fence&#34;&gt;a medic who was killed&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Israel says the Palestinian protests were violent.  If that is true, the Palestinians are making a misguided choice.  Their only chance of winning more world support is nonviolence.   &lt;/p&gt;</content>
+&lt;p&gt; When farm animals are regularly given antibiotics, the antibiotics pollute local water and trigger antibiotic resistance.  The EU was considering a plan to try to stop that, but  &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/01/antibiotic-apocalypse-eu-scraps-plans-to-tackle-drug-pollution-despite-fears-of-rising-resistance&#34;&gt;gave up&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF9698000M8B5HKNHSHDZJGZ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400K5VV552HRDP06ASX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF96980006T7JZZF9PM9WXZX.html</id>
-<published>2018-06-06T00:00:00.000Z</published>
-<updated>2018-06-06T00:00:00.000Z</updated>
-<title>The baby went to Texas</title>
+<id>http://localhost:8000/post/01CFKFW400JV97C3F1AV1V6S3F.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>The dishonesty of thugs</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The baby went to Texas to talk with parents of recently murdered students. One said it was &lt;a href=&#34;https://www.commondreams.org/news/2018/06/01/talking-toddler-mother-school-shooting-victim-reveals-how-it-felt-discuss-gun-policy&#34;&gt;&amp;quot;like talking to a toddler&amp;quot;&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Lush  &lt;a href=&#34;https://www.theguardian.com/media/2018/jun/01/cosmetics-retailer-lush-criticised-by-police-over-spycops-ad-campaign&#34;&gt;publicized the dishonesty of thugs&lt;/a&gt;, and faces criticism from thugs who say it is wrong to remind people of their dishonesty. &lt;/p&gt;&lt;p&gt; One of the women that the undercover &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; seduced says she &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/03/sajid-javid-lush-spycops-campaign-victims&#34;&gt;appreciates the support&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF96980006T7JZZF9PM9WXZX.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400JV97C3F1AV1V6S3F.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00ZJ81FTZV2ZBVT9D5.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Copyright damages science</title>
+<id>http://localhost:8000/post/01CFKFW400HY4ZTVV2JZKTP4F3.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Apple blocks Telegram upgrades</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The US suspended copyright on German science books during World War II.  This provides an opportunity to measure  &lt;a href=&#34;https://voxeu.org/article/effects-copyrights-science&#34;&gt;how much copyright damages science&lt;/a&gt;.  It turned out to be substantial.   &lt;/p&gt;</content>
+&lt;p&gt; Apple has  &lt;a href=&#34;https://www.theverge.com/2018/5/31/17412396/telegram-apple-app-store-app-updates-russia&#34;&gt;blocked Telegram from upgrading its app for a month&lt;/a&gt;.  This evidently has to do with Russia&#39;s command to Apple to block Telegram in Russia. &lt;/p&gt;&lt;p&gt; The Telegram client is free software on other platforms, but no apps are free on an iThing.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00ZJ81FTZV2ZBVT9D5.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400HY4ZTVV2JZKTP4F3.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00YGD6X4T1879RJW0H.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Protests in Nicaragua</title>
+<id>http://localhost:8000/post/01CFKFW400H3FMPNCWA8AB43EK.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>School vouchers</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Nicaragua&amp;#39;s suppression forces &lt;a href=&#34;https://www.theguardian.com/world/2018/may/31/nicaragua-peace-talks-daniel-ortega-abandoned-mothers-day-protest&#34;&gt;killed 11 more protesters&lt;/a&gt; in a massive demonstration led by mothers of protesters previously killed.   &lt;/p&gt;</content>
+&lt;p&gt; Public-funded school vouchers are &lt;a href=&#34;http://www.orlandosentinel.com/features/education/school-zone/os-voucher-school-curriculum-20180503-story.html&#34;&gt;supporting religiously biased &amp;quot;schools&amp;quot;&lt;/a&gt; that inculcate religion and bogus science.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00YGD6X4T1879RJW0H.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400H3FMPNCWA8AB43EK.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00Y05578H6TFRW3A4J.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Children</title>
+<id>http://localhost:8000/post/01CFKFW400GSHDTNPFG6C1DT1R.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Escape from spell of jihadi cult</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Debunking  &lt;a href=&#34;https://www.theguardian.com/lifeandstyle/2018/may/31/truth-about-only-children-insular-confident-worry&#34;&gt;myths&lt;/a&gt; that pressure people that have one child to make another child.   &lt;/p&gt;</content>
+&lt;p&gt; Only in prison did Mohammed Khalid find friends and therapists to help him  &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/03/mohammed-khalid-america-youngest-terrorist-interview&#34;&gt;escape the spell of the jihadi cult he had fallen into&lt;/a&gt;.  Before that, the jihadis were his only friends. &lt;/p&gt;&lt;p&gt; Why did FBI agents slam an unarmed person against a wall? There was no need for that.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00Y05578H6TFRW3A4J.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400GSHDTNPFG6C1DT1R.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00XN607116RCAS9SQ4.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Abortion rights in Ireland</title>
+<id>http://localhost:8000/post/01CFKFW400GAA6VGAKKDJYC6WA.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Effects of Javascript code</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Protesters in Northern Ireland &lt;a href=&#34;https://www.theguardian.com/world/2018/may/31/pro-choice-activists-take-abortion-pills-belfast-protest&#34;&gt;demand abortion rights&lt;/a&gt; such as women in the Irish Republic will soon have.   &lt;/p&gt;</content>
+&lt;p&gt; Misguided values of the day: a writer thinks that the effect of &lt;a href=&#34;https://daringfireball.net/linked/2018/05/27/usa-today-gdpr&#34;&gt;Javascript code&lt;/a&gt; of slowing down a web page from 3 seconds to 45 seconds is worse than spying on users and taking control of their computers.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00XN607116RCAS9SQ4.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400GAA6VGAKKDJYC6WA.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00X9XK7SER25M3ZXHA.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Climate of &#34;fear and anxiety&#34; at NASA</title>
+<id>http://localhost:8000/post/01CFKFW400FDXN86GNJ6G61HWK.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Marjory Stoneman Douglas survivor</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; NASA has a climate of &amp;quot;fear and anxiety&amp;quot; resulting from  &lt;a href=&#34;https://www.theguardian.com/science/2018/may/30/nasa-climate-change-sensitive-subject-since-trump-former-employee&#34;&gt;censorship about global heating&lt;/a&gt; which came straight from the cheater. &lt;/p&gt;&lt;p&gt; This, I expect, is exactly what &lt;a href=&#34;https://stallman.org/glossary.html#cheater&#34;&gt;the cheater&lt;/a&gt; wants.   &lt;/p&gt;</content>
+&lt;p&gt; David Hogg escaped being killed in Marjory Stoneman Douglas high school, so a right-wing terrorist &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/05/florida-school-shooting-survivor-david-hogg-swatting-prank&#34;&gt;tried to get a SWAT team to kill him&lt;/a&gt;. Fortunately for him, nobody was home at the time.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00X9XK7SER25M3ZXHA.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400FDXN86GNJ6G61HWK.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00X73GH8HWC5H8AYZW.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Possibility of peace</title>
+<id>http://localhost:8000/post/01CFKFW400F7CHXSFY65803MV0.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Urgent: Farm bill</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Uri Avnery: Israel converted Gaza into an enemy, but that enemy now offers a 40-year truce that it will certainly not break.  &lt;a href=&#34;http://zope.gush-shalom.org/home/en/channels/avnery/1527857702/&#34;&gt;Will Israel dare tolerate&lt;/a&gt; the possibility of peace?   &lt;/p&gt;</content>
+&lt;p&gt; US citizens: &lt;a href=&#34;https://secure.foodandwateraction.org/act/tell-the-senate-we-need-farm-bill-works&#34;&gt;call on the Senate&lt;/a&gt; to about the wrongs of the House farm bill.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00X73GH8HWC5H8AYZW.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400F7CHXSFY65803MV0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00WYCX4H8K3S0MJXQG.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Military drones</title>
+<id>http://localhost:8000/post/01CFKFW400F1TKC7738PK4X4D2.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Schools buying face recognition systems</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Leaked Emails Show Google  &lt;a href=&#34;https://theintercept.com/2018/05/31/google-leaked-emails-drone-ai-pentagon-lucrative/&#34;&gt;Expected Lucrative Military Drone AI Work to Grow Exponentially&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; As far as I&amp;#39;m concerned, what&amp;#39;s important here is not which company does the work, but the danger to society of drone bombing with or without AI.   &lt;/p&gt;</content>
+&lt;p&gt; Some US schools are  &lt;a href=&#34;https://theintercept.com/2018/05/30/face-recognition-schools-school-shootings/&#34;&gt;buying tremendously expensive face recognition surveillance systems&lt;/a&gt;, supposedly for security against shootings.  These systems are useless for such security, but will subject all the students to tyranny.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WYCX4H8K3S0MJXQG.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400F1TKC7738PK4X4D2.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00WHA107DTJEPVQAE2.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Shot by border thugs</title>
+<id>http://localhost:8000/post/01CFKFW400EVPVC4HFFJJJ32PN.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Officials appointed by the hater</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US border &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; shot refugee Claudia Patricia Gómez González dead, then told various stories to create an excuse.  They said that the refugees were &amp;quot;rushing&amp;quot; them. &lt;/p&gt;&lt;p&gt; The other witnesses &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/31/guatemala-migrant-shot-us-immigration-border-patrol&#34;&gt;have been jailed&lt;/a&gt; and can&amp;#39;t be found. &lt;/p&gt;&lt;p&gt; It turns out that border thugs have a &lt;a href=&#34;https://theintercept.com/2018/06/01/border-patrol-agent-assault-statistics-fbi/&#34;&gt;made a practice of grossly exaggerating&lt;/a&gt; the frequency of &amp;quot;assaults&amp;quot; against them.   &lt;/p&gt;</content>
+&lt;p&gt; The hater has appointed many officials that were  &lt;a href=&#34;https://www.dailykos.com/stories/2018/5/31/1768455/-Trump-has-been-steadily-stacking-top-posts-with-hate-group-leaders-and-anti-immigrant-activists&#34;&gt;known for stirring up hatred against immigrants&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WHA107DTJEPVQAE2.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400EVPVC4HFFJJJ32PN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00WH4ZA829SSX82MES.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Rewilding project in Patagonia</title>
+<id>http://localhost:8000/post/01CFKFW400EM7KQVTK74V32TG4.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>War on Pain Sufferers</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A private project has rewilded 17000 square miles in Patagonia, &lt;a href=&#34;https://www.theguardian.com/environment/2018/may/30/can-the-worlds-largest-rewilding-project-restore-patagonias-beauty&#34;&gt;reintroducing the species that used to live there&lt;/a&gt; before humans and farming kicked them out.   &lt;/p&gt;</content>
+&lt;p&gt; The US government is  &lt;a href=&#34;https://reason.com/reasontv/2018/06/01/how-the-government-made-the-opioid-crisi&#34;&gt;shutting down the few remaining clinics&lt;/a&gt; where people in great pain can get enough opiates to treat it.  The doctor warns that some will commit suicide. &lt;/p&gt;&lt;p&gt; I hope they do it in congresscritter&#39;s offices so that it might help end the War on Pain Sufferers.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WH4ZA829SSX82MES.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400EM7KQVTK74V32TG4.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00VZV8FSA7FJC8XX6W.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Pushing poor people into crime</title>
+<id>http://localhost:8000/post/01CFKFW400E78RGA0V3CVHGPDK.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Cost of cheater&#39;s golf trips</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Denying welfare benefits, including food stamps, to poor people who were convicted of drug crimes  &lt;a href=&#34;https://theintercept.com/2018/06/01/food-stamps-drug-conviction-snap-welfare/&#34;&gt;makes them more likely to return to crime&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; To try to discourage crime with punishment presupposes that everyone can get by ok without crime.  In the US today, that is false for a &lt;a href=&#34;https://stallman.org/archives/2018-mar-jun.html#29_May_2018_(Poverty_in_the_US)&#34;&gt;large fraction&lt;/a&gt; of &lt;a href=&#34;https://stallman.org/archives/2017-sep-dec.html#5_October_2017_(Health_care,_food,_and_shelter)&#34;&gt;people&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/1/1768646/-Mueller-investigation-cost-16-7M-over-the-first-year&#34;&gt;Mueller&#39;s investigation cost only 1/4 as much&lt;/a&gt; as the cheater&#39;s golf trips.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00VZV8FSA7FJC8XX6W.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400E78RGA0V3CVHGPDK.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00VRKCA3SG1EHR7HKA.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Facebook age-discriminating job ads</title>
+<id>http://localhost:8000/post/01CFKFW400CXF06V4PR17AK0DR.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>The military and global heating</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Workers are suing Facebook for its  &lt;a href=&#34;https://www.vox.com/policy-and-politics/2018/5/31/17408884/facebook-amazon-job-ads-age-discrimination-lawsuit&#34;&gt;age-discriminating job ads&lt;/a&gt;, as well as the companies that buy the targeted ads.   &lt;/p&gt;</content>
+&lt;p&gt; The military is  &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/04/dont-turn-to-the-military-to-solve-the-climate-change-crisis&#34;&gt;not a very good tool for dealing with the problem&lt;/a&gt; of global heating. &lt;/p&gt;&lt;p&gt; They say an ounce of prevention is worth a pound of cure, but the military is proposed only as treatment of the symptoms.  What could the military do to prevent &lt;a href=&#34;https://stallman.org/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt;?  Bomb fossil fuel facilities to render them unusable, I suppose.  But how about trying peaceful approaches first?   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00VRKCA3SG1EHR7HKA.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400CXF06V4PR17AK0DR.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00V7A74XJDPH8YWWC5.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>4 cents awarded in damages</title>
+<id>http://localhost:8000/post/01CFKFW400CPFHM7MGPFADT999.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Selling favorable news coverage</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Florida &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; killed a black man over nothing but their own imagination and panic.  Relatives sued, and a jury &lt;a href=&#34;https://www.commondreams.org/further/2018/05/31/whats-black-life-worth-trumps-america-four-bucks-evidently-oops-scratch-four&#34;&gt;awarded them 4 cents in damages&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; A former Tory official is now a corrupt newspaper editor, and has sold Google and Uber a &lt;a href=&#34;https://www.opendemocracy.net/uk/james-cusick/george-osborne-s-london-evening-standard-promises-positive-news-coverage-to-uber-goo&#34;&gt;promise of favorable news coverage&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00V7A74XJDPH8YWWC5.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400CPFHM7MGPFADT999.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00V0K60QGNEWMH54XP.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Suing journalists in UK</title>
+<id>http://localhost:8000/post/01CFKFW400CF5T2TS41C20KED0.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Panel for student safety</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Rich people and politicians from many countries choose the UK as &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/murdered-maltese-reporter-faced-threat-of-libel-action-in-uk&#34;&gt;the place to sue critical journalists&lt;/a&gt; so as to silence them.   &lt;/p&gt;</content>
+&lt;p&gt; DeVos set up a panel to study safety of students in school.  It &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/05/betsy-devos-guns-school-shootings-safety-panel-not-include&#34;&gt;won&#39;t cover the possibility of being shot&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Will it cover the danger of being &lt;a href=&#34;https://stallman.org/archives/2016-jul-oct.html#15_August_2016_(Thugs_in_schools)&#34;&gt;jailed by a &amp;quot;school resource&amp;quot; thug&lt;/a&gt;?   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00V0K60QGNEWMH54XP.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400CF5T2TS41C20KED0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CF6KWH00TZEZZFSCVDB3BBDB.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Amazon warehouse staff</title>
+<id>http://localhost:8000/post/01CFKFW400BH6FC2ZTRSJWH2BA.html</id>
+<published>2018-06-10T00:00:00.000Z</published>
+<updated>2018-06-10T00:00:00.000Z</updated>
+<title>Cell phone location tracking data</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Amazon works its warehouse staff to the point of  &lt;a href=&#34;https://www.theguardian.com/business/2018/may/31/amazon-accused-of-treating-uk-warehouse-staff-like-robots&#34;&gt;sickness and even death&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; &amp;quot;Anonymizing&amp;quot; people&#39;s cell phone location tracking data still allows &lt;a href=&#34;https://boingboing.net/2018/06/01/location-privacy-is-hard.html&#34;&gt;determining a lot about them from locations&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00TZEZZFSCVDB3BBDB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400BH6FC2ZTRSJWH2BA.html"/>
 </entry>
 </feed>

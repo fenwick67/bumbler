@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-06-10T19:44:35-05:00</updated>
+<updated>2018-07-08T13:34:26-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/15.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/22.xml"/><entry>
-<id>http://localhost:8000/post/01C72HQY004S3HGG1S4MSB30VK.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>War on workers</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CF6KWH00CCMGWYRKNFS0Z13P.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Disability and assisted suicide</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Trump Administrationâs &lt;a href=&#34;https://www.commondreams.org/views/2018/02/19/trump-administrations-war-workers&#34;&gt;War on Workers&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Disabled people in the UK &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/01/disabled-people-assisted-dying-safeguards-pressure&#34;&gt;fear the legalization&lt;/a&gt; of assisted suicide. They expect to be pressured into suicide by a state that saves money by leaving them totally helpless. &lt;/p&gt;&lt;p&gt; There is no fundamental conflict between providing the disabled with what they need for a decent life, if that is possible, and giving people a way out of a life which is inevitably hell.  To do both, we need to put an end to plutocracy.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY004S3HGG1S4MSB30VK.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00CCMGWYRKNFS0Z13P.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C72HQY0045NPWDS6NMBHXAS1.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>Marjory Stoneman Douglas</title>
+<id>http://localhost:8000/post/01CF6KWH00C9B0294F583R8EM7.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Sun cream labeling</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The school shooting in Florida was in a high school named after journalist &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/who-was-marjory-stoneman-douglas&#34;&gt;Marjory Stoneman Douglas&lt;/a&gt; because of her campaigns for women&amp;#39;s rights, racial equality and preserving the Everglades.   &lt;/p&gt;</content>
+&lt;p&gt; The system for labeling sun cream is  &lt;a href=&#34;https://www.theguardian.com/society/2018/jun/01/britons-risking-skin-damage-and-cancer-due-to-suncare-ignorance&#34;&gt;confusing&lt;/a&gt;, so most people misunderstand it. &lt;/p&gt;&lt;p&gt; Correcting this should not be left to the good will of companies.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY0045NPWDS6NMBHXAS1.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00C9B0294F583R8EM7.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C72HQY003ZHRYAEGP4AYG94G.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>Arctic sea ice</title>
+<id>http://localhost:8000/post/01CF6KWH00C8RH2MYJFZETPNWN.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Obstruction of justice by violent thug</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Arctic sea ice has &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/2018-starts-record-lows-arctic-sea-ice-extent&#34;&gt;reached a record low&lt;/a&gt;, less than ever in the past 12,000 years or more.   &lt;/p&gt;</content>
+&lt;p&gt; A New Jersey &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt;  &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/01/police-officer-woman-beach-punched-new-jersey-emily-weinman&#34;&gt;punched a teenager in the head, then slammed her to the ground&lt;/a&gt;, after determining that she was not drunk. &lt;/p&gt;&lt;p&gt; For a &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; to switch off a bodycam while attacking a person ought to be considered obstruction of justice.  The &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; should go to prison for that alone, and serve additional time for the violence itself. &lt;/p&gt;&lt;p&gt; As for Ms Weinman, even if she spit intentionally at the &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; who had already brutalized her, that should be considered self-defense.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY003ZHRYAEGP4AYG94G.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00C8RH2MYJFZETPNWN.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C72HQY0037KE00FJH5M12MRZ.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>Wage theft</title>
+<id>http://localhost:8000/post/01CF6KWH00BME5BYJ356CZ3MGB.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Successful blacks</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &amp;quot;Wage theft is the rule, not the exception, for low-wage workers.&amp;quot; In the US, it adds up to &lt;a href=&#34;https://www.commondreams.org/news/2018/02/19/shady-bosses-stealing-15-billion-wages-low-income-workers-report&#34;&gt;15 billion dollars per year&lt;/a&gt;, stolen from the people who can least afford to lose it.   &lt;/p&gt;</content>
+&lt;p&gt; Successful blacks find that lots of people  &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/30/raheem-sterling-media-young-black-men-footballer-tattoo&#34;&gt;look for minor excuses to criticize them&lt;/a&gt;. Clearly, the real motive for these criticisms has to be racism.  They demand that the successful black be twice as clean as a white needs to be. &lt;/p&gt;&lt;p&gt; I&#39;ve encountered a little of this.  There are people who criticize me for insignificant things, making mountains out of molehills.  Clearly their motive for doing this is something other than what they criticize.  I suspect that they don&#39;t like the free software movement — but, lacking rational arguments against it, they hope do use irrational associations to harm it.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY0037KE00FJH5M12MRZ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00BME5BYJ356CZ3MGB.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C72HQY002YA7QYN370TJEX8S.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>Urgent: Budget bill amendments</title>
+<id>http://localhost:8000/post/01CF6KWH00B6FG99RHWT59VS00.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Google&#39;s lobbying group</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;http://salsa4.salsalabs.com/o/51152/p/salsa/web/common/public/signup?signup_page_KEY=11168&#34;&gt;phone your congresscritter&lt;/a&gt; to oppose budget bill amendments that would allow rich people to put even more money into political campaigns.   &lt;/p&gt;</content>
+&lt;p&gt; Google operates a lobbying group that  &lt;a href=&#34;https://theintercept.com/2018/05/30/google-engine-advocacy-tech-startups/&#34;&gt;pretends to represent new startups&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY002YA7QYN370TJEX8S.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00B6FG99RHWT59VS00.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700YX3AQMN03R9M3TGB.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Syrian Kurds in Afrin</title>
+<id>http://localhost:8000/post/01CF6KWH00AZ6G5KT7AFQYRCJZ.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Copyright censorship system</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Syrian Kurds in Afrin have asked Assad to &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/turkey-warns-assad-not-intervene-kurdish-enclave-afrin&#34;&gt;defend them from Turkey&lt;/a&gt;. ErdoÄan warned Assad that Turkey would attack Assad.  And Assad&amp;#39;s Russian backers, too? &lt;/p&gt;&lt;p&gt; It is very strange for a breakaway part of Syria to ally in effect with Syria (and thus maybe Russia).  Even stranger to ally with Syria and the US at the same time.  I don&amp;#39;t know what to make of this.   &lt;/p&gt;</content>
+&lt;p&gt; Presenting hypothetical future products that would be prohibited by the copyright censorship system that the EU is  &lt;a href=&#34;https://boingboing.net/2018/05/28/futurecrime.html&#34;&gt;planning to impose&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700YX3AQMN03R9M3TGB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00AZ6G5KT7AFQYRCJZ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700XTBFCWSE1Z89QCW1.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Temperature study</title>
+<id>http://localhost:8000/post/01CF6KWH00A64GW8G7210KCHDX.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Cameroon developing civil war</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A study measured temperatures for the past 11,000 years, since the end of the last ice age.  It has &lt;a href=&#34;https://www.theguardian.com/environment/climate-consensus-97-per-cent/2018/feb/19/pollen-data-shows-humans-reversed-natural-global-cooling&#34;&gt;never been as hot&lt;/a&gt; as it is now.   &lt;/p&gt;</content>
+&lt;p&gt; Cameroon is  &lt;a href=&#34;https://www.theguardian.com/global-development/2018/may/30/cameroon-killings-escalate-anglophone-crisis&#34;&gt;developing a civil war&lt;/a&gt; between those whose second language is French and those whose second language is English. &lt;/p&gt;&lt;p&gt; As usual, they are not fighting about anything significant, it is mere factionalism.  In that country, the factions have coalesced around one&#39;s second language.  It could just as well have been which end of the egg to open.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700XTBFCWSE1Z89QCW1.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00A64GW8G7210KCHDX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700VY7GTAJ4QDD1WM9A.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Animals and the wall</title>
+<id>http://localhost:8000/post/01CF6KWH009F27VSME83DCQWD1.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Economy minister of Italy</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; If the bully&amp;#39;s wall is built, it would &lt;a href=&#34;https://www.commondreams.org/views/2018/02/18/rewriting-biological-history-trump-border-wall-puts-wildlife-risk&#34;&gt;put bison and jaguars in danger&lt;/a&gt; in Mexico and the US. &lt;/p&gt;&lt;p&gt; 180 already-endangered species would be harmed. &lt;/p&gt;&lt;p&gt; Is it possible to make openings that these animals could get through, and watch them closely enough that humans could not get through? Is it possible to make small holes for smaller animals to get through? &lt;/p&gt;&lt;p&gt; If this could be done, the wall would be a foolish expenditure but not a cause of extinction.   &lt;/p&gt;</content>
+&lt;p&gt; Italy&#39;s two governing parties have agreed to &lt;a href=&#34;https://www.theguardian.com/world/2018/may/31/italys-populist-leaders-strike-deal-resurrect-coalition&#34;&gt;replace the proposed economy minister&lt;/a&gt; that was vetoed because he was willing simply to think about separating Italy from the euro. &lt;/p&gt;&lt;p&gt; I think that reforming the euro-zone rules would be better than pulling Italy and Greece out of the euro zone.  However, as long as governments are unwilling to threaten to leave, the &lt;a href=&#34;https://stallman.org/glossary.html#bankster&#34;&gt;banksters&lt;/a&gt; won&#39;t even consider reforming the rules.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700VY7GTAJ4QDD1WM9A.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH009F27VSME83DCQWD1.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700TAVC315RMGPPWZY6.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>New privatized prison</title>
+<id>http://localhost:8000/post/01CF6KWH0098DEEV0AJSRH7PY3.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Protection of nature</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Texas has a new privatized prison, which pretends to be a &amp;quot;treatment program&amp;quot; for ex-cons, except that &lt;a href=&#34;http://www.texasobserver.org/a-prison-by-any-other-name/&#34;&gt;there is no treatment&lt;/a&gt; and prisoners are never released except to die.   &lt;/p&gt;</content>
+&lt;p&gt; New Zealand aims to eliminate some introduced predators — rats, possums, and stoats — to  &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/01/save-kiwi-new-zealand-protect-bird-species&#34;&gt;protect kiwis and other native birds&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; We exaggerate the extent to which native peoples actively protected nature.  Humans have a tendency to hunt animals to extinction, until they learn better.  It was the Maori that wiped out the moas, and presumably the aboriginals of Australia that wiped out the giant bird Dromornis, and presumably the Malagasy that wiped out the elephant birds. &lt;/p&gt;&lt;p&gt; Fortunately, humans can also learn to protect nature.  In the 1700s, European traders organized a system of territories to limit hunting of beavers in Canada, so that the natives wouldn&#39;t hunt them to extinction and bring the profitable beaver fur trade to a halt.  This was good for all the humans involved, as well as for the beavers as a species. &lt;/p&gt;&lt;p&gt; The question is whether today&#39;s civilization can learn to protect nature and work hard enough to succeed in doing it. &lt;/p&gt;&lt;p&gt; 2050 might be fine as a target for eliminating those predators from New Zealand, if civilization continues so that New Zealand remains able to carry out the plan.  But that slow time scale offers plenty of time for something to happen that would bring the effort to a halt. &lt;/p&gt;&lt;p&gt; Meanwhile, what about the cats?  Domestic and feral cats kill tremendous numbers of birds, all around the world, including endangered birds. &lt;/p&gt;&lt;p&gt; The world is full of eco-menaces that humans actively keep in check. These include invasive species, pollution in the ground, and nuclear waste.  If technological civilization falls, there will still be humans (I expect), but they won&#39;t have the means to stop these menaces from spreading.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700TAVC315RMGPPWZY6.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0098DEEV0AJSRH7PY3.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700SP41VSRABCTNZSZB.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Registered intermediaries</title>
+<id>http://localhost:8000/post/01CF6KWH008PR8ZYG0NB35450T.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Charter schools</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/society/2018/feb/17/child-witnesses-one-girl-evidence-hamster&#34;&gt;&amp;quot;Registered intermediaries&amp;quot;&lt;/a&gt; help young children testify about sexual abuse. &lt;/p&gt;&lt;p&gt; In the US, &amp;quot;recovered memory&amp;quot; therapists used to convince vulnerable people that they &amp;quot;remembered&amp;quot; being sexually abused while children — but the abuse had not really happened.  Some people were imprisoned for years then exonerated. &lt;/p&gt;&lt;p&gt; It might be the case that these &amp;quot;intermediaries&amp;quot; are doing the same thing, some of the time.  Or maybe they take care to avoid it.  The article does not address the issue.   &lt;/p&gt;</content>
+&lt;p&gt; A plan for increasing charter schools in North Carolina is  &lt;a href=&#34;https://www.commondreams.org/views/2018/05/31/new-charter-school-plan-should-alarm-nation&#34;&gt;designed so that they will be segregated&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700SP41VSRABCTNZSZB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH008PR8ZYG0NB35450T.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700PA21BB14MGH83DEP.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Hostility towards Oxfam</title>
+<id>http://localhost:8000/post/01CF6KWH008MSPN50JEPJ5MNR6.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>US deportation thugs</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Oxfam faces an inexplicable climate of hostility, in which everything it says is taken as a &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/16/oxfam-boss-mark-goldring-anything-we-say-is-being-manipulated-weve-been-savaged&#34;&gt;sign of wrongdoing&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; You can see this bias when people label this uproar with the terms &amp;quot;sex exploitation&amp;quot; and &amp;quot;sexual abuse&amp;quot;.  At that point enters the premise that doing business with a sex worker is a wrong that deserves condemnation. Then the attack typically condemns the organization because someone on its staff did this &amp;quot;wrong&amp;quot;. &lt;/p&gt;&lt;p&gt; If an Oxfam staffer hires a country music band, a genre which I dislike rather strongly, should I say Oxfam has a music exploitation scandal?   &lt;/p&gt;</content>
+&lt;p&gt; US deportation &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; seem to have  &lt;a href=&#34;https://www.commondreams.org/news/2018/05/30/denied-care-and-held-ice-box-cell-asylum-seekers-death-ice-custody-exposes-systemic&#34;&gt;killed asylum seeker Roxsana Hernandez&lt;/a&gt; by exposing her to cold for two weeks, combined with hunger and sleep deprivation. &lt;/p&gt;&lt;p&gt; None of those is legitimate treatment of prisoners &amp;amp;mdash not even prisoners that have been convicted of crimes. &lt;/p&gt;&lt;p&gt; Apparently the &lt;a href=&#34;https://stallman.org/glossary.html#bully&#34;&gt;bully&lt;/a&gt; has unleashed the thugs&#39; brutality, so that they eagerly new ways to make their prisoners suffer.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700PA21BB14MGH83DEP.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH008MSPN50JEPJ5MNR6.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700P1D5T7VQ3PHHW8ZS.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Undercover thug resigned</title>
+<id>http://localhost:8000/post/01CF6KWH007A389KAR2S0ST211.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Hamas proposes cease fire</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; An undercover &lt;a href=&#34;/glossary.html#thug&#34;&gt;thug&lt;/a&gt;, sent to infiltrate dissidents that opposed fox hunting by pretending to love one of them, &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/18/police-spy-christine-greening-long-term-relationship-activist-tom-frampton-after-quitting-covert-role&#34;&gt;fell in love for real&lt;/a&gt; and resigned.   &lt;/p&gt;</content>
+&lt;p&gt; Hamas has  &lt;a href=&#34;https://www.theguardian.com/world/2018/may/30/hamas-groups-agree-gaza-ceasefire-if-israel-reciprocates&#34;&gt;proposed a cease fire&lt;/a&gt; with Israel.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700P1D5T7VQ3PHHW8ZS.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH007A389KAR2S0ST211.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700N5NFXMJB1PY5B1DS.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>&#39;State of emergency&#39; in Ethiopia</title>
+<id>http://localhost:8000/post/01CF6KWH006T5JJ6G860KR0VMF.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Australia&#39;s investment in fossil fuels</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/16/state-of-emergency-declared-in-ethiopia-amid-political-unrest&#34;&gt;What is happening in Ethiopia?&lt;/a&gt; &lt;/p&gt;&lt;p&gt; This &amp;quot;state of emergency&amp;quot; shows something big is happening.  What is it?   &lt;/p&gt;</content>
+&lt;p&gt; Australia&#39;s big four banks stopped investing in coal but  &lt;a href=&#34;https://www.theguardian.com/australia-news/2018/may/31/big-four-banks-quit-coal-only-to-invest-in-other-fossil-fuels-research-finds&#34;&gt;shifted the investment into oil and gas&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700N5NFXMJB1PY5B1DS.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH006T5JJ6G860KR0VMF.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>UK and Qadhafi</title>
+<id>http://localhost:8000/post/01CF6KWH006PHPKN3H3JRYP7PX.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Virginia approves expansion of Medicaid</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/extent-of-uk-cooperation-with-gaddafi-regime-libya-mi6-revealed&#34;&gt;How the UK told Qadhafi&lt;/a&gt; where to find exiled dissidents so he could kidnap them.   &lt;/p&gt;</content>
+&lt;p&gt; Virginia has  &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/imposed-work-requirements-taint-medicaid-expansion-victory-virginia&#34;&gt;approved expansion of Medicaid&lt;/a&gt; — that is, participation in part of Obama&#39;s medical care program. &lt;/p&gt;&lt;p&gt; Republicans fight to the death to prevent expansion of Medicaid — poor people&#39;s death, that is.  Republicans oppose this program on principle because it provides government help to people who they believe aren&#39;t rich enough to deserve it.  But they also oppose it more specifically because it was a victory for Democrats.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH006PHPKN3H3JRYP7PX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Cash propaganda</title>
+<id>http://localhost:8000/post/01CF6KWH0068QR0PT1QBJ7X434.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Urgent: Children taken away</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/krona-public-toilets-cashless-sweden-coin&#34;&gt;Look at the propaganda&lt;/a&gt; designed to dishearten people about the privacy of cash. &lt;/p&gt;&lt;p&gt; It takes a gently derisive tone towards some minor practical inconveniences of tracked digital payments, while suggesting they will soon be solved. The result is to disparage the idea that there is something serious at stake. &lt;/p&gt;&lt;p&gt; If you live in Sweden — or any other country — plan in advance to carry cash, and only pay cash in stores.  If a store won&amp;#39;t take cash, say &amp;quot;I&amp;#39;m going to another store that will.&amp;quot; &lt;/p&gt;&lt;p&gt; You can easily think of bogus objections, if you are willing to exaggerate — so ignore them instead. &lt;/p&gt;&lt;p&gt; If you find yourself without cash one day, don&amp;#39;t give up — just do better the next day. &lt;/p&gt;&lt;p&gt; And don&amp;#39;t use a pay toilet no matter how they want you to pay.  It is vicious and cruel to make people pay to use a toilet.  I have money, and I could afford to pay, but &lt;em&gt;some people can&amp;#39;t&lt;/em&gt;.  I have boycotted pay toilets for 10 years.   &lt;/p&gt;</content>
+&lt;p&gt; US citizens: &lt;a href=&#34;https://actionnetwork.org/petitions/where-are-the-children?nowrapper=true&#34;&gt;tell the government&lt;/a&gt; to stop taking children away from border-crossing parents.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0068QR0PT1QBJ7X434.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700CST5ANFKY5WSPYZA.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Urgent: Fire LA thug</title>
+<id>http://localhost:8000/post/01CF6KWH0061JVPZSGMBHRJVAA.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>FBI&#39;s use of informants</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Everyone: &lt;a href=&#34;http://act.colorofchange.org/sign/Bye_Kevin/&#34;&gt;call on Los Angeles&lt;/a&gt; to fire the thug that shot a gun at a group of teenagers because they were crossing a lawn.   &lt;/p&gt;</content>
+&lt;p&gt; The  &lt;a href=&#34;https://theintercept.com/2018/05/31/spygate-trump-russia-fbi-informants/&#34;&gt;FBI&#39;s Use of Informants&lt;/a&gt; Is Full of Problems, but What Happened in &amp;quot;Spygate&amp;quot; Isn’t One of Them.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700CST5ANFKY5WSPYZA.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0061JVPZSGMBHRJVAA.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700C94T7K9ANMQPM4CY.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Endangered species</title>
+<id>http://localhost:8000/post/01CF6KWH0053SWADWE2D91YBNV.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Political &#34;optics&#34;</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Australia has laws for protection of endangered species, but usually it only &lt;a href=&#34;https://www.theguardian.com/environment/2018/feb/20/fantasy-documents-recovery-plans-failing-australias-endangered-species&#34;&gt;goes through the motions&lt;/a&gt; of trying, or not even that.   &lt;/p&gt;</content>
+&lt;p&gt; Demanding to save face — the insistence that one has never been wrong — makes today&#39;s politics unable to correct any problem. The constant focus on  &lt;a href=&#34;https://www.theguardian.com/us-news/2018/may/30/politicians-admitting-wrong-brexit-trump&#34;&gt;minor details of political &amp;quot;optics&amp;quot;&lt;/a&gt;, rather than on substance, makes it even worse. &lt;/p&gt;&lt;p&gt; I try to focus on substance rather than optics, but I don&#39;t know whether I do this enough.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700C94T7K9ANMQPM4CY.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH0053SWADWE2D91YBNV.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB700C7E0923XC21DHSB0.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>US war crimes in Afghanistan</title>
+<id>http://localhost:8000/post/01CF6KWH002D84B4MJX6FSRP90.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Rohingya</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/16/icc-us-accountable-for-crimes-afghanistan&#34;&gt;Campaigning for&lt;/a&gt; the International Criminal Court to investigate US war crimes in Afghanistan, and target the highest leaders responsible — starting with &lt;a href=&#34;/glossary.html#dubya&#34;&gt;Dubya&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; The UN has made a deal that would eventually  &lt;a href=&#34;https://www.theguardian.com/global/2018/jun/01/myanmar-and-un-announce-deal-for-safe-return-of-rohingya&#34;&gt;enable some of the Rohingya to return to Burma&lt;/a&gt;.  However, if the majority of Rohingya, who don&#39;t have any papers, are excluded, it isn&#39;t much of a deal.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700C7E0923XC21DHSB0.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH002D84B4MJX6FSRP90.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB7007N52S184VF0WCTC3.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Preventing massacres</title>
+<id>http://localhost:8000/post/01CF6KWH001WF3FJW3BDMD4YE0.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Meat and fish multinationals</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The time to talk about preventing more massacres &lt;a href=&#34;https://www.commondreams.org/news/2018/02/18/time-now-marjory-stoneman-douglas-high-students-take-streets-washington&#34;&gt;is March 24&lt;/a&gt;. (And before, and after.)   &lt;/p&gt;</content>
+&lt;p&gt; Meat and Fish Multinationals  &lt;a href=&#34;https://www.theguardian.com/environment/2018/may/30/meat-and-fish-protein-multinationals-jeopardising-paris-climate-goals&#34;&gt;&amp;quot;Jeopardising Paris Climate Goals&amp;quot;&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB7007N52S184VF0WCTC3.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH001WF3FJW3BDMD4YE0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01C6ZZB7005T57YX31MD5JTSS7.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Lies leading to war with Iraq</title>
+<id>http://localhost:8000/post/01CF6KWH001VDP2N61KD6VTBK0.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Election cheating</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The rulers that lied to go to war with Iraq have not faced justice, but &lt;a href=&#34;https://www.commondreams.org/views/2018/02/18/there-no-justice-our-world&#34;&gt;they still deserve it&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; This year&#39;s congressional election will &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/aging-paperless-voting-machines-hotly-contested-districts-stoke-fears-ahead-midterms&#34;&gt;remain vulnerable to cheating&lt;/a&gt; through computerized voting machines.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB7005T57YX31MD5JTSS7.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH001VDP2N61KD6VTBK0.html"/>
 </entry>
 </feed>

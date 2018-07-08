@@ -11,7 +11,7 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     style(type="text/css") .gallery{display:flex;text-align:center;justify-content:space-between;align-content:space-between;flex-wrap:wrap}.gallery>*{flex:1 1 auto; width:100%;}.posts{margin:0 auto;max-width:800px;}body,html{overflow-x:hidden}.post,.post-like{margin:20px;}.hide-scroll,footer{background:#fff}
-    <link type="application/atom+xml" rel="alternate" href="/atom/feed.xml"/>
+    link( type="application/atom+xml", rel="alternate", href=linkTo('feed')) 
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png" />
     meta(name="description" content=site.description)
   body
@@ -28,7 +28,7 @@ html
             span
         .navbar-menu#drawer
           .navbar-start
-            a.navbar-item(href="/atom/feed.xml") Atom Feed
+            a.navbar-item(href=linkTo('feed')) Atom Feed
             a.navbar-item.is-hidden(href='/admin') Admin
           .navbar-end
 
@@ -52,7 +52,7 @@ html
                       .field.is-grouped.is-grouped-multiline
                         for tagInfo in site.tags
                           .control
-                            a(href="/tag/"+tagInfo.name).tags.has-addons
+                            a(href=linkTo('tag',tagInfo.name)).tags.has-addons
                               .tag(class=(page.tag == tagInfo.name)?'is-link':'is-dark')= tagInfo.name
                               .tag= tagInfo.count
             if page.posts
@@ -70,7 +70,7 @@ html
                         p.card-header-title
                           span.tags
                             for tag in post.tags
-                              a(href="/tag/"+tag).tag.is-dark= tag
+                              a(href=linkTo('tag',tag)).tag.is-dark= tag
 
                     .card-content.e-content
                       if post.assets && post.assets.length > 0
