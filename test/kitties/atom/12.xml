@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/11.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CF969800QJ2B2YYFDZWVWCMY.html</id>
+<published>2018-06-06T00:00:00.000Z</published>
+<updated>2018-06-06T00:00:00.000Z</updated>
+<title>Dangerous rose bush</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Onion: &lt;a href=&#34;https://local.theonion.com/botanic-garden-forced-to-euthanize-rose-bush-that-prick-1826486145&#34;&gt;…officials…were forced&lt;/a&gt; to euthanize a rose bush after it pricked a child. &lt;/p&gt;&lt;p&gt; I think armed plants should always be kept in cages ;-).   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF969800QJ2B2YYFDZWVWCMY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01CF969800GTC2H3NSGBSY0STJ.html</id>
+<published>2018-06-06T00:00:00.000Z</published>
+<updated>2018-06-06T00:00:00.000Z</updated>
+<title>Surveillance homes</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Guardian starts to recognize that the &amp;quot;smart&amp;quot; home &lt;a href=&#34;https://www.theguardian.com/technology/2018/jun/01/uk-homes-vulnerable-to-staggering-level-of-corporate-surveillance&#34;&gt;means a surveillance home&lt;/a&gt;.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF969800GTC2H3NSGBSY0STJ.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01CF969800FQF0QSKGTEW77PRP.html</id>
 <published>2018-06-06T00:00:00.000Z</published>
 <updated>2018-06-06T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; Leaked Emails Show Google  &lt;a href=&#34;https://theintercept.com/2018/05/31/google-leaked-emails-drone-ai-pentagon-lucrative/&#34;&gt;Expected Lucrative Military Drone AI Work to Grow Exponentially&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; As far as I&#39;m concerned, what&#39;s important here is not which company does the work, but the danger to society of drone bombing with or without AI.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WYCX4H8K3S0MJXQG.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CF6KWH00WHA107DTJEPVQAE2.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Shot by border thugs</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US border &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; shot refugee Claudia Patricia Gómez González dead, then told various stories to create an excuse.  They said that the refugees were &amp;quot;rushing&amp;quot; them. &lt;/p&gt;&lt;p&gt; The other witnesses &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/31/guatemala-migrant-shot-us-immigration-border-patrol&#34;&gt;have been jailed&lt;/a&gt; and can&#39;t be found. &lt;/p&gt;&lt;p&gt; It turns out that border thugs have a &lt;a href=&#34;https://theintercept.com/2018/06/01/border-patrol-agent-assault-statistics-fbi/&#34;&gt;made a practice of grossly exaggerating&lt;/a&gt; the frequency of &amp;quot;assaults&amp;quot; against them.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WHA107DTJEPVQAE2.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CF6KWH00WH4ZA829SSX82MES.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Rewilding project in Patagonia</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A private project has rewilded 17000 square miles in Patagonia, &lt;a href=&#34;https://www.theguardian.com/environment/2018/may/30/can-the-worlds-largest-rewilding-project-restore-patagonias-beauty&#34;&gt;reintroducing the species that used to live there&lt;/a&gt; before humans and farming kicked them out.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WH4ZA829SSX82MES.html"/>
 </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/13.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CF6KWH00EN01M0D0XSC9RWEE.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>War on Drugs</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Americans are  &lt;a href=&#34;https://reason.com/archives/2018/05/30/an-overdose-is-not-a-murder&#34;&gt;imprisoned for sharing drugs when that leads to an overdose&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; This extends the War on Drugs by adding a form of terrorism to the tactics.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00EN01M0D0XSC9RWEE.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01CF6KWH00E0D2C2FJEZH1HWH9.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Applying for work as an ex-convict</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Education Is One Way Out of Prison.   &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/31/education-prison-work-ex-offenders-university-convictions&#34;&gt;Let&#39;s Make Work Another&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; One of the problems is that you can no longer make a living from the jobs that are not highly competitive.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00E0D2C2FJEZH1HWH9.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01CF6KWH00CCMGWYRKNFS0Z13P.html</id>
 <published>2018-06-05T00:00:00.000Z</published>
 <updated>2018-06-05T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; The UN has made a deal that would eventually  &lt;a href=&#34;https://www.theguardian.com/global/2018/jun/01/myanmar-and-un-announce-deal-for-safe-return-of-rohingya&#34;&gt;enable some of the Rohingya to return to Burma&lt;/a&gt;.  However, if the majority of Rohingya, who don&#39;t have any papers, are excluded, it isn&#39;t much of a deal.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH002D84B4MJX6FSRP90.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CF6KWH001WF3FJW3BDMD4YE0.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Meat and fish multinationals</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Meat and Fish Multinationals  &lt;a href=&#34;https://www.theguardian.com/environment/2018/may/30/meat-and-fish-protein-multinationals-jeopardising-paris-climate-goals&#34;&gt;&amp;quot;Jeopardising Paris Climate Goals&amp;quot;&lt;/a&gt;.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH001WF3FJW3BDMD4YE0.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CF6KWH001VDP2N61KD6VTBK0.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Election cheating</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; This year&#39;s congressional election will &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/aging-paperless-voting-machines-hotly-contested-districts-stoke-fears-ahead-midterms&#34;&gt;remain vulnerable to cheating&lt;/a&gt; through computerized voting machines.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH001VDP2N61KD6VTBK0.html"/>
 </entry>
 </feed>

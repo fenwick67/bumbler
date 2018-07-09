@@ -41,6 +41,7 @@ var Asset = function () {
     }
     this.href = href;
     this.type = type || getTypeForExtension(getExtension(href));
+    this.featured = false;
   }
 
   _createClass(Asset, [{
@@ -355,16 +356,17 @@ module.exports = function (el, options) {
   var canDelete = options.canDelete || !!options.id || false;
   var post = {
     tags: '',
-    assets: []
+    assets: [],
+    caption: ''
   };
   var files = [];
 
-  var tpl = '\n  <div class="editor">\n    <div>\n      <div class="field">\n        <label class="label">Title\n          <p class="control">\n            <input v-model="post.title" class="input" placeholder="(optional)" name="title" type="text">\n          </p>\n        </label>\n      </div>\n      <div class="field">\n        <label class="label">Tags\n        <p class="control">\n          <input v-model="post.tags" class="input" placeholder="(comma seperated, optional)" name="tags" type="text">\n        </p>\n        </label>\n      </div>\n      <div class="tags">\n        <span class="tag is-link" v-for=" tag in tagsList ">\n          {{ tag }}\n        </span>\n      </div>\n      <div class="field">\n        <div>\n          <label class="label">Assets</label>\n          <div class="file has-name is-boxed">\n            <label class="file-label">\n              <input multiple="multiple" class="file-input" type="file" style="display:none" @change="fileInputChanged">\n              <span class="file-cta">\n                <span class="file-icon">\uD83D\uDCC1\uFE0E\uD83E\uDC81</span>\n                <span class="file-label">\n                  Upload assets\u2026\n                </span>\n              </span>\n            </label>\n          </div>\n          <div class="gallery">\n            <div v-for="asset in post.assets" class="level">\n              <img v-if="asset.type==\'image\'" :src="asset._preview||asset.href" class="thumb"></img>\n              <span v-else>{{ asset.type }}</span>\n              <i> {{ asset.href }} </i>\n              <a v-if="asset._uploaded === false" class="button is-success" @click="uploadAsset(asset)">\uD83E\uDC81 Upload now</a>\n              <a class="button is-danger" @click="removeAsset(asset,$event)">\u274C&#xFE0E; Remove</a>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class="field">\n        <label class="label">Caption/Content</label>\n        <textarea v-model="post.caption" class="textarea" name="caption"></textarea>\n      </div>\n      <div class="field is-grouped">\n        <p class="control">\n          <button @click="save" class="button is-link">\uD83D\uDCBE\uFE0E Submit Post</button>\n          <button @click="deletePost" v-if="canDelete" class="button is-danger">\u274C&#xFE0E; Delete</button>\n        </p>\n      </div>\n    </div>\n  </div>';
+  var tpl = '\n  <div class="editor">\n    <div>\n      <div class="field">\n        <label class="label">Title\n          <p class="control">\n            <input v-model="post.title" class="input" placeholder="(optional)" name="title" type="text">\n          </p>\n        </label>\n      </div>\n      <div class="field">\n        <label class="label">Tags\n        <p class="control">\n          <input v-model="post.tags" class="input" placeholder="(comma seperated, optional)" name="tags" type="text">\n        </p>\n        </label>\n      </div>\n      <div class="tags">\n        <span class="tag is-link" v-for=" tag in tagsList ">\n          {{ tag }}\n        </span>\n      </div>\n      <div class="field">\n        <div>\n          <label class="label">Assets</label>\n          <div class="file has-name is-boxed">\n            <label class="file-label">\n              <input multiple="multiple" class="file-input" type="file" style="display:none" @change="fileInputChanged">\n              <span class="file-cta">\n                <span class="file-icon">\uD83D\uDCC1\uFE0E\uD83E\uDC81</span>\n                <span class="file-label">\n                  Upload assets\u2026\n                </span>\n              </span>\n            </label>\n          </div>\n          <div class="gallery">\n            <div v-for="asset in post.assets" class="level">\n              <img v-if="asset.type==\'image\'" :src="asset._preview||asset.href" class="thumb"></img>\n              <span v-else>{{ asset.type }}</span>\n              <i> {{ asset.href }} </i>\n              <a v-if="asset._uploaded === false" class="button is-success" @click="uploadAsset(asset)" v-bind:class="{ \'is-loading\' : asset._uploading }">\uD83E\uDC81 Upload now</a>\n              <a class="button is-danger" @click="removeAsset(asset,$event)">\u274C&#xFE0E; Remove</a>\n              <a class="button" @click="featureAsset(asset,$event)" :class="{\'is-warning\':asset.featured}">\n                <span v-if="asset.featured">\u2605&#xFE0E; Featured</span>\n                <span v-if="!asset.featured">Not Featured</span>\n              </a>\n              <a class="button" @click="addToContent(asset,$event)">Add to Content</a>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class="field">\n        <label class="label">Caption/Content</label>\n        <textarea\n          v-model="post.caption"\n          class="textarea"\n          ref="textarea"\n          name="caption"\n          @change="updateCursorPosition"\n          @click="updateCursorPosition"\n          @keyup="updateCursorPosition">\n        </textarea>\n      </div>\n      <div class="field is-grouped">\n        <p class="control">\n          <button @click="save" class="button is-link">\uD83D\uDCBE\uFE0E Submit Post</button>\n          <button @click="deletePost" v-if="canDelete" class="button is-danger">\u274C&#xFE0E; Delete</button>\n        </p>\n      </div>\n    </div>\n  </div>';
 
   var view = new _vue2.default({
     el: el,
     template: tpl,
-    data: { options: options, post: post, canDelete: canDelete, files: files },
+    data: { options: options, post: post, canDelete: canDelete, files: files, cursorPosition: 0 },
     computed: {
       tagsList: function tagsList() {
         var tags = this.post && typeof this.post.tags == 'string' ? this.post.tags : '';
@@ -418,7 +420,6 @@ module.exports = function (el, options) {
           });
         });
       },
-
       // load from browser by id
       load: function load(id) {
         var _this2 = this;
@@ -458,11 +459,13 @@ module.exports = function (el, options) {
         xhr.open("POST", url, true);
         xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.getItem('jwt'));
         var done = false;
+
+        asset._uploading = true;
         xhr.onreadystatechange = function () {
           if (xhr.readyState == 4 && xhr.status == 200) {
             // Every thing ok, file uploaded
             asset._uploaded = true;
-
+            asset._uploading = false;
             cb(null);
           } else if (xhr.status != 200 && xhr.readyState == 4) {
             cb(xhr.responseText);
@@ -489,14 +492,47 @@ module.exports = function (el, options) {
           this.post.assets.splice(idx, 1);
         }
       },
-
+      featureAsset: function featureAsset(a) {
+        var idx = this.post.assets.indexOf(a);
+        if (idx > -1) {
+          this.post.assets[idx].featured = !this.post.assets[idx].featured;
+        } else {
+          console.warn('asset not found? ', a);
+        }
+      },
+      updateCursorPosition: function updateCursorPosition() {
+        var ta = this.$refs.textarea;
+        this.cursorPosition = ta.selectionStart;
+      },
+      addToContent: function addToContent(asset) {
+        var ta = this.$refs.textarea;
+        var widget;
+        if (asset.type == 'audio') {
+          widget = '<audio controls title="" src="' + asset.href + '"/>';
+        } else if (asset.type == "video") {
+          widget = '<video controls title="" src="' + asset.href + '"/>';
+        } else if (asset.type == 'image') {
+          widget = '![description here](' + asset.href + ')';
+        } else {
+          widget = '[description here](' + asset.href + ')';
+        }
+        if (!this.post.caption || !ta) {
+          // handle case where caption doesn't exist RN
+          console.log('1');
+          this.post.caption = widget;
+        } else {
+          var cursorPosition = ta.selectionStart;
+          this.post.caption = this.post.caption.slice(0, cursorPosition) + widget + this.post.caption.slice(cursorPosition);
+        }
+      },
 
       // do note: this only creates an asset, it doesn't add it to the post.assets!
       createAssetFromFile: function createAssetFromFile(file) {
         var a = new Asset('/assets/' + file.name);
-        a._uploaded = false;
         a._file = file;
         a._preview = null;
+        a._uploaded = false;
+        a._uploading = false;
 
         // actually read the file and render it
         var reader = new FileReader();
@@ -509,7 +545,6 @@ module.exports = function (el, options) {
 
         return a;
       },
-
 
       fileInputChanged: function fileInputChanged(e) {
         var input = e.target;

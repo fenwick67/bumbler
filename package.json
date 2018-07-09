@@ -55,6 +55,7 @@
     "session-file-store": "^1.0.0",
     "through2": "^2.0.3",
     "ulid": "^2.3.0",
+    "yaml-front-matter": "^4.0.0",
     "yargs": "^8.0.1"
   },
   "devDependencies": {

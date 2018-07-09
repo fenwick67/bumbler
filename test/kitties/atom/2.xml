@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CHS0KH008Y5JVTDRA4TJ8HVG.html</id>
+<published>2018-07-07T00:00:00.000Z</published>
+<updated>2018-07-07T00:00:00.000Z</updated>
+<title>Babies in court</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US immigration courts often require babies to &lt;a href=&#34;https://www.cnn.com/2018/06/30/politics/children-in-court/index.html&#34;&gt;represent themselves in court&lt;/a&gt;.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH008Y5JVTDRA4TJ8HVG.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01CHS0KH008RS0PZTEY7FVW88T.html</id>
+<published>2018-07-07T00:00:00.000Z</published>
+<updated>2018-07-07T00:00:00.000Z</updated>
+<title>Urgent: Profiting from refugee imprisonment</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Everyone: &lt;a href=&#34;https://act.credoaction.com/sign/wells_fargo_immigration&#34;&gt;call on Wells Fargo, JPMorgan Chase and BlackRock&lt;/a&gt; to stop profiting from imprisonment of refugees.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH008RS0PZTEY7FVW88T.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01CHS0KH006S6ZQNNAFJTNP2HS.html</id>
 <published>2018-07-07T00:00:00.000Z</published>
 <updated>2018-07-07T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; Wood pellets sound renewable.  Maybe they would be so if made from fast-growing tree farms, but they are being made by cutting down ordinary forests that would &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/30/wood-pellets-biomass-environmental-impact&#34;&gt;take a century to regrow&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; That&#39;s if they ever do regrow.  &lt;a href=&#34;https://stallman.org/glossary.html#global heating&#34;&gt;Global heating&lt;/a&gt; could prevent that. This is why I have always been skeptical of &amp;quot;carbon offset&amp;quot; schemes that &lt;a href=&#34;https://stallman.org/archives/2017-may-aug.html#29_August_2017_(Planting_trees_to_take_CO2_out_of_air)&#34;&gt;rely on planting trees&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00FK4DH1A287E6815B.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CHPE6T00B7AYNSQMM07V1W37.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Refugees in Syria</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Assad&#39;s forces are &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/30/syria-southern-towns-surrender-to-assad-forces&#34;&gt;driving 160,000 refugees&lt;/a&gt; towards borders they won&#39;t be allowed to cross.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00B7AYNSQMM07V1W37.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CHPE6T005SH9MMFXD4RKWCTM.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Mass shootings and misogyny</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/29/mass-shootings-white-male-fragility-capital-gazette-maryland-misogyny&#34;&gt;More than half of mass shootings&lt;/a&gt; are motivated by misogyny. &lt;/p&gt;&lt;p&gt; I am not surprised that many of them showed signs that led people to wonder if they were dangerous.  Nonetheless, the percentage of misogynists that actually become dangerous is tiny, and it is hard to predict who is part of that percentage.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T005SH9MMFXD4RKWCTM.html"/>
 </entry>
 </feed>

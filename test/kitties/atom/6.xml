@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/5.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CHH9DC005V3YGXXJED9SHR7Q.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Flight attendant&#39;s moral responsibility</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt;Flight attendant  &lt;a href=&#34;https://www.houstonchronicle.com/local/gray-matters/article/Flight-attendant-I-won-t-work-flights-that-13008372.php&#34;&gt;Hunt Palmquist vowed&lt;/a&gt; he would refuse to work on flights to transport immigrant child prisoners.&lt;/p&gt; &lt;p&gt;He realized that if he helped do this, he would morally responsible for his actions.&lt;/p&gt; &lt;p&gt;His response may be the reason that some airlines have since refused to carry those prisoners.  We should pressure the other airlines in the US to do the same.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC005V3YGXXJED9SHR7Q.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01CHH9DC005FTP290ENCEQC0NV.html</id>
+<published>2018-07-04T00:00:00.000Z</published>
+<updated>2018-07-04T00:00:00.000Z</updated>
+<title>Facebook disinformation plan</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt;Facebook plans to work with a right-wing think-tank &lt;a href=&#34;https://www.commondreams.org/news/2018/05/18/alarming-facebook-teams-think-tank-funded-saudi-arabia-and-military-contractors&#34;&gt;funded by rich fossil fuel interests&lt;/a&gt;, supposedly to &amp;quot;protect&amp;quot; democracy.&lt;/p&gt; &lt;p&gt;The funding suggests that what they plan to protect is plutocracy&lt;/p&gt; &lt;p&gt;This is one more reason to stop being used by Facebook.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC005FTP290ENCEQC0NV.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01CHH9DC003ZZDJVSQ3F28AXGQ.html</id>
 <published>2018-07-04T00:00:00.000Z</published>
 <updated>2018-07-04T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; Soros: Instead of trying to teach Italy a lesson by punishing non-rich Italians, &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/05/eu-italy-european-leaders-punish-government-help&#34;&gt;the EU should learn one&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400PF1XZDF2HCZYHAA8.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CFKFW400P00Y9K4A7FTCP2JT.html</id>
-<published>2018-06-10T00:00:00.000Z</published>
-<updated>2018-06-10T00:00:00.000Z</updated>
-<title>Unfair sentences</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Holding people responsible for what their partners in crime do can lead to sentences that are  &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/1/1768681/-Judge-sentences-black-15-year-old-to-five-years-prison-10-years-probation-over-one-pair-of-shoes&#34;&gt;clearly unfair&lt;/a&gt;.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400P00Y9K4A7FTCP2JT.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CFKFW400NJSVV1WR8K44HR91.html</id>
-<published>2018-06-10T00:00:00.000Z</published>
-<updated>2018-06-10T00:00:00.000Z</updated>
-<title>Netanyahu prepared to attack Iran</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Netanyahu ordered generals to prepare to attack Iran, in  &lt;a href=&#34;https://www.commondreams.org/news/2018/06/01/amid-new-threat-war-former-mossad-chief-admits-israel-had-2011-plan-attack-iran&#34;&gt;2011&lt;/a&gt;. He could do that again at any moment if he thinks it is advantageous for him.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFKFW400NJSVV1WR8K44HR91.html"/>
 </entry>
 </feed>

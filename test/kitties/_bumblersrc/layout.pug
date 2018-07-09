@@ -73,10 +73,16 @@ html
                               a(href=linkTo('tag',tag)).tag.is-dark= tag
 
                     .card-content.e-content
+                      if post.frontMatter && Object.keys(post.frontMatter).length > 0
+                        pre
+                          code!= JSON.stringify(post.frontMatter)
                       if post.assets && post.assets.length > 0
                         .gallery
                           each attachment in post.assets
-                            span!= attachment.widget
+                            - var s = ''
+                            - if (attachment.featured){s += 'border:solid 1px yellow;'}
+                            - if (attachment.inline){s += 'box-shadow:0 0 10px 10px blue;'}
+                            span(style=s)!= attachment.widget
                       if post.caption && post.assets && post.assets.length > 0
                         br
                       if post.caption

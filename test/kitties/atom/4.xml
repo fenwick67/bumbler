@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:25-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/3.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CHKVT300G55QXQEKXTTV61BY.html</id>
+<published>2018-07-05T00:00:00.000Z</published>
+<updated>2018-07-05T00:00:00.000Z</updated>
+<title>Assault on immigrant families</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;http://www.yesmagazine.org/peace-justice/15-actions-that-can-shut-down-trumps-assault-on-immigrant-families-20180622&#34;&gt;15 Actions&lt;/a&gt; That Can Shut Down Trump’s Assault on Immigrant Families.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHKVT300G55QXQEKXTTV61BY.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01CHKVT300F7FNBW3V21BDPJSH.html</id>
+<published>2018-07-05T00:00:00.000Z</published>
+<updated>2018-07-05T00:00:00.000Z</updated>
+<title>Urgent: Water extraction</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US citizens, &lt;a href=&#34;http://action.storyofstuff.org/sign/petition-forest-service-standup-nestle-2/&#34;&gt;tell the heads&lt;/a&gt; of the Forest Service and the Department of Agriculture: Don&#39;t give Nestlé a new permit to extract water from the San Bernardino National Forest.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHKVT300F7FNBW3V21BDPJSH.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01CHKVT300ECP97A6GAD3T3G23.html</id>
 <published>2018-07-05T00:00:00.000Z</published>
 <updated>2018-07-05T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; Pimps pay bail for female prisoners in US jails, then &lt;a href=&#34;https://www.theguardian.com/global-development/2018/jun/29/revealed-how-us-sex-traffickers-recruit-jailed-women-for-prostitution-the-trap&#34;&gt;compel them to do sex work&lt;/a&gt; or else be jailed again. &lt;/p&gt;&lt;p&gt; &amp;quot;Incarceration takes vulnerable women and makes them more vulnerable.&amp;quot;   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00NNQS06HA0RFP3M3H.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CHH9DC00N848CHCVB3KNC6HT.html</id>
-<published>2018-07-04T00:00:00.000Z</published>
-<updated>2018-07-04T00:00:00.000Z</updated>
-<title>Facebook&#39;s fake account</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt;Even as Facebook oppresses real useds with its &amp;quot;real name&amp;quot; requirement, &lt;a href=&#34;https://www.buzzfeed.com/charliewarzel/heres-how-easy-it-is-to-buy-fake-facebook-profiles&#34;&gt;it is easy to buy and run a realistic Facebook account&lt;/a&gt; that is completely fake.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;  </content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00N848CHCVB3KNC6HT.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CHH9DC00N7D6C5SEJDZED6EP.html</id>
-<published>2018-07-04T00:00:00.000Z</published>
-<updated>2018-07-04T00:00:00.000Z</updated>
-<title>Protest isn&#39;t civil</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/views/2018/06/28/protest-isnt-civil&#34;&gt;Protest Isn’t Civil.&lt;/a&gt; Indeed, protest against unjust rule cannot be effective if it accepts the limits imposed by unjust rule.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHH9DC00N7D6C5SEJDZED6EP.html"/>
 </entry>
 </feed>

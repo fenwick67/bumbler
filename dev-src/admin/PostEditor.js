@@ -12,7 +12,8 @@ module.exports = function(el,options){
   var canDelete = options.canDelete || !!options.id || false;
   var post = {
     tags:'',
-    assets:[]
+    assets:[],
+    caption:''
   };
   var files = [];
 
@@ -57,15 +58,28 @@ module.exports = function(el,options){
               <img v-if="asset.type=='image'" :src="asset._preview||asset.href" class="thumb"></img>
               <span v-else>{{ asset.type }}</span>
               <i> {{ asset.href }} </i>
-              <a v-if="asset._uploaded === false" class="button is-success" @click="uploadAsset(asset)">🢁 Upload now</a>
+              <a v-if="asset._uploaded === false" class="button is-success" @click="uploadAsset(asset)" v-bind:class="{ 'is-loading' : asset._uploading }">🢁 Upload now</a>
               <a class="button is-danger" @click="removeAsset(asset,$event)">❌&#xFE0E; Remove</a>
+              <a class="button" @click="featureAsset(asset,$event)" :class="{'is-warning':asset.featured}">
+                <span v-if="asset.featured">★&#xFE0E; Featured</span>
+                <span v-if="!asset.featured">Not Featured</span>
+              </a>
+              <a class="button" @click="addToContent(asset,$event)">Add to Content</a>
             </div>
           </div>
         </div>
       </div>
       <div class="field">
         <label class="label">Caption/Content</label>
-        <textarea v-model="post.caption" class="textarea" name="caption"></textarea>
+        <textarea
+          v-model="post.caption"
+          class="textarea"
+          ref="textarea"
+          name="caption"
+          @change="updateCursorPosition"
+          @click="updateCursorPosition"
+          @keyup="updateCursorPosition">
+        </textarea>
       </div>
       <div class="field is-grouped">
         <p class="control">
@@ -79,7 +93,7 @@ module.exports = function(el,options){
   var view = new Vue({
     el:el,
     template:tpl,
-    data:{options,post,canDelete,files},
+    data:{options,post,canDelete,files,cursorPosition:0},
     computed:{
       tagsList:function(){
         var tags = this.post&&typeof this.post.tags == 'string'?this.post.tags:'';
@@ -132,7 +146,6 @@ module.exports = function(el,options){
         });
 
       },
-
       // load from browser by id
       load(id){
         api.getPost(id,(er,post)=>{
@@ -144,7 +157,6 @@ module.exports = function(el,options){
           }
         });
       },
-
       deletePost(callback){
         var callback = typeof callback === 'function'?callback:function(){};
         var id = this.post.id;
@@ -164,7 +176,6 @@ module.exports = function(el,options){
         });
 
       },
-
       uploadAsset(asset,callback){
         var file = asset._file;
         var cb = callback || function(){};
@@ -174,11 +185,13 @@ module.exports = function(el,options){
         xhr.open("POST", url, true);
         xhr.setRequestHeader('Authorization','Bearer '+localStorage.getItem('jwt'))
         var done = false;
+
+        asset._uploading = true;
         xhr.onreadystatechange = function() {
           if (xhr.readyState == 4 && xhr.status == 200) {
             // Every thing ok, file uploaded
             asset._uploaded = true;
-
+            asset._uploading = false;
             cb(null);
           }else if (xhr.status != 200 && xhr.readyState == 4){
             cb(xhr.responseText);
@@ -187,9 +200,7 @@ module.exports = function(el,options){
         fd.append("upload_file", file);
         xhr.send(fd);
 
-
       },
-
       uploadAll(done){
         var done = done || function(){};
         each(this.post.assets,(a,cb)=>{
@@ -200,20 +211,52 @@ module.exports = function(el,options){
           }
         },done);
       },
-
       removeAsset(a){
         var idx = this.post.assets.indexOf(a)
         if (idx > -1){
           this.post.assets.splice(idx,1);
         }
       },
+      featureAsset(a){
+        var idx = this.post.assets.indexOf(a)
+        if (idx > -1){
+          this.post.assets[idx].featured = !this.post.assets[idx].featured;
+        }else{
+          console.warn('asset not found? ',a)
+        }
+      },
+      updateCursorPosition(){
+        var ta = this.$refs.textarea;
+        this.cursorPosition = ta.selectionStart;
+      },
+      addToContent(asset){
+        var ta = this.$refs.textarea;
+        var widget;
+        if(asset.type == 'audio'){
+          widget = `<audio controls title="" src="${asset.href}"/>`;
+        }else if( asset.type == "video"){
+          widget = `<video controls title="" src="${asset.href}"/>`;
+        }else if (asset.type == 'image'){
+          widget = `![description here](${asset.href})`;
+        }else{
+          widget = `[description here](${asset.href})`;
+        }
+        if (!this.post.caption || !ta){ // handle case where caption doesn't exist RN
+          console.log('1')
+          this.post.caption = widget;
+        }else{
+          var cursorPosition = ta.selectionStart;
+          this.post.caption = this.post.caption.slice(0,cursorPosition)+widget+this.post.caption.slice(cursorPosition);
+        }
 
+      },
       // do note: this only creates an asset, it doesn't add it to the post.assets!
       createAssetFromFile(file){
         var a = new Asset('/assets/'+file.name);
-        a._uploaded = false;
         a._file = file;
         a._preview = null;
+        a._uploaded = false;
+        a._uploading = false;
 
         // actually read the file and render it
         var reader = new FileReader();
@@ -226,7 +269,6 @@ module.exports = function(el,options){
 
         return a;
       },
-
       fileInputChanged:function(e){
         var input = e.target;
         for (var i = 0; i < input.files.length; i ++){

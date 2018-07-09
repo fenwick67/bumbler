@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/17.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01C7544N00CVSKC459DJSKK8Z2.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Sexual harassment</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/21/women-have-changed-the-mood-now-we-need-to-change-policy&#34;&gt;On what is needed&lt;/a&gt; to put an end to sexual harassment by men that have power over women&#39;s careers.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00CVSKC459DJSKK8Z2.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7544N00BR5QQQ38C0F2MCWM.html</id>
+<published>2018-02-25T00:00:00.000Z</published>
+<updated>2018-02-25T00:00:00.000Z</updated>
+<title>Gun control support</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US gun owners &lt;a href=&#34;https://www.dailykos.com/story/2018/2/20/1743202/-Quinnipiac-poll-Support-for-gun-control-tops-2-1-the-highest-ever&#34;&gt;overwhelmingly support&lt;/a&gt; some kinds of gun control regulations.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7544N00BR5QQQ38C0F2MCWM.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01C7544N00B3QKMD7AWJ5F2NM5.html</id>
 <published>2018-02-25T00:00:00.000Z</published>
 <updated>2018-02-25T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; A book store in the US &lt;a href=&#34;https://electronicintifada.net/content/new-york-bookseller-bowed-israel-supporters-after-violent-threats/23301&#34;&gt;yielded to violent threats&lt;/a&gt; from supporters of Israel, by publishing a statement condemning the Palestinian Boycott, Divestment and Sanctions campaign. &lt;/p&gt;&lt;p&gt; Now students opposed to the occupation of Palestine have launched a nonviolent campaign calling on the bookstore to move back to a neutral stance. &lt;/p&gt;&lt;p&gt; I think it is wrong to accuse the bookstore of &amp;quot;suppression of literary freedom&amp;quot;, but it is clear that that was the aim of those that made the threats.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00GHWVHX8XBYKE2SNS.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C72HQY00F639AAD9429YXWNW.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>Electricity in Puerto Rico</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Restoration of electric power in Puerto Rico is held up because subcontractors &lt;a href=&#34;https://www.commondreams.org/news/2018/02/19/instability-mounts-puerto-rico-amid-privatization-efforts-and-power-authoritys-cash&#34;&gt;fail to do their work&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I urge Puerto Ricans to do everything possible to convince potential buyers to refuse to buy its power grid.  The less it is sold for, the less it will be necessary to pay to seize it back.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00F639AAD9429YXWNW.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C72HQY00E0FRHRDVNAZ9177Y.html</id>
-<published>2018-02-24T00:00:00.000Z</published>
-<updated>2018-02-24T00:00:00.000Z</updated>
-<title>Forests and trains</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The UK government has &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/19/transport-secretary-injunction-stop-hs2-protesters-chris-grayling-london&#34;&gt;banned protests&lt;/a&gt; in an ancient forest scheduled to be cut down to build a train line. &lt;/p&gt;&lt;p&gt; In general I support high-speed trains.  They help replace air travel with something much more efficient (as well as pleasant).  But the UK needs to get rid of the laws that make it so easy to destroy forests, and so easy to ban protests.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00E0FRHRDVNAZ9177Y.html"/>
 </entry>
 </feed>

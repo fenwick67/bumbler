@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/15.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01C7A8Y30069E6S8F5P7DPRJ06.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Google&#39;s AMP plan</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.socpub.com/articles/chris-graham-why-google-amp-threat-open-web-15847&#34;&gt;AMP is Google&#39;s plan&lt;/a&gt; to try to pressure web sites to become part of a single empire of the web. &lt;/p&gt;&lt;p&gt; Mobile operating systems that support cr…apps are similar in spirit — intended to lead people away from the interoperable web. &lt;/p&gt;&lt;p&gt; Javascript does it in another way.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y30069E6S8F5P7DPRJ06.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C7A8Y3004Z53TQACQVFPDR3S.html</id>
+<published>2018-02-27T00:00:00.000Z</published>
+<updated>2018-02-27T00:00:00.000Z</updated>
+<title>Organ transplants</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; People in Venezuela who have had organ transplants, if they are not rich, &lt;a href=&#34;https://www.reuters.com/article/us-venezuela-transplants/with-medicine-running-out-venezuelans-with-transplants-live-in-fear-idUSKCN1G41FR&#34;&gt;can&#39;t get the medicines necessary&lt;/a&gt; to protect the transplanted organs from their immune systems. People who need kidney dialysis are in trouble too, as many dialysis machines are broken. &lt;/p&gt;&lt;p&gt; Contrast this with the US where &lt;a href=&#34;/glossary.html#scrotus&#34;&gt;SCROTUS&lt;/a&gt; are trying to cut the funds to pay for these treatments for &lt;a href=&#34;https://stallman.org/archives/2017-nov-feb.html#20_December_2017_(Tax_attacks_and_medical_insurance)&#34;&gt;Americans that are not rich&lt;/a&gt;.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C7A8Y3004Z53TQACQVFPDR3S.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01C7A8Y3003K5XV2D5NQMBEZ5T.html</id>
 <published>2018-02-27T00:00:00.000Z</published>
 <updated>2018-02-27T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; Jordon Dyrdahl-Roberts was a legal secretary in the Montana Department of Labor.  When told he would have to work on subpoenas from the US immigration thugs, &lt;a href=&#34;https://www.washingtonpost.com/news/posteverything/wp/2018/02/16/i-was-asked-to-help-ice-at-my-government-job-i-couldnt-do-that-so-i-quit/&#34;&gt;he immediately quit&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00CVXN3P8Q1MKPEG80.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C77PHC00BEDCFWGEBESQ41ZY.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Student protests</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Florida high school students &lt;a href=&#34;Https://www.theguardian.com/us-news/2018/feb/21/florida-students-confront-lawmakers-on-gun-control-as-thousands-walk-out&#34;&gt;went to the state capitol&lt;/a&gt; to demand gun control.  Thousands of students left school to protest. &lt;/p&gt;&lt;p&gt; The school superintendent of Needville, Texas, declared he would &lt;a href=&#34;https://www.dailykos.com/story/2018/2/21/1743418/-Texas-school-district-threatens-suspension-if-students-protest-to-prevent-the-next-mass-shooting&#34;&gt;suspend any students&lt;/a&gt; that walk out of school to protest. &lt;/p&gt;&lt;p&gt; I hope all the high school students in that district walk out to protest at his office, to show they are not going to be intimidated. &lt;/p&gt;&lt;p&gt; If he follows through with the threat to &amp;quot;suspend&amp;quot; them, they can organize a three-day teach-in, where they will learn things that are more important than what is normally taught in school.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC00BEDCFWGEBESQ41ZY.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C77PHC009G9ZM28GBJDNP39J.html</id>
-<published>2018-02-26T00:00:00.000Z</published>
-<updated>2018-02-26T00:00:00.000Z</updated>
-<title>Purpose of education</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Measuring education in terms of increased income afterwards is &lt;a href=&#34;https://www.commondreams.org/views/2018/02/20/economists-dont-know-crap-about-education&#34;&gt;missing the main point&lt;/a&gt; of education. &lt;/p&gt;&lt;p&gt; We used to acknowledge clearly that the purpose of education was to prepare people to be capable citizens of a democracy.  The mere attempt to judge issues of education in narrow economic terms indicates a basic error.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C77PHC009G9ZM28GBJDNP39J.html"/>
 </entry>
 </feed>

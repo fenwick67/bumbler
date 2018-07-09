@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/12.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01CF6KWH00WHA107DTJEPVQAE2.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Shot by border thugs</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; US border &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; shot refugee Claudia Patricia Gómez González dead, then told various stories to create an excuse.  They said that the refugees were &amp;quot;rushing&amp;quot; them. &lt;/p&gt;&lt;p&gt; The other witnesses &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/31/guatemala-migrant-shot-us-immigration-border-patrol&#34;&gt;have been jailed&lt;/a&gt; and can&#39;t be found. &lt;/p&gt;&lt;p&gt; It turns out that border thugs have a &lt;a href=&#34;https://theintercept.com/2018/06/01/border-patrol-agent-assault-statistics-fbi/&#34;&gt;made a practice of grossly exaggerating&lt;/a&gt; the frequency of &amp;quot;assaults&amp;quot; against them.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WHA107DTJEPVQAE2.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01CF6KWH00WH4ZA829SSX82MES.html</id>
+<published>2018-06-05T00:00:00.000Z</published>
+<updated>2018-06-05T00:00:00.000Z</updated>
+<title>Rewilding project in Patagonia</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; A private project has rewilded 17000 square miles in Patagonia, &lt;a href=&#34;https://www.theguardian.com/environment/2018/may/30/can-the-worlds-largest-rewilding-project-restore-patagonias-beauty&#34;&gt;reintroducing the species that used to live there&lt;/a&gt; before humans and farming kicked them out.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00WH4ZA829SSX82MES.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01CF6KWH00VZV8FSA7FJC8XX6W.html</id>
 <published>2018-06-05T00:00:00.000Z</published>
 <updated>2018-06-05T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/news/2018/05/31/victory-dissent-government-drops-charges-against-group-j20-protesters&#34;&gt;A judge dropped charges&lt;/a&gt; against some inauguration protesters because US prosecutors were shown to have violated their right to a fair trial.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00G9Q6B9KZX6E8XPPN.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CF6KWH00EN01M0D0XSC9RWEE.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>War on Drugs</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Americans are  &lt;a href=&#34;https://reason.com/archives/2018/05/30/an-overdose-is-not-a-murder&#34;&gt;imprisoned for sharing drugs when that leads to an overdose&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; This extends the War on Drugs by adding a form of terrorism to the tactics.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00EN01M0D0XSC9RWEE.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01CF6KWH00E0D2C2FJEZH1HWH9.html</id>
-<published>2018-06-05T00:00:00.000Z</published>
-<updated>2018-06-05T00:00:00.000Z</updated>
-<title>Applying for work as an ex-convict</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Education Is One Way Out of Prison.   &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/may/31/education-prison-work-ex-offenders-university-convictions&#34;&gt;Let&#39;s Make Work Another&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; One of the problems is that you can no longer make a living from the jobs that are not highly competitive.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CF6KWH00E0D2C2FJEZH1HWH9.html"/>
 </entry>
 </feed>

@@ -32,6 +32,7 @@ class Asset{
     }
     this.href = href;
     this.type = type || getTypeForExtension(getExtension(href));
+    this.featured = false;
   }
 
   delete(callback){

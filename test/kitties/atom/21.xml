@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/20.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01C5YG5W00FBCH7PE3AFQ1KF51.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>Raising interest rates</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The Federal Reserve has started to &lt;a href=&#34;https://theintercept.com/2018/02/08/stock-market-crash-jobs-report-wages/&#34;&gt;raise interest rates&lt;/a&gt;, mainly with the purpose of stopping workers from getting raises.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00FBCH7PE3AFQ1KF51.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C5YG5W00EYPVZDCVRB7VV76F.html</id>
+<published>2018-02-10T00:00:00.000Z</published>
+<updated>2018-02-10T00:00:00.000Z</updated>
+<title>European Republic</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Proposing that the &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/07/european-union-power-citizens-republic&#34;&gt; EU should become a European Republic, &lt;/a&gt; rather than a &amp;quot;United States of Europe&amp;quot;. &lt;/p&gt;&lt;p&gt; &lt;a href=&#34;http://stallman.org/archives/2016-sep-dec.html#20_December_2016_(Convicted_of_inciting_discrimination)&#34;&gt; How about taking the Swiss Confederation as a model, with its referendums for important issues? &lt;/a&gt;   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00EYPVZDCVRB7VV76F.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01C5YG5W00EQNCYR6FVJW1VWCT.html</id>
 <published>2018-02-10T00:00:00.000Z</published>
 <updated>2018-02-10T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; SCROTUS threaten to &lt;a href=&#34;https://www.commondreams.org/news/2018/02/07/siding-monsanto-gop-threatens-cut-who-funds-over-glyphosate-finding&#34;&gt;cut off funding for WHO&lt;/a&gt; because it reported that Glyphosate is probably carcinogenic.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500RZ83NHAACQS1PDS1.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C5VXS500RNW8RAEH2WHA8JXV.html</id>
-<published>2018-02-09T00:00:00.000Z</published>
-<updated>2018-02-09T00:00:00.000Z</updated>
-<title>Urgent: Medicaid</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;https://act.credoaction.com/sign/trump_medicaid&#34;&gt;call on all state governors&lt;/a&gt; not to help the bully destroy Medicaid.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500RNW8RAEH2WHA8JXV.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C5VXS500QXKGAFVWJ5Z9GD0F.html</id>
-<published>2018-02-09T00:00:00.000Z</published>
-<updated>2018-02-09T00:00:00.000Z</updated>
-<title>Self-checkout machines</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The self-checkout machines that replace human sales clerks &lt;a href=&#34;https://www.theatlantic.com/magazine/archive/2018/03/stealing-from-self-checkout/550940/&#34;&gt;also encourage shoplifting&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Shoplifting in a supermarket is not uniformly wrong.  Poor people are morally entitled to steal food to eat, if they can&#39;t afford to buy it, and the suffering imposed by the plutocratic state often puts them in that situation. &lt;/p&gt;&lt;p&gt; But I hope this convinces the stores to get rid of those machines and hire more human beings. &lt;/p&gt;&lt;p&gt; You can join me in helping to make that happen.  When I enter the store I pass by those machines and tell the people using them, &amp;quot;If you use those machines, you are putting other Americans out of work.  When I realized that I decided to go always to the human sales clerks so that they can stay employed.&amp;quot;  I do the same thing when I leave. &lt;/p&gt;&lt;p&gt; You can do it too.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5VXS500QXKGAFVWJ5Z9GD0F.html"/>
 </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/19.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>UK and Qadhafi</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/extent-of-uk-cooperation-with-gaddafi-regime-libya-mi6-revealed&#34;&gt;How the UK told Qadhafi&lt;/a&gt; where to find exiled dissidents so he could kidnap them.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html</id>
+<published>2018-02-23T00:00:00.000Z</published>
+<updated>2018-02-23T00:00:00.000Z</updated>
+<title>Cash propaganda</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/krona-public-toilets-cashless-sweden-coin&#34;&gt;Look at the propaganda&lt;/a&gt; designed to dishearten people about the privacy of cash. &lt;/p&gt;&lt;p&gt; It takes a gently derisive tone towards some minor practical inconveniences of tracked digital payments, while suggesting they will soon be solved. The result is to disparage the idea that there is something serious at stake. &lt;/p&gt;&lt;p&gt; If you live in Sweden — or any other country — plan in advance to carry cash, and only pay cash in stores.  If a store won&#39;t take cash, say &amp;quot;I&#39;m going to another store that will.&amp;quot; &lt;/p&gt;&lt;p&gt; You can easily think of bogus objections, if you are willing to exaggerate — so ignore them instead. &lt;/p&gt;&lt;p&gt; If you find yourself without cash one day, don&#39;t give up — just do better the next day. &lt;/p&gt;&lt;p&gt; And don&#39;t use a pay toilet no matter how they want you to pay.  It is vicious and cruel to make people pay to use a toilet.  I have money, and I could afford to pay, but &lt;em&gt;some people can&#39;t&lt;/em&gt;.  I have boycotted pay toilets for 10 years.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01C6ZZB700CST5ANFKY5WSPYZA.html</id>
 <published>2018-02-23T00:00:00.000Z</published>
 <updated>2018-02-23T00:00:00.000Z</updated>
@@ -195,25 +215,5 @@
 &lt;p&gt; The &amp;quot;president&amp;quot; of the Maldive Islands arrested judges to &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/07/maldives-state-of-emergency-judges-block-political-prisoners&#34;&gt; stop the Supreme Court from freeing imprisoned legislators. &lt;/a&gt; &lt;/p&gt;&lt;p&gt; The elected president Masheed campaigned globally to curb &lt;a href=&#34;/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt;. &lt;a href=&#34;https://stallman.org/archives/2011-nov-feb.html#10_February_2012_(Maldive_Islands)&#34;&gt; I suspect that oil interests helped arrange the coup against him. &lt;/a&gt; &lt;/p&gt;&lt;p&gt; If &lt;a href=&#34;/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt; goes far enough, the questions of democracy and human rights in the Maldives will cease to matter.  Long before they are entirely inundated, they will be unable to support their population. The rulers, however, will probably get the chance to move elsewhere.   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00P2GJ6SVX8Q1DMCFS.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C5YG5W00FBCH7PE3AFQ1KF51.html</id>
-<published>2018-02-10T00:00:00.000Z</published>
-<updated>2018-02-10T00:00:00.000Z</updated>
-<title>Raising interest rates</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Federal Reserve has started to &lt;a href=&#34;https://theintercept.com/2018/02/08/stock-market-crash-jobs-report-wages/&#34;&gt;raise interest rates&lt;/a&gt;, mainly with the purpose of stopping workers from getting raises.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00FBCH7PE3AFQ1KF51.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C5YG5W00EYPVZDCVRB7VV76F.html</id>
-<published>2018-02-10T00:00:00.000Z</published>
-<updated>2018-02-10T00:00:00.000Z</updated>
-<title>European Republic</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Proposing that the &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/feb/07/european-union-power-citizens-republic&#34;&gt; EU should become a European Republic, &lt;/a&gt; rather than a &amp;quot;United States of Europe&amp;quot;. &lt;/p&gt;&lt;p&gt; &lt;a href=&#34;http://stallman.org/archives/2016-sep-dec.html#20_December_2016_(Convicted_of_inciting_discrimination)&#34;&gt; How about taking the Swiss Confederation as a model, with its referendums for important issues? &lt;/a&gt;   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C5YG5W00EYPVZDCVRB7VV76F.html"/>
 </entry>
 </feed>

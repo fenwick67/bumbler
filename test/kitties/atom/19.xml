@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T13:34:26-05:00</updated>
+<updated>2018-07-08T19:25:13-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -18,6 +18,26 @@
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/18.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
+<id>http://localhost:8000/post/01C72HQY00F639AAD9429YXWNW.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Electricity in Puerto Rico</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; Restoration of electric power in Puerto Rico is held up because subcontractors &lt;a href=&#34;https://www.commondreams.org/news/2018/02/19/instability-mounts-puerto-rico-amid-privatization-efforts-and-power-authoritys-cash&#34;&gt;fail to do their work&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I urge Puerto Ricans to do everything possible to convince potential buyers to refuse to buy its power grid.  The less it is sold for, the less it will be necessary to pay to seize it back.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00F639AAD9429YXWNW.html"/>
+</entry>
+<entry>
+<id>http://localhost:8000/post/01C72HQY00E0FRHRDVNAZ9177Y.html</id>
+<published>2018-02-24T00:00:00.000Z</published>
+<updated>2018-02-24T00:00:00.000Z</updated>
+<title>Forests and trains</title>
+<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
+&lt;p&gt; The UK government has &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/feb/19/transport-secretary-injunction-stop-hs2-protesters-chris-grayling-london&#34;&gt;banned protests&lt;/a&gt; in an ancient forest scheduled to be cut down to build a train line. &lt;/p&gt;&lt;p&gt; In general I support high-speed trains.  They help replace air travel with something much more efficient (as well as pleasant).  But the UK needs to get rid of the laws that make it so easy to destroy forests, and so easy to ban protests.   &lt;/p&gt;</content>
+<category term="stallman"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C72HQY00E0FRHRDVNAZ9177Y.html"/>
+</entry>
+<entry>
 <id>http://localhost:8000/post/01C72HQY00BNRK9Z574BTK5BHR.html</id>
 <published>2018-02-24T00:00:00.000Z</published>
 <updated>2018-02-24T00:00:00.000Z</updated>
@@ -196,25 +216,5 @@
 &lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/16/state-of-emergency-declared-in-ethiopia-amid-political-unrest&#34;&gt;What is happening in Ethiopia?&lt;/a&gt; &lt;/p&gt;&lt;p&gt; This &amp;quot;state of emergency&amp;quot; shows something big is happening.  What is it?   &lt;/p&gt;</content>
 <category term="stallman"/>
 <link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700N5NFXMJB1PY5B1DS.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>UK and Qadhafi</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/extent-of-uk-cooperation-with-gaddafi-regime-libya-mi6-revealed&#34;&gt;How the UK told Qadhafi&lt;/a&gt; where to find exiled dissidents so he could kidnap them.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700JA9TYRXT8YM9DG53.html"/>
-</entry>
-<entry>
-<id>http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html</id>
-<published>2018-02-23T00:00:00.000Z</published>
-<updated>2018-02-23T00:00:00.000Z</updated>
-<title>Cash propaganda</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/feb/19/krona-public-toilets-cashless-sweden-coin&#34;&gt;Look at the propaganda&lt;/a&gt; designed to dishearten people about the privacy of cash. &lt;/p&gt;&lt;p&gt; It takes a gently derisive tone towards some minor practical inconveniences of tracked digital payments, while suggesting they will soon be solved. The result is to disparage the idea that there is something serious at stake. &lt;/p&gt;&lt;p&gt; If you live in Sweden — or any other country — plan in advance to carry cash, and only pay cash in stores.  If a store won&#39;t take cash, say &amp;quot;I&#39;m going to another store that will.&amp;quot; &lt;/p&gt;&lt;p&gt; You can easily think of bogus objections, if you are willing to exaggerate — so ignore them instead. &lt;/p&gt;&lt;p&gt; If you find yourself without cash one day, don&#39;t give up — just do better the next day. &lt;/p&gt;&lt;p&gt; And don&#39;t use a pay toilet no matter how they want you to pay.  It is vicious and cruel to make people pay to use a toilet.  I have money, and I could afford to pay, but &lt;em&gt;some people can&#39;t&lt;/em&gt;.  I have boycotted pay toilets for 10 years.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01C6ZZB700E287W91DJ6TC6AGT.html"/>
 </entry>
 </feed>
