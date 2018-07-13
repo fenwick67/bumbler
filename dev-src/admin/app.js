@@ -10,6 +10,11 @@ var CustomPageList = require('./CustomPageList');
 var SettingsManager = require('./SettingsManager');
 var ScriptsView = require('./ScriptsView');
 
+import Buefy from 'buefy';
+import Vue from 'vue'
+Vue.use(Buefy);
+
+
 const api = require('./rpc').api;
 
 // for UI purposes
@@ -47,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   initNavigation();
 
   // popups
-  var popupManager = new PopupManager('#popup-area');
+  var popupManager = PopupManager('#popup-area');
   window.popup = popupManager.show.bind(popupManager);
 
   // files controller

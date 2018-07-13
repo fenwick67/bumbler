@@ -1,0 +1,198 @@
+$bg:red !default;
+$fg:red !default;
+$bg2:red !default;
+$fg2:red !default;
+$shadow:0 0 0 10px red !default;
+$card-bg:red !default;
+$link:red !default;
+$primary:red !default;
+$primary-invert:red !default;
+$grey-dark: red !default;
+$grey: red !default;
+$grey-dark:red !default;
+
+
+pre,body,.table thead th{
+  color:$grey-dark;
+}
+pre{
+  background:$bg;
+}
+
+body{
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:stretch;
+  min-height:100%;
+}
+.sidebar{
+  background:$card-bg;
+  flex:0 0 auto;
+  padding:0 0.5rem;
+  // border-right:solid 1px #eee;
+  z-index:2;
+  box-shadow:$shadow;
+  a{
+    color:$grey-dark;
+    &:active{
+      color:$grey-dark;
+    }
+    &:not(.is-active):hover{
+      color:$grey;
+      background:$bg;
+    }
+  }
+}
+
+.sidebar>.big, .sidebar>.big *{
+  color:$link !important;
+  text-align:center;
+  font-size:1.8rem;
+  list-style-type:none;
+  font-weight: lighter;
+}
+hash-template{
+  display:none;
+}
+hash-template.unhidden{
+  display:flex;
+}
+.menu-list li, .menu-list a{
+  transition: all 0.2s;
+}
+#app{
+  flex: 1 1 auto;
+  margin:1em;
+}
+#app .panel{
+  background:$bg;
+  flex:1 1 auto;
+}
+#app .panel .panel-header{
+  background:$primary;
+}
+#app .panel .panel-header .title,#app .panel .panel-header .subtitle{
+  font-weight:lighter;
+  color:$primary-invert;
+}
+#app .panel .panel-header .subtitle{
+  margin-top:-.8rem;
+}
+#app .panel .panel-header{
+  margin-top:-1rem;
+  margin-left:-1rem;
+  margin-right:-1rem;
+  margin-bottom:1rem;
+  padding:2rem;
+}
+@media all and (min-width: 550px){
+
+    background: $bg;
+
+    hash-template{
+      justify-content:center;
+
+    }
+    #app .panel{
+      background:$card-bg;
+      padding:2rem;
+      max-width:75rem;
+      box-shadow: $shadow;
+      border-radius:1rem;
+      overflow:hidden;
+    }
+    #app .panel .panel-header{
+      margin-top:-2rem;
+      margin-left:-2rem;
+      margin-right:-2rem;
+      margin-bottom:2rem;
+      padding:2rem;
+    }
+    #sidebar{
+      min-width:5em;
+    }
+}
+#app .panel{
+  // padding:2rem;
+  height:100%;
+  background:$card-bg;
+}
+#popup-area{
+  position:fixed;
+  width:100%;
+  height:0;
+  bottom:2em;
+  left:0;
+  right:-2em;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+  z-index:10;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+// fresh popup
+.popup{
+  position:relative;
+  transform:translateX(-2em) translateZ(0) scale(1);
+  opacity:0;
+  flex:0 1 auto;
+  position:relative;
+  z-index:10;
+  opacity:1;
+  transition:all 0.5s;
+  box-shadow: $shadow;
+  width:15rem;
+}
+// being added
+.popup.fadein{
+  opacity:1;
+  transform:translateX(-2em) translateY(6rem) scale(0);
+}
+// being removed
+.popup.fadeout{
+  transition:all 2s;
+  opacity:0;
+  transform:translateX(40rem) scale(1);
+}
+.thumb{
+  display:inline-block;
+  max-height:100px;
+  max-width:150px;
+  border:solid 1px black;
+}
+.asset{
+  display:flex;
+  align-items:center;
+  border-bottom:solid 1px $bg2;
+}
+.asset:first-child{
+  border-top:solid 1px $bg2;
+}
+.asset>*{
+  margin:0.5rem;
+}
+.textedit{
+  font-family:monospace;
+  white-space: pre;
+  overflow: auto;
+}
+
+// for pages:
+
+.gallery{
+  display:flex;
+  text-align:center;
+  justify-content:space-between;
+  flex-direction:column;
+}
+.gallery>*{
+  flex:1 1 auto;
+}
+
+// dark theme stuff again
+.button:hover{
+  color:$grey;
+  background:$bg;
+}

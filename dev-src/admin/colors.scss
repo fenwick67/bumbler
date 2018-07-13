@@ -1,0 +1,50 @@
+@import "bulma/sass/utilities/_all";
+
+$black:hsl(220.5, 63%, 11%);;
+$black-bis:	hsl(220.5, 63%, 7%);
+$black-ter:	hsl(220.5, 63%, 14%);
+$grey-darker:	hsl(220.5, 63%, 21%);
+$grey-dark:	hsl(220.5, 63%, 29%);
+
+$grey:	hsl(220.5, 63%, 48%);
+
+$grey-light:	hsl(220.5, 63%, 71%);
+$grey-lighter:	hsl(220.5, 63%, 86%);
+$white-ter:	hsl(220.5, 63%, 88%);
+$white-bis:	hsl(220.5, 63%, 95%);
+$white:	hsl(220.5, 63%, 98%);
+
+$orange:	hsl(18, 100%, 53%);
+$yellow:	hsl(48, 100%, 67%);
+$green:	hsl(141, 71%, 48%);
+$turquoise:	hsl(171, 100%, 41%);
+$blue:	hsl(217, 71%, 53%);
+$purple:	rgb(126, 115, 255);
+$red:	hsl(348, 100%, 61%);
+
+$primary:$purple;
+$primary-invert: findColorInvert($primary);
+$link:$primary;
+$link-invert:$primary-invert;
+$green-invert: findColorInvert($primary);
+
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "link":($primary, $primary-invert)
+);
+
+
+$bg: $white-bis;
+$fg: $black;
+$bg2: $grey-light;
+$fg2: $grey-darker;
+$shadow: 0 2px 3px 1px rgba(0,0,0,0.1), 0 0 0 1px rgba(10, 22, 46, 0.1);
+$card-bg:$white;

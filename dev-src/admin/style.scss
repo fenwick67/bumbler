@@ -1,226 +1,51 @@
-$black:hsl(0, 0%, 4%);
-$black-bis:	hsl(0, 0%, 7%);
-$black-ter:	hsl(0, 0%, 14%);
-$grey-darker:	hsl(0, 0%, 21%);
-$grey-dark:	hsl(0, 0%, 29%);
-$grey:	hsl(0, 0%, 48%);
-$grey-light:	hsl(0, 0%, 71%);
-$grey-lighter:	hsl(0, 0%, 86%);
-$white-ter:	hsl(0, 0%, 96%);
-$white-bis:	hsl(0, 0%, 98%);
-$white:	hsl(0, 0%, 100%);
 
-$orange:	hsl(14, 100%, 53%);
-$yellow:	hsl(48, 100%, 67%);
-$green:	hsl(141, 71%, 48%);
-$turquoise:	hsl(171, 100%, 41%);
-$blue:	hsl(217, 71%, 53%);
-$purple:	hsl(271, 100%, 71%);
-$red:	hsl(348, 100%, 61%);
-$link: hsl(217, 71%, 53%);
 
-@function inv($c){
-  @return lighten(invert($c),20%);
-}
-
-@function dar($c){
-  @return darken(desaturate($c,10%),10%);
-}
-
-/*
-$primary:hsl(34.1, 100%, 56.5%);
-$primary-invert:rgba(0,0,0,0.7);
-*/
 @-webkit-viewport{width:device-width}
 @-moz-viewport{width:device-width}
 @-ms-viewport{width:device-width}
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
 
-.card{background-color:$white-bis;}
+%admin-shared{
+  $card-bg:red !default;
+  $fg:red !default;
 
-$bg: $white;
-$fg: $black;
-$bg2: $grey-light;
-$fg2: $grey-darker;
-$shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+  background-color:$card-bg;
+  color:$fg;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  overflow-y:auto;
+}
 
-/*
-NIGHT MAN
-*/
-.nightmode,.nightmode *{
 
-  $black:inv($black);
-  $black-bis:	inv($black-bis);
-  $black-ter:	inv($black-ter);
-  $grey-darker:	inv($grey-darker);
-  $grey-dark:	inv($grey-dark);
-  $grey:	inv($grey);
-  $grey-light:	inv($grey-light);
-  $grey-lighter:	inv($grey-lighter);
-  $white-ter:	inv($white-ter);
-  $white-bis:	inv($white-bis);
-  $white:	inv($white);
-  $bg:inv($bg);
-  $fg:inv($fg);
-  $bg2:inv($bg2);
-  $fg2:inv($fg2);
+// taken from bulma
 
-  $background: $white-ter;
+html{
+  margin:0;
+  box-sizing: border-box;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
 
-  $orange:dar($orange);
-  $yellow:dar($yellow);
-  $green:dar($green);
-  $turquoise:dar($turquoise);
-  $blue:dar($blue);
-  $purple:dar($purple);
-  $red:dar($red);
-
-  body{
-    background-color:$bg;
-    color:$fg;
-  }
-
+html.admin:not(.nightmode){
+  @import './colors.scss';
   @import "bulma";
+  @import "buefy";
+  @extend %admin-shared;
+  @import './adminstyle.scss';
 }
-
-@import "bulma";
-
-
-
-.admin{
-
-    background-color:$bg;
-    color:$fg;
-    height:100%;
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
-    overflow-y:auto;
-
-  body{
-    margin:0;
-    padding:0;
-    display:flex;
-    align-items:stretch;
-    min-height:100%;
-  }
-  .sidebar{
-    flex:0 0 auto;
-    padding:0 0.5rem;
-    // border-right:solid 1px #eee;
-    z-index:2;
-    box-shadow:$shadow;
-  }
-  .sidebar>.big, .sidebar>.big *{
-    color:$link !important;
-    text-align:center;
-    font-size:1.8rem;
-    list-style-type:none;
-  }
-  hash-template{
-    display:none;
-  }
-  hash-template.unhidden{
-    display:block;
-  }
-  .menu-list li, .menu-list a{
-    transition: all 0.2s;
-  }
-  #app{
-    flex: 1 1 auto;
-    margin:1em;
-  }
-  @media all and (min-width: 550px){
-      #app>*{
-        padding:2rem;
-      }
-      #sidebar{
-        min-width:5em;
-      }
-  }
-  #app>*{
-    // padding:2rem;
-    height:100%;
-  }
-  #popup-area{
-    position:fixed;
-    width:100%;
-    height:0;
-    bottom:2em;
-    left:0;
-    right:-2em;
-    padding:0;
-    display:flex;
-    flex-direction: column;
-    z-index:10;
-    justify-content: flex-end;
-    align-items:flex-end;
-  }
-  // fresh popup
-  .popup{
-    position:relative;
-    transform:translateX(-2em) translateZ(0) scale(1);
-    opacity:0;
-    flex:0 1 auto;
-    position:relative;
-    z-index:10;
-    opacity:1;
-    transition:all 0.5s;
-    box-shadow: $shadow;
-    width:15rem;
-  }
-  // being added
-  .popup.fadein{
-    opacity:1;
-    transform:translateX(-2em) translateY(6rem) scale(0);
-  }
-  // being removed
-  .popup.fadeout{
-    transition:all 2s;
-    opacity:0;
-    transform:translateX(40rem) scale(1);
-  }
-  .thumb{
-    display:inline-block;
-    max-height:100px;
-    max-width:150px;
-    border:solid 1px black;
-  }
-  .asset{
-    display:flex;
-    align-items:center;
-    border-bottom:solid 1px $bg2;
-  }
-  .asset:first-child{
-    border-top:solid 1px $bg2;
-  }
-  .asset>*{
-    margin:0.5rem;
-  }
-  .textedit{
-    font-family:monospace;
-    white-space: pre;
-    overflow: auto;
-  }
-
-}
-// for pages:
-
-.gallery{
-  display:flex;
-  text-align:center;
-  justify-content:space-between;
-  flex-direction:column;
-}
-.gallery>*{
-  flex:1 1 auto;
-}
-
-// simplemde styles
-html.nightmode{
-  @import "simplemde-theme-dark";
-}
-html:not(.nightmode){
-  @import "simplemde-theme-base";
+html.admin.nightmode{
+  @import './colors-inverse.scss';
+  @import "bulma";
+  @import "buefy";
+  @extend %admin-shared;
+  @import './adminstyle.scss';
 }

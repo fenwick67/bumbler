@@ -44,7 +44,7 @@ gulp.task('browserify-prod',function(done){
 
 gulp.task('sass', function () {
   return gulp.src('./dev-src/**/*.scss')
-    .pipe(sass({includePaths:['node_modules/bulma','node_modules/simplemde-theme-dark/src','node_modules/simplemde-theme-base/src']}).on('error', sass.logError))
+    .pipe(sass({includePaths:['node_modules/bulma','node_modules/buefy','node_modules','node_modules/buefy/src','node_modules/buefy/src/scss']}).on('error', sass.logError))
     .pipe(gulp.dest('./dev-serve'));
 });
 

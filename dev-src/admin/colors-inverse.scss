@@ -1,0 +1,60 @@
+
+@import './colors.scss';
+
+@function inv($c){
+  @return lighten(hsl(hue($c), saturation($c)*0.7, 100% - lightness($c)) ,10%);
+}
+
+@function dar($c){
+  @return darken(desaturate($c,50%),10%);
+}
+
+$black:inv($black);
+$black-bis:	inv($black-bis);
+$black-ter:	inv($black-ter);
+$grey-darker:	inv($grey-darker);
+$grey-dark:	inv($grey-dark);
+$grey:	inv($grey);
+$grey-light:	inv($grey-light);
+$grey-lighter:	inv($grey-lighter);
+$white-ter:	inv($white-ter);
+$white-bis:	inv($white-bis);
+$white:	inv($white);
+
+$bg:inv($bg);
+$fg:inv($fg);
+$bg2:inv($bg2);
+$fg2:inv($fg2);
+$card-bg:inv($card-bg);
+
+$orange:dar($orange);
+$yellow:dar($yellow);
+$green:dar($green);
+$turquoise:dar($turquoise);
+$blue:dar($blue);
+$purple:dar($purple);
+$red:dar($red);
+
+$primary:dar($primary);
+$link:dar($link);
+$info:dar($info);
+$success:dar($success);
+$warning:dar($warning);
+$danger:dar($danger);
+
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert),
+  "link":($primary, $primary-invert)
+);
+
+$shadow: 0 2px 3px 1px rgba(0,0,0,0.5), 0 0 0 1px rgba(10, 22, 46, 0.1);
+
+$card-bg:$white;

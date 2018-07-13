@@ -46,51 +46,53 @@
           p Hey buddy.  You'll need Javascript to use Bumbler's admin interface.
           p Don't worry: <a href="https://github.com/fenwick67/bumbler">it's Free Software</a> and doesn't track anything, period.
         hash-template#files
-          div
-            h1.title Files
-            h2.subtitle These are located in <code>/assets</code> on your server.
+          .panel
+            .panel-header
+              h1.title Files
+              h2.subtitle These are located in <code>/assets</code> on your server.
             .file-view
 
         // posts
         hash-template#post-create
-          div
-            h1.title Create Post
+          .panel
+            .panel-header
+              h1.title Create Post
             div.editor
         hash-template#post-edit
-          div
-            h1.title Edit Post
+          .panel
+            .panel-header
+              h1.title Edit Post
             .editor
         hash-template#posts
-          div
-            h1.title Manage Posts
+          .panel
+            .panel-header
+              h1.title Manage Posts
             #posts-list
 
         // settings
         hash-template#html
-          h1.title Edit site template
-          h2.subtitle Site templates use the <a href="https://pugjs.org">Pug</a> templating language.
-          span#htmleditor
+          .panel
+            .panel-header
+              h1.title Edit site template
+              h2.subtitle Site templates use the Pug templating language.
+            span#htmleditor
         hash-template#settings
-          h1.title Settings
-          form
-        hash-template#publish
-          h1.title Publish
-          .field
-            button.button.is-primary#publish-button ✈️&#xFE0E; Publish to Git Repo
-          p
-            | Edit your
-            a(href="#settings") &nbsp;settings&nbsp;
-            | to set the repository and branch.
-
+          .panel
+            .panel-header
+              h1.title Settings
+            form
         hash-template#scripts
-          h1.title Scripts
+          .panel
+            .panel-header
+              h1.title Scripts
           div
 
         // custom pages
         hash-template#custompages
-          div
-            h1.title Custom Pages
-            h2.subtitle Custom pages let you add things like an About, Contact, or FAQ page.
+          .panel
+            .panel-header
+              h1.title Custom Pages
+              h2.subtitle Custom pages let you add things like an About, Contact, or FAQ page.
             #custom-page-list
 
         hash-template#404

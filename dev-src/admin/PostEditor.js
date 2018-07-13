@@ -4,6 +4,8 @@ const api = require('./rpc').api;
 import Vue from 'vue/dist/vue.js';
 import each from 'async/each';
 import { ulid } from 'ulid';
+import Buefy from 'buefy';
+Vue.use(Buefy);
 
 module.exports = function(el,options){
   var el = el;
@@ -11,7 +13,7 @@ module.exports = function(el,options){
   var id = options.id || null;
   var canDelete = options.canDelete || !!options.id || false;
   var post = {
-    tags:'',
+    tags:[],
     assets:[],
     caption:''
   };
@@ -30,14 +32,13 @@ module.exports = function(el,options){
       <div class="field">
         <label class="label">Tags
         <p class="control">
-          <input v-model="post.tags" class="input" placeholder="(comma seperated, optional)" name="tags" type="text">
+          <b-taginput
+                v-model="post.tags"
+                ellipsis
+                placeholder="Add a tag">
+            </b-taginput>
         </p>
         </label>
-      </div>
-      <div class="tags">
-        <span class="tag is-link" v-for=" tag in tagsList ">
-          {{ tag }}
-        </span>
       </div>
       <div class="field">
         <div>
@@ -94,14 +95,7 @@ module.exports = function(el,options){
     el:el,
     template:tpl,
     data:{options,post,canDelete,files,cursorPosition:0},
-    computed:{
-      tagsList:function(){
-        var tags = this.post&&typeof this.post.tags == 'string'?this.post.tags:'';
-        var t = tags.split(/,\s*/g);
-        t = t.filter(s=>!!s);
-        return t;
-      }
-    },
+    computed:{},
     methods:{
 
       save:function(){
@@ -150,6 +144,9 @@ module.exports = function(el,options){
       load(id){
         api.getPost(id,(er,post)=>{
           if (!er){
+            if (typeof post.tags == 'string'){
+              post.tags = post.tags.split(',');
+            }
             this.post = post;
           }
           else{
