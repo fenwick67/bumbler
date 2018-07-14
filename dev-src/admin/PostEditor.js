@@ -43,31 +43,66 @@ module.exports = function(el,options){
       <div class="field">
         <div>
           <label class="label">Assets</label>
-          <div class="file has-name is-boxed">
-            <label class="file-label">
-              <input multiple="multiple" class="file-input" type="file" style="display:none" @change="fileInputChanged">
-              <span class="file-cta">
-                <span class="file-icon">📁︎🢁</span>
-                <span class="file-label">
-                  Upload assets…
-                </span>
-              </span>
-            </label>
+          <div>
+            <b-field>
+                <b-upload v-model="dropFiles" multiple drag-drop @input="gotFiles">
+                  <div class="content has-text-centered">
+                    <div class="padded">
+                      <p>
+                        <span class="is-size-3">🡅&#xFE0E;</span><span class="is-size-4">Upload</span>
+                      </p>
+                    </div>
+                  </div>
+                </b-upload>
+            </b-field>
           </div>
-          <div class="gallery">
-            <div v-for="asset in post.assets" class="level">
-              <img v-if="asset.type=='image'" :src="asset._preview||asset.href" class="thumb"></img>
-              <span v-else>{{ asset.type }}</span>
-              <i> {{ asset.href }} </i>
-              <a v-if="asset._uploaded === false" class="button is-success" @click="uploadAsset(asset)" v-bind:class="{ 'is-loading' : asset._uploading }">🢁 Upload now</a>
-              <a class="button is-danger" @click="removeAsset(asset,$event)">❌&#xFE0E; Remove</a>
-              <a class="button" @click="featureAsset(asset,$event)" :class="{'is-warning':asset.featured}">
-                <span v-if="asset.featured">★&#xFE0E; Featured</span>
-                <span v-if="!asset.featured">Not Featured</span>
-              </a>
-              <a class="button" @click="addToContent(asset,$event)">Add to Content</a>
-            </div>
-          </div>
+          <div class="uploads-area">
+
+            <div v-for="asset in post.assets" class="upload">
+              <div class="box margined">
+                <div class="asset-edit">
+                  <div class="asset-preview">
+                    <img v-if="asset.type=='image'" :src="asset._preview||asset.href" class="thumb"></img>
+                    <audio v-else-if="asset.type=='audio'" controls :src="asset._preview||asset.href" class="thumb"></audio>
+                    <video v-else-if="asset.type=='video'" controls :src="asset._preview||asset.href" class="thumb"></video>
+                    <span v-else>type {{ asset.type }}</span>
+                  </div>
+                  <div class="asset-rows">
+                    <div class="asset-row">
+                        <span class="has-text-dark"> {{ asset.href }} </span>
+                    </div>
+                    <span class="asset-row">
+
+                      <span class="field is-grouped">
+
+                        <p class="control" v-if="asset._uploaded === false">
+                          <a class="button is-success" @click="uploadAsset(asset)" v-bind:class="{ 'is-loading' : asset._uploading }">🡅 Upload</a>
+                        </p>
+                        <p class="control">
+                          <b-tooltip label="remove">
+                            <a class="button is-danger" @click="removeAsset(asset,$event)">❌&#xFE0E;</a>
+                          </b-tooltip>
+                        </p>
+                        <p class="control">
+                          <b-tooltip :label="asset.featured?'featured':'not featured'">
+                            <a class="button" @click="featureAsset(asset,$event)" :class="{'is-warning':asset.featured,'is-default':!asset.featured}">
+                              ★&#xFE0E;
+                            </a>
+                          </b-tooltip>
+                        </p>
+                        <p class="control">
+                          <b-tooltip label="add inline">
+                            <a class="button is-primary" @click="addToContent(asset,$event)">🡇&#xFE0E;</a>
+                          </b-tooltip>
+                        </p>
+                      </span>
+                    </span>
+                  </div>
+                </div><!-- end asset-edit -->
+              </div><!-- end box -->
+            </div><!-- end column -->
+          </div><!-- end columns -->
+
         </div>
       </div>
       <div class="field">
@@ -86,21 +121,23 @@ module.exports = function(el,options){
         <p class="control">
           <button @click="save" class="button is-link">💾︎ Submit Post</button>
           <button @click="deletePost" v-if="canDelete" class="button is-danger">❌&#xFE0E; Delete</button>
+          <button @click="discard" v-if="!canDelete" class="button is-warning">⮌︎ Discard</button>
         </p>
       </div>
     </div>
+    <b-loading :is-full-page="true" :active="loading" :can-cancel="false"></b-loading>
   </div>`
 
   var view = new Vue({
     el:el,
     template:tpl,
-    data:{options,post,canDelete,files,cursorPosition:0},
+    data:{options,post,canDelete,dropFiles:[],cursorPosition:0,loading:false},
     computed:{},
     methods:{
 
       save:function(){
         console.log('saving');
-
+        this.loading = true;
         var assets = JSON.parse(JSON.stringify(this.post.assets));
         assets = assets.map(a=>{
           Object.keys(a).forEach(k=>{
@@ -124,14 +161,17 @@ module.exports = function(el,options){
         // upload
         this.uploadAll(er=>{
           if (er){
+            this.loading = false;
             return popup(er,'danger','Error uploading files')
           }
 
           api.putPost(json,(er)=>{
+            this.loading = false;
             if (!er){
               popup('uploaded post!','success');
               this.post = {};
               window.startBuild();
+              window.location.hash='#post/create'
             }else{
               popup(er,'danger','Error');
             }
@@ -142,17 +182,34 @@ module.exports = function(el,options){
       },
       // load from browser by id
       load(id){
+        this.loading = true;
+        this.post = {};
         api.getPost(id,(er,post)=>{
+          this.loading = false;
           if (!er){
+
+            // now normalize it
             if (typeof post.tags == 'string'){
               post.tags = post.tags.split(',');
             }
+            post.assets.forEach(a=>{
+              a.featured = !!a.featured;
+            })
+
             this.post = post;
           }
           else{
             window.popup(er,'warning','error loading post')
           }
         });
+      },
+      discard:function(){
+        this.post = {
+          tags:[],
+          assets:[],
+          caption:''
+        };
+        this.dropFiles= [];
       },
       deletePost(callback){
         var callback = typeof callback === 'function'?callback:function(){};
@@ -164,7 +221,7 @@ module.exports = function(el,options){
         api.deletePost(id,function(er){
           if(!er){
             popup('deleted post','success');
-            navigate('posts')
+            window.location.hash='#posts'
             window.startBuild();
           }else{
             popup('failed to delete','danger');
@@ -257,12 +314,11 @@ module.exports = function(el,options){
 
         // actually read the file and render it
         var reader = new FileReader();
-        if (isImg(file.name)){
-          reader.onload = function() {
-            a._preview = reader.result;
-          };
-          reader.readAsDataURL(file);
-        }
+
+        reader.onload = function() {
+          a._preview = reader.result;
+        };
+        reader.readAsDataURL(file);
 
         return a;
       },
@@ -270,6 +326,16 @@ module.exports = function(el,options){
         var input = e.target;
         for (var i = 0; i < input.files.length; i ++){
           this.post.assets.push(this.createAssetFromFile(input.files[i]))
+        }
+      },
+      gotFiles:function(e){
+        for (var i = 0; i < this.dropFiles.length; i ++){
+          this.post.assets.push(this.createAssetFromFile(this.dropFiles[i]))
+        }
+
+        // empty dropfiles
+        while(this.dropFiles.length > 0){
+          this.dropFiles.pop();
         }
       }
 

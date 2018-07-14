@@ -6,7 +6,7 @@ $black-ter:	hsl(220.5, 63%, 14%);
 $grey-darker:	hsl(220.5, 63%, 21%);
 $grey-dark:	hsl(220.5, 63%, 29%);
 
-$grey:	hsl(220.5, 63%, 48%);
+$grey:	hsl(220.5, 10%, 48%);
 
 $grey-light:	hsl(220.5, 63%, 71%);
 $grey-lighter:	hsl(220.5, 63%, 86%);
@@ -17,11 +17,13 @@ $white:	hsl(220.5, 63%, 98%);
 $orange:	hsl(18, 100%, 53%);
 $yellow:	hsl(48, 100%, 67%);
 $green:	hsl(141, 71%, 48%);
-$turquoise:	hsl(171, 100%, 41%);
+$turquoise:	hsl(170.8, 62.6%, 54.9%);
 $blue:	hsl(217, 71%, 53%);
 $purple:	rgb(126, 115, 255);
 $red:	hsl(348, 100%, 61%);
 
+// coral hsl(351.5, 100%, 68.2%)
+// blu #5dc6ff
 $primary:$purple;
 $primary-invert: findColorInvert($primary);
 $link:$primary;

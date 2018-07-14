@@ -12,7 +12,8 @@ module.exports = function(element,options){
         return {
           pages:[],
           editing:false,
-          currentPage:null
+          currentPage:null,
+          loaded:false
         }
       },
       template:`
@@ -60,6 +61,7 @@ module.exports = function(element,options){
             <a class="button is-warning" @click="cancel">⮌︎ Cancel</a>
           </form>
         </div>
+        <b-loading :is-full-page="true" :active="!loaded" :can-cancel="false"></b-loading>
       </div>
       `,
       methods:{
@@ -101,6 +103,7 @@ module.exports = function(element,options){
         loadAll(done){
           var _done = function(e){if (done){done(e)}}
           api.getCustomPages((er,data)=>{
+            this.loaded = true;
             if(!er){
               this.pages = data;
               _done(null)

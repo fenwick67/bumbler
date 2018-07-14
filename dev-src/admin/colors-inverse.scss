@@ -42,6 +42,9 @@ $success:dar($success);
 $warning:dar($warning);
 $danger:dar($danger);
 
+$dark:inv($dark);
+$light:inv($dark);
+
 $colors: (
   "white": ($white, $black),
   "black": ($black, $white),

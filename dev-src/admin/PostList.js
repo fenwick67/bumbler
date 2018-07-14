@@ -35,6 +35,7 @@ function PostList(el) {
              <a class="button is-link" @click="edit(id)">✏️ Edit</a>
           </div>
         </div>
+        <b-loading :is-full-page="true" :active="loading" :can-cancel="false"></b-loading>
       </div>
       `,
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T19:25:13-05:00</updated>
+<updated>2018-07-14T16:01:48-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,204 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/3.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
-<id>http://localhost:8000/post/01CHS0KH008Y5JVTDRA4TJ8HVG.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Babies in court</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/37.xml"/><entry>
+<id>http://localhost:8000/post/01CJ5WK400PHTW5QW1VC6DAPAB.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Black family in Subway</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US immigration courts often require babies to &lt;a href=&#34;https://www.cnn.com/2018/06/30/politics/children-in-court/index.html&#34;&gt;represent themselves in court&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; A Subway employee reported a supposedly dangerous situation — a black family had &lt;a href=&#34;https://www.dailykos.com/stories/2018/7/5/1778297/-Subway-employee-calls-police-on-two-parents-and-their-four-kids-eating-dinner&#34;&gt;stayed for a whole hour&lt;/a&gt; while eating, and several had used the toilet.  She was so rattled that she counted 6 people as 8 people. &lt;/p&gt;&lt;p&gt; Perhaps she assumed that nobody would stay in a &amp;quot;fast food&amp;quot; restaurant for a whole hour except for evil purposes.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH008Y5JVTDRA4TJ8HVG.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400PHTW5QW1VC6DAPAB.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH008RS0PZTEY7FVW88T.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Urgent: Profiting from refugee imprisonment</title>
+<id>http://localhost:8000/post/01CJ5WK400MC9RZGZT67K7K3RG.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Sadism of immigration thugs</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Everyone: &lt;a href=&#34;https://act.credoaction.com/sign/wells_fargo_immigration&#34;&gt;call on Wells Fargo, JPMorgan Chase and BlackRock&lt;/a&gt; to stop profiting from imprisonment of refugees.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.dailykos.com/stories/2018/7/5/1778207/--He-was-full-of-dirt-and-lice-Court-documents-describe-cruel-treatment-of-migrant-kids-families&#34;&gt;Court filings by refugee parents&lt;/a&gt; show the abuse, dishonesty and cruelty of the immigration &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; toward both parents and children. &lt;/p&gt;&lt;p&gt; Those &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; are getting off on sadism.  I wouldn&#39;t trust any of them in a position of responsibility from which they could mistreat vulnerable people. &lt;/p&gt;&lt;p&gt; Is there a psychological treatment to help them become decent members of society?   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH008RS0PZTEY7FVW88T.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400MC9RZGZT67K7K3RG.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH006S6ZQNNAFJTNP2HS.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Unmonitored opioid prescriptions</title>
+<id>http://localhost:8000/post/01CJ5WK400KZ60YBPJ5XAWX3M0.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Surveillance by parents</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; A doctor in Britain killed almost a hundred people, unintentionally, by &lt;a href=&#34;https://www.theguardian.com/society/2018/jun/20/gosport-war-memorial-hospital-jane-barton-inquiry-suspicious-deaths&#34;&gt;prescribing opioids and failing to monitor them&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; This was not an act of euthanasia, but it  &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/25/right-to-die-law-prevent-another-gosport-scandal&#34;&gt;may be cited to oppose the right to euthanasia&lt;/a&gt;, as well as to deny people in great pain the treatment they need. &lt;/p&gt;&lt;p&gt; A proper right-to-die law should not make people wait for years in pain, or in helpless boredom, until death is only a few months away. Anyone who is too incapacitated to commit suicide alone should have the right to help.   &lt;/p&gt;</content>
+&lt;p&gt; A US college student resents how digital surveillance by her parents gave them power over &lt;a href=&#34;https://letgrow.org/what-it-feels-like-to-grow-up-with-a-parent-reading-your-texts/&#34;&gt;every aspect of her life&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH006S6ZQNNAFJTNP2HS.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400KZ60YBPJ5XAWX3M0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH006RFVZ8P95FQ7BG5Z.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Urgent: Divest from weapons companies</title>
+<id>http://localhost:8000/post/01CJ5WK400K7THEYV91E54VSV7.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Refugee and US citizen imprisonment</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Everyone: &lt;a href=&#34;https://actionnetwork.org/petitions/public-pensions-must-divest-from-weapons-dealers&#34;&gt;call on all governments&lt;/a&gt; to divest public pension funds from weapons companies.   &lt;/p&gt;</content>
+&lt;p&gt; ACLU: The widespread revulsion against imprisoning refugee children, and subsequently indefinitely imprisoning refugee families, &lt;a href=&#34;https://www.commondreams.org/views/2018/07/06/family-separation-crisis-exposes-americas-addiction-incarceration&#34;&gt;may provide an opportunity&lt;/a&gt; to win the campaign to stop imprisoning so many US citizens.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH006RFVZ8P95FQ7BG5Z.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400K7THEYV91E54VSV7.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH003BYX6TN8ZNRXF4PG.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>US immigration thug sexually abuses child</title>
+<id>http://localhost:8000/post/01CJ5WK400J7GEDR7CA9MPS7HW.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>French thug charged for killing</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; One &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; in a US immigration prison sexually abused a child for months, and  &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/18/1772895/-Detention-officer-arrested-for-sexually-assaulting-a-4-year-old-threatening-mom-with-deportation&#34;&gt;threatened to have the child&#39;s mother deported if she complained&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; If he can get them deported before his trial, there might be no witnesses to testify against him.   &lt;/p&gt;</content>
+&lt;p&gt; A French &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thug&lt;/a&gt; has been charged for a killing that sparked a riot, and &lt;a href=&#34;https://www.theguardian.com/world/2018/jul/06/policeman-charged-for-shooting-that-sparked-riots-in-france&#34;&gt;changed his story afterwards&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH003BYX6TN8ZNRXF4PG.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400J7GEDR7CA9MPS7HW.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH0032926TJNGK90ZDQH.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Repressive form of internet</title>
+<id>http://localhost:8000/post/01CJ5WK400DWR82WNC4NPHMEXB.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>End Citizens United group</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; China is  &lt;a href=&#34;https://www.theatlantic.com/international/archive/2018/06/zte-huawei-china-trump-trade-cyber/563033/&#34;&gt;spreading a repressive form of internet&lt;/a&gt; to repressive countries around the world. &lt;/p&gt;&lt;p&gt; The article spreads confusion when it uses the term &amp;quot;intellectual property&amp;quot;.  What this article really means is &amp;quot;trade secrets&amp;quot;. Another article may use the same phrase to mean &amp;quot;copyright&amp;quot;.  Yet another may use it to mean &amp;quot;patents&amp;quot;. &lt;a href=&#34;https://gnu.org/philosophy/not-ipr.html&#34;&gt;The three have nothing in common&lt;/a&gt;, so any use of a term that tries to generalize about all of them (and other things, too!) is pure confusion.   &lt;/p&gt;</content>
+&lt;p&gt; The group End Citizens United funds the reelection campaigns of &amp;quot;centrist&amp;quot; Democrats who are &lt;a href=&#34;https://www.commondreams.org/news/2018/07/05/actions-speak-louder-words-prominent-group-end-citizens-united-called-out-backing&#34;&gt;not especially strong&lt;/a&gt; on getting money out of politics.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH0032926TJNGK90ZDQH.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400DWR82WNC4NPHMEXB.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH0024SW0Z8GTRJJD0D9.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Independent Workers Union of GB</title>
+<id>http://localhost:8000/post/01CJ5WK400DCBNXSGPY7EG993D.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Tennessee voter suppression</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Independent Workers Union of Great Britain is unionizing the sweatshop service economy and &lt;a href=&#34;https://www.theguardian.com/politics/2018/jul/01/union-beating-gig-economy-giants-iwgb-zero-hours-workers&#34;&gt;achieving victories&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.dailykos.com/stories/2018/7/4/1777143/-Huge-News-Civil-Rights-1-Voter-Suppression-0&#34;&gt;A US court ruled&lt;/a&gt; that Tennessee cannot confiscate drivers&#39; licenses because people owe money. &lt;/p&gt;&lt;p&gt; This will thwart one scheme for voter suppression.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH0024SW0Z8GTRJJD0D9.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400DCBNXSGPY7EG993D.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHS0KH001XQZ08SEYQVX9BMS.html</id>
-<published>2018-07-07T00:00:00.000Z</published>
-<updated>2018-07-07T00:00:00.000Z</updated>
-<title>Stealing sand</title>
+<id>http://localhost:8000/post/01CJ5WK400C7RYATC556BZN5P8.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Lobster trapping and whales</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The global supply of sand suitable for making concrete is insufficient, so gangs &lt;a href=&#34;https://www.theguardian.com/global/2018/jul/01/riddle-of-the-sands-the-truth-behind-stolen-beaches-and-dredged-islands&#34;&gt;steal sand from beaches&lt;/a&gt;, and in some places kill anyone who tries to report or stop them.   &lt;/p&gt;</content>
+&lt;p&gt; Is it wise to shut down lobster trapping in a region of the sea because &lt;a href=&#34;https://www.theguardian.com/environment/2018/jul/06/canada-grand-manan-ban-fishing-endangered-whale&#34;&gt;a whale was spotted&lt;/a&gt; in the area?   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHS0KH001XQZ08SEYQVX9BMS.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400C7RYATC556BZN5P8.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00Z2KGX2Y6QX4G4BJ3.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>NSA dragnet</title>
+<id>http://localhost:8000/post/01CJ5WK400AD4BKCFZZJFPXFH9.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Federal guidelines cancelled</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; ACLU: &lt;a href=&#34;https://www.aclu.org/blog/national-security/privacy-and-surveillance/nsa-using-secrecy-avoid-courtroom-reckoning-its&#34;&gt;The NSA Is Using Secrecy&lt;/a&gt; to Avoid a Courtroom Reckoning on Its Global Surveillance Dragnet.   &lt;/p&gt;</content>
+&lt;p&gt; Saboteur Sessions &lt;a href=&#34;https://www.commondreams.org/views/2018/07/06/jeff-sessions-sets-back-clock&#34;&gt;cancelled some federal guidelines&lt;/a&gt; about how federal agencies should respect human rights.  These guidelines go back to Presidents Obama, Bush II, and Ford.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00Z2KGX2Y6QX4G4BJ3.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400AD4BKCFZZJFPXFH9.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00YK8MGNN3KESBTCVH.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Urgent: Funding for the DHS</title>
+<id>http://localhost:8000/post/01CJ5WK400692AB02BY8VM301G.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Record-setting heat wave</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;https://www.aclu.org/issues/immigrants-rights/call-senators-defund-dhs&#34;&gt;call your senators&lt;/a&gt; and suggest cutting off funding to the Department of Harshness and Sadism.   &lt;/p&gt;</content>
+&lt;p&gt; Last week&#39;s &lt;a href=&#34;https://www.dailykos.com/stories/2018/7/5/1777626/-Red-hot-planet-All-time-heat-records-have-been-set-all-over-the-world-during-the-past-week&#34;&gt;record-setting heat wave&lt;/a&gt;, in North America and Europe, was unusual. &lt;/p&gt;&lt;p&gt; In a couple of decades, a heat wave at the same level will be so common that it won&#39;t be worth reporting.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00YK8MGNN3KESBTCVH.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK400692AB02BY8VM301G.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00XXTK2X21SM8J5V1C.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Campaigns against unions</title>
+<id>http://localhost:8000/post/01CJ5WK4004D0TJ9S0VJT592M3.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Andrew Wheeler</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Massively-funded right-wing campaigns are pressuring public workers &lt;a href=&#34;https://theintercept.com/2018/06/30/janus-bleed-unions-state-policy-network/&#34;&gt;to stop supporting the unions&lt;/a&gt; that represent them. In private, they admit that their goal is to deny the Democratic Party election funds and votes. &lt;/p&gt;&lt;p&gt; The party&#39;s best hope in coping with this is to choose progressive candidates that give voters an opportunity to aim for more than delaying the advance of plutocratist poverty.   &lt;/p&gt;</content>
+&lt;p&gt; Andrew Wheeler, who now runs the EPA, is not crazy and careless like Pruitt.  He is a &lt;a href=&#34;https://www.commondreams.org/views/2018/07/06/how-dangerous-new-epa-chief-andrew-wheeler-very-heres-why&#34;&gt;careful and persistent saboteur&lt;/a&gt; for the coal business.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00XXTK2X21SM8J5V1C.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK4004D0TJ9S0VJT592M3.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00XQD5CMHWP656QF6G.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Vehicle inspections</title>
+<id>http://localhost:8000/post/01CJ5WK4001X1ZNCMV3VF2WTE6.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Men who raped a journalist</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://truthout.org/articles/when-everyone-is-a-suspect-how-vehicle-inspections-terrorize-immigrant-communities/&#34;&gt;When Everyone Is a Suspect&lt;/a&gt;: How Vehicle Inspections Terrorize Immigrant  Communities.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/05/a-man-raped-me-another-tried-to-they-were-not-animals-they-were-men&#34;&gt;A journalist says&lt;/a&gt; that the strangers that raped her are not monsters or animals.  They are men who think they can get away with violent crime.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00XQD5CMHWP656QF6G.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK4001X1ZNCMV3VF2WTE6.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00SM58J9G4JW0G54V1.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Antibiotic resistance in meat</title>
+<id>http://localhost:8000/post/01CJ5WK4001EARR04HWS3ZVMH1.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Harassing black drivers</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; As of 2015, most of the bacteria in most of the meat samples from US supermarkets were &lt;a href=&#34;https://www.commondreams.org/news/2018/06/29/aaack-new-analysis-shows-superbugs-lurking-three-fourths-us-supermarket-meat&#34;&gt;resistant to some antibiotics&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;Thugs&lt;/a&gt; in the area of St Louis systematically harass black drivers by giving them lots of traffic tickets that they can&#39;t afford to pay.  They systematically allow white drivers to &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jul/05/missouri-driving-while-black-st-louis&#34;&gt;get away with much worse&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00SM58J9G4JW0G54V1.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK4001EARR04HWS3ZVMH1.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00S2P44M62DRJKARQK.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Letting a boat sink</title>
+<id>http://localhost:8000/post/01CJ5WK40008EJVM27GJZJQ2T0.html</id>
+<published>2018-07-12T00:00:00.000Z</published>
+<updated>2018-07-12T00:00:00.000Z</updated>
+<title>Urgent: Justice for Anthony Wall</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Italy and Libya told a nearby rescue ship to stay away from a sinking boat with 125 people on it.  Then they waited 90 minutes, until &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/29/italy-and-libya-accused-after-migrant-deaths-in-dinghy-sinking&#34;&gt;100 of them had drowned&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Everyone: &lt;a href=&#34;https://campaigns.organizefor.org/petitions/justice-for-anthony-wall&#34;&gt;Demand justice for Anthony Wall&lt;/a&gt;, who was attacked by restaurant staff and then by &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt;, apparently for being black and gay.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00S2P44M62DRJKARQK.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ5WK40008EJVM27GJZJQ2T0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00PKDD8CNJ1M53RY7T.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Right-wing manipulation</title>
+<id>http://localhost:8000/post/01CJ3A6D00ZTZ6624HZ7GY5WX8.html</id>
+<published>2018-07-11T00:00:00.000Z</published>
+<updated>2018-07-11T00:00:00.000Z</updated>
+<title>Protest camps near ICE offices</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Right-wing rich Americans can manipulate voters through Facebook as well as Russians can.  And &lt;a href=&#34;https://truthout.org/articles/1-8-billion-in-unregulated-digital-ads-could-sway-midterms/&#34;&gt;they are doing it now&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; Americans have set up protest camps near ICE offices in several cities &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jul/06/occupy-ice-movement-new-york-louisville-portland&#34;&gt;demanding to abolish the ICE&lt;/a&gt; (the deportation thug agency).   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00PKDD8CNJ1M53RY7T.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ3A6D00ZTZ6624HZ7GY5WX8.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00P91B9VVC1BWVHQM3.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>California privacy law</title>
+<id>http://localhost:8000/post/01CJ3A6D00ZGGQFBT259P4SAD4.html</id>
+<published>2018-07-11T00:00:00.000Z</published>
+<updated>2018-07-11T00:00:00.000Z</updated>
+<title>Extreme capitalism</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The &lt;a href=&#34;https://www.commondreams.org/news/2018/06/29/promising-bellwether-or-utter-failure-california-passes-landmark-privacy-law-online&#34;&gt;California privacy law was passed&lt;/a&gt; to forestall a ballot question that would have gone further. &lt;/p&gt;&lt;p&gt; However, it looks like the ballot initiative was also limited to regulating businesses that collect data.  Would it have done anything about government face recognition cameras?   &lt;/p&gt;</content>
+&lt;p&gt; George Soros strove with all his intellect to use his money to protect democracy — but he was  &lt;a href=&#34;https://www.theguardian.com/news/2018/jul/06/the-george-soros-philosophy-and-its-fatal-flaw&#34;&gt;defeated by extreme capitalism&lt;/a&gt;.  Extreme capitalism treats democracy as an inconvenience to be corrupted and subverted. &lt;/p&gt;&lt;p&gt; I do not reach the conclusion that his fundamental philosophical ideas are deficient.  We cannot point to some other approach and assert with confidence that it would have achieved more.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00P91B9VVC1BWVHQM3.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ3A6D00ZGGQFBT259P4SAD4.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00HWH2KQAEYCM6YERK.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Census undercount</title>
+<id>http://localhost:8000/post/01CJ3A6D00TWY5Y8VBWC3VCY4F.html</id>
+<published>2018-07-11T00:00:00.000Z</published>
+<updated>2018-07-11T00:00:00.000Z</updated>
+<title>War on drugs</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The 2020 Census Could &lt;a href=&#34;https://www.motherjones.com/politics/2018/06/census-undercount-millions-of-kids/&#34;&gt;Overlook Millions of (low income) Kids&lt;/a&gt;, Report Finds.   &lt;/p&gt;</content>
+&lt;p&gt; Billy Caldwell needs his marijuana oil twice a day to treat his epilepsy, and his mother will be forced to spend  &lt;a href=&#34;https://www.theguardian.com/society/2018/jul/05/cannabis-oil-row-billy-caldwell-under-hospital-arrest-says-mother&#34;&gt;four hours each time bringing him to the hospital and back&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; That leaves a total of 8 waking hours per day for all other waking activities.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00HWH2KQAEYCM6YERK.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ3A6D00TWY5Y8VBWC3VCY4F.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00HMCVMHCBZWF62HNS.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Water privatization</title>
+<id>http://localhost:8000/post/01CJ3A6D00TNNSRSYRSH7F0B77.html</id>
+<published>2018-07-11T00:00:00.000Z</published>
+<updated>2018-07-11T00:00:00.000Z</updated>
+<title>Saboteur Pruitt</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Privatizing Puerto Rico&#39;s water is likely to &lt;a href=&#34;https://www.commondreams.org/newswire/2018/06/26/water-privatization-adds-insult-injury-puerto-rico&#34;&gt;raise the price by 60%&lt;/a&gt;. Given how poor the island is now, many will be without water.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://stallman.org/glossary.html#saboteur&#34;&gt;Saboteur&lt;/a&gt; Pruitt of the EPA has been  &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jul/05/scott-pruitt-what-it-took-to-get-him-to-resign-from-his-epa-job&#34;&gt;forced out due to many personal scandals&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Any one of these scandals would have ended the career of any politician in the past, but &lt;a href=&#34;https://stallman.org/glossary.html#cheater&#34;&gt;the cheater&lt;/a&gt; doesn&#39;t mind them. &lt;/p&gt;&lt;p&gt; His temporary replacement is  &lt;a href=&#34;https://www.theguardian.com/environment/2018/jul/06/who-is-andrew-wheeler-epa-environment-trump-weapon&#34;&gt;likely to commit the same sorts of sabotage&lt;/a&gt;, but more systematically and without the side-scandals.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00HMCVMHCBZWF62HNS.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ3A6D00TNNSRSYRSH7F0B77.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00GZBJM6WH5YXRX7M2.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Uranium in North Korea</title>
+<id>http://localhost:8000/post/01CJ3A6D00QWPD8QZGVVQMMD5H.html</id>
+<published>2018-07-11T00:00:00.000Z</published>
+<updated>2018-07-11T00:00:00.000Z</updated>
+<title>Channel One&#39;s commercials</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US spy officials say that North Korea is &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/30/north-korea-still-secretly-enriching-uranium-say-us-officials&#34;&gt;still enriching uranium&lt;/a&gt;, and say this is &amp;quot;deceiving&amp;quot; the US. &lt;/p&gt;&lt;p&gt; But it would not be a deception, rather a reflection of the fact that North Korea has not made a concrete deal with concrete commitments about nuclear weapons.   &lt;/p&gt;</content>
+&lt;p&gt; Channel One&#39;s commercial advertisements to captive audiences in US schools are &lt;a href=&#34;https://www.commondreams.org/newswire/2018/07/05/advocates-commercial-free-schools-cheer-channel-one-signs&#34;&gt;coming to an end&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00GZBJM6WH5YXRX7M2.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ3A6D00QWPD8QZGVVQMMD5H.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CHPE6T00FK4DH1A287E6815B.html</id>
-<published>2018-07-06T00:00:00.000Z</published>
-<updated>2018-07-06T00:00:00.000Z</updated>
-<title>Wood pellets</title>
+<id>http://localhost:8000/post/01CJ3A6D00QKNPQ1NT6TEHSX1Y.html</id>
+<published>2018-07-11T00:00:00.000Z</published>
+<updated>2018-07-11T00:00:00.000Z</updated>
+<title>Air pollution from ships</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Wood pellets sound renewable.  Maybe they would be so if made from fast-growing tree farms, but they are being made by cutting down ordinary forests that would &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/30/wood-pellets-biomass-environmental-impact&#34;&gt;take a century to regrow&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; That&#39;s if they ever do regrow.  &lt;a href=&#34;https://stallman.org/glossary.html#global heating&#34;&gt;Global heating&lt;/a&gt; could prevent that. This is why I have always been skeptical of &amp;quot;carbon offset&amp;quot; schemes that &lt;a href=&#34;https://stallman.org/archives/2017-may-aug.html#29_August_2017_(Planting_trees_to_take_CO2_out_of_air)&#34;&gt;rely on planting trees&lt;/a&gt;.   &lt;/p&gt;</content>
+&lt;p&gt; The engines of ships in the Mediterranean produce lots of air pollution.  This is  &lt;a href=&#34;https://www.theguardian.com/world/2018/jul/06/i-dont-want-ships-to-kill-me-marseille-fights-cruise-liner-pollution&#34;&gt;especially dangerous when they run their engines at a dock in a city&lt;/a&gt;, right next to where people live.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHPE6T00FK4DH1A287E6815B.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ3A6D00QKNPQ1NT6TEHSX1Y.html"/>
 </entry>
 </feed>

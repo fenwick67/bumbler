@@ -32,17 +32,19 @@ module.exports = function SettingsManager (el){
 
   return new Vue({
     el:el,
-    data:{labels,settings,settingsKeys},
+    data:{labels,settings,settingsKeys,loading:false,},
     template:`
     <form @keydown.ctrl.83.prevent="save">
       <div>
         <div>
           <div class="field" v-for="key in settingsKeys">
-            <label class="label">{{ labels[key]?labels[key]:'' }}
-              <input v-if="typeof settings[key] == 'boolean'" type="checkbox" v-model="settings[key]"></input>
-              <input v-else-if="typeof settings[key] == 'number'" class="input" type="number" v-model="settings[key]"></input>
+
+            <b-checkbox v-if="typeof settings[key] == 'boolean'" v-model="settings[key]"><div class="label">{{ labels[key]?labels[key]:'' }}</div></b-checkbox>
+            <label v-else class="label">{{ labels[key]?labels[key]:'' }}
+              <input v-if="typeof settings[key] == 'number'" class="input" type="number" v-model="settings[key]"></input>
               <input v-else class="input" type="text" v-model="settings[key]"></input>
             </label>
+
           </div>
         </div>
       </div>
@@ -55,10 +57,13 @@ module.exports = function SettingsManager (el){
           <button class="button is-warning" @click="reload">⮌︎ Revert Changes</button>
         </p>
       </div>
+      <b-loading :is-full-page="true" :active="loading" :can-cancel="false"></b-loading>
     </form>`,
     methods:{
       load(reload){
+        this.loading = true;
         api.getSettings((er,settings)=>{
+          this.loading = false;
           if(er){
             window.popup(er,'danger','error loading settings')
           }else{

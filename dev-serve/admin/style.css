@@ -13,9 +13,15 @@
 @viewport {
   width: device-width; }
 
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 html.admin:not(.nightmode), html.admin.nightmode {
-  background-color: red;
-  color: red;
+  background-color: #f7f9fd;
+  color: #0a162e;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -1453,7 +1459,7 @@ html.admin:not(.nightmode) {
     html.admin:not(.nightmode) .button.is-static {
       background-color: #cddaf4;
       border-color: #c5d3f2;
-      color: #2d5fc8;
+      color: #6e7687;
       box-shadow: none;
       pointer-events: none; }
     html.admin:not(.nightmode) .button.is-rounded {
@@ -2550,7 +2556,7 @@ html.admin:not(.nightmode) {
       width: 2.25em;
       z-index: 4; }
     html.admin:not(.nightmode) .control.has-icon .input:focus + .icon, html.admin:not(.nightmode) .control.has-icon .taginput .taginput-container.is-focusable:focus + .icon, html.admin:not(.nightmode) .taginput .control.has-icon .taginput-container.is-focusable:focus + .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icon .taginput-container.is-focusable:focus + .icon {
-      color: #2d5fc8; }
+      color: #6e7687; }
     html.admin:not(.nightmode) .control.has-icon .input.is-small + .icon, html.admin:not(.nightmode) .control.has-icon .taginput .is-small.taginput-container.is-focusable + .icon, html.admin:not(.nightmode) .taginput .control.has-icon .is-small.taginput-container.is-focusable + .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icon .is-small.taginput-container.is-focusable + .icon {
       font-size: 0.75rem; }
     html.admin:not(.nightmode) .control.has-icon .input.is-medium + .icon, html.admin:not(.nightmode) .control.has-icon .taginput .is-medium.taginput-container.is-focusable + .icon, html.admin:not(.nightmode) .taginput .control.has-icon .is-medium.taginput-container.is-focusable + .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icon .is-medium.taginput-container.is-focusable + .icon {
@@ -2568,7 +2574,7 @@ html.admin:not(.nightmode) {
     html.admin:not(.nightmode) .control.has-icons-left .input:focus ~ .icon, html.admin:not(.nightmode) .control.has-icons-left .taginput .taginput-container.is-focusable:focus ~ .icon, html.admin:not(.nightmode) .taginput .control.has-icons-left .taginput-container.is-focusable:focus ~ .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icons-left .taginput-container.is-focusable:focus ~ .icon,
     html.admin:not(.nightmode) .control.has-icons-left .select:focus ~ .icon, html.admin:not(.nightmode) .control.has-icons-right .input:focus ~ .icon, html.admin:not(.nightmode) .control.has-icons-right .taginput .taginput-container.is-focusable:focus ~ .icon, html.admin:not(.nightmode) .taginput .control.has-icons-right .taginput-container.is-focusable:focus ~ .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icons-right .taginput-container.is-focusable:focus ~ .icon,
     html.admin:not(.nightmode) .control.has-icons-right .select:focus ~ .icon {
-      color: #2d5fc8; }
+      color: #6e7687; }
     html.admin:not(.nightmode) .control.has-icons-left .input.is-small ~ .icon, html.admin:not(.nightmode) .control.has-icons-left .taginput .is-small.taginput-container.is-focusable ~ .icon, html.admin:not(.nightmode) .taginput .control.has-icons-left .is-small.taginput-container.is-focusable ~ .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icons-left .is-small.taginput-container.is-focusable ~ .icon,
     html.admin:not(.nightmode) .control.has-icons-left .select.is-small ~ .icon, html.admin:not(.nightmode) .control.has-icons-right .input.is-small ~ .icon, html.admin:not(.nightmode) .control.has-icons-right .taginput .is-small.taginput-container.is-focusable ~ .icon, html.admin:not(.nightmode) .taginput .control.has-icons-right .is-small.taginput-container.is-focusable ~ .icon, html.admin.nightmode .taginput html.admin:not(.nightmode) .control.has-icons-right .is-small.taginput-container.is-focusable ~ .icon,
     html.admin:not(.nightmode) .control.has-icons-right .select.is-small ~ .icon {
@@ -4573,7 +4579,7 @@ html.admin:not(.nightmode) {
       background-color: #c5d3f2;
       border-color: #c5d3f2;
       box-shadow: none;
-      color: #2d5fc8;
+      color: #6e7687;
       opacity: 0.5; }
   html.admin:not(.nightmode) .pagination-previous,
   html.admin:not(.nightmode) .pagination-next {
@@ -6387,7 +6393,7 @@ html.admin:not(.nightmode) {
         height: 1.25em;
         flex-shrink: 0;
         border-radius: 3px;
-        border: 2px solid #2d5fc8;
+        border: 2px solid #6e7687;
         transition: background 150ms ease-out; }
       html.admin:not(.nightmode) .b-checkbox.checkbox input[type=checkbox]:checked + .check {
         background: #7e73ff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
@@ -6449,7 +6455,7 @@ html.admin:not(.nightmode) {
       html.admin:not(.nightmode) .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-link {
         border-color: #7e73ff; }
     html.admin:not(.nightmode) .b-checkbox.checkbox:focus input[type=checkbox] + .check {
-      box-shadow: 0 0 0.5em rgba(45, 95, 200, 0.8); }
+      box-shadow: 0 0 0.5em rgba(110, 118, 135, 0.8); }
     html.admin:not(.nightmode) .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check {
       box-shadow: 0 0 0.5em rgba(126, 115, 255, 0.8); }
       html.admin:not(.nightmode) .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-white {
@@ -6510,7 +6516,7 @@ html.admin:not(.nightmode) {
       html.admin:not(.nightmode) .datepicker .datepicker-table .datepicker-header {
         display: table-header-group; }
         html.admin:not(.nightmode) .datepicker .datepicker-table .datepicker-header .datepicker-cell {
-          color: #2d5fc8;
+          color: #6e7687;
           font-weight: 600; }
       html.admin:not(.nightmode) .datepicker .datepicker-table .datepicker-body {
         display: table-row-group; }
@@ -6968,7 +6974,7 @@ html.admin:not(.nightmode) {
         justify-content: center;
         width: 1.25em;
         height: 1.25em;
-        border: 2px solid #2d5fc8;
+        border: 2px solid #6e7687;
         border-radius: 50%;
         transition: background 150ms ease-out; }
         html.admin:not(.nightmode) .b-radio.radio input[type=radio] + .check:before {
@@ -7050,7 +7056,7 @@ html.admin:not(.nightmode) {
       html.admin:not(.nightmode) .b-radio.radio:hover input[type=radio] + .check.is-link {
         border-color: #7e73ff; }
     html.admin:not(.nightmode) .b-radio.radio:focus input[type=radio] + .check {
-      box-shadow: 0 0 0.5em rgba(45, 95, 200, 0.8); }
+      box-shadow: 0 0 0.5em rgba(110, 118, 135, 0.8); }
     html.admin:not(.nightmode) .b-radio.radio:focus input[type=radio]:checked + .check {
       box-shadow: 0 0 0.5em rgba(126, 115, 255, 0.8); }
       html.admin:not(.nightmode) .b-radio.radio:focus input[type=radio]:checked + .check.is-white {
@@ -7094,7 +7100,7 @@ html.admin:not(.nightmode) {
       font-style: normal;
       padding: 0.25em 0; }
   html.admin:not(.nightmode) .select.is-empty select {
-    color: rgba(45, 95, 200, 0.7); }
+    color: rgba(110, 118, 135, 0.7); }
   html.admin:not(.nightmode) .switch {
     cursor: pointer;
     display: inline-flex;
@@ -7183,7 +7189,7 @@ html.admin:not(.nightmode) {
     html.admin:not(.nightmode) .switch:focus {
       outline: none; }
       html.admin:not(.nightmode) .switch:focus input[type=checkbox] + .check {
-        box-shadow: 0 0 0.5em rgba(45, 95, 200, 0.6); }
+        box-shadow: 0 0 0.5em rgba(110, 118, 135, 0.6); }
       html.admin:not(.nightmode) .switch:focus input[type=checkbox]:checked + .check {
         box-shadow: 0 0 0.5em rgba(126, 115, 255, 0.8); }
         html.admin:not(.nightmode) .switch:focus input[type=checkbox]:checked + .check.is-white {
@@ -7216,7 +7222,7 @@ html.admin:not(.nightmode) {
     html.admin:not(.nightmode) .switch[disabled] {
       opacity: 0.5;
       cursor: not-allowed;
-      color: #2d5fc8; }
+      color: #6e7687; }
   html.admin:not(.nightmode) .table-wrapper .table {
     margin-bottom: 0; }
   html.admin:not(.nightmode) .table-wrapper:not(:last-child) {
@@ -7259,10 +7265,10 @@ html.admin:not(.nightmode) {
             justify-content: center;
             text-align: center; }
         html.admin:not(.nightmode) .b-table .table th.is-current-sort {
-          border-color: #2d5fc8;
+          border-color: #6e7687;
           font-weight: 700; }
         html.admin:not(.nightmode) .b-table .table th.is-sortable:hover {
-          border-color: #2d5fc8; }
+          border-color: #6e7687; }
         html.admin:not(.nightmode) .b-table .table th.is-sortable,
         html.admin:not(.nightmode) .b-table .table th.is-sortable .th-wrap {
           cursor: pointer; }
@@ -7426,7 +7432,7 @@ html.admin:not(.nightmode) {
       html.admin:not(.nightmode) .timepicker .control .select select option {
         font-size: 1.5rem; }
         html.admin:not(.nightmode) .timepicker .control .select select option:disabled {
-          color: rgba(45, 95, 200, 0.7); }
+          color: rgba(110, 118, 135, 0.7); }
     html.admin:not(.nightmode) .timepicker .control .select:after {
       display: none; }
   html.admin:not(.nightmode) .timepicker .control:nth-child(1) .select select {
@@ -7834,6 +7840,9 @@ html.admin:not(.nightmode) {
       html.admin:not(.nightmode) .upload .upload-draggable:hover.is-link, html.admin:not(.nightmode) .upload .upload-draggable.is-hovered.is-link {
         border-color: #7e73ff;
         background: rgba(126, 115, 255, 0.05); }
+  html.admin:not(.nightmode) .box {
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(10, 22, 46, 0.1);
+    border-radius: 0.5rem; }
   html.admin:not(.nightmode) pre, html.admin:not(.nightmode) body, html.admin:not(.nightmode) .table thead th {
     color: #1b3a79; }
   html.admin:not(.nightmode) pre {
@@ -7855,7 +7864,7 @@ html.admin:not(.nightmode) {
       html.admin:not(.nightmode) .sidebar a:active {
         color: #1b3a79; }
       html.admin:not(.nightmode) .sidebar a:not(.is-active):hover {
-        color: #2d5fc8;
+        color: #6e7687;
         background: #eaeffa; }
   html.admin:not(.nightmode) .sidebar > .big, html.admin:not(.nightmode) .sidebar > .big * {
     color: #7e73ff !important;
@@ -7874,7 +7883,8 @@ html.admin:not(.nightmode) {
     margin: 1em; }
   html.admin:not(.nightmode) #app .panel {
     background: #eaeffa;
-    flex: 1 1 auto; }
+    flex: 1 1 auto;
+    position: relative; }
   html.admin:not(.nightmode) #app .panel .panel-header {
     background: #7e73ff; }
   html.admin:not(.nightmode) #app .panel .panel-header .title, html.admin:not(.nightmode) #app .panel .panel-header .subtitle {
@@ -7944,9 +7954,9 @@ html.admin:not(.nightmode) {
     transform: translateX(40rem) scale(1); }
   html.admin:not(.nightmode) .thumb {
     display: inline-block;
-    max-height: 100px;
-    max-width: 150px;
-    border: solid 1px black; }
+    height: 128px;
+    width: 128px;
+    object-fit: cover; }
   html.admin:not(.nightmode) .asset {
     display: flex;
     align-items: center;
@@ -7959,6 +7969,8 @@ html.admin:not(.nightmode) {
     font-family: monospace;
     white-space: pre;
     overflow: auto; }
+  html.admin:not(.nightmode) .padded {
+    padding: 1rem; }
   html.admin:not(.nightmode) .gallery {
     display: flex;
     text-align: center;
@@ -7967,8 +7979,43 @@ html.admin:not(.nightmode) {
   html.admin:not(.nightmode) .gallery > * {
     flex: 1 1 auto; }
   html.admin:not(.nightmode) .button:hover {
-    color: #2d5fc8;
+    color: #1b3a79;
     background: #eaeffa; }
+  html.admin:not(.nightmode) .button:focus {
+    color: #6e7687; }
+  html.admin:not(.nightmode) .menu .button {
+    text-align: left;
+    height: inherit; }
+  html.admin:not(.nightmode) .asset-edit {
+    display: flex;
+    flex-direction: row; }
+  html.admin:not(.nightmode) .asset-edit > .asset-preview {
+    min-height: 4rem;
+    flex-shrink: 0; }
+  html.admin:not(.nightmode) .asset-edit > .asset-rows {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 1rem; }
+  html.admin:not(.nightmode) .asset-edit > .asset-rows > .asset-row {
+    height: 50%; }
+  html.admin:not(.nightmode) .uploads-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+  html.admin:not(.nightmode) .uploads-area .upload {
+    width: 50%;
+    justify-content: space-between;
+    flex: 1 0 auto; }
+  html.admin:not(.nightmode) .upload:nth-child(even) .box.margined, html.admin:not(.nightmode) .upload:last-child .box.margined {
+    margin: 1rem 0 0 0 !important; }
+  html.admin:not(.nightmode) .upload:nth-child(odd) .box.margined {
+    margin: 1rem 1rem 0 0; }
+  @media all and (max-width: 1150px) {
+    html.admin:not(.nightmode) .uploads-area .upload {
+      width: 100%; }
+    html.admin:not(.nightmode) .box.margined {
+      margin: 1rem 0 0 0 !important; } }
 
 html.admin.nightmode {
   /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
@@ -8390,13 +8437,13 @@ html.admin.nightmode {
   html.admin.nightmode a.has-text-black:hover, html.admin.nightmode a.has-text-black:focus {
     color: #d7dfef !important; }
   html.admin.nightmode .has-text-light {
-    color: whitesmoke !important; }
-  html.admin.nightmode a.has-text-light:hover, html.admin.nightmode a.has-text-light:focus {
-    color: #dbdbdb !important; }
-  html.admin.nightmode .has-text-dark {
     color: #363636 !important; }
-  html.admin.nightmode a.has-text-dark:hover, html.admin.nightmode a.has-text-dark:focus {
+  html.admin.nightmode a.has-text-light:hover, html.admin.nightmode a.has-text-light:focus {
     color: #1c1c1c !important; }
+  html.admin.nightmode .has-text-dark {
+    color: #e3e3e3 !important; }
+  html.admin.nightmode a.has-text-dark:hover, html.admin.nightmode a.has-text-dark:focus {
+    color: #c9c9c9 !important; }
   html.admin.nightmode .has-text-primary {
     color: #7770cf !important; }
   html.admin.nightmode a.has-text-primary:hover, html.admin.nightmode a.has-text-primary:focus {
@@ -8874,120 +8921,120 @@ html.admin.nightmode {
           box-shadow: none;
           color: #111a2c; }
     html.admin.nightmode .button.is-light {
-      background-color: whitesmoke;
+      background-color: #363636;
       border-color: transparent;
       color: #363636; }
       html.admin.nightmode .button.is-light:hover, html.admin.nightmode .button.is-light.is-hovered {
-        background-color: #eeeeee;
+        background-color: #2f2f2f;
         border-color: transparent;
         color: #363636; }
       html.admin.nightmode .button.is-light:focus, html.admin.nightmode .button.is-light.is-focused {
         border-color: transparent;
         color: #363636; }
         html.admin.nightmode .button.is-light:focus:not(:active), html.admin.nightmode .button.is-light.is-focused:not(:active) {
-          box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
+          box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
       html.admin.nightmode .button.is-light:active, html.admin.nightmode .button.is-light.is-active {
-        background-color: #e8e8e8;
+        background-color: #292929;
         border-color: transparent;
         color: #363636; }
       html.admin.nightmode .button.is-light[disabled] {
-        background-color: whitesmoke;
+        background-color: #363636;
         border-color: transparent;
         box-shadow: none; }
       html.admin.nightmode .button.is-light.is-inverted {
         background-color: #363636;
-        color: whitesmoke; }
+        color: #363636; }
         html.admin.nightmode .button.is-light.is-inverted:hover {
           background-color: #292929; }
         html.admin.nightmode .button.is-light.is-inverted[disabled] {
           background-color: #363636;
           border-color: transparent;
           box-shadow: none;
-          color: whitesmoke; }
+          color: #363636; }
       html.admin.nightmode .button.is-light.is-loading:after {
         border-color: transparent transparent #363636 #363636 !important; }
       html.admin.nightmode .button.is-light.is-outlined {
         background-color: transparent;
-        border-color: whitesmoke;
-        color: whitesmoke; }
+        border-color: #363636;
+        color: #363636; }
         html.admin.nightmode .button.is-light.is-outlined:hover, html.admin.nightmode .button.is-light.is-outlined:focus {
-          background-color: whitesmoke;
-          border-color: whitesmoke;
+          background-color: #363636;
+          border-color: #363636;
           color: #363636; }
         html.admin.nightmode .button.is-light.is-outlined.is-loading:after {
-          border-color: transparent transparent whitesmoke whitesmoke !important; }
+          border-color: transparent transparent #363636 #363636 !important; }
         html.admin.nightmode .button.is-light.is-outlined[disabled] {
           background-color: transparent;
-          border-color: whitesmoke;
+          border-color: #363636;
           box-shadow: none;
-          color: whitesmoke; }
+          color: #363636; }
       html.admin.nightmode .button.is-light.is-inverted.is-outlined {
         background-color: transparent;
         border-color: #363636;
         color: #363636; }
         html.admin.nightmode .button.is-light.is-inverted.is-outlined:hover, html.admin.nightmode .button.is-light.is-inverted.is-outlined:focus {
           background-color: #363636;
-          color: whitesmoke; }
+          color: #363636; }
         html.admin.nightmode .button.is-light.is-inverted.is-outlined[disabled] {
           background-color: transparent;
           border-color: #363636;
           box-shadow: none;
           color: #363636; }
     html.admin.nightmode .button.is-dark {
-      background-color: #363636;
+      background-color: #e3e3e3;
       border-color: transparent;
       color: whitesmoke; }
       html.admin.nightmode .button.is-dark:hover, html.admin.nightmode .button.is-dark.is-hovered {
-        background-color: #2f2f2f;
+        background-color: #dddddd;
         border-color: transparent;
         color: whitesmoke; }
       html.admin.nightmode .button.is-dark:focus, html.admin.nightmode .button.is-dark.is-focused {
         border-color: transparent;
         color: whitesmoke; }
         html.admin.nightmode .button.is-dark:focus:not(:active), html.admin.nightmode .button.is-dark.is-focused:not(:active) {
-          box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
+          box-shadow: 0 0 0 0.125em rgba(227, 227, 227, 0.25); }
       html.admin.nightmode .button.is-dark:active, html.admin.nightmode .button.is-dark.is-active {
-        background-color: #292929;
+        background-color: #d6d6d6;
         border-color: transparent;
         color: whitesmoke; }
       html.admin.nightmode .button.is-dark[disabled] {
-        background-color: #363636;
+        background-color: #e3e3e3;
         border-color: transparent;
         box-shadow: none; }
       html.admin.nightmode .button.is-dark.is-inverted {
         background-color: whitesmoke;
-        color: #363636; }
+        color: #e3e3e3; }
         html.admin.nightmode .button.is-dark.is-inverted:hover {
           background-color: #e8e8e8; }
         html.admin.nightmode .button.is-dark.is-inverted[disabled] {
           background-color: whitesmoke;
           border-color: transparent;
           box-shadow: none;
-          color: #363636; }
+          color: #e3e3e3; }
       html.admin.nightmode .button.is-dark.is-loading:after {
         border-color: transparent transparent whitesmoke whitesmoke !important; }
       html.admin.nightmode .button.is-dark.is-outlined {
         background-color: transparent;
-        border-color: #363636;
-        color: #363636; }
+        border-color: #e3e3e3;
+        color: #e3e3e3; }
         html.admin.nightmode .button.is-dark.is-outlined:hover, html.admin.nightmode .button.is-dark.is-outlined:focus {
-          background-color: #363636;
-          border-color: #363636;
+          background-color: #e3e3e3;
+          border-color: #e3e3e3;
           color: whitesmoke; }
         html.admin.nightmode .button.is-dark.is-outlined.is-loading:after {
-          border-color: transparent transparent #363636 #363636 !important; }
+          border-color: transparent transparent #e3e3e3 #e3e3e3 !important; }
         html.admin.nightmode .button.is-dark.is-outlined[disabled] {
           background-color: transparent;
-          border-color: #363636;
+          border-color: #e3e3e3;
           box-shadow: none;
-          color: #363636; }
+          color: #e3e3e3; }
       html.admin.nightmode .button.is-dark.is-inverted.is-outlined {
         background-color: transparent;
         border-color: whitesmoke;
         color: whitesmoke; }
         html.admin.nightmode .button.is-dark.is-inverted.is-outlined:hover, html.admin.nightmode .button.is-dark.is-inverted.is-outlined:focus {
           background-color: whitesmoke;
-          color: #363636; }
+          color: #e3e3e3; }
         html.admin.nightmode .button.is-dark.is-inverted.is-outlined[disabled] {
           background-color: transparent;
           border-color: whitesmoke;
@@ -9389,7 +9436,7 @@ html.admin.nightmode {
     html.admin.nightmode .button.is-static {
       background-color: #1f2f51;
       border-color: #223458;
-      color: #738fc9;
+      color: #979ca5;
       box-shadow: none;
       pointer-events: none; }
     html.admin.nightmode .button.is-rounded {
@@ -9669,22 +9716,22 @@ html.admin.nightmode {
         box-shadow: 0 0 0 0.125em rgba(251, 252, 254, 0.25); }
     html.admin.nightmode .input.is-light, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-light.taginput-container.is-focusable, html.admin.nightmode .taginput .is-light.taginput-container.is-focusable,
     html.admin.nightmode .textarea.is-light {
-      border-color: whitesmoke; }
+      border-color: #363636; }
       html.admin.nightmode .input.is-light:focus, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-light.taginput-container.is-focusable:focus, html.admin.nightmode .taginput .is-light.taginput-container.is-focusable:focus, html.admin.nightmode .input.is-light.is-focused, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-light.is-focused.taginput-container.is-focusable, html.admin.nightmode .taginput .is-light.is-focused.taginput-container.is-focusable, html.admin.nightmode .input.is-light:active, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-light.taginput-container.is-focusable:active, html.admin.nightmode .taginput .is-light.taginput-container.is-focusable:active, html.admin.nightmode .input.is-light.is-active, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-light.is-active.taginput-container.is-focusable, html.admin.nightmode .taginput .is-light.is-active.taginput-container.is-focusable,
       html.admin.nightmode .textarea.is-light:focus,
       html.admin.nightmode .textarea.is-light.is-focused,
       html.admin.nightmode .textarea.is-light:active,
       html.admin.nightmode .textarea.is-light.is-active {
-        box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
     html.admin.nightmode .input.is-dark, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-dark.taginput-container.is-focusable, html.admin.nightmode .taginput .is-dark.taginput-container.is-focusable,
     html.admin.nightmode .textarea.is-dark {
-      border-color: #363636; }
+      border-color: #e3e3e3; }
       html.admin.nightmode .input.is-dark:focus, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-dark.taginput-container.is-focusable:focus, html.admin.nightmode .taginput .is-dark.taginput-container.is-focusable:focus, html.admin.nightmode .input.is-dark.is-focused, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-dark.is-focused.taginput-container.is-focusable, html.admin.nightmode .taginput .is-dark.is-focused.taginput-container.is-focusable, html.admin.nightmode .input.is-dark:active, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-dark.taginput-container.is-focusable:active, html.admin.nightmode .taginput .is-dark.taginput-container.is-focusable:active, html.admin.nightmode .input.is-dark.is-active, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-dark.is-active.taginput-container.is-focusable, html.admin.nightmode .taginput .is-dark.is-active.taginput-container.is-focusable,
       html.admin.nightmode .textarea.is-dark:focus,
       html.admin.nightmode .textarea.is-dark.is-focused,
       html.admin.nightmode .textarea.is-dark:active,
       html.admin.nightmode .textarea.is-dark.is-active {
-        box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
+        box-shadow: 0 0 0 0.125em rgba(227, 227, 227, 0.25); }
     html.admin.nightmode .input.is-primary, html.admin:not(.nightmode) .taginput html.admin.nightmode .is-primary.taginput-container.is-focusable, html.admin.nightmode .taginput .is-primary.taginput-container.is-focusable,
     html.admin.nightmode .textarea.is-primary {
       border-color: #7770cf; }
@@ -9902,13 +9949,13 @@ html.admin.nightmode {
       html.admin.nightmode .select.is-black select:focus, html.admin.nightmode .select.is-black select.is-focused, html.admin.nightmode .select.is-black select:active, html.admin.nightmode .select.is-black select.is-active {
         box-shadow: 0 0 0 0.125em rgba(251, 252, 254, 0.25); }
     html.admin.nightmode .select.is-light select {
-      border-color: whitesmoke; }
-      html.admin.nightmode .select.is-light select:focus, html.admin.nightmode .select.is-light select.is-focused, html.admin.nightmode .select.is-light select:active, html.admin.nightmode .select.is-light select.is-active {
-        box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
-    html.admin.nightmode .select.is-dark select {
       border-color: #363636; }
-      html.admin.nightmode .select.is-dark select:focus, html.admin.nightmode .select.is-dark select.is-focused, html.admin.nightmode .select.is-dark select:active, html.admin.nightmode .select.is-dark select.is-active {
+      html.admin.nightmode .select.is-light select:focus, html.admin.nightmode .select.is-light select.is-focused, html.admin.nightmode .select.is-light select:active, html.admin.nightmode .select.is-light select.is-active {
         box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
+    html.admin.nightmode .select.is-dark select {
+      border-color: #e3e3e3; }
+      html.admin.nightmode .select.is-dark select:focus, html.admin.nightmode .select.is-dark select.is-focused, html.admin.nightmode .select.is-dark select:active, html.admin.nightmode .select.is-dark select.is-active {
+        box-shadow: 0 0 0 0.125em rgba(227, 227, 227, 0.25); }
     html.admin.nightmode .select.is-primary select {
       border-color: #7770cf; }
       html.admin.nightmode .select.is-primary select:focus, html.admin.nightmode .select.is-primary select.is-focused, html.admin.nightmode .select.is-primary select:active, html.admin.nightmode .select.is-primary select.is-active {
@@ -10011,35 +10058,35 @@ html.admin.nightmode {
       border-color: transparent;
       color: #111a2c; }
     html.admin.nightmode .file.is-light .file-cta {
-      background-color: whitesmoke;
+      background-color: #363636;
       border-color: transparent;
       color: #363636; }
     html.admin.nightmode .file.is-light:hover .file-cta, html.admin.nightmode .file.is-light.is-hovered .file-cta {
-      background-color: #eeeeee;
+      background-color: #2f2f2f;
       border-color: transparent;
       color: #363636; }
     html.admin.nightmode .file.is-light:focus .file-cta, html.admin.nightmode .file.is-light.is-focused .file-cta {
       border-color: transparent;
-      box-shadow: 0 0 0.5em rgba(245, 245, 245, 0.25);
+      box-shadow: 0 0 0.5em rgba(54, 54, 54, 0.25);
       color: #363636; }
     html.admin.nightmode .file.is-light:active .file-cta, html.admin.nightmode .file.is-light.is-active .file-cta {
-      background-color: #e8e8e8;
+      background-color: #292929;
       border-color: transparent;
       color: #363636; }
     html.admin.nightmode .file.is-dark .file-cta {
-      background-color: #363636;
+      background-color: #e3e3e3;
       border-color: transparent;
       color: whitesmoke; }
     html.admin.nightmode .file.is-dark:hover .file-cta, html.admin.nightmode .file.is-dark.is-hovered .file-cta {
-      background-color: #2f2f2f;
+      background-color: #dddddd;
       border-color: transparent;
       color: whitesmoke; }
     html.admin.nightmode .file.is-dark:focus .file-cta, html.admin.nightmode .file.is-dark.is-focused .file-cta {
       border-color: transparent;
-      box-shadow: 0 0 0.5em rgba(54, 54, 54, 0.25);
+      box-shadow: 0 0 0.5em rgba(227, 227, 227, 0.25);
       color: whitesmoke; }
     html.admin.nightmode .file.is-dark:active .file-cta, html.admin.nightmode .file.is-dark.is-active .file-cta {
-      background-color: #292929;
+      background-color: #d6d6d6;
       border-color: transparent;
       color: whitesmoke; }
     html.admin.nightmode .file.is-primary .file-cta {
@@ -10298,9 +10345,9 @@ html.admin.nightmode {
     html.admin.nightmode .help.is-black {
       color: #fbfcfe; }
     html.admin.nightmode .help.is-light {
-      color: whitesmoke; }
-    html.admin.nightmode .help.is-dark {
       color: #363636; }
+    html.admin.nightmode .help.is-dark {
+      color: #e3e3e3; }
     html.admin.nightmode .help.is-primary {
       color: #7770cf; }
     html.admin.nightmode .help.is-info {
@@ -10486,7 +10533,7 @@ html.admin.nightmode {
       width: 2.25em;
       z-index: 4; }
     html.admin.nightmode .control.has-icon .input:focus + .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icon .taginput-container.is-focusable:focus + .icon, html.admin.nightmode .control.has-icon .taginput .taginput-container.is-focusable:focus + .icon, html.admin.nightmode .taginput .control.has-icon .taginput-container.is-focusable:focus + .icon {
-      color: #738fc9; }
+      color: #979ca5; }
     html.admin.nightmode .control.has-icon .input.is-small + .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icon .is-small.taginput-container.is-focusable + .icon, html.admin.nightmode .control.has-icon .taginput .is-small.taginput-container.is-focusable + .icon, html.admin.nightmode .taginput .control.has-icon .is-small.taginput-container.is-focusable + .icon {
       font-size: 0.75rem; }
     html.admin.nightmode .control.has-icon .input.is-medium + .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icon .is-medium.taginput-container.is-focusable + .icon, html.admin.nightmode .control.has-icon .taginput .is-medium.taginput-container.is-focusable + .icon, html.admin.nightmode .taginput .control.has-icon .is-medium.taginput-container.is-focusable + .icon {
@@ -10504,7 +10551,7 @@ html.admin.nightmode {
     html.admin.nightmode .control.has-icons-left .input:focus ~ .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icons-left .taginput-container.is-focusable:focus ~ .icon, html.admin.nightmode .control.has-icons-left .taginput .taginput-container.is-focusable:focus ~ .icon, html.admin.nightmode .taginput .control.has-icons-left .taginput-container.is-focusable:focus ~ .icon,
     html.admin.nightmode .control.has-icons-left .select:focus ~ .icon, html.admin.nightmode .control.has-icons-right .input:focus ~ .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icons-right .taginput-container.is-focusable:focus ~ .icon, html.admin.nightmode .control.has-icons-right .taginput .taginput-container.is-focusable:focus ~ .icon, html.admin.nightmode .taginput .control.has-icons-right .taginput-container.is-focusable:focus ~ .icon,
     html.admin.nightmode .control.has-icons-right .select:focus ~ .icon {
-      color: #738fc9; }
+      color: #979ca5; }
     html.admin.nightmode .control.has-icons-left .input.is-small ~ .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icons-left .is-small.taginput-container.is-focusable ~ .icon, html.admin.nightmode .control.has-icons-left .taginput .is-small.taginput-container.is-focusable ~ .icon, html.admin.nightmode .taginput .control.has-icons-left .is-small.taginput-container.is-focusable ~ .icon,
     html.admin.nightmode .control.has-icons-left .select.is-small ~ .icon, html.admin.nightmode .control.has-icons-right .input.is-small ~ .icon, html.admin:not(.nightmode) .taginput html.admin.nightmode .control.has-icons-right .is-small.taginput-container.is-focusable ~ .icon, html.admin.nightmode .control.has-icons-right .taginput .is-small.taginput-container.is-focusable ~ .icon, html.admin.nightmode .taginput .control.has-icons-right .is-small.taginput-container.is-focusable ~ .icon,
     html.admin.nightmode .control.has-icons-right .select.is-small ~ .icon {
@@ -10651,10 +10698,10 @@ html.admin.nightmode {
       background-color: #fbfcfe;
       color: #111a2c; }
     html.admin.nightmode .notification.is-light {
-      background-color: whitesmoke;
+      background-color: #363636;
       color: #363636; }
     html.admin.nightmode .notification.is-dark {
-      background-color: #363636;
+      background-color: #e3e3e3;
       color: whitesmoke; }
     html.admin.nightmode .notification.is-primary {
       background-color: #7770cf;
@@ -10708,17 +10755,17 @@ html.admin.nightmode {
     html.admin.nightmode .progress.is-black::-ms-fill {
       background-color: #fbfcfe; }
     html.admin.nightmode .progress.is-light::-webkit-progress-value {
-      background-color: whitesmoke; }
+      background-color: #363636; }
     html.admin.nightmode .progress.is-light::-moz-progress-bar {
-      background-color: whitesmoke; }
+      background-color: #363636; }
     html.admin.nightmode .progress.is-light::-ms-fill {
-      background-color: whitesmoke; }
+      background-color: #363636; }
     html.admin.nightmode .progress.is-dark::-webkit-progress-value {
-      background-color: #363636; }
+      background-color: #e3e3e3; }
     html.admin.nightmode .progress.is-dark::-moz-progress-bar {
-      background-color: #363636; }
+      background-color: #e3e3e3; }
     html.admin.nightmode .progress.is-dark::-ms-fill {
-      background-color: #363636; }
+      background-color: #e3e3e3; }
     html.admin.nightmode .progress.is-primary::-webkit-progress-value {
       background-color: #7770cf; }
     html.admin.nightmode .progress.is-primary::-moz-progress-bar {
@@ -10783,13 +10830,13 @@ html.admin.nightmode {
         color: #111a2c; }
       html.admin.nightmode .table td.is-light,
       html.admin.nightmode .table th.is-light {
-        background-color: whitesmoke;
-        border-color: whitesmoke;
+        background-color: #363636;
+        border-color: #363636;
         color: #363636; }
       html.admin.nightmode .table td.is-dark,
       html.admin.nightmode .table th.is-dark {
-        background-color: #363636;
-        border-color: #363636;
+        background-color: #e3e3e3;
+        border-color: #e3e3e3;
         color: whitesmoke; }
       html.admin.nightmode .table td.is-primary,
       html.admin.nightmode .table th.is-primary {
@@ -10930,10 +10977,10 @@ html.admin.nightmode {
       background-color: #fbfcfe;
       color: #111a2c; }
     html.admin.nightmode .tag:not(body).is-light {
-      background-color: whitesmoke;
+      background-color: #363636;
       color: #363636; }
     html.admin.nightmode .tag:not(body).is-dark {
-      background-color: #363636;
+      background-color: #e3e3e3;
       color: whitesmoke; }
     html.admin.nightmode .tag:not(body).is-primary {
       background-color: #7770cf;
@@ -11506,19 +11553,19 @@ html.admin.nightmode {
     html.admin.nightmode .message.is-light {
       background-color: #fafafa; }
       html.admin.nightmode .message.is-light .message-header {
-        background-color: whitesmoke;
+        background-color: #363636;
         color: #363636; }
       html.admin.nightmode .message.is-light .message-body {
-        border-color: whitesmoke;
-        color: #505050; }
+        border-color: #363636;
+        color: #2a2a2a; }
     html.admin.nightmode .message.is-dark {
       background-color: #fafafa; }
       html.admin.nightmode .message.is-dark .message-header {
-        background-color: #363636;
+        background-color: #e3e3e3;
         color: whitesmoke; }
       html.admin.nightmode .message.is-dark .message-body {
-        border-color: #363636;
-        color: #2a2a2a; }
+        border-color: #e3e3e3;
+        color: #545454; }
     html.admin.nightmode .message.is-primary {
       background-color: #f8f7fc; }
       html.admin.nightmode .message.is-primary .message-header {
@@ -11818,7 +11865,7 @@ html.admin.nightmode {
           background-color: #fbfcfe;
           color: #111a2c; } }
     html.admin.nightmode .navbar.is-light {
-      background-color: whitesmoke;
+      background-color: #363636;
       color: #363636; }
       html.admin.nightmode .navbar.is-light .navbar-brand > .navbar-item,
       html.admin.nightmode .navbar.is-light .navbar-brand .navbar-link {
@@ -11826,7 +11873,7 @@ html.admin.nightmode {
       html.admin.nightmode .navbar.is-light .navbar-brand > a.navbar-item:hover, html.admin.nightmode .navbar.is-light .navbar-brand > a.navbar-item.is-active,
       html.admin.nightmode .navbar.is-light .navbar-brand .navbar-link:hover,
       html.admin.nightmode .navbar.is-light .navbar-brand .navbar-link.is-active {
-        background-color: #e8e8e8;
+        background-color: #292929;
         color: #363636; }
       html.admin.nightmode .navbar.is-light .navbar-brand .navbar-link::after {
         border-color: #363636; }
@@ -11843,20 +11890,20 @@ html.admin.nightmode {
         html.admin.nightmode .navbar.is-light .navbar-end > a.navbar-item.is-active,
         html.admin.nightmode .navbar.is-light .navbar-end .navbar-link:hover,
         html.admin.nightmode .navbar.is-light .navbar-end .navbar-link.is-active {
-          background-color: #e8e8e8;
+          background-color: #292929;
           color: #363636; }
         html.admin.nightmode .navbar.is-light .navbar-start .navbar-link::after,
         html.admin.nightmode .navbar.is-light .navbar-end .navbar-link::after {
           border-color: #363636; }
         html.admin.nightmode .navbar.is-light .navbar-item.has-dropdown:hover .navbar-link,
         html.admin.nightmode .navbar.is-light .navbar-item.has-dropdown.is-active .navbar-link {
-          background-color: #e8e8e8;
+          background-color: #292929;
           color: #363636; }
         html.admin.nightmode .navbar.is-light .navbar-dropdown a.navbar-item.is-active {
-          background-color: whitesmoke;
+          background-color: #363636;
           color: #363636; } }
     html.admin.nightmode .navbar.is-dark {
-      background-color: #363636;
+      background-color: #e3e3e3;
       color: whitesmoke; }
       html.admin.nightmode .navbar.is-dark .navbar-brand > .navbar-item,
       html.admin.nightmode .navbar.is-dark .navbar-brand .navbar-link {
@@ -11864,7 +11911,7 @@ html.admin.nightmode {
       html.admin.nightmode .navbar.is-dark .navbar-brand > a.navbar-item:hover, html.admin.nightmode .navbar.is-dark .navbar-brand > a.navbar-item.is-active,
       html.admin.nightmode .navbar.is-dark .navbar-brand .navbar-link:hover,
       html.admin.nightmode .navbar.is-dark .navbar-brand .navbar-link.is-active {
-        background-color: #292929;
+        background-color: #d6d6d6;
         color: whitesmoke; }
       html.admin.nightmode .navbar.is-dark .navbar-brand .navbar-link::after {
         border-color: whitesmoke; }
@@ -11881,17 +11928,17 @@ html.admin.nightmode {
         html.admin.nightmode .navbar.is-dark .navbar-end > a.navbar-item.is-active,
         html.admin.nightmode .navbar.is-dark .navbar-end .navbar-link:hover,
         html.admin.nightmode .navbar.is-dark .navbar-end .navbar-link.is-active {
-          background-color: #292929;
+          background-color: #d6d6d6;
           color: whitesmoke; }
         html.admin.nightmode .navbar.is-dark .navbar-start .navbar-link::after,
         html.admin.nightmode .navbar.is-dark .navbar-end .navbar-link::after {
           border-color: whitesmoke; }
         html.admin.nightmode .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link,
         html.admin.nightmode .navbar.is-dark .navbar-item.has-dropdown.is-active .navbar-link {
-          background-color: #292929;
+          background-color: #d6d6d6;
           color: whitesmoke; }
         html.admin.nightmode .navbar.is-dark .navbar-dropdown a.navbar-item.is-active {
-          background-color: #363636;
+          background-color: #e3e3e3;
           color: whitesmoke; } }
     html.admin.nightmode .navbar.is-primary {
       background-color: #7770cf;
@@ -12509,7 +12556,7 @@ html.admin.nightmode {
       background-color: #223458;
       border-color: #223458;
       box-shadow: none;
-      color: #738fc9;
+      color: #979ca5;
       opacity: 0.5; }
   html.admin.nightmode .pagination-previous,
   html.admin.nightmode .pagination-next {
@@ -13749,7 +13796,7 @@ html.admin.nightmode {
           html.admin.nightmode .hero.is-black.is-bold .navbar-menu {
             background-image: linear-gradient(141deg, #d4e3f2 0%, #fbfcfe 71%, white 100%); } }
     html.admin.nightmode .hero.is-light {
-      background-color: whitesmoke;
+      background-color: #363636;
       color: #363636; }
       html.admin.nightmode .hero.is-light a:not(.button):not(.dropdown-item):not(.tag),
       html.admin.nightmode .hero.is-light strong {
@@ -13763,14 +13810,14 @@ html.admin.nightmode {
           color: #363636; }
       @media screen and (max-width: 1023px) {
         html.admin.nightmode .hero.is-light .navbar-menu {
-          background-color: whitesmoke; } }
+          background-color: #363636; } }
       html.admin.nightmode .hero.is-light .navbar-item,
       html.admin.nightmode .hero.is-light .navbar-link {
         color: rgba(54, 54, 54, 0.7); }
       html.admin.nightmode .hero.is-light a.navbar-item:hover, html.admin.nightmode .hero.is-light a.navbar-item.is-active,
       html.admin.nightmode .hero.is-light .navbar-link:hover,
       html.admin.nightmode .hero.is-light .navbar-link.is-active {
-        background-color: #e8e8e8;
+        background-color: #292929;
         color: #363636; }
       html.admin.nightmode .hero.is-light .tabs a {
         color: #363636;
@@ -13786,14 +13833,14 @@ html.admin.nightmode {
       html.admin.nightmode .hero.is-light .tabs.is-boxed li.is-active a, html.admin.nightmode .hero.is-light .tabs.is-boxed li.is-active a:hover, html.admin.nightmode .hero.is-light .tabs.is-toggle li.is-active a, html.admin.nightmode .hero.is-light .tabs.is-toggle li.is-active a:hover {
         background-color: #363636;
         border-color: #363636;
-        color: whitesmoke; }
+        color: #363636; }
       html.admin.nightmode .hero.is-light.is-bold {
-        background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%); }
+        background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); }
         @media screen and (max-width: 768px) {
           html.admin.nightmode .hero.is-light.is-bold .navbar-menu {
-            background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%); } }
+            background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); } }
     html.admin.nightmode .hero.is-dark {
-      background-color: #363636;
+      background-color: #e3e3e3;
       color: whitesmoke; }
       html.admin.nightmode .hero.is-dark a:not(.button):not(.dropdown-item):not(.tag),
       html.admin.nightmode .hero.is-dark strong {
@@ -13807,14 +13854,14 @@ html.admin.nightmode {
           color: whitesmoke; }
       @media screen and (max-width: 1023px) {
         html.admin.nightmode .hero.is-dark .navbar-menu {
-          background-color: #363636; } }
+          background-color: #e3e3e3; } }
       html.admin.nightmode .hero.is-dark .navbar-item,
       html.admin.nightmode .hero.is-dark .navbar-link {
         color: rgba(245, 245, 245, 0.7); }
       html.admin.nightmode .hero.is-dark a.navbar-item:hover, html.admin.nightmode .hero.is-dark a.navbar-item.is-active,
       html.admin.nightmode .hero.is-dark .navbar-link:hover,
       html.admin.nightmode .hero.is-dark .navbar-link.is-active {
-        background-color: #292929;
+        background-color: #d6d6d6;
         color: whitesmoke; }
       html.admin.nightmode .hero.is-dark .tabs a {
         color: whitesmoke;
@@ -13830,12 +13877,12 @@ html.admin.nightmode {
       html.admin.nightmode .hero.is-dark .tabs.is-boxed li.is-active a, html.admin.nightmode .hero.is-dark .tabs.is-boxed li.is-active a:hover, html.admin.nightmode .hero.is-dark .tabs.is-toggle li.is-active a, html.admin.nightmode .hero.is-dark .tabs.is-toggle li.is-active a:hover {
         background-color: whitesmoke;
         border-color: whitesmoke;
-        color: #363636; }
+        color: #e3e3e3; }
       html.admin.nightmode .hero.is-dark.is-bold {
-        background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); }
+        background-image: linear-gradient(141deg, #cfc4c6 0%, #e3e3e3 71%, #f0efef 100%); }
         @media screen and (max-width: 768px) {
           html.admin.nightmode .hero.is-dark.is-bold .navbar-menu {
-            background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); } }
+            background-image: linear-gradient(141deg, #cfc4c6 0%, #e3e3e3 71%, #f0efef 100%); } }
     html.admin.nightmode .hero.is-primary {
       background-color: #7770cf;
       color: #fff; }
@@ -14323,7 +14370,7 @@ html.admin.nightmode {
         height: 1.25em;
         flex-shrink: 0;
         border-radius: 3px;
-        border: 2px solid #738fc9;
+        border: 2px solid #979ca5;
         transition: background 150ms ease-out; }
       html.admin.nightmode .b-checkbox.checkbox input[type=checkbox]:checked + .check {
         background: #7770cf url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
@@ -14335,11 +14382,11 @@ html.admin.nightmode {
           background: #fbfcfe url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23111a2c' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
           border-color: #fbfcfe; }
         html.admin.nightmode .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-light {
-          background: whitesmoke url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23363636' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
-          border-color: whitesmoke; }
-        html.admin.nightmode .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-dark {
-          background: #363636 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:whitesmoke' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
+          background: #363636 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23363636' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
           border-color: #363636; }
+        html.admin.nightmode .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-dark {
+          background: #e3e3e3 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:whitesmoke' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
+          border-color: #e3e3e3; }
         html.admin.nightmode .b-checkbox.checkbox input[type=checkbox]:checked + .check.is-primary {
           background: #7770cf url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
           border-color: #7770cf; }
@@ -14369,9 +14416,9 @@ html.admin.nightmode {
       html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-black {
         border-color: #fbfcfe; }
       html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-light {
-        border-color: whitesmoke; }
-      html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-dark {
         border-color: #363636; }
+      html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-dark {
+        border-color: #e3e3e3; }
       html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-primary {
         border-color: #7770cf; }
       html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-info {
@@ -14385,7 +14432,7 @@ html.admin.nightmode {
       html.admin.nightmode .b-checkbox.checkbox:hover input[type=checkbox] + .check.is-link {
         border-color: #7770cf; }
     html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox] + .check {
-      box-shadow: 0 0 0.5em rgba(115, 143, 201, 0.8); }
+      box-shadow: 0 0 0.5em rgba(151, 156, 165, 0.8); }
     html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check {
       box-shadow: 0 0 0.5em rgba(119, 112, 207, 0.8); }
       html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-white {
@@ -14393,9 +14440,9 @@ html.admin.nightmode {
       html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-black {
         box-shadow: 0 0 0.5em rgba(251, 252, 254, 0.8); }
       html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-light {
-        box-shadow: 0 0 0.5em rgba(245, 245, 245, 0.8); }
-      html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-dark {
         box-shadow: 0 0 0.5em rgba(54, 54, 54, 0.8); }
+      html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-dark {
+        box-shadow: 0 0 0.5em rgba(227, 227, 227, 0.8); }
       html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-primary {
         box-shadow: 0 0 0.5em rgba(119, 112, 207, 0.8); }
       html.admin.nightmode .b-checkbox.checkbox:focus input[type=checkbox]:checked + .check.is-info {
@@ -14446,7 +14493,7 @@ html.admin.nightmode {
       html.admin.nightmode .datepicker .datepicker-table .datepicker-header {
         display: table-header-group; }
         html.admin.nightmode .datepicker .datepicker-table .datepicker-header .datepicker-cell {
-          color: #738fc9;
+          color: #979ca5;
           font-weight: 600; }
       html.admin.nightmode .datepicker .datepicker-table .datepicker-body {
         display: table-row-group; }
@@ -14482,9 +14529,9 @@ html.admin.nightmode {
               html.admin.nightmode .datepicker .datepicker-table .datepicker-body.has-events .datepicker-cell.has-event .events .event.is-black {
                 background-color: #fbfcfe; }
               html.admin.nightmode .datepicker .datepicker-table .datepicker-body.has-events .datepicker-cell.has-event .events .event.is-light {
-                background-color: whitesmoke; }
-              html.admin.nightmode .datepicker .datepicker-table .datepicker-body.has-events .datepicker-cell.has-event .events .event.is-dark {
                 background-color: #363636; }
+              html.admin.nightmode .datepicker .datepicker-table .datepicker-body.has-events .datepicker-cell.has-event .events .event.is-dark {
+                background-color: #e3e3e3; }
               html.admin.nightmode .datepicker .datepicker-table .datepicker-body.has-events .datepicker-cell.has-event .events .event.is-primary {
                 background-color: #7770cf; }
               html.admin.nightmode .datepicker .datepicker-table .datepicker-body.has-events .datepicker-cell.has-event .events .event.is-info {
@@ -14769,10 +14816,10 @@ html.admin.nightmode {
         background: #fbfcfe; }
       html.admin.nightmode .notices .toast.is-light {
         color: #363636;
-        background: whitesmoke; }
+        background: #363636; }
       html.admin.nightmode .notices .toast.is-dark {
         color: whitesmoke;
-        background: #363636; }
+        background: #e3e3e3; }
       html.admin.nightmode .notices .toast.is-primary {
         color: #fff;
         background: #7770cf; }
@@ -14800,7 +14847,7 @@ html.admin.nightmode {
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
       border-radius: 3px;
       pointer-events: auto;
-      background: #363636;
+      background: #e3e3e3;
       color: whitesmoke;
       min-height: 3em; }
       html.admin.nightmode .notices .snackbar .text {
@@ -14817,9 +14864,9 @@ html.admin.nightmode {
         html.admin.nightmode .notices .snackbar .action.is-black .button {
           color: #fbfcfe; }
         html.admin.nightmode .notices .snackbar .action.is-light .button {
-          color: whitesmoke; }
-        html.admin.nightmode .notices .snackbar .action.is-dark .button {
           color: #363636; }
+        html.admin.nightmode .notices .snackbar .action.is-dark .button {
+          color: #e3e3e3; }
         html.admin.nightmode .notices .snackbar .action.is-primary .button {
           color: #7770cf; }
         html.admin.nightmode .notices .snackbar .action.is-info .button {
@@ -14904,7 +14951,7 @@ html.admin.nightmode {
         justify-content: center;
         width: 1.25em;
         height: 1.25em;
-        border: 2px solid #738fc9;
+        border: 2px solid #979ca5;
         border-radius: 50%;
         transition: background 150ms ease-out; }
         html.admin.nightmode .b-radio.radio input[type=radio] + .check:before {
@@ -14920,9 +14967,9 @@ html.admin.nightmode {
         html.admin.nightmode .b-radio.radio input[type=radio] + .check.is-black:before {
           background: #fbfcfe; }
         html.admin.nightmode .b-radio.radio input[type=radio] + .check.is-light:before {
-          background: whitesmoke; }
-        html.admin.nightmode .b-radio.radio input[type=radio] + .check.is-dark:before {
           background: #363636; }
+        html.admin.nightmode .b-radio.radio input[type=radio] + .check.is-dark:before {
+          background: #e3e3e3; }
         html.admin.nightmode .b-radio.radio input[type=radio] + .check.is-primary:before {
           background: #7770cf; }
         html.admin.nightmode .b-radio.radio input[type=radio] + .check.is-info:before {
@@ -14942,9 +14989,9 @@ html.admin.nightmode {
         html.admin.nightmode .b-radio.radio input[type=radio]:checked + .check.is-black {
           border-color: #fbfcfe; }
         html.admin.nightmode .b-radio.radio input[type=radio]:checked + .check.is-light {
-          border-color: whitesmoke; }
-        html.admin.nightmode .b-radio.radio input[type=radio]:checked + .check.is-dark {
           border-color: #363636; }
+        html.admin.nightmode .b-radio.radio input[type=radio]:checked + .check.is-dark {
+          border-color: #e3e3e3; }
         html.admin.nightmode .b-radio.radio input[type=radio]:checked + .check.is-primary {
           border-color: #7770cf; }
         html.admin.nightmode .b-radio.radio input[type=radio]:checked + .check.is-info {
@@ -14970,9 +15017,9 @@ html.admin.nightmode {
       html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-black {
         border-color: #fbfcfe; }
       html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-light {
-        border-color: whitesmoke; }
-      html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-dark {
         border-color: #363636; }
+      html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-dark {
+        border-color: #e3e3e3; }
       html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-primary {
         border-color: #7770cf; }
       html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-info {
@@ -14986,7 +15033,7 @@ html.admin.nightmode {
       html.admin.nightmode .b-radio.radio:hover input[type=radio] + .check.is-link {
         border-color: #7770cf; }
     html.admin.nightmode .b-radio.radio:focus input[type=radio] + .check {
-      box-shadow: 0 0 0.5em rgba(115, 143, 201, 0.8); }
+      box-shadow: 0 0 0.5em rgba(151, 156, 165, 0.8); }
     html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check {
       box-shadow: 0 0 0.5em rgba(119, 112, 207, 0.8); }
       html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-white {
@@ -14994,9 +15041,9 @@ html.admin.nightmode {
       html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-black {
         box-shadow: 0 0 0.5em rgba(251, 252, 254, 0.8); }
       html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-light {
-        box-shadow: 0 0 0.5em rgba(245, 245, 245, 0.8); }
-      html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-dark {
         box-shadow: 0 0 0.5em rgba(54, 54, 54, 0.8); }
+      html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-dark {
+        box-shadow: 0 0 0.5em rgba(227, 227, 227, 0.8); }
       html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-primary {
         box-shadow: 0 0 0.5em rgba(119, 112, 207, 0.8); }
       html.admin.nightmode .b-radio.radio:focus input[type=radio]:checked + .check.is-info {
@@ -15030,7 +15077,7 @@ html.admin.nightmode {
       font-style: normal;
       padding: 0.25em 0; }
   html.admin.nightmode .select.is-empty select {
-    color: rgba(115, 143, 201, 0.7); }
+    color: rgba(151, 156, 165, 0.7); }
   html.admin.nightmode .switch {
     cursor: pointer;
     display: inline-flex;
@@ -15071,9 +15118,9 @@ html.admin.nightmode {
         html.admin.nightmode .switch input[type=checkbox]:checked + .check.is-black {
           background: #fbfcfe; }
         html.admin.nightmode .switch input[type=checkbox]:checked + .check.is-light {
-          background: whitesmoke; }
-        html.admin.nightmode .switch input[type=checkbox]:checked + .check.is-dark {
           background: #363636; }
+        html.admin.nightmode .switch input[type=checkbox]:checked + .check.is-dark {
+          background: #e3e3e3; }
         html.admin.nightmode .switch input[type=checkbox]:checked + .check.is-primary {
           background: #7770cf; }
         html.admin.nightmode .switch input[type=checkbox]:checked + .check.is-info {
@@ -15101,9 +15148,9 @@ html.admin.nightmode {
       html.admin.nightmode .switch:hover input[type=checkbox]:checked + .check.is-black {
         background: rgba(251, 252, 254, 0.9); }
       html.admin.nightmode .switch:hover input[type=checkbox]:checked + .check.is-light {
-        background: rgba(245, 245, 245, 0.9); }
-      html.admin.nightmode .switch:hover input[type=checkbox]:checked + .check.is-dark {
         background: rgba(54, 54, 54, 0.9); }
+      html.admin.nightmode .switch:hover input[type=checkbox]:checked + .check.is-dark {
+        background: rgba(227, 227, 227, 0.9); }
       html.admin.nightmode .switch:hover input[type=checkbox]:checked + .check.is-primary {
         background: rgba(119, 112, 207, 0.9); }
       html.admin.nightmode .switch:hover input[type=checkbox]:checked + .check.is-info {
@@ -15119,7 +15166,7 @@ html.admin.nightmode {
     html.admin.nightmode .switch:focus {
       outline: none; }
       html.admin.nightmode .switch:focus input[type=checkbox] + .check {
-        box-shadow: 0 0 0.5em rgba(115, 143, 201, 0.6); }
+        box-shadow: 0 0 0.5em rgba(151, 156, 165, 0.6); }
       html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check {
         box-shadow: 0 0 0.5em rgba(119, 112, 207, 0.8); }
         html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-white {
@@ -15127,9 +15174,9 @@ html.admin.nightmode {
         html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-black {
           box-shadow: 0 0 0.5em rgba(251, 252, 254, 0.8); }
         html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-light {
-          box-shadow: 0 0 0.5em rgba(245, 245, 245, 0.8); }
-        html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-dark {
           box-shadow: 0 0 0.5em rgba(54, 54, 54, 0.8); }
+        html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-dark {
+          box-shadow: 0 0 0.5em rgba(227, 227, 227, 0.8); }
         html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-primary {
           box-shadow: 0 0 0.5em rgba(119, 112, 207, 0.8); }
         html.admin.nightmode .switch:focus input[type=checkbox]:checked + .check.is-info {
@@ -15152,7 +15199,7 @@ html.admin.nightmode {
     html.admin.nightmode .switch[disabled] {
       opacity: 0.5;
       cursor: not-allowed;
-      color: #738fc9; }
+      color: #979ca5; }
   html.admin.nightmode .table-wrapper .table {
     margin-bottom: 0; }
   html.admin.nightmode .table-wrapper:not(:last-child) {
@@ -15195,10 +15242,10 @@ html.admin.nightmode {
             justify-content: center;
             text-align: center; }
         html.admin.nightmode .b-table .table th.is-current-sort {
-          border-color: #738fc9;
+          border-color: #979ca5;
           font-weight: 700; }
         html.admin.nightmode .b-table .table th.is-sortable:hover {
-          border-color: #738fc9; }
+          border-color: #979ca5; }
         html.admin.nightmode .b-table .table th.is-sortable,
         html.admin.nightmode .b-table .table th.is-sortable .th-wrap {
           cursor: pointer; }
@@ -15362,7 +15409,7 @@ html.admin.nightmode {
       html.admin.nightmode .timepicker .control .select select option {
         font-size: 1.5rem; }
         html.admin.nightmode .timepicker .control .select select option:disabled {
-          color: rgba(115, 143, 201, 0.7); }
+          color: rgba(151, 156, 165, 0.7); }
     html.admin.nightmode .timepicker .control .select:after {
       display: none; }
   html.admin.nightmode .timepicker .control:nth-child(1) .select select {
@@ -15405,12 +15452,12 @@ html.admin.nightmode {
       border-left: 5px solid transparent;
       bottom: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-top.is-light:before {
-      border-top: 5px solid whitesmoke;
+      border-top: 5px solid #363636;
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
       bottom: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-top.is-dark:before {
-      border-top: 5px solid #363636;
+      border-top: 5px solid #e3e3e3;
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
       bottom: calc(100% + 2px); }
@@ -15468,12 +15515,12 @@ html.admin.nightmode {
       left: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-right.is-light:before {
       border-top: 5px solid transparent;
-      border-right: 5px solid whitesmoke;
+      border-right: 5px solid #363636;
       border-bottom: 5px solid transparent;
       left: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-right.is-dark:before {
       border-top: 5px solid transparent;
-      border-right: 5px solid #363636;
+      border-right: 5px solid #e3e3e3;
       border-bottom: 5px solid transparent;
       left: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-right.is-primary:before {
@@ -15530,12 +15577,12 @@ html.admin.nightmode {
       top: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-bottom.is-light:before {
       border-right: 5px solid transparent;
-      border-bottom: 5px solid whitesmoke;
+      border-bottom: 5px solid #363636;
       border-left: 5px solid transparent;
       top: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-bottom.is-dark:before {
       border-right: 5px solid transparent;
-      border-bottom: 5px solid #363636;
+      border-bottom: 5px solid #e3e3e3;
       border-left: 5px solid transparent;
       top: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-bottom.is-primary:before {
@@ -15593,12 +15640,12 @@ html.admin.nightmode {
     html.admin.nightmode .tooltip.is-left.is-light:before {
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
-      border-left: 5px solid whitesmoke;
+      border-left: 5px solid #363636;
       right: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-left.is-dark:before {
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
-      border-left: 5px solid #363636;
+      border-left: 5px solid #e3e3e3;
       right: calc(100% + 2px); }
     html.admin.nightmode .tooltip.is-left.is-primary:before {
       border-top: 5px solid transparent;
@@ -15664,10 +15711,10 @@ html.admin.nightmode {
       background: #fbfcfe;
       color: #111a2c; }
     html.admin.nightmode .tooltip.is-light:after {
-      background: whitesmoke;
+      background: #363636;
       color: #363636; }
     html.admin.nightmode .tooltip.is-dark:after {
-      background: #363636;
+      background: #e3e3e3;
       color: whitesmoke; }
     html.admin.nightmode .tooltip.is-primary:after {
       background: #7770cf;
@@ -15747,11 +15794,11 @@ html.admin.nightmode {
         border-color: #fbfcfe;
         background: rgba(251, 252, 254, 0.05); }
       html.admin.nightmode .upload .upload-draggable:hover.is-light, html.admin.nightmode .upload .upload-draggable.is-hovered.is-light {
-        border-color: whitesmoke;
-        background: rgba(245, 245, 245, 0.05); }
-      html.admin.nightmode .upload .upload-draggable:hover.is-dark, html.admin.nightmode .upload .upload-draggable.is-hovered.is-dark {
         border-color: #363636;
         background: rgba(54, 54, 54, 0.05); }
+      html.admin.nightmode .upload .upload-draggable:hover.is-dark, html.admin.nightmode .upload .upload-draggable.is-hovered.is-dark {
+        border-color: #e3e3e3;
+        background: rgba(227, 227, 227, 0.05); }
       html.admin.nightmode .upload .upload-draggable:hover.is-primary, html.admin.nightmode .upload .upload-draggable.is-hovered.is-primary {
         border-color: #7770cf;
         background: rgba(119, 112, 207, 0.05); }
@@ -15770,6 +15817,9 @@ html.admin.nightmode {
       html.admin.nightmode .upload .upload-draggable:hover.is-link, html.admin.nightmode .upload .upload-draggable.is-hovered.is-link {
         border-color: #7770cf;
         background: rgba(119, 112, 207, 0.05); }
+  html.admin.nightmode .box {
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(10, 22, 46, 0.1);
+    border-radius: 0.5rem; }
   html.admin.nightmode pre, html.admin.nightmode body, html.admin.nightmode .table thead th {
     color: #b9c7e4; }
   html.admin.nightmode pre {
@@ -15791,7 +15841,7 @@ html.admin.nightmode {
       html.admin.nightmode .sidebar a:active {
         color: #b9c7e4; }
       html.admin.nightmode .sidebar a:not(.is-active):hover {
-        color: #738fc9;
+        color: #979ca5;
         background: #152037; }
   html.admin.nightmode .sidebar > .big, html.admin.nightmode .sidebar > .big * {
     color: #7770cf !important;
@@ -15810,7 +15860,8 @@ html.admin.nightmode {
     margin: 1em; }
   html.admin.nightmode #app .panel {
     background: #152037;
-    flex: 1 1 auto; }
+    flex: 1 1 auto;
+    position: relative; }
   html.admin.nightmode #app .panel .panel-header {
     background: #7770cf; }
   html.admin.nightmode #app .panel .panel-header .title, html.admin.nightmode #app .panel .panel-header .subtitle {
@@ -15880,9 +15931,9 @@ html.admin.nightmode {
     transform: translateX(40rem) scale(1); }
   html.admin.nightmode .thumb {
     display: inline-block;
-    max-height: 100px;
-    max-width: 150px;
-    border: solid 1px black; }
+    height: 128px;
+    width: 128px;
+    object-fit: cover; }
   html.admin.nightmode .asset {
     display: flex;
     align-items: center;
@@ -15895,6 +15946,8 @@ html.admin.nightmode {
     font-family: monospace;
     white-space: pre;
     overflow: auto; }
+  html.admin.nightmode .padded {
+    padding: 1rem; }
   html.admin.nightmode .gallery {
     display: flex;
     text-align: center;
@@ -15903,5 +15956,40 @@ html.admin.nightmode {
   html.admin.nightmode .gallery > * {
     flex: 1 1 auto; }
   html.admin.nightmode .button:hover {
-    color: #738fc9;
+    color: #b9c7e4;
     background: #152037; }
+  html.admin.nightmode .button:focus {
+    color: #979ca5; }
+  html.admin.nightmode .menu .button {
+    text-align: left;
+    height: inherit; }
+  html.admin.nightmode .asset-edit {
+    display: flex;
+    flex-direction: row; }
+  html.admin.nightmode .asset-edit > .asset-preview {
+    min-height: 4rem;
+    flex-shrink: 0; }
+  html.admin.nightmode .asset-edit > .asset-rows {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 1rem; }
+  html.admin.nightmode .asset-edit > .asset-rows > .asset-row {
+    height: 50%; }
+  html.admin.nightmode .uploads-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+  html.admin.nightmode .uploads-area .upload {
+    width: 50%;
+    justify-content: space-between;
+    flex: 1 0 auto; }
+  html.admin.nightmode .upload:nth-child(even) .box.margined, html.admin.nightmode .upload:last-child .box.margined {
+    margin: 1rem 0 0 0 !important; }
+  html.admin.nightmode .upload:nth-child(odd) .box.margined {
+    margin: 1rem 1rem 0 0; }
+  @media all and (max-width: 1150px) {
+    html.admin.nightmode .uploads-area .upload {
+      width: 100%; }
+    html.admin.nightmode .box.margined {
+      margin: 1rem 0 0 0 !important; } }

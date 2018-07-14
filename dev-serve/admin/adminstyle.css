@@ -1,3 +1,7 @@
+.box {
+  box-shadow: 0 0 0 10px red;
+  border-radius: 0.5rem; }
+
 pre, body, .table thead th {
   color: red; }
 
@@ -47,7 +51,8 @@ hash-template.unhidden {
 
 #app .panel {
   background: red;
-  flex: 1 1 auto; }
+  flex: 1 1 auto;
+  position: relative; }
 
 #app .panel .panel-header {
   background: red; }
@@ -127,9 +132,9 @@ hash-template.unhidden {
 
 .thumb {
   display: inline-block;
-  max-height: 100px;
-  max-width: 150px;
-  border: solid 1px black; }
+  height: 128px;
+  width: 128px;
+  object-fit: cover; }
 
 .asset {
   display: flex;
@@ -147,6 +152,9 @@ hash-template.unhidden {
   white-space: pre;
   overflow: auto; }
 
+.padded {
+  padding: 1rem; }
+
 .gallery {
   display: flex;
   text-align: center;
@@ -159,3 +167,49 @@ hash-template.unhidden {
 .button:hover {
   color: red;
   background: red; }
+
+.button:focus {
+  color: red; }
+
+.menu .button {
+  text-align: left;
+  height: inherit; }
+
+.asset-edit {
+  display: flex;
+  flex-direction: row; }
+
+.asset-edit > .asset-preview {
+  min-height: 4rem;
+  flex-shrink: 0; }
+
+.asset-edit > .asset-rows {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 1rem; }
+
+.asset-edit > .asset-rows > .asset-row {
+  height: 50%; }
+
+.uploads-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.uploads-area .upload {
+  width: 50%;
+  justify-content: space-between;
+  flex: 1 0 auto; }
+
+.upload:nth-child(even) .box.margined, .upload:last-child .box.margined {
+  margin: 1rem 0 0 0 !important; }
+
+.upload:nth-child(odd) .box.margined {
+  margin: 1rem 1rem 0 0; }
+
+@media all and (max-width: 1150px) {
+  .uploads-area .upload {
+    width: 100%; }
+  .box.margined {
+    margin: 1rem 0 0 0 !important; } }

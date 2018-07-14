@@ -31,9 +31,10 @@ class PugEditor{
               <button class="button is-success" @click="save">💾︎ Save</button>
             </p>
             <p class="control">
-              <button class="button is-warning" @click="load(true)">⮌︎ Revert Changes</button>
+              <button class="button is-warning" @click="load(true)">⮌︎ Discard Changes</button>
             </p>
           </div>
+          <b-loading :is-full-page="true" :active="!loaded" :can-cancel="false"></b-loading>
         </span>
       `,
       methods:{

@@ -6,6 +6,9 @@
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
 
+@import './colors.scss';
+
+
 %admin-shared{
   $card-bg:red !default;
   $fg:red !default;

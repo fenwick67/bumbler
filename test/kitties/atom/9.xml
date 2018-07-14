@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>http://localhost:8000/feed.atom</id>
 <title>KBnD</title>
-<updated>2018-07-08T19:25:13-05:00</updated>
+<updated>2018-07-14T16:01:48-05:00</updated>
 <subtitle>kitties, birdies, doggos, and more</subtitle>
 <logo>http://localhost:8000/assets/avatar.png</logo>
 <author>
@@ -17,204 +17,203 @@
 <link rel="self" type="application/atom+xml" href="http://localhost:8000/atom.xml"/><link rel="next" type="application/atom+xml" href="http://localhost:8000/atom/10.xml"/>
 <link rel="previous" type="application/atom+xml" href="http://localhost:8000/atom/8.xml"/>
 <link rel="first" type="application/atom+xml" href="http://localhost:8000/atom/feed.xml"/>
-<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/27.xml"/><entry>
-<id>http://localhost:8000/post/01CFGXFD00R5YYDP4XE0T4RTCV.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Feeding the world</title>
+<link rel="last" type="application/atom+xml" href="http://localhost:8000/atom/37.xml"/><entry>
+<id>http://localhost:8000/post/01CJ0QSP0007WPJGPX6HHVS20T.html</id>
+<published>2018-07-10T00:00:00.000Z</published>
+<updated>2018-07-10T00:00:00.000Z</updated>
+<title>Victor Jara murder</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Who Should Feed the World: Real People or &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jun/05/feed-the-world-real-people-faceless-multinationals-monsanto-bayer&#34;&gt;Faceless Multinationals&lt;/a&gt;?   &lt;/p&gt;</content>
+&lt;p&gt; Chilean army officers have been convicted of murdering singer Victor Jara a few days after the 1973 coup against President Allende.  That was &lt;a href=&#34;https://www.theguardian.com/world/2018/jul/03/victor-jara-ex-military-officers-sentenced-in-chile-for-1973-death&#34;&gt;after torturing him first&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00R5YYDP4XE0T4RTCV.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ0QSP0007WPJGPX6HHVS20T.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00R3GXPBHSB7ACQTR4.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Campaigning for gun control</title>
+<id>http://localhost:8000/post/01CJ0QSP0001T6X04HCMVBBZ14.html</id>
+<published>2018-07-10T00:00:00.000Z</published>
+<updated>2018-07-10T00:00:00.000Z</updated>
+<title>Jesus in a cage</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The students from Marjory Stoneman Douglas high school will &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/04/parkland-students-bus-tour-gun-control-midterms&#34;&gt;spend two months campaigning&lt;/a&gt; for candidates that support gun control.   &lt;/p&gt;</content>
+&lt;p&gt; A Christian church &lt;a href=&#34;https://www.indystar.com/story/news/2018/07/03/ice-family-detention-protest-christ-church-cathedral-put-jesus-cage/753946002/&#34;&gt;put up a display&lt;/a&gt; of Jesus and his parents in a cage. This can reclaim Christianity from being a support for cruelty and harshness.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00R3GXPBHSB7ACQTR4.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ0QSP0001T6X04HCMVBBZ14.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00PGZAQN1WKBCH01Z0.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Prison phone fees</title>
+<id>http://localhost:8000/post/01CJ0QSP0000Q5TSBZM2FPBR48.html</id>
+<published>2018-07-10T00:00:00.000Z</published>
+<updated>2018-07-10T00:00:00.000Z</updated>
+<title>Sex-change operations</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Sheriffs Are &lt;a href=&#34;https://www.techdirt.com/articles/20180527/15041839927/sheriffs-are-raking-millions-prison-phone-fees-some-really-dont-want-to-talk-about-it.shtml&#34;&gt;Raking In Millions In Prison Phone Fees&lt;/a&gt; And Some Really  Don&#39;t Want To Talk About It.   &lt;/p&gt;</content>
+&lt;p&gt; Acceptance of sex-change operations is leading some to &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/05/dolls-dresses-no-proof-not-girl-pink-v-blue&#34;&gt;subscribe to rigid gender roles&lt;/a&gt;: if you don&#39;t want to follow some gender role assigned to your gender, they jump to the conclusion you need an operation.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00PGZAQN1WKBCH01Z0.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CJ0QSP0000Q5TSBZM2FPBR48.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00KNQMDDK9JXZ0NGCQ.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Building a new bomber</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The US Air Force has so much military power that it has no difficulty in spending 100 billion dollars to &lt;a href=&#34;https://www.commondreams.org/views/2018/06/04/military-industrial-complex-strikes-out-again&#34;&gt;build a totally pointless new bomber&lt;/a&gt;.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00KNQMDDK9JXZ0NGCQ.html"/>
+<id>http://localhost:8000/post/01CHY66Z0Q3SVCKZTBZFZGXN7T.html</id>
+<published>2018-07-09T00:14:11.990Z</published>
+<updated>2018-07-09T00:14:11.990Z</updated>
+<title>New Post on KBnD</title>
+<content type="html" xml:lang="en">&lt;p&gt;here we go&lt;/p&gt;
+</content>
+<link rel="enclosure" type="audio/wave" href="http://localhost:8000/assets/monkey%20rap.wav"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHY66Z0Q3SVCKZTBZFZGXN7T.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00JWDB8H89REDP0Q3D.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Truck driver strike</title>
-<content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Activity in Brazil was brought to a halt by a &lt;a href=&#34;https://theintercept.com/2018/06/05/brazil-truckers-strike/&#34;&gt;strike by truck drivers&lt;/a&gt;, self-organized and not going through a union.  They demanded a lower price for diesel fuel. &lt;/p&gt;&lt;p&gt; By making the price unpredictable, President Temer put the burden on the truck drivers.  The country needs to charge more for fossil fuels; subsidy of fossil fuels promotes &lt;a href=&#34;https://stallman.org/glossary.html#global heating&#34;&gt;global heating&lt;/a&gt;.  However, it needs to make sure that the burden does not fall on truck drivers, but rather on the businesses that use the services of trucks.   &lt;/p&gt;</content>
-<category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00JWDB8H89REDP0Q3D.html"/>
+<id>http://localhost:8000/post/01CHY5NAKTWGSKJ2N3M3DTJ8VQ.html</id>
+<published>2018-07-09T00:04:34.042Z</published>
+<updated>2018-07-09T00:04:34.042Z</updated>
+<title>test</title>
+<content type="html" xml:lang="en">&lt;p&gt;Hi!&lt;/p&gt;
+</content>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHY5NAKTWGSKJ2N3M3DTJ8VQ.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00J0B3KETEM64H0WKM.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Fun name for a jail cell</title>
+<id>http://localhost:8000/post/01CHVK0800ZZ5ET6VFX5DTJ7PF.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Residences as investments</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The Onion: ICE agent Don Neville was reportedly trying Monday to &lt;a href=&#34;https://www.theonion.com/ice-agent-trying-to-think-of-fun-name-for-jail-cell-bef-1826545410&#34;&gt;think of a fun name for a jail cell&lt;/a&gt; before locking up a 5-year-old immigrant. &lt;/p&gt;&lt;p&gt; The Onion truly excels at helping us see &lt;a href=&#34;https://stallman.org/glossary.html#thug&#34;&gt;thugs&lt;/a&gt; as human beings with the same range of emotions as all the rest of us.   &lt;/p&gt;</content>
+&lt;p&gt; The mayors of London and Barcelona call for power to &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/03/city-properties-homes-people-first-london-barcelona&#34;&gt;prevent using residential space as empty investments&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00J0B3KETEM64H0WKM.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800ZZ5ET6VFX5DTJ7PF.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00F1CCJPCZXJ34V7YP.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Urgent: Rainforest in Indonesia</title>
+<id>http://localhost:8000/post/01CHVK0800W1MX9JXPMQJW42Q5.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Tim Geithner</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Everyone: &lt;a href=&#34;https://www.lovetheleuser.org/tampurhydrodam&#34;&gt;call on Indonesia and Aceh&lt;/a&gt; not to build a dam that would destroy a protected rainforest which is a habitat for endangered species.   &lt;/p&gt;</content>
+&lt;p&gt; After Long Career Bailing Out Big Banks, Obama Treasury Secretary Tim Geithner &lt;a href=&#34;https://www.commondreams.org/news/2018/07/02/after-long-career-bailing-out-big-banks-obama-treasury-secretary-tim-geithner-now&#34;&gt;Now Runs Predatory Firm&lt;/a&gt; That Exploits the Poor for Profit.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00F1CCJPCZXJ34V7YP.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800W1MX9JXPMQJW42Q5.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD00CX2PZ1XWHK2VV1XZ.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Urgent: Bill Gates</title>
+<id>http://localhost:8000/post/01CHVK0800VEGPD5BKFRC8VE22.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>War on Drugs in Mexico</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US college seniors: Are you graduating from college in the US this year?  Did you get Bill Gates&#39;s &amp;quot;gift&amp;quot; of gratis download of a book? &lt;/p&gt;&lt;p&gt; If so, can you tell me (1) whether you can download it without running any nonfree software, (2) whether it has DRM, and (3) whether you have to agree to a jerkmaking &amp;quot;no sharing, no lending, no giving&amp;quot; contract before you can get a copy?   &lt;/p&gt;</content>
+&lt;p&gt; Mexico needs to end the War on Drugs.  But maybe it needs &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/02/mexico-narco-nightmare-amnesty-traffickers&#34;&gt;cooperation from the US&lt;/a&gt; to make this effective.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD00CX2PZ1XWHK2VV1XZ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800VEGPD5BKFRC8VE22.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD008G7V6VQ8GB8S4ZHF.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Equating to nonhuman animals</title>
+<id>http://localhost:8000/post/01CHVK0800Q1043DD8SWJ99XXF.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Principle behind Roe v Wade</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Equating certain people to nonhuman animals makes it &lt;a href=&#34;https://www.commondreams.org/views/2018/06/04/slippery-slope-dehumanizing-language&#34;&gt;easier to commit violence&lt;/a&gt; against them.   &lt;/p&gt;</content>
+&lt;p&gt; The decision Roe v Wade was based on a &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/28/1776268/-If-Roe-goes-gay-rights-may-follow&#34;&gt;principle called &amp;quot;substantive due process&amp;quot;&lt;/a&gt;, established by previous Supreme Court decisions and applied in many other areas including contraception and the legalization of homosexual sex. &lt;/p&gt;&lt;p&gt; Gorsuch opposes that principle in general, and the oppressor&#39;s other Supreme Court nominees are likely to oppose it too. &lt;/p&gt;&lt;p&gt; The 49 Senate Democrats can&#39;t directly defeat a Supreme Court nominee, but there are many things they can do to delay it — &lt;em&gt;if&lt;/em&gt; they stand firm and united.  With firmness, they have a chance of &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/28/1776316/-What-can-Senate-Democrats-do-Lock-down-49-and-fight-like-hell&#34;&gt;delaying until January&lt;/a&gt;, when perhaps they will have a majority.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD008G7V6VQ8GB8S4ZHF.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800Q1043DD8SWJ99XXF.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFGXFD003JB69QSXCTVVM8S0.html</id>
-<published>2018-06-09T00:00:00.000Z</published>
-<updated>2018-06-09T00:00:00.000Z</updated>
-<title>Prison for baby immigrants</title>
+<id>http://localhost:8000/post/01CHVK0800PRAPVVEYMBDXBPNP.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Tesla factory in Nevada</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Senator Merkley tried to visit a prison for baby immigrants, but &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/3/1769169/-Sen-Merkley-refused-entry-into-facility-holding-hundreds-of-children-separated-from-parents&#34;&gt;they wouldn&#39;t let him in&lt;/a&gt; or tell him anything. &lt;/p&gt;&lt;p&gt; The motive for the policy of taking all babies away from their parents is to create what in the UK is called a &amp;quot;hostile environment&amp;quot;.  These babies are being used as hostages; hurting them is intended to make their parents miserable.  Thus, the US has become the world leader in sadism.   &lt;/p&gt;</content>
+&lt;p&gt; A Tesla factory has brought many more workers to a corner of Nevada, so poor people in the area can&#39;t afford a place to live.  The factory was brought there with large tax subsidies, so the &lt;a href=&#34;https://www.theguardian.com/cities/2018/jul/03/all-humanity-has-left-the-area-the-cities-paying-for-tesla-gigafactory&#34;&gt;state has no funds&lt;/a&gt; to help with the social problems that the factory causes. &lt;/p&gt;&lt;p&gt; I have never accepted the idea that government&#39;s legitimate job included trying to compete with other governments to offer businesses the biggest tax breaks.  That approach is called &amp;quot;beggar thy neighbor&amp;quot; and the only ones who benefit, overall, are the companies. &lt;/p&gt;&lt;p&gt; We should &lt;a href=&#34;https://stallman.org/articles/states-union.html&#34;&gt;put an end to it&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFGXFD003JB69QSXCTVVM8S0.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800PRAPVVEYMBDXBPNP.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00ZF23AERA5V5HJ197.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Marijuana prohibition</title>
+<id>http://localhost:8000/post/01CHVK0800MYVVAHECZ16SAHHY.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Most Americans are poor</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Prohibition of marijuana does not &amp;quot;work&amp;quot;, if you define &amp;quot;working&amp;quot; as stopping people from using it.  Even if one presumes that it would be better if nobody used marijuana, the right thing to do is &lt;a href=&#34;https://www.theguardian.com/society/2018/jun/02/why-we-must-legalise-cannabis-public-health&#34;&gt;legalize it and regulate it&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; However, the premise that it would be better if nobody used marijuana is wrong anyway.   &lt;/p&gt;</content>
+&lt;p&gt; There are many ways to judge whether people are poor.  In general, they lead to the conclusion that &lt;a href=&#34;https://www.commondreams.org/views/2018/07/02/more-evidence-half-americans-are-or-near-poverty&#34;&gt;most Americans are poor&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00ZF23AERA5V5HJ197.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800MYVVAHECZ16SAHHY.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00YP8805RPBMBX7A1D.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Criticism of Nauru government</title>
+<id>http://localhost:8000/post/01CHVK0800MFPWMRVGS2JMKAKS.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Principle behind Roe v Wade</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/04/fears-naurus-sweeping-new-contempt-laws-target-opposition&#34;&gt;Nauru has made&lt;/a&gt; criticism of the government and its courts a crime. &lt;/p&gt;&lt;p&gt; That makes it even more useful as a sealed immigration prison for Australia.   &lt;/p&gt;</content>
+&lt;p&gt; The decision Roe v Wade was based on a &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/28/1776268/-If-Roe-goes-gay-rights-may-follow&#34;&gt;principle called &amp;quot;substantive due process&amp;quot;&lt;/a&gt;, established by previous Supreme Court decisions and applied in many other areas including contraception and the legalization of homosexual sex. &lt;/p&gt;&lt;p&gt; Gorsuch opposes that principle in general, and the oppressor&#39;s other Supreme Court nominees are likely to oppose it too. &lt;/p&gt;&lt;p&gt; The 49 Senate Democrats can&#39;t directly defeat a Supreme Court nominee, but there are many things they can do to delay it — &lt;em&gt;if&lt;/em&gt; they stand firm and united.  With firmness, they have a chance of &lt;a href=&#34;https://www.dailykos.com/stories/2018/6/28/1776316/-What-can-Senate-Democrats-do-Lock-down-49-and-fight-like-hell&#34;&gt;delaying until January&lt;/a&gt;, when perhaps they will have a majority.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00YP8805RPBMBX7A1D.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800MFPWMRVGS2JMKAKS.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00Y1MB5GZCX37PF3YJ.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>The cheater&#39;s use of vagueness</title>
+<id>http://localhost:8000/post/01CHVK0800M0SH1AYM982F410D.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Skirts in school</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; How the cheater turns vagueness &lt;a href=&#34;https://www.nytimes.com/2018/05/24/opinion/trump-lying-imprecision.html&#34;&gt;to the service of lies and bullshit&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I suggest not paying attention to anything he says.  Focus instead on what he and his henchmen are doing.   &lt;/p&gt;</content>
+&lt;p&gt; &amp;quot;&lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/03/ban-skirts-in-school-gender-stereotypes&#34;&gt;Don&#39;t ban skirts in school.&lt;/a&gt; Let everybody wear them.&amp;quot; &lt;/p&gt;&lt;p&gt; The idea of requiring students to wear a specific uniform strikes me as mere repression.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00Y1MB5GZCX37PF3YJ.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800M0SH1AYM982F410D.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00XJDNGQD389TRN7HB.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Theocratic Christian plans</title>
+<id>http://localhost:8000/post/01CHVK0800JPDXZXDQ2YRJWPCX.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Urgent: Contracts for imprisoning refugees</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Theocratic Christians plan to make state legislatures &lt;a href=&#34;https://www.theguardian.com/world/2018/jun/04/project-blitz-the-legislative-assault-by-christian-nationalists-to-reshape-america&#34;&gt;push their religion into public schools&lt;/a&gt;, and to legalize discrimination against queer people. &lt;/p&gt;&lt;p&gt; They published a document describing the states in their plan.  Laws to impose religious slogans in public buildings are the first step.   &lt;/p&gt;</content>
+&lt;p&gt; US citizens: &lt;a href=&#34;http://act.winwithoutwar.org/sign/tell-defense-contractors-no-war-profits-caging-kids&#34;&gt;Tell the CEOs of General Dynamics and MVM&lt;/a&gt; to cancel their contracts for imprisoning refugees.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00XJDNGQD389TRN7HB.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800JPDXZXDQ2YRJWPCX.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00WRTTP9HMS0V3E6TE.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Torture by UK partners</title>
+<id>http://localhost:8000/post/01CHVK0800JA0FD58XSEG2PXVP.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Skirts in school</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; UK spies still have intelligence collaborations which &lt;a href=&#34;https://www.theguardian.com/uk-news/2018/jun/02/uk-spies-breaching-rules-sharing-intelligence-gained-torture-mi5-mi6&#34;&gt;involve torture by partner countries&lt;/a&gt;. This despite having been ordered not to do so.   &lt;/p&gt;</content>
+&lt;p&gt; &amp;quot;&lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/03/ban-skirts-in-school-gender-stereotypes&#34;&gt;Don&#39;t ban skirts in school.&lt;/a&gt; Let everybody wear them.&amp;quot; &lt;/p&gt;&lt;p&gt; The idea of requiring students to wear a specific uniform strikes me as mere repression.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00WRTTP9HMS0V3E6TE.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800JA0FD58XSEG2PXVP.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00WGHJC8YJBSAP5CYA.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Urgent: Charges against Reality Winner</title>
+<id>http://localhost:8000/post/01CHVK0800J96SEFR6BEFHQQZC.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Plastic bags and bottles</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; US citizens: &lt;a href=&#34;https://stallman.org/petitions/petition-winner/&#34;&gt;call for&lt;/a&gt; charges against Reality Winner to be dropped.   &lt;/p&gt;</content>
+&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/global-development/2018/jul/03/himalayan-state-sikkim-india-war-plastic-bags&#34;&gt;Sikkim&#39;s example demonstrates&lt;/a&gt; what is required to entirely stop the use of plastic bags and bottles.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00WGHJC8YJBSAP5CYA.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800J96SEFR6BEFHQQZC.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00W04AKAB9B1SE7MNH.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Civilian casualty count</title>
+<id>http://localhost:8000/post/01CHVK0800HYCYJ2QC3NVC99K4.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Tesla factory in Nevada</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; The US government continues &lt;a href=&#34;https://www.commondreams.org/news/2018/06/01/carnage-concealed-experts-denounce-pentagon-lowballing-number-civilians-us-killed&#34;&gt;presenting gross undercounts&lt;/a&gt; of the number of civilian casualties. &lt;/p&gt;&lt;p&gt; This practice &lt;a href=&#34;https://stallman.org/archives/2004-may-aug.html#24%20May%202004%20(Wedding%20Party%20Attack)&#34;&gt;started under Dubya&lt;/a&gt; and &lt;a href=&#34;https://stallman.org/archives/2015-may-aug.html#12_August_2015_(US_bombing_campaign)&#34;&gt;continued under Obama&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Amnesty International &lt;a href=&#34;https://www.commondreams.org/newswire/2018/06/01/amnesty-international-calls-us-investigate-all-claims-civilian-casualties&#34;&gt;Calls on US&lt;/a&gt; to Investigate All Claims of Civilian Casualties.   &lt;/p&gt;</content>
+&lt;p&gt; A Tesla factory has brought many more workers to a corner of Nevada, so poor people in the area can&#39;t afford a place to live.  The factory was brought there with large tax subsidies, so the &lt;a href=&#34;https://www.theguardian.com/cities/2018/jul/03/all-humanity-has-left-the-area-the-cities-paying-for-tesla-gigafactory&#34;&gt;state has no funds&lt;/a&gt; to help with the social problems that the factory causes. &lt;/p&gt;&lt;p&gt; I have never accepted the idea that government&#39;s legitimate job included trying to compete with other governments to offer businesses the biggest tax breaks.  That approach is called &amp;quot;beggar thy neighbor&amp;quot; and the only ones who benefit, overall, are the companies. &lt;/p&gt;&lt;p&gt; We should &lt;a href=&#34;https://stallman.org/articles/states-union.html&#34;&gt;put an end to it&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00W04AKAB9B1SE7MNH.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800HYCYJ2QC3NVC99K4.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00VNNP39F3ESJX2HH3.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Urgent: Unkinder Morgan pipeline</title>
+<id>http://localhost:8000/post/01CHVK0800GRXKW2WJ91HEG2Z9.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Harvesting parsley in Gaza</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; Everyone: &lt;a href=&#34;https://act.climatetruth.org/sign/climate_hypocrite&#34;&gt;call on Trudeau&lt;/a&gt; to kill the Unkinder Morgan pipeline.   &lt;/p&gt;</content>
+&lt;p&gt; In Gaza, &lt;a href=&#34;https://theintercept.com/2018/07/03/israel-palestine-agriculture-gaza/&#34;&gt;harvesting parsley looks &amp;quot;suspicious&amp;quot;&lt;/a&gt; to Israeli soldiers, who might fire grenades at you and kill you. &lt;/p&gt;&lt;p&gt; If Israel wants a buffer zone around Gaza, it is entitled to create one on the Israeli side of the border.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00VNNP39F3ESJX2HH3.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800GRXKW2WJ91HEG2Z9.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00VHM0VFFPN7EFW7N9.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>UN report on Republicans</title>
+<id>http://localhost:8000/post/01CHVK0800G506B7N0C3TWQ6S0.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Bernie Sanders and the Dem party</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.commondreams.org/news/2018/06/01/scathing-un-report-condemns-trump-and-gop-deliberately-driving-already-devastating&#34;&gt;A UN report says&lt;/a&gt; that Republicans are deliberately trying to increase inequality and poverty in the US. &lt;/p&gt;&lt;p&gt; When US children grow up in poverty, it is nearly impossible for them to escape poverty, now that the government &lt;a href=&#34;https://www.theguardian.com/us-news/2018/jun/02/trumps-tragic-policies-likely-to-make-child-poverty-much-worse-says-un&#34;&gt;no longer offers much help&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; I think the underlying reason for this is that American rich consider most Americans superfluous as workers, and would rather eradicate them than allow them any hope.  The plan is to turn them against each other based on various kinds of racial, ethnic or gender groupings.   &lt;/p&gt;</content>
+&lt;p&gt; Bernie Sanders represents what the Democratic Party &lt;a href=&#34;https://www.commondreams.org/views/2018/07/03/not-extreme-sanders-and-ocasio-cortezs-leftism-has-been-core-democratic-party&#34;&gt;stood for from 1932 to 1992&lt;/a&gt;. &lt;/p&gt;&lt;p&gt; Plutocratic Democrats who reject that position try to present themselves as the &amp;quot;center&amp;quot; by painting Sanders as the &amp;quot;opposite extreme&amp;quot; from &lt;a href=&#34;https://stallman.org/glossary.html#cheater&#34;&gt;the cheater&lt;/a&gt;.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00VHM0VFFPN7EFW7N9.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800G506B7N0C3TWQ6S0.html"/>
 </entry>
 <entry>
-<id>http://localhost:8000/post/01CFEB2P00TBS678P6X3X69A1V.html</id>
-<published>2018-06-08T00:00:00.000Z</published>
-<updated>2018-06-08T00:00:00.000Z</updated>
-<title>Carbon bubble</title>
+<id>http://localhost:8000/post/01CHVK0800G10F2FKK7AH0E026.html</id>
+<published>2018-07-08T00:00:00.000Z</published>
+<updated>2018-07-08T00:00:00.000Z</updated>
+<title>Protests and political victories</title>
 <content type="html" xml:lang="en">&lt;p&gt;Stallman Sez: &lt;/p&gt;
-&lt;p&gt; &lt;a href=&#34;https://www.theguardian.com/environment/2018/jun/04/what-is-the-carbon-bubble-and-what-will-happen-if-it-bursts&#34;&gt;What will happen&lt;/a&gt; when the carbon bubble bursts?   &lt;/p&gt;</content>
+&lt;p&gt; Protest rallies can lead to political victories when they &lt;a href=&#34;https://www.theguardian.com/commentisfree/2018/jul/03/dear-resistance-marching-is-not-enough&#34;&gt;build support for other actions&lt;/a&gt; that can win the victories.   &lt;/p&gt;</content>
 <category term="stallman"/>
-<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CFEB2P00TBS678P6X3X69A1V.html"/>
+<link rel="alternate" type="text/html" href="http://localhost:8000/post/01CHVK0800G10F2FKK7AH0E026.html"/>
 </entry>
 </feed>
