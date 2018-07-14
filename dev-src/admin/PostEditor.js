@@ -34,7 +34,8 @@ module.exports = function(el,options){
         <p class="control">
           <b-taginput
                 v-model="post.tags"
-                ellipsis
+                attached
+                type="is-primary"
                 placeholder="Add a tag">
             </b-taginput>
         </p>
@@ -43,22 +44,9 @@ module.exports = function(el,options){
       <div class="field">
         <div>
           <label class="label">Assets</label>
-          <div>
-            <b-field>
-                <b-upload v-model="dropFiles" multiple drag-drop @input="gotFiles">
-                  <div class="content has-text-centered">
-                    <div class="padded">
-                      <p>
-                        <span class="is-size-3">🡅&#xFE0E;</span><span class="is-size-4">Upload</span>
-                      </p>
-                    </div>
-                  </div>
-                </b-upload>
-            </b-field>
-          </div>
           <div class="uploads-area">
 
-            <div v-for="asset in post.assets" class="upload">
+            <div v-for="asset in post.assets" class="upload-tile">
               <div class="box margined">
                 <div class="asset-edit">
                   <div class="asset-preview">
@@ -69,7 +57,7 @@ module.exports = function(el,options){
                   </div>
                   <div class="asset-rows">
                     <div class="asset-row">
-                        <span class="has-text-dark"> {{ asset.href }} </span>
+                        <span class="has-text-dark has-text-weight-semibold"> {{ asset.href.split('/').slice(-1)[0] }} </span>
                     </div>
                     <span class="asset-row">
 
@@ -100,8 +88,22 @@ module.exports = function(el,options){
                   </div>
                 </div><!-- end asset-edit -->
               </div><!-- end box -->
-            </div><!-- end column -->
-          </div><!-- end columns -->
+            </div><!-- end tile -->
+          </div><!-- end tiles -->
+
+          <div>
+            <b-field>
+                <b-upload v-model="dropFiles" multiple drag-drop @input="gotFiles">
+                  <div class="content has-text-centered">
+                    <div class="padded">
+                      <p>
+                        <span class="is-size-4">&#x1f4ce;&#xFE0E;</span><span class="is-size-5">&nbsp;Add Files</span>
+                      </p>
+                    </div>
+                  </div>
+                </b-upload>
+            </b-field>
+          </div>
 
         </div>
       </div>
@@ -169,9 +171,9 @@ module.exports = function(el,options){
             this.loading = false;
             if (!er){
               popup('uploaded post!','success');
-              this.post = {};
               window.startBuild();
               window.location.hash='#post/create'
+              this.discard();
             }else{
               popup(er,'danger','Error');
             }

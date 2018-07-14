@@ -7841,8 +7841,10 @@ html.admin:not(.nightmode) {
         border-color: #7e73ff;
         background: rgba(126, 115, 255, 0.05); }
   html.admin:not(.nightmode) .box {
+    padding: 1rem;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(10, 22, 46, 0.1);
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    background: #fdfdfe; }
   html.admin:not(.nightmode) pre, html.admin:not(.nightmode) body, html.admin:not(.nightmode) .table thead th {
     color: #1b3a79; }
   html.admin:not(.nightmode) pre {
@@ -7954,8 +7956,8 @@ html.admin:not(.nightmode) {
     transform: translateX(40rem) scale(1); }
   html.admin:not(.nightmode) .thumb {
     display: inline-block;
-    height: 128px;
-    width: 128px;
+    height: 100px;
+    width: 100px;
     object-fit: cover; }
   html.admin:not(.nightmode) .asset {
     display: flex;
@@ -7986,43 +7988,53 @@ html.admin:not(.nightmode) {
   html.admin:not(.nightmode) .menu .button {
     text-align: left;
     height: inherit; }
+  html.admin:not(.nightmode) .snackbar .text {
+    color: #f7f9fd; }
   html.admin:not(.nightmode) .asset-edit {
     display: flex;
     flex-direction: row; }
   html.admin:not(.nightmode) .asset-edit > .asset-preview {
-    min-height: 4rem;
+    height: 100px;
     flex-shrink: 0; }
   html.admin:not(.nightmode) .asset-edit > .asset-rows {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 1rem 1rem; }
+    margin: 0 0 0 1rem; }
   html.admin:not(.nightmode) .asset-edit > .asset-rows > .asset-row {
-    height: 50%; }
+    height: 50%;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   html.admin:not(.nightmode) .uploads-area {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between; }
-  html.admin:not(.nightmode) .uploads-area .upload {
+  html.admin:not(.nightmode) .uploads-area .upload-tile {
     width: 50%;
     justify-content: space-between;
     flex: 1 0 auto; }
-  html.admin:not(.nightmode) .upload:nth-child(even) .box.margined, html.admin:not(.nightmode) .upload:last-child .box.margined {
-    margin: 1rem 0 0 0 !important; }
-  html.admin:not(.nightmode) .upload:nth-child(odd) .box.margined {
-    margin: 1rem 1rem 0 0; }
+  html.admin:not(.nightmode) .upload-tile .box.margined {
+    margin-bottom: 1rem; }
+  html.admin:not(.nightmode) .upload-tile:nth-child(even) .box.margined, html.admin:not(.nightmode) .upload-tile:last-child .box.margined {
+    margin-right: 0 !important; }
+  html.admin:not(.nightmode) .upload-tile:nth-child(odd) .box.margined {
+    margin-right: 1rem; }
   @media all and (max-width: 1150px) {
-    html.admin:not(.nightmode) .uploads-area .upload {
+    html.admin:not(.nightmode) .uploads-area .upload-tile {
       width: 100%; }
     html.admin:not(.nightmode) .box.margined {
-      margin: 1rem 0 0 0 !important; } }
+      margin-right: 0 !important; } }
 
 html.admin.nightmode {
   /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
   /*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
   /**
  * Vue Transitions
- */ }
+ */
+  background-color: #111a2c;
+  color: #fbfcfe; }
 
 @keyframes spinAround {
   from {
@@ -15818,8 +15830,10 @@ html.admin.nightmode {
         border-color: #7770cf;
         background: rgba(119, 112, 207, 0.05); }
   html.admin.nightmode .box {
+    padding: 1rem;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(10, 22, 46, 0.1);
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    background: #101726; }
   html.admin.nightmode pre, html.admin.nightmode body, html.admin.nightmode .table thead th {
     color: #b9c7e4; }
   html.admin.nightmode pre {
@@ -15931,8 +15945,8 @@ html.admin.nightmode {
     transform: translateX(40rem) scale(1); }
   html.admin.nightmode .thumb {
     display: inline-block;
-    height: 128px;
-    width: 128px;
+    height: 100px;
+    width: 100px;
     object-fit: cover; }
   html.admin.nightmode .asset {
     display: flex;
@@ -15963,33 +15977,41 @@ html.admin.nightmode {
   html.admin.nightmode .menu .button {
     text-align: left;
     height: inherit; }
+  html.admin.nightmode .snackbar .text {
+    color: #111a2c; }
   html.admin.nightmode .asset-edit {
     display: flex;
     flex-direction: row; }
   html.admin.nightmode .asset-edit > .asset-preview {
-    min-height: 4rem;
+    height: 100px;
     flex-shrink: 0; }
   html.admin.nightmode .asset-edit > .asset-rows {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 1rem 1rem; }
+    margin: 0 0 0 1rem; }
   html.admin.nightmode .asset-edit > .asset-rows > .asset-row {
-    height: 50%; }
+    height: 50%;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   html.admin.nightmode .uploads-area {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between; }
-  html.admin.nightmode .uploads-area .upload {
+  html.admin.nightmode .uploads-area .upload-tile {
     width: 50%;
     justify-content: space-between;
     flex: 1 0 auto; }
-  html.admin.nightmode .upload:nth-child(even) .box.margined, html.admin.nightmode .upload:last-child .box.margined {
-    margin: 1rem 0 0 0 !important; }
-  html.admin.nightmode .upload:nth-child(odd) .box.margined {
-    margin: 1rem 1rem 0 0; }
+  html.admin.nightmode .upload-tile .box.margined {
+    margin-bottom: 1rem; }
+  html.admin.nightmode .upload-tile:nth-child(even) .box.margined, html.admin.nightmode .upload-tile:last-child .box.margined {
+    margin-right: 0 !important; }
+  html.admin.nightmode .upload-tile:nth-child(odd) .box.margined {
+    margin-right: 1rem; }
   @media all and (max-width: 1150px) {
-    html.admin.nightmode .uploads-area .upload {
+    html.admin.nightmode .uploads-area .upload-tile {
       width: 100%; }
     html.admin.nightmode .box.margined {
-      margin: 1rem 0 0 0 !important; } }
+      margin-right: 0 !important; } }

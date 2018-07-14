@@ -50,5 +50,7 @@ html.admin.nightmode{
   @import "bulma";
   @import "buefy";
   @extend %admin-shared;
+  background-color:$card-bg;
+  color:$fg;
   @import './adminstyle.scss';
 }

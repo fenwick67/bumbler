@@ -10,10 +10,14 @@ $primary-invert:red !default;
 $grey-dark: red !default;
 $grey: red !default;
 $grey-dark:red !default;
+$white:red !default;
+$pure-white: red !default;
 
 .box{
+  padding:1rem;
   box-shadow: $shadow;
   border-radius:0.5rem;
+  background:$pure-white;
 }
 
 pre,body,.table thead th{
@@ -165,8 +169,8 @@ hash-template.unhidden{
 }
 .thumb{
   display:inline-block;
-  height:128px;
-  width:128px;
+  height:100px;
+  width:100px;
   object-fit:cover;
 }
 .asset{
@@ -200,7 +204,7 @@ hash-template.unhidden{
   flex:1 1 auto;
 }
 
-// dark theme stuff again
+// dark theme / buefy fixes
 .button:hover{
   color:$grey-dark;
   background:$bg;
@@ -208,10 +212,12 @@ hash-template.unhidden{
 .button:focus{
   color:$grey;
 }
-
 .menu .button{
   text-align:left;
   height:inherit;
+}
+.snackbar .text{
+  color:$white;
 }
 
 // asset view on edit page
@@ -220,16 +226,20 @@ hash-template.unhidden{
   flex-direction: row;
 }
 .asset-edit>.asset-preview{
-  min-height:4rem;
+  height:100px;
   flex-shrink:0;
 }
 .asset-edit>.asset-rows{
   display:flex;
   flex-direction:column;
-  margin:1rem 0 1rem 1rem;
+  margin:0 0 0 1rem;
 }
 .asset-edit>.asset-rows>.asset-row{
   height:50%;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .uploads-area{
@@ -238,25 +248,29 @@ hash-template.unhidden{
   flex-direction:row;
   justify-content:space-between;
 }
-.uploads-area .upload{
+.uploads-area .upload-tile{
   width:50%;
   justify-content:space-between;
   flex:1 0 auto;
 }
 
-// this is barely worth how nice it looks
-.upload:nth-child(even) .box.margined, .upload:last-child .box.margined{
-  margin:1rem 0 0 0 !important;
+.upload-tile .box.margined{
+  margin-bottom:1rem;
 }
-.upload:nth-child(odd) .box.margined{
-  margin:1rem 1rem 0 0;
+
+// this is barely worth how nice it looks
+.upload-tile:nth-child(even) .box.margined, .upload-tile:last-child .box.margined{
+  margin-right:0 !important;
+}
+.upload-tile:nth-child(odd) .box.margined{
+  margin-right:1rem;
 }
 // collapse assets if window can't fit 2
 @media all and (max-width: 1150px){
-  .uploads-area .upload{
+  .uploads-area .upload-tile{
     width:100%;
   }
   .box.margined{
-    margin:1rem 0 0 0 !important;
+    margin-right:0 !important;
   }
 }
