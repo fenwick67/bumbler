@@ -1,13 +1,14 @@
 {
   "name": "bumbler",
-  "version": "0.5.2",
+  "version": "0.6.1",
   "tags": [
     "cms",
     "blog",
     "microblog",
-    "atom"
+    "atom",
+    "rss"
   ],
-  "description": "A DIY, filesystem-based CMS for photos, music, microblogging, or whatever",
+  "description": "A DIY, filesystem-based CMS for photos, music, microblogging, blogs, or whatever",
   "main": "cli.js",
   "bin": {
     "bumbler": "./cli.js"
@@ -67,9 +68,6 @@
     "bulma": "^0.6.2",
     "envify": "^4.1.0",
     "gulp-sass": "^4.0.1",
-    "simplemde": "^1.11.2",
-    "simplemde-theme-base": "git@github.com:xcatliu/simplemde-theme-base.git#c2e86f3a0dde118d28c7dd66bc0e7740d6526171",
-    "simplemde-theme-dark": "git@github.com:xcatliu/simplemde-theme-dark.git#ef6ae7d0b3d03464ba4e2a0c99776a9e371cef8f",
     "uglify-js": "^3.3.10",
     "vue": "^2.5.13"
   }
