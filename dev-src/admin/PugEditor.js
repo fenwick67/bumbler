@@ -230,5 +230,7 @@ function getSampleData(){
     return post;
   });
 
+  delete data3.page.links;
+
   return [data,data2,data3];
 }

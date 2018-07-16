@@ -14,9 +14,9 @@ class Asset{
       var x = ext.toLowerCase();
       var type = 'unknown'
       var types = {
-        'audio':['mp3','wav','ogg'],
-        'video':['mp4'],
-        'image':['png','gif','bmp','svg','tif','jpg','jpeg']
+        'audio':['mp3','wav','ogg','aac'],
+        'video':['mp4','webm'],
+        'image':['png','apng','gif','bmp','svg','tif','tiff','jpg','jpe','jpeg']
       }
       each(types,(extensions,key)=>{
         each(extensions,extension=>{
