@@ -1,9 +1,0 @@
-{
-  "date": "2017-12-29T05:10:09.494Z",
-  "caption": "GoTenna *does* have an SDK for Android and iOS but the details are all obfuscated away.  Even then, messages are restricted to very short lengths to deal with the 900MHz FCC restrictions.  There are also lots of 900MHz radios on Adafruit et cetera, but there's no unified, open 900MHz mesh protocol sadly.  \n\nFreedomBox is supposedly [working toward 2.4GHz mesh networking](https://wiki.debian.org/FreedomBox/Design/MeshNetwork) but I don't think it's working yet.",
-  "tags": "scuttlebutt",
-  "title": "",
-  "assets": [],
-  "id": "01C2GATWAPCTAY1J8Y2JQ8GVWW",
-  "permalink": "/posts/01C2GATWAPCTAY1J8Y2JQ8GVWW"
-}

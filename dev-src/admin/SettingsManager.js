@@ -12,18 +12,20 @@ module.exports = function SettingsManager (el){
     "title:Title",
     "postsPerPage:Posts per Page",
     "metadata:Metadata (json)",
-    "description:Site Description:string",
+    "description:Site Description",
     "authorName:Author Name",
     "avatar:Avatar URL",
     "siteUrl:Site base URL (format: https://www.site.com/)",
     "reverseOrder:Reverse order (newest on last page?)"
   ].map(str=>{
     var s = str.split(':');
-    labels[s[0]] = s[1];
+    var key = s.shift();
+    var val = s.join(':');
+    labels[key] = val;
 
     return {
-      key:s[0],
-      label:s[1]
+      key:key,
+      label:val
     }
   })
 
