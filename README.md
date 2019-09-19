@@ -57,8 +57,8 @@ step 0: install Node.js and NPM
 
 1. Create a new folder for your site and open a terminal inside it
 2. `npm install -g bumbler`
+    * Windows Users: You will need to either enable "Developer Mode" (windows 10 only), or run the following commands as administrator, so that the symlinks can be created.
 3. Run `bumbler init` and follow the directions
-    * On Windows, you need admin access to create symbolic links, which Bumbler will do, so you'll have to run the terminal as an administrator. I'm sorry.
 4. Run `bumbler` to start up your site
 5. Go to `localhost:3000/admin` to start making posts and customizing your site.
 
@@ -94,7 +94,7 @@ _bumblersrc/   # where the site source data is held
   ╠═favicon.png  # Put an icon here and favicon.ico will be built             |
   ╠═plugins/     # plugins go in here                                         |
   ╚═scripts/     # you can put executable scripts in here and bumbler will    |
-                 #                          let you run them from the UI      |
+       |         #                          let you run them from the UI      |
      # └──────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -118,6 +118,8 @@ Since the site builds to static files, you can easily build your site on your PC
 ## Developing Plugins
 
 Bumbler has a plugin system!
+
+Plugins should go in `_bumblersrc/plugins/`.
 
 Your plugin gets passed two parameters: the plugin library and a ready callback.  
 
@@ -248,7 +250,7 @@ Each page gets the following passed to the template:
             href:'/assets/photo.jpeg'
             widget:'<img src="/assets/photo.jpeg"></img>',
             type:'image'|'video'|'audio'|'unknown',
-            featured:true|false,
+            featured:true|false, // the UI has an option to "feature" assets, which sets this flag to true.
             inine:true|false // whether the asset was included in post caption
           },
           '...'
