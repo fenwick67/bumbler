@@ -55,7 +55,7 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "prompt": "^1.0.0",
-    "sanitize-html": "^1.20.0",
+    "sanitize-html": "^2.3.2",
     "session-file-store": "^1.0.0",
     "through2": "^2.0.3",
     "ulid": "^2.3.0",
