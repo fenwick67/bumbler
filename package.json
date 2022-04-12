@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/fenwick67/bumbler#readme",
   "dependencies": {
-    "async": "^2.4.0",
+    "async": "^3.2.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "buefy": "^0.6.6",
